@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Authors>Serhiy Lakas</Authors>
+    <Product>1C8 COMConnector Extensions</Product>
+    <Company>sabatex on git</Company>
+    <Description>1C8 COMConnector Extensions</Description>
+    <Copyright>2019, Serhiy Lakas</Copyright>
+    <Version>3.1.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>#1C8 #1C8.1 #1C8.2 #1C8.3</PackageTags>
+    <PackageId>sabatex.V1C8</PackageId>
+    <AssemblyName>sabatex.V1C8</AssemblyName>
+    <RootNamespace>sabatex.V1C8</RootNamespace>
+
+    <PackageReleaseNotes>Add SetProperty</PackageReleaseNotes>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <RepositoryUrl>https://github.com/sabatex/V1C8.git</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

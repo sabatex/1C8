@@ -8,7 +8,7 @@
     <Company>sabatex on git</Company>
     <Description>1C8 COMConnector Extensions</Description>
     <Copyright>2019, Serhiy Lakas</Copyright>
-    <Version>5.0.100-preview.8.0</Version>
+    <Version>5.0.100-preview.8.1</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8 #1C8.1 #1C8.2 #1C8.3</PackageTags>
     <PackageId>sabatex.V1C8</PackageId>
@@ -28,5 +28,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   </ItemGroup>
-
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
 </Project>

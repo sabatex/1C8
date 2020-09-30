@@ -7,9 +7,10 @@ namespace sabatex.V1C8
     public class V1CConnector
     {
 
-        private V1CConnector()
+        private V1CConnector(dynamic context)
         {
-
+            this.context = context;
+            Metadata = new Metadata(context);
         }
 
         public static string BuildConnectionString(String dataBasePath, string userName, string password)
@@ -22,13 +23,15 @@ namespace sabatex.V1C8
         }
 
 
+        public Metadata Metadata {get;private set;}
         public static V1CConnector GetConnection(string connectionString)
         {
             Type comConnector = Type.GetTypeFromProgID("V83.COMConnector");
             dynamic instance = Activator.CreateInstance(comConnector);
             dynamic comObject = instance.Connect(connectionString);
 
-            return new V1CConnector() { context = comObject };
+            return new V1CConnector(comObject);
+          
         }
 
         dynamic context;

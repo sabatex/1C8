@@ -6,14 +6,17 @@ on:
 jobs:
   publish:
     name: build, pack & publish
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
 
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:
-           dotnet-version: 5.0.100-preview.8
+           dotnet-version: 5.0.100-rc.1.20452.10
+      
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.0
 
       # Publish
       - name: publish on version change

@@ -4,10 +4,10 @@ using System.Text;
 
 namespace sabatex.V1C8
 {
-     public class Connection
+    public class V1CConnector
     {
 
-        private Connection()
+        private V1CConnector()
         {
 
         }
@@ -22,13 +22,13 @@ namespace sabatex.V1C8
         }
 
 
-        public static Connection GetConnection(string connectionString)
+        public static V1CConnector GetConnection(string connectionString)
         {
             Type comConnector = Type.GetTypeFromProgID("V83.COMConnector");
             dynamic instance = Activator.CreateInstance(comConnector);
             dynamic comObject = instance.Connect(connectionString);
 
-            return new Connection() { context = comObject };
+            return new V1CConnector() { context = comObject };
         }
 
         dynamic context;

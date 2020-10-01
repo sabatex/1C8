@@ -6,7 +6,7 @@
         <Copyright>2020, Serhiy Lakas</Copyright>
         <Version>21.71.0-beta1</Version>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageTags>#1C8 #1C8.1 #1C8.2 #1C8.3</PackageTags>
+        <PackageTags>#1C8 #1C8.1 #1C8.2 #1C8.3 </PackageTags>
         <PackageId>sabatex.V1C8.AccountingUkrCorp.Models</PackageId>
         <AssemblyName>sabatex.V1C8.AccountingUkrCorp.Models</AssemblyName>
         <PackageReleaseNotes>Auto construct</PackageReleaseNotes>

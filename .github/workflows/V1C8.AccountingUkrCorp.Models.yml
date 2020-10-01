@@ -1,11 +1,11 @@
 # Controls when the action will run. Triggers the workflow on push or pull request
-name: publish to nuget V1C8.AccountingUkrCorp.Models
+name: V1C8.AccountingUkrCorp.Models publish to nuget
 on:
   push:
     branches:
       - beta_5.0
     paths:
-        - 'src/V1C8.AccountingUkrCorp/**'
+        - 'src/V1C8.AccountingUkrCorp/Models/sabatex.V1C8.AccountingUkrCorp.Models.csproj'
 jobs:
   publish:
     name: build, pack & publish
@@ -28,30 +28,6 @@ jobs:
         with:
           # Filepath of the project to be packaged, relative to root of repository
           PROJECT_FILE_PATH: src\V1C8.AccountingUkrCorp\Models\sabatex.V1C8.AccountingUkrCorp.Models.csproj
-          # API key to authenticate with NuGet server
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          # Flag to toggle pushing symbols along with nuget package to the server, disabled by default
-          INCLUDE_SYMBOLS: true
-      
-      # Publish V1C8.AccountingUkrCorp.PostgreSQLDbContext
-      - name: publish on version change V1C8.AccountingUkrCorp.PostgreSQLDbContext
-        id: publish_V1C8_AccountingUkrCorp_PostgreSQLDbContext
-        uses: rohith/publish-nuget@v2
-        with:
-          # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: src\V1C8.AccountingUkrCorp\PostgreSQLDbContext\sabatex.V1C8.AccountingUkrCorp.PostgreSQLDbContext.csproj
-          # API key to authenticate with NuGet server
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          # Flag to toggle pushing symbols along with nuget package to the server, disabled by default
-          INCLUDE_SYMBOLS: true
-       
-      # Publish V1C8 sabatex.V1C8.AccountingUkrCorp.Adapters
-      - name: publish on version change sabatex.V1C8.AccountingUkrCorp.Adapters
-        id: publish_sabatex_V1C8_AccountingUkrCorp_Adapters
-        uses: rohith/publish-nuget@v2
-        with:
-          # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: src\V1C8.AccountingUkrCorp\Adapters\sabatex.V1C8.AccountingUkrCorp.Adapters.csproj
           # API key to authenticate with NuGet server
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           # Flag to toggle pushing symbols along with nuget package to the server, disabled by default

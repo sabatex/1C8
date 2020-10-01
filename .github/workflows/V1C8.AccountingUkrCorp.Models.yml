@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master # Default release branch
+    paths:
+        - 'src/V1C8/**'
 jobs:
   publish:
     name: build, pack & publish

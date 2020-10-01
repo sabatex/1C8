@@ -14,7 +14,7 @@
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-        <RepositoryUrl>https://github.com/sabatex </RepositoryUrl>
+        <RepositoryUrl>https://github.com/sabatex</RepositoryUrl>
         <RepositoryType>GIT</RepositoryType>
     </PropertyGroup>
     <ItemGroup>

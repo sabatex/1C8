@@ -1,0 +1,29 @@
+name: sabatex.V1C8.AccountingUkrCorp.Adapters publish to nuget
+on:
+  push:
+    branches:
+      - beta_5.0
+    paths:
+        - 'src/V1C8.AccountingUkrCorp/Adapters/sabatex.V1C8.AccountingUkrCorp.Adapters.csproj'
+jobs:
+  publish:
+    name: build, pack & publish
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+           dotnet-version: 5.0.100-rc.1.20452.10
+      
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.0
+
+      - name: publish on version change sabatex.V1C8.AccountingUkrCorp.Adapters
+        id: publish_sabatex_V1C8_AccountingUkrCorp_Adapters
+        uses: rohith/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: src\V1C8.AccountingUkrCorp\Adapters\sabatex.V1C8.AccountingUkrCorp.Adapters.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          INCLUDE_SYMBOLS: true

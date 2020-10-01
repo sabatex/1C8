@@ -4,7 +4,7 @@ on:
     branches:
       - beta_5.0
     paths:
-      - 'src\V1C8\V1C8.csproj'
+      - 'src/V1C8/V1C8.csproj'
       
 jobs:
   publish:

@@ -14,8 +14,6 @@
     <PackageId>sabatex.V1C8</PackageId>
     <AssemblyName>sabatex.V1C8</AssemblyName>
     <RootNamespace>sabatex.V1C8</RootNamespace>
-
-
     <PackageReleaseNotes>Add SetProperty</PackageReleaseNotes>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>

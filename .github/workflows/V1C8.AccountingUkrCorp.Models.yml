@@ -23,7 +23,7 @@ jobs:
 
       # Publish V1C8.AccountingUkrCorp.Models
       - name: publish on version change V1C8.AccountingUkrCorp.Models
-        id: publish_V1C8.AccountingUkrCorp.Models
+        id: publish_V1C8_AccountingUkrCorp_Models
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
@@ -32,9 +32,10 @@ jobs:
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           # Flag to toggle pushing symbols along with nuget package to the server, disabled by default
           INCLUDE_SYMBOLS: true
-       # Publish V1C8.AccountingUkrCorp.PostgreSQLDbContext
+      
+      # Publish V1C8.AccountingUkrCorp.PostgreSQLDbContext
       - name: publish on version change V1C8.AccountingUkrCorp.PostgreSQLDbContext
-        id: publish_V1C8.AccountingUkrCorp.PostgreSQLDbContext
+        id: publish_V1C8_AccountingUkrCorp_PostgreSQLDbContext
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
@@ -43,9 +44,10 @@ jobs:
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           # Flag to toggle pushing symbols along with nuget package to the server, disabled by default
           INCLUDE_SYMBOLS: true
-       # Publish V1C8
+       
+      # Publish V1C8 sabatex.V1C8.AccountingUkrCorp.Adapters
       - name: publish on version change sabatex.V1C8.AccountingUkrCorp.Adapters
-        id: publish_sabatex.V1C8.AccountingUkrCorp.Adapters
+        id: publish_sabatex_V1C8_AccountingUkrCorp_Adapters
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository

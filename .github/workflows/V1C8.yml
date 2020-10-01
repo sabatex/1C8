@@ -1,4 +1,4 @@
-name: V1C8.3 publish to nuget
+name: V1C83 publish to nuget
 on:
   push:
     branches:

@@ -1,0 +1,34 @@
+# Controls when the action will run. Triggers the workflow on push or pull request
+name: V1C8.AccountingUkrCorp.PostgreSQLDbContext publish to nuget
+on:
+  push:
+    branches:
+      - beta_5.0
+    paths:
+        - 'src/V1C8.AccountingUkrCorp/PostgreSQLDbContext/sabatex.V1C8.AccountingUkrCorp.PostgreSQLDbContext.csproj'
+jobs:
+  publish:
+    name: build, pack & publish
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+           dotnet-version: 5.0.100-rc.1.20452.10
+      
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.0
+
+       
+      # Publish V1C8.AccountingUkrCorp.PostgreSQLDbContext
+      - name: publish on version change V1C8.AccountingUkrCorp.PostgreSQLDbContext
+        id: publish_V1C8_AccountingUkrCorp_PostgreSQLDbContext
+        uses: rohith/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: src\V1C8.AccountingUkrCorp\PostgreSQLDbContext\sabatex.V1C8.AccountingUkrCorp.PostgreSQLDbContext.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+          INCLUDE_SYMBOLS: true
+       
+ 

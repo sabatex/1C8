@@ -3,9 +3,9 @@ name: publish to nuget V1C8.AccountingUkrCorp.Models
 on:
   push:
     branches:
-      - master # Default release branch
+      - beta_5.0
     paths:
-        - 'src/V1C8/**'
+        - 'src/V1C8.AccountingUkrCorp/**'
 jobs:
   publish:
     name: build, pack & publish

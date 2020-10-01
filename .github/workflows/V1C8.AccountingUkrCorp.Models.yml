@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - beta_5.0
-    paths:
-        - 'src/V1C8.AccountingUkrCorp/**'
+#    paths:
+#        - 'src/V1C8.AccountingUkrCorp/**'
 jobs:
   publish:
     name: build, pack & publish

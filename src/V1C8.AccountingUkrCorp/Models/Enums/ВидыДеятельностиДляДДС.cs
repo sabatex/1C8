@@ -11,8 +11,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыДеятельностиДляДДС", Comment = "Виды деятельности для отчета ДДС", Synonym = "Виды деятельности для отчета ДДС")]
     public class ВидыДеятельностиДляДДС:EnumItem
     {
-        public static readonly ВидыДеятельностиДляДДС Операционная = new ВидыДеятельностиДляДДС{Name= "Операционная",Synonim="Операционная",Comment=""};
-        public static readonly ВидыДеятельностиДляДДС Инвестиционная = new ВидыДеятельностиДляДДС{Name= "Инвестиционная",Synonim="Инвестиционная",Comment=""};
-        public static readonly ВидыДеятельностиДляДДС Финансовая = new ВидыДеятельностиДляДДС{Name= "Финансовая",Synonim="Финансовая",Comment=""};
+        public static readonly ВидыДеятельностиДляДДС Операционная = new ВидыДеятельностиДляДДС{Name= "Операционная",Synonym="Операционная",Comment=""};
+        public static readonly ВидыДеятельностиДляДДС Инвестиционная = new ВидыДеятельностиДляДДС{Name= "Инвестиционная",Synonym="Инвестиционная",Comment=""};
+        public static readonly ВидыДеятельностиДляДДС Финансовая = new ВидыДеятельностиДляДДС{Name= "Финансовая",Synonym="Финансовая",Comment=""};
     }
 }

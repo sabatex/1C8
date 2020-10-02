@@ -11,12 +11,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "Периодичность", Comment = "(Упр)", Synonym = "Периодичность")]
     public class Периодичность:EnumItem
     {
-        public static readonly Периодичность День = new Периодичность{Name= "День",Synonim="День",Comment=""};
-        public static readonly Периодичность Неделя = new Периодичность{Name= "Неделя",Synonim="Неделя",Comment=""};
-        public static readonly Периодичность Месяц = new Периодичность{Name= "Месяц",Synonim="Месяц",Comment=""};
-        public static readonly Периодичность Квартал = new Периодичность{Name= "Квартал",Synonim="Квартал",Comment=""};
-        public static readonly Периодичность Год = new Периодичность{Name= "Год",Synonim="Год",Comment=""};
-        public static readonly Периодичность Декада = new Периодичность{Name= "Декада",Synonim="Декада",Comment=""};
-        public static readonly Периодичность Полугодие = new Периодичность{Name= "Полугодие",Synonim="Полугодие",Comment=""};
+        public static readonly Периодичность День = new Периодичность{Name= "День",Synonym="День",Comment=""};
+        public static readonly Периодичность Неделя = new Периодичность{Name= "Неделя",Synonym="Неделя",Comment=""};
+        public static readonly Периодичность Месяц = new Периодичность{Name= "Месяц",Synonym="Месяц",Comment=""};
+        public static readonly Периодичность Квартал = new Периодичность{Name= "Квартал",Synonym="Квартал",Comment=""};
+        public static readonly Периодичность Год = new Периодичность{Name= "Год",Synonym="Год",Comment=""};
+        public static readonly Периодичность Декада = new Периодичность{Name= "Декада",Synonym="Декада",Comment=""};
+        public static readonly Периодичность Полугодие = new Периодичность{Name= "Полугодие",Synonym="Полугодие",Comment=""};
     }
 }

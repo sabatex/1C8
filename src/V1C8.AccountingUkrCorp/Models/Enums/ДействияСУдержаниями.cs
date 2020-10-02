@@ -11,8 +11,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ДействияСУдержаниями", Comment = "", Synonym = "Действия с удержаниями")]
     public class ДействияСУдержаниями:EnumItem
     {
-        public static readonly ДействияСУдержаниями Начать = new ДействияСУдержаниями{Name= "Начать",Synonim="Начать",Comment=""};
-        public static readonly ДействияСУдержаниями Изменить = new ДействияСУдержаниями{Name= "Изменить",Synonim="Изменить",Comment=""};
-        public static readonly ДействияСУдержаниями Прекратить = new ДействияСУдержаниями{Name= "Прекратить",Synonim="Прекратить",Comment=""};
+        public static readonly ДействияСУдержаниями Начать = new ДействияСУдержаниями{Name= "Начать",Synonym="Начать",Comment=""};
+        public static readonly ДействияСУдержаниями Изменить = new ДействияСУдержаниями{Name= "Изменить",Synonym="Изменить",Comment=""};
+        public static readonly ДействияСУдержаниями Прекратить = new ДействияСУдержаниями{Name= "Прекратить",Synonym="Прекратить",Comment=""};
     }
 }

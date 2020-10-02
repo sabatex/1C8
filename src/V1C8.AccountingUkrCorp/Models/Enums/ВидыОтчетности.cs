@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыОтчетности", Comment = "(Общ)", Synonym = "Виды отчетности")]
     public class ВидыОтчетности:EnumItem
     {
-        public static readonly ВидыОтчетности РегламентированнаяОтчетность = new ВидыОтчетности{Name= "РегламентированнаяОтчетность",Synonim="Регламентированная отчетность",Comment="(Регл)"};
-        public static readonly ВидыОтчетности ОтчетностьПоМСФО = new ВидыОтчетности{Name= "ОтчетностьПоМСФО",Synonim="Отчетность по МСФО",Comment="(Упр)"};
+        public static readonly ВидыОтчетности РегламентированнаяОтчетность = new ВидыОтчетности{Name= "РегламентированнаяОтчетность",Synonym="Регламентированная отчетность",Comment="(Регл)"};
+        public static readonly ВидыОтчетности ОтчетностьПоМСФО = new ВидыОтчетности{Name= "ОтчетностьПоМСФО",Synonym="Отчетность по МСФО",Comment="(Упр)"};
     }
 }

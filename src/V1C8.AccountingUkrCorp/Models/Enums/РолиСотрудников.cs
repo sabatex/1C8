@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "РолиСотрудников", Comment = "", Synonym = "Роли сотрудников")]
     public class РолиСотрудников:EnumItem
     {
-        public static readonly РолиСотрудников Работник = new РолиСотрудников{Name= "Работник",Synonim="Работник",Comment=""};
-        public static readonly РолиСотрудников Договорник = new РолиСотрудников{Name= "Договорник",Synonim="Договорник",Comment=""};
+        public static readonly РолиСотрудников Работник = new РолиСотрудников{Name= "Работник",Synonym="Работник",Comment=""};
+        public static readonly РолиСотрудников Договорник = new РолиСотрудников{Name= "Договорник",Synonym="Договорник",Comment=""};
     }
 }

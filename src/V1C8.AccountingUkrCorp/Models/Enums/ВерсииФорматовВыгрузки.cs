@@ -11,6 +11,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВерсииФорматовВыгрузки", Comment = "", Synonym = "Версии форматов выгрузки")]
     public class ВерсииФорматовВыгрузки:EnumItem
     {
-        public static readonly ВерсииФорматовВыгрузки ГНСУ_XML = new ВерсииФорматовВыгрузки{Name= "ГНСУ_XML",Synonim="ГНСУ, формат XML",Comment=""};
+        public static readonly ВерсииФорматовВыгрузки ГНСУ_XML = new ВерсииФорматовВыгрузки{Name= "ГНСУ_XML",Synonym="ГНСУ, формат XML",Comment=""};
     }
 }

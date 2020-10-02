@@ -11,9 +11,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "СоциальныеГруппыНаселения", Comment = "", Synonym = "Социальные группы населения")]
     public class СоциальныеГруппыНаселения:EnumItem
     {
-        public static readonly СоциальныеГруппыНаселения ДетиДо6 = new СоциальныеГруппыНаселения{Name= "ДетиДо6",Synonim="Дети до 6 лет",Comment=""};
-        public static readonly СоциальныеГруппыНаселения ДетиДо18 = new СоциальныеГруппыНаселения{Name= "ДетиДо18",Synonim="Дети от 6 до18 лет",Comment=""};
-        public static readonly СоциальныеГруппыНаселения Трудоспособные = new СоциальныеГруппыНаселения{Name= "Трудоспособные",Synonim="Трудоспособные",Comment=""};
-        public static readonly СоциальныеГруппыНаселения НеТрудоспособные = new СоциальныеГруппыНаселения{Name= "НеТрудоспособные",Synonim="Нетрудоспособные",Comment=""};
+        public static readonly СоциальныеГруппыНаселения ДетиДо6 = new СоциальныеГруппыНаселения{Name= "ДетиДо6",Synonym="Дети до 6 лет",Comment=""};
+        public static readonly СоциальныеГруппыНаселения ДетиДо18 = new СоциальныеГруппыНаселения{Name= "ДетиДо18",Synonym="Дети от 6 до18 лет",Comment=""};
+        public static readonly СоциальныеГруппыНаселения Трудоспособные = new СоциальныеГруппыНаселения{Name= "Трудоспособные",Synonym="Трудоспособные",Comment=""};
+        public static readonly СоциальныеГруппыНаселения НеТрудоспособные = new СоциальныеГруппыНаселения{Name= "НеТрудоспособные",Synonym="Нетрудоспособные",Comment=""};
     }
 }

@@ -11,9 +11,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыЗанятости", Comment = "", Synonym = "Виды занятости")]
     public class ВидыЗанятости:EnumItem
     {
-        public static readonly ВидыЗанятости ОсновноеМестоРаботы = new ВидыЗанятости{Name= "ОсновноеМестоРаботы",Synonim="Основное место работы",Comment=""};
-        public static readonly ВидыЗанятости Совместительство = new ВидыЗанятости{Name= "Совместительство",Synonim="Внешнее совместительство",Comment=""};
-        public static readonly ВидыЗанятости ВнутреннееСовместительство = new ВидыЗанятости{Name= "ВнутреннееСовместительство",Synonim="Внутреннее совместительство",Comment=""};
-        public static readonly ВидыЗанятости Подработка = new ВидыЗанятости{Name= "Подработка",Synonim="Подработка",Comment=""};
+        public static readonly ВидыЗанятости ОсновноеМестоРаботы = new ВидыЗанятости{Name= "ОсновноеМестоРаботы",Synonym="Основное место работы",Comment=""};
+        public static readonly ВидыЗанятости Совместительство = new ВидыЗанятости{Name= "Совместительство",Synonym="Внешнее совместительство",Comment=""};
+        public static readonly ВидыЗанятости ВнутреннееСовместительство = new ВидыЗанятости{Name= "ВнутреннееСовместительство",Synonym="Внутреннее совместительство",Comment=""};
+        public static readonly ВидыЗанятости Подработка = new ВидыЗанятости{Name= "Подработка",Synonym="Подработка",Comment=""};
     }
 }

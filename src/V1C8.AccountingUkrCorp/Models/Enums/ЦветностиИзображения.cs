@@ -11,8 +11,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ЦветностиИзображения", Comment = "", Synonym = "Цветности изображения")]
     public class ЦветностиИзображения:EnumItem
     {
-        public static readonly ЦветностиИзображения Монохромное = new ЦветностиИзображения{Name= "Монохромное",Synonim="Монохромное",Comment=""};
-        public static readonly ЦветностиИзображения ГрадацииСерого = new ЦветностиИзображения{Name= "ГрадацииСерого",Synonim="Градации серого",Comment=""};
-        public static readonly ЦветностиИзображения Цветное = new ЦветностиИзображения{Name= "Цветное",Synonim="Цветное",Comment=""};
+        public static readonly ЦветностиИзображения Монохромное = new ЦветностиИзображения{Name= "Монохромное",Synonym="Монохромное",Comment=""};
+        public static readonly ЦветностиИзображения ГрадацииСерого = new ЦветностиИзображения{Name= "ГрадацииСерого",Synonym="Градации серого",Comment=""};
+        public static readonly ЦветностиИзображения Цветное = new ЦветностиИзображения{Name= "Цветное",Synonym="Цветное",Comment=""};
     }
 }

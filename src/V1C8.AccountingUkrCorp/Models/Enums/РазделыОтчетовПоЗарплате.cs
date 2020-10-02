@@ -11,10 +11,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "РазделыОтчетовПоЗарплате", Comment = "", Synonym = "Разделы отчетов по зарплате")]
     public class РазделыОтчетовПоЗарплате:EnumItem
     {
-        public static readonly РазделыОтчетовПоЗарплате Начисления = new РазделыОтчетовПоЗарплате{Name= "Начисления",Synonim="Начисления",Comment=""};
-        public static readonly РазделыОтчетовПоЗарплате Удержания = new РазделыОтчетовПоЗарплате{Name= "Удержания",Synonim="Удержания",Comment=""};
-        public static readonly РазделыОтчетовПоЗарплате Выплаты = new РазделыОтчетовПоЗарплате{Name= "Выплаты",Synonim="Выплаты",Comment=""};
-        public static readonly РазделыОтчетовПоЗарплате ДоходыВНеденежнойФорме = new РазделыОтчетовПоЗарплате{Name= "ДоходыВНеденежнойФорме",Synonim="Доходы в неденежной форме",Comment=""};
-        public static readonly РазделыОтчетовПоЗарплате ПогашениеЗадолженности = new РазделыОтчетовПоЗарплате{Name= "ПогашениеЗадолженности",Synonim="Погашение задолженности",Comment=""};
+        public static readonly РазделыОтчетовПоЗарплате Начисления = new РазделыОтчетовПоЗарплате{Name= "Начисления",Synonym="Начисления",Comment=""};
+        public static readonly РазделыОтчетовПоЗарплате Удержания = new РазделыОтчетовПоЗарплате{Name= "Удержания",Synonym="Удержания",Comment=""};
+        public static readonly РазделыОтчетовПоЗарплате Выплаты = new РазделыОтчетовПоЗарплате{Name= "Выплаты",Synonym="Выплаты",Comment=""};
+        public static readonly РазделыОтчетовПоЗарплате ДоходыВНеденежнойФорме = new РазделыОтчетовПоЗарплате{Name= "ДоходыВНеденежнойФорме",Synonym="Доходы в неденежной форме",Comment=""};
+        public static readonly РазделыОтчетовПоЗарплате ПогашениеЗадолженности = new РазделыОтчетовПоЗарплате{Name= "ПогашениеЗадолженности",Synonym="Погашение задолженности",Comment=""};
     }
 }

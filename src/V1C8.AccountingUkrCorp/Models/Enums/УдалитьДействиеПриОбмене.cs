@@ -11,8 +11,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "УдалитьДействиеПриОбмене", Comment = "", Synonym = "(не используется) Действие при обмене")]
     public class УдалитьДействиеПриОбмене:EnumItem
     {
-        public static readonly УдалитьДействиеПриОбмене ЗагрузкаДанных = new УдалитьДействиеПриОбмене{Name= "ЗагрузкаДанных",Synonim="Загрузка данных",Comment=""};
-        public static readonly УдалитьДействиеПриОбмене ОтложенныеДвижения = new УдалитьДействиеПриОбмене{Name= "ОтложенныеДвижения",Synonim="Отложенные движения",Comment=""};
-        public static readonly УдалитьДействиеПриОбмене ВыгрузкаДанных = new УдалитьДействиеПриОбмене{Name= "ВыгрузкаДанных",Synonim="Выгрузка данных",Comment=""};
+        public static readonly УдалитьДействиеПриОбмене ЗагрузкаДанных = new УдалитьДействиеПриОбмене{Name= "ЗагрузкаДанных",Synonym="Загрузка данных",Comment=""};
+        public static readonly УдалитьДействиеПриОбмене ОтложенныеДвижения = new УдалитьДействиеПриОбмене{Name= "ОтложенныеДвижения",Synonym="Отложенные движения",Comment=""};
+        public static readonly УдалитьДействиеПриОбмене ВыгрузкаДанных = new УдалитьДействиеПриОбмене{Name= "ВыгрузкаДанных",Synonym="Выгрузка данных",Comment=""};
     }
 }

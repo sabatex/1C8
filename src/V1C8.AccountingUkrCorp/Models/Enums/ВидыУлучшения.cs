@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыУлучшения", Comment = "", Synonym = "Виды улучшения")]
     public class ВидыУлучшения:EnumItem
     {
-        public static readonly ВидыУлучшения Модернизация = new ВидыУлучшения{Name= "Модернизация",Synonim="Модернизация",Comment=""};
-        public static readonly ВидыУлучшения Ремонт = new ВидыУлучшения{Name= "Ремонт",Synonim="Ремонт",Comment=""};
+        public static readonly ВидыУлучшения Модернизация = new ВидыУлучшения{Name= "Модернизация",Synonym="Модернизация",Comment=""};
+        public static readonly ВидыУлучшения Ремонт = new ВидыУлучшения{Name= "Ремонт",Synonym="Ремонт",Comment=""};
     }
 }

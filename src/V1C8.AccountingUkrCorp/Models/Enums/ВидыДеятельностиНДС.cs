@@ -11,8 +11,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыДеятельностиНДС", Comment = "", Synonym = "Виды деятельности НДС")]
     public class ВидыДеятельностиНДС:EnumItem
     {
-        public static readonly ВидыДеятельностиНДС Облагаемая = new ВидыДеятельностиНДС{Name= "Облагаемая",Synonim="Облагаемая",Comment=""};
-        public static readonly ВидыДеятельностиНДС Необлагаемая = new ВидыДеятельностиНДС{Name= "Необлагаемая",Synonim="Необлагаемая",Comment=""};
-        public static readonly ВидыДеятельностиНДС ПропорциональноОблагаемая = new ВидыДеятельностиНДС{Name= "ПропорциональноОблагаемая",Synonim="Пропорционально облагаемая",Comment=""};
+        public static readonly ВидыДеятельностиНДС Облагаемая = new ВидыДеятельностиНДС{Name= "Облагаемая",Synonym="Облагаемая",Comment=""};
+        public static readonly ВидыДеятельностиНДС Необлагаемая = new ВидыДеятельностиНДС{Name= "Необлагаемая",Synonym="Необлагаемая",Comment=""};
+        public static readonly ВидыДеятельностиНДС ПропорциональноОблагаемая = new ВидыДеятельностиНДС{Name= "ПропорциональноОблагаемая",Synonym="Пропорционально облагаемая",Comment=""};
     }
 }

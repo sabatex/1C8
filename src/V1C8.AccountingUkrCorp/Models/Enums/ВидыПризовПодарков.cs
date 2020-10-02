@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыПризовПодарков", Comment = "", Synonym = "Виды призов и подарков")]
     public class ВидыПризовПодарков:EnumItem
     {
-        public static readonly ВидыПризовПодарков Подарок = new ВидыПризовПодарков{Name= "Подарок",Synonim="Подарок",Comment=""};
-        public static readonly ВидыПризовПодарков Приз = new ВидыПризовПодарков{Name= "Приз",Synonim="Приз, выигрыш в конкурсе",Comment=""};
+        public static readonly ВидыПризовПодарков Подарок = new ВидыПризовПодарков{Name= "Подарок",Synonym="Подарок",Comment=""};
+        public static readonly ВидыПризовПодарков Приз = new ВидыПризовПодарков{Name= "Приз",Synonym="Приз, выигрыш в конкурсе",Comment=""};
     }
 }

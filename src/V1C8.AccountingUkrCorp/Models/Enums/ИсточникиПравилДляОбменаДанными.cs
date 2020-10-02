@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ИсточникиПравилДляОбменаДанными", Comment = "", Synonym = "Источники правил для обмена данными")]
     public class ИсточникиПравилДляОбменаДанными:EnumItem
     {
-        public static readonly ИсточникиПравилДляОбменаДанными МакетКонфигурации = new ИсточникиПравилДляОбменаДанными{Name= "МакетКонфигурации",Synonim="Макет конфигурации",Comment=""};
-        public static readonly ИсточникиПравилДляОбменаДанными Файл = new ИсточникиПравилДляОбменаДанными{Name= "Файл",Synonim="Файл",Comment=""};
+        public static readonly ИсточникиПравилДляОбменаДанными МакетКонфигурации = new ИсточникиПравилДляОбменаДанными{Name= "МакетКонфигурации",Synonym="Макет конфигурации",Comment=""};
+        public static readonly ИсточникиПравилДляОбменаДанными Файл = new ИсточникиПравилДляОбменаДанными{Name= "Файл",Synonym="Файл",Comment=""};
     }
 }

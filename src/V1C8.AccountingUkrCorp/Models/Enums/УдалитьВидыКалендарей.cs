@@ -11,8 +11,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "УдалитьВидыКалендарей", Comment = "", Synonym = "(не используется) Виды календарей")]
     public class УдалитьВидыКалендарей:EnumItem
     {
-        public static readonly УдалитьВидыКалендарей Пятидневка = new УдалитьВидыКалендарей{Name= "Пятидневка",Synonim="Пятидневка",Comment=""};
-        public static readonly УдалитьВидыКалендарей Шестидневка = new УдалитьВидыКалендарей{Name= "Шестидневка",Synonim="Шестидневка",Comment=""};
-        public static readonly УдалитьВидыКалендарей Произвольный = new УдалитьВидыКалендарей{Name= "Произвольный",Synonim="Произвольный",Comment=""};
+        public static readonly УдалитьВидыКалендарей Пятидневка = new УдалитьВидыКалендарей{Name= "Пятидневка",Synonym="Пятидневка",Comment=""};
+        public static readonly УдалитьВидыКалендарей Шестидневка = new УдалитьВидыКалендарей{Name= "Шестидневка",Synonym="Шестидневка",Comment=""};
+        public static readonly УдалитьВидыКалендарей Произвольный = new УдалитьВидыКалендарей{Name= "Произвольный",Synonym="Произвольный",Comment=""};
     }
 }

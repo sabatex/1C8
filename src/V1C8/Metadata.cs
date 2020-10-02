@@ -13,7 +13,7 @@ namespace sabatex.V1C8
         {
             this.rootCOMObject = rootCOMObject;
             this.metaDataCOMObject = rootCOMObject.Metadata;
-            this.Enums = new Enums(rootCOMObject);
+            this.Enums = new Enums(metaDataCOMObject.Enums);
         }
         public string Name { get=>metaDataCOMObject.Name; }
         public string Version { get=>metaDataCOMObject.Version; }

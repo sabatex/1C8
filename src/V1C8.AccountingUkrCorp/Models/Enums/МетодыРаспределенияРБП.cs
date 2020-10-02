@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "МетодыРаспределенияРБП", Comment = "", Synonym = "Методы распределения расходов будущих периодов")]
     public class МетодыРаспределенияРБП:EnumItem
     {
-        public static readonly МетодыРаспределенияРБП ПоДням = new МетодыРаспределенияРБП{Name= "ПоДням",Synonim="По количеству дней в месяце",Comment=""};
-        public static readonly МетодыРаспределенияРБП ПоМесяцам = new МетодыРаспределенияРБП{Name= "ПоМесяцам",Synonim="Равными частями каждый месяц",Comment=""};
+        public static readonly МетодыРаспределенияРБП ПоДням = new МетодыРаспределенияРБП{Name= "ПоДням",Synonym="По количеству дней в месяце",Comment=""};
+        public static readonly МетодыРаспределенияРБП ПоМесяцам = new МетодыРаспределенияРБП{Name= "ПоМесяцам",Synonym="Равными частями каждый месяц",Comment=""};
     }
 }

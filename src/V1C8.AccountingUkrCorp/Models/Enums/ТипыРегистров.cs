@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ТипыРегистров", Comment = "", Synonym = "Типы регистров")]
     public class ТипыРегистров:EnumItem
     {
-        public static readonly ТипыРегистров РегистрНакопления = new ТипыРегистров{Name= "РегистрНакопления",Synonim="Регистр накопления",Comment=""};
-        public static readonly ТипыРегистров РегистрСведений = new ТипыРегистров{Name= "РегистрСведений",Synonim="Регистр сведений",Comment=""};
+        public static readonly ТипыРегистров РегистрНакопления = new ТипыРегистров{Name= "РегистрНакопления",Synonym="Регистр накопления",Comment=""};
+        public static readonly ТипыРегистров РегистрСведений = new ТипыРегистров{Name= "РегистрСведений",Synonym="Регистр сведений",Comment=""};
     }
 }

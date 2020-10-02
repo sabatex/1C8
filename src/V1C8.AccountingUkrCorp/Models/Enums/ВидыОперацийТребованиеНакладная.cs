@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыОперацийТребованиеНакладная", Comment = "(Общ)", Synonym = "Виды операций документа 'Требование-накладная'")]
     public class ВидыОперацийТребованиеНакладная:EnumItem
     {
-        public static readonly ВидыОперацийТребованиеНакладная Материалы = new ВидыОперацийТребованиеНакладная{Name= "Материалы",Synonim="Материалы",Comment=""};
-        public static readonly ВидыОперацийТребованиеНакладная Оборудование = new ВидыОперацийТребованиеНакладная{Name= "Оборудование",Synonim="Оборудование",Comment=""};
+        public static readonly ВидыОперацийТребованиеНакладная Материалы = new ВидыОперацийТребованиеНакладная{Name= "Материалы",Synonym="Материалы",Comment=""};
+        public static readonly ВидыОперацийТребованиеНакладная Оборудование = new ВидыОперацийТребованиеНакладная{Name= "Оборудование",Synonym="Оборудование",Comment=""};
     }
 }

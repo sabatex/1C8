@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
     [Description1C8(Name = "ВидыОперацийВозвратТоваров", Comment = "(Общ)", Synonym = "Виды операций возврат товаров")]
     public class ВидыОперацийВозвратТоваров:EnumItem
     {
-        public static readonly ВидыОперацийВозвратТоваров ИзПереработки = new ВидыОперацийВозвратТоваров{Name= "ИзПереработки",Synonim="Материалы из переработки",Comment="(Общ)"};
-        public static readonly ВидыОперацийВозвратТоваров ОтЗаказчика = new ВидыОперацийВозвратТоваров{Name= "ОтЗаказчика",Synonim="Продукция от заказчика",Comment="(Общ)"};
+        public static readonly ВидыОперацийВозвратТоваров ИзПереработки = new ВидыОперацийВозвратТоваров{Name= "ИзПереработки",Synonym="Материалы из переработки",Comment="(Общ)"};
+        public static readonly ВидыОперацийВозвратТоваров ОтЗаказчика = new ВидыОперацийВозвратТоваров{Name= "ОтЗаказчика",Synonym="Продукция от заказчика",Comment="(Общ)"};
     }
 }

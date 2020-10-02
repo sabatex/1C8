@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ComponentModel.DataAnnotations;
+using sabatex.V1C8.ComponentModel.DataAnnotations;
+
+namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
+{
+    [Description1C8(Name = "СпособыНачисленияАмортизацииОС", Comment = "(Общ)", Synonym = "Способы начисления амортизации основных средств")]
+    public class СпособыНачисленияАмортизацииОС:EnumItem
+    {
+        public static readonly СпособыНачисленияАмортизацииОС Прямолинейный = new СпособыНачисленияАмортизацииОС{Name= "Прямолинейный",Synonim="Прямолинейный",Comment=""};
+        public static readonly СпособыНачисленияАмортизацииОС Налоговый = new СпособыНачисленияАмортизацииОС{Name= "Налоговый",Synonim="Налоговый (с 01.04.2011 не актуален)",Comment=""};
+        public static readonly СпособыНачисленияАмортизацииОС УменьшенияОстатка = new СпособыНачисленияАмортизацииОС{Name= "УменьшенияОстатка",Synonim="Уменьшения остатка",Comment=""};
+        public static readonly СпособыНачисленияАмортизацииОС Кумулятивный = new СпособыНачисленияАмортизацииОС{Name= "Кумулятивный",Synonim="Кумулятивный (по сумме чисел лет)",Comment=""};
+        public static readonly СпособыНачисленияАмортизацииОС Производственный = new СпособыНачисленияАмортизацииОС{Name= "Производственный",Synonim="Производственный",Comment="Пропорционально объему продукции"};
+        public static readonly СпособыНачисленияАмортизацииОС УскоренногоУменьшенияОстатка = new СпособыНачисленияАмортизацииОС{Name= "УскоренногоУменьшенияОстатка",Synonim="Ускоренного уменьшения остатка",Comment=""};
+        public static readonly СпособыНачисленияАмортизацииОС _100 = new СпособыНачисленияАмортизацииОС{Name= "_100",Synonim="100%",Comment="100% в первый месяц эксплуатации"};
+        public static readonly СпособыНачисленияАмортизацииОС _50_50 = new СпособыНачисленияАмортизацииОС{Name= "_50_50",Synonim="50% - 50%",Comment="50% в первый месяц эксплуатации, 50% при списании"};
+    }
+}

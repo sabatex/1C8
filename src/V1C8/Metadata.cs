@@ -1,18 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using sabatex.V1C8.MetadataClasses;
 
 namespace sabatex.V1C8
 {
     public class Metadata 
     {
-        dynamic context;
-        internal Metadata(dynamic context)
+        dynamic rootCOMObject;
+        dynamic metaDataCOMObject;
+        internal Metadata(dynamic rootCOMObject)
         {
-            this.context = context;
+            this.rootCOMObject = rootCOMObject;
+            this.metaDataCOMObject = rootCOMObject.Metadata;
+            this.Enums = new Enums(rootCOMObject);
         }
-        public string Name { get=>context.Metadata.Name; }
-        public string Version { get=>context.Metadata.Version; }
+        public string Name { get=>metaDataCOMObject.Name; }
+        public string Version { get=>metaDataCOMObject.Version; }
+        public readonly Enums Enums;
 
     }
+
+    
 }

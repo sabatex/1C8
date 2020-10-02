@@ -7,7 +7,7 @@ namespace sabatex.V1C8
     public class V1CConnector
     {
 
-        private V1CConnector(dynamic context)
+        protected V1CConnector(dynamic context)
         {
             this.context = context;
             Metadata = new Metadata(context);

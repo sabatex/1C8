@@ -5,20 +5,21 @@ using sabatex.V1C8.MetadataClasses;
 
 namespace sabatex.V1C8
 {
-    public class Metadata 
+    public class Metadata:IDisposable 
     {
-        dynamic rootCOMObject;
-        dynamic metaDataCOMObject;
+        dynamic COMObject;
         internal Metadata(dynamic rootCOMObject)
         {
-            this.rootCOMObject = rootCOMObject;
-            this.metaDataCOMObject = rootCOMObject.Metadata;
-            this.Enums = new Enums(metaDataCOMObject.Enums);
+            this.COMObject = rootCOMObject;
         }
-        public string Name { get=>metaDataCOMObject.Name; }
-        public string Version { get=>metaDataCOMObject.Version; }
-        public readonly Enums Enums;
+        public string Name { get=>COMObject.Metadata.Name; }
+        public string Version { get=>COMObject.Metadata.Version; }
+        public Enums Enums {get=>new Enums(COMObject);}
 
+        public void Dispose()
+        {
+            COMObject = null;
+        }
     }
 
     

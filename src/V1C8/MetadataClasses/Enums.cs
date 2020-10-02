@@ -11,8 +11,8 @@ namespace sabatex.V1C8.MetadataClasses
         {
             this.context = context;
         }
-        public int Count()=>context.Count();
-        public EnumMetadata  Get(int i)=>new EnumMetadata(context.Get(i));
+        public int Count()=>context.Metadata.Enums.Count();
+        public EnumMetadata  Get(int i)=>new EnumMetadata(context.Metadata.Enums.Get(i));
 
     }
 

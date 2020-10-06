@@ -260,6 +260,10 @@ namespace sabatex.V1C8
         {
             return OLE1C77Function(methodName, BindingFlags.InvokeMethod, handle, args);
         }
+        public T Method<T>(string methodName, params object[] args) where T:V1C8COMObject
+        {
+            return OLE1C77Function<T>(methodName,BindingFlags.InvokeMethod,handle,args);
+        }
 
         public object GetProperty(string PropertyName) => OLE1C77Function(PropertyName, BindingFlags.GetProperty, Handle);
         public T GetProperty<T>(string PropertyName) where T:V1C8COMObject
@@ -383,22 +387,7 @@ namespace sabatex.V1C8
 
         }
 
-        public T Method<T>(string MethodName, params object[] args)
-        {
-            try
-            {
-                return (T)Method(MethodName, args);
-            }
-            catch
-            {
-                Trace.TraceError($"Error get method {MethodName} as string");
-                throw new Exception($"Error get method {MethodName} as string");
-            }
-
-
-        }
-
-        public V1C8COMConnector GLOBAL
+         public V1C8COMConnector GLOBAL
         {
             get
             {

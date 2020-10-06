@@ -8,7 +8,7 @@ namespace sabatex.V1C8
      public class V1C8COMConnector:V1C8COMObject, IDisposable
     {
         protected readonly string connectionString;
-        public readonly dynamic COMObject;
+        //public readonly dynamic COMObject;
         //protected bool disposed = false;
         protected V1C8COMConnector()
         {
@@ -32,8 +32,8 @@ namespace sabatex.V1C8
             this($"File='{dataBasePath}';Usr='{userName}';pwd='{password}';"){}
 
 
-        public string String(dynamic value) => COMObject.String(value);
-        public Guid GetObjectId(dynamic value) => Guid.Parse(this.String(value.УникальныйИдентификатор()));
+        public string String(V1C8COMObject value) => MethodString("String",value);
+        public Guid GetObjectId(V1C8COMObject value) => Guid.Parse(this.String(value.GetPropertyObject("УникальныйИдентификатор")));
 
         public MetaData MetaData{get=>GetProperty<MetaData>("Metadata");}
         public static string BuildConnectionString(string dataBasePath, string userName, string password)

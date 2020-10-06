@@ -3,34 +3,35 @@ using System.Collections.Generic;
 using System.Text;
 using sabatex.V1C8.Models;
 
-namespace sabatex.V1C8.MetadataClasses
+namespace sabatex.V1C8
 {
-    public class EnumMetadata
+    public class EnumMetaData
     {
         public readonly string Name;
         public readonly string Synonym;
         public readonly string Comment;
 
         public readonly EnumItem[] EnumValues;
-        public EnumMetadata(dynamic context)
+        public EnumMetaData(dynamic context)
         {
             Name = context.Name;
             Synonym = context.Synonym;
             Comment = context.Comment;
             int i = context.EnumValues.Count();
-           
-            EnumValues =  new EnumItem[i];
-            while (0<i--)
+
+            EnumValues = new EnumItem[i];
+            while (0 < i--)
             {
                 dynamic v = context.Get(i);
-                EnumValues[i] = new EnumItem{
+                EnumValues[i] = new EnumItem
+                {
                     Name = v.Name,
                     Synonym = v.Synonym,
-                    Comment = v.Comment
+                    Comment = v.Comment,
+                    Owner = Name
                 };
             }
-         
+
         }
     }
-
 }

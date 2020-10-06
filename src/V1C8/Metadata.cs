@@ -1,24 +1,24 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using sabatex.V1C8.MetadataClasses;
+
 
 namespace sabatex.V1C8
 {
-    public class Metadata:IDisposable 
+    public class MetaData:IDisposable
     {
-        dynamic COMObject;
-        internal Metadata(dynamic rootCOMObject)
+        V1C8COMConnector owner;
+        internal MetaData(V1C8COMConnector v1C8COMConnector)
         {
-            this.COMObject = rootCOMObject;
+            owner = v1C8COMConnector;
         }
-        public string Name { get=>COMObject.Metadata.Name; }
-        public string Version { get=>COMObject.Metadata.Version; }
-        public Enums Enums {get=>new Enums(COMObject);}
+
+        public string Name { get=>owner.COMObject.Metadata.Name; }
+        public string Version { get => owner.COMObject.Metadata.Version; }
 
         public void Dispose()
         {
-            COMObject = null;
+            owner = null;
         }
     }
 

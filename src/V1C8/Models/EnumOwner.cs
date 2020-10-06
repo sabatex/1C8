@@ -1,15 +1,18 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace sabatex.V1C8.Models
+namespace V1C8Extensions.Models
 {
-    public class EnumItem
+    public class EnumOwner
     {
         [Key]
         public string Name { get; set; }
         public string Synonym { get; set; }
         public string Comment { get; set; }
-        public string Owner { get; set; }
-    }
 
+    }
 }

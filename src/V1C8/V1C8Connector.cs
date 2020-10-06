@@ -5,11 +5,11 @@ using System.Text;
 
 namespace sabatex.V1C8
 {
-     public class V1C8COMConnector:IDisposable
+     public class V1C8COMConnector:V1C8COMObject, IDisposable
     {
         protected readonly string connectionString;
         public readonly dynamic COMObject;
-        protected bool disposed = false;
+        //protected bool disposed = false;
         protected V1C8COMConnector()
         {
 
@@ -21,8 +21,8 @@ namespace sabatex.V1C8
             this.connectionString = connectionString;
             Type comConnector = Type.GetTypeFromProgID("V83.COMConnector");
             dynamic instance = Activator.CreateInstance(comConnector);
-            COMObject = instance.Connect(connectionString);
-            MetaData = new MetaData(this);
+            handle = instance.Connect(connectionString);
+
         }
 
         public V1C8COMConnector(string serverName, string dataBaseName, string userName, string password) :
@@ -35,18 +35,14 @@ namespace sabatex.V1C8
         public string String(dynamic value) => COMObject.String(value);
         public Guid GetObjectId(dynamic value) => Guid.Parse(this.String(value.УникальныйИдентификатор()));
 
-        public readonly MetaData MetaData;
-
-        public void Dispose()
+        public MetaData MetaData{get=>GetProperty<MetaData>("Metadata");}
+        public static string BuildConnectionString(string dataBasePath, string userName, string password)
         {
-            if (!disposed)
-            {
-                if (COMObject != null)
-                {
-                    if (Marshal.IsComObject(COMObject))
-                        Marshal.ReleaseComObject(COMObject);
-                }
-            }
+            return $"File='{dataBasePath}';Usr='{userName}';pwd='{password}';";
+        }
+        public static string BuildConnectionString(string serverName, string dataBaseName, string userName, string password)
+        {
+            return $"Srvr='{serverName}';Ref='{dataBaseName}';Usr='{userName}';pwd='{password}';";
         }
     }
 

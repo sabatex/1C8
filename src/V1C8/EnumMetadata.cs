@@ -5,33 +5,13 @@ using sabatex.V1C8.Models;
 
 namespace sabatex.V1C8
 {
-    public class EnumMetaData
+    public class EnumMetaData:V1C8COMObject
     {
-        public readonly string Name;
-        public readonly string Synonym;
-        public readonly string Comment;
+        public string Name {get=>GetPropertyString("Name");}
+        public string Synonym {get=>GetPropertyString("Synonym");}
+        public  string Comment {get=>GetPropertyString("Comment");}
 
-        public readonly EnumItem[] EnumValues;
-        public EnumMetaData(dynamic context)
-        {
-            Name = context.Name;
-            Synonym = context.Synonym;
-            Comment = context.Comment;
-            int i = context.EnumValues.Count();
-
-            EnumValues = new EnumItem[i];
-            while (0 < i--)
-            {
-                dynamic v = context.Get(i);
-                EnumValues[i] = new EnumItem
-                {
-                    Name = v.Name,
-                    Synonym = v.Synonym,
-                    Comment = v.Comment,
-                    Owner = Name
-                };
-            }
-
-        }
+        public EnumValues EnumValues{get=>GetProperty<EnumValues>("EnumValues");}
+ 
     }
 }

@@ -22,6 +22,7 @@ namespace sabatex.V1C8
             Type comConnector = Type.GetTypeFromProgID("V83.COMConnector");
             dynamic instance = Activator.CreateInstance(comConnector);
             COMObject = instance.Connect(connectionString);
+            MetaData = new MetaData(this);
         }
 
         public V1C8COMConnector(string serverName, string dataBaseName, string userName, string password) :
@@ -34,6 +35,7 @@ namespace sabatex.V1C8
         public string String(dynamic value) => COMObject.String(value);
         public Guid GetObjectId(dynamic value) => Guid.Parse(this.String(value.УникальныйИдентификатор()));
 
+        public readonly MetaData MetaData;
 
         public void Dispose()
         {

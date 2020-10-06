@@ -15,6 +15,7 @@ namespace sabatex.V1C8
 
         public string Name { get=>owner.COMObject.Metadata.Name; }
         public string Version { get => owner.COMObject.Metadata.Version; }
+        public dynamic FindByType(dynamic elementType)=>owner.COMObject.Metadata.FindByType(elementType);
 
         public void Dispose()
         {

@@ -36,6 +36,9 @@ namespace sabatex.V1C8
         public Guid GetObjectId(V1C8COMObject value) => Guid.Parse(this.String(value.GetPropertyObject("УникальныйИдентификатор")));
 
         public MetaData MetaData{get=>GetProperty<MetaData>("Metadata");}
+
+        public References Справочники {get=>GetProperty<References>("Справочники");}
+
         public static string BuildConnectionString(string dataBasePath, string userName, string password)
         {
             return $"File='{dataBasePath}';Usr='{userName}';pwd='{password}';";

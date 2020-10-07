@@ -16,6 +16,7 @@ namespace sabatex.V1C8
         bool disposed = false;
         protected object handle;
         protected object Handle { get => handle; }
+        public dynamic Dynamic {get=>handle;}
         protected V1C8COMObject()
         {
 

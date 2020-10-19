@@ -266,11 +266,17 @@ namespace sabatex.V1C8
             return OLE1C77Function<T>(methodName,BindingFlags.InvokeMethod,handle,args);
         }
 
-        public object GetProperty(string PropertyName) => OLE1C77Function(PropertyName, BindingFlags.GetProperty, Handle);
-        public T GetProperty<T>(string PropertyName) where T:V1C8COMObject
+        public object GetProperty(string propertyName) => OLE1C77Function(propertyName, BindingFlags.GetProperty, Handle);
+        public T GetProperty<T>(string propertyName) where T:V1C8COMObject
         {
-            return OLE1C77Function<T>(PropertyName, BindingFlags.GetProperty, Handle);
+            return OLE1C77Function<T>(propertyName, BindingFlags.GetProperty, Handle);
         }
+
+        public T GetStructProperty<T>(string propertyName) where T:struct
+        {
+            return (T)GetProperty(propertyName);
+        }
+
 
         public R MethodSruct<R>(string methodName, params object[] args) where R:struct
         {

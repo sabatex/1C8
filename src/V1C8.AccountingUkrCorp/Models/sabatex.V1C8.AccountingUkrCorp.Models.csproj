@@ -18,6 +18,6 @@
         <RepositoryType>GIT</RepositoryType>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="sabatex.V1C8" Version="5.0.100-beta.1.13" />
+        <PackageReference Include="sabatex.V1C8" Version="5.0.100-beta.1.14" />
     </ItemGroup>
 </Project>

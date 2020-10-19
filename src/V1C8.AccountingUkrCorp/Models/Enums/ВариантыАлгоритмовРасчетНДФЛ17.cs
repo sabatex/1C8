@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("VaryantyAlhorytmovRaschetNDFL17")]
     [Description1C8(Name = "ВариантыАлгоритмовРасчетНДФЛ17", Comment = "", Synonym = "Варианты алгоритмов расчет НДФЛ 17%")]
     public class ВариантыАлгоритмовРасчетНДФЛ17:EnumItem
     {

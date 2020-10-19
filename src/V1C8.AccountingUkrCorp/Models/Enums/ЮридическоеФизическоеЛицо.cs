@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("YurydycheskoeFyzycheskoeLytso")]
     [Description1C8(Name = "ЮридическоеФизическоеЛицо", Comment = "Определяет, является ли организация или контрагент юридическим лицом или нет.", Synonym = "Юридическое / физическое лицо")]
     public class ЮридическоеФизическоеЛицо:EnumItem
     {

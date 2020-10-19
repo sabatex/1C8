@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("PrychynyOtkliuchenyiaDopolnytelnykhOtchetovYObrabotokVModelyServysa")]
     [Description1C8(Name = "ПричиныОтключенияДополнительныхОтчетовИОбработокВМоделиСервиса", Comment = "", Synonym = "Причины отключения дополнительных отчетов и обработок в модели сервиса")]
     public class ПричиныОтключенияДополнительныхОтчетовИОбработокВМоделиСервиса:EnumItem
     {

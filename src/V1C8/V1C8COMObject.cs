@@ -272,6 +272,19 @@ namespace sabatex.V1C8
             return OLE1C77Function<T>(PropertyName, BindingFlags.GetProperty, Handle);
         }
 
+        public R MethodSruct<R>(string methodName, params object[] args) where R:struct
+        {
+            try
+            {    
+                return (R)Method(methodName,args);
+            }
+            catch (Exception e)
+            {
+                Trace.TraceError($"Error get method {methodName} with error ={e}");
+                throw new Exception();
+            }
+        }
+
         public V1C8COMObject GetPropertyObject(string PropertyName)
         {
             try

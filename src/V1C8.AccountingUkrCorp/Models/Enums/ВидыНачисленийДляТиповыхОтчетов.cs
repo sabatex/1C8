@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("VydyNachyslenyiDliaTypovykhOtchetov")]
     [Description1C8(Name = "ВидыНачисленийДляТиповыхОтчетов", Comment = "", Synonym = "Виды начислений для типовых отчетов П-6, П-7")]
     public class ВидыНачисленийДляТиповыхОтчетов:EnumItem
     {

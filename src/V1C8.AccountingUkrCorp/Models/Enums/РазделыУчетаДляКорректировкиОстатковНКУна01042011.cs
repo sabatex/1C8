@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("RazdelyUchetaDliaKorrektyrovkyOstatkovNKUna01042011")]
     [Description1C8(Name = "РазделыУчетаДляКорректировкиОстатковНКУна01042011", Comment = "", Synonym = "Разделы учета для корректировки остатков в связи с вступлением в силу норм НКУ (01.04.2011)")]
     public class РазделыУчетаДляКорректировкиОстатковНКУна01042011:EnumItem
     {

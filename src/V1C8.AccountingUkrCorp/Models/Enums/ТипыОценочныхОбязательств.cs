@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("TypyOtsenochnykhObiazatelstv")]
     [Description1C8(Name = "ТипыОценочныхОбязательств", Comment = "", Synonym = "Типы оценочных обязательств")]
     public class ТипыОценочныхОбязательств:EnumItem
     {

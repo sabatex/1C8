@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("SobytyiaProdazhyNalohovyiUchet")]
     [Description1C8(Name = "СобытияПродажиНалоговыйУчет", Comment = "(Регл)", Synonym = "События продажи налоговый учет")]
     public class СобытияПродажиНалоговыйУчет:EnumItem
     {

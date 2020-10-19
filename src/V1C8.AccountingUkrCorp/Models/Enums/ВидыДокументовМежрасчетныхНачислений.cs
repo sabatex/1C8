@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("VydyDokumentovMezhraschetnykhNachyslenyi")]
     [Description1C8(Name = "ВидыДокументовМежрасчетныхНачислений", Comment = "", Synonym = "Виды документов межрасчетных начислений")]
     public class ВидыДокументовМежрасчетныхНачислений:EnumItem
     {

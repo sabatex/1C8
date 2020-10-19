@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("SposobyUstanovkyKursaValiuty")]
     [Description1C8(Name = "СпособыУстановкиКурсаВалюты", Comment = "", Synonym = "Способы установки курса валюты")]
     public class СпособыУстановкиКурсаВалюты:EnumItem
     {

@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("OsnovanyiaDliaDonachyslenyiaStrakhovykhVznosov")]
     [Description1C8(Name = "ОснованияДляДоначисленияСтраховыхВзносов", Comment = "", Synonym = "Основания для доначисления страховых взносов")]
     public class ОснованияДляДоначисленияСтраховыхВзносов:EnumItem
     {

@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("TypySummDliaVvodaOstatkov")]
     [Description1C8(Name = "ТипыСуммДляВводаОстатков", Comment = "", Synonym = "Типы сумм для ввода остатков")]
     public class ТипыСуммДляВводаОстатков:EnumItem
     {

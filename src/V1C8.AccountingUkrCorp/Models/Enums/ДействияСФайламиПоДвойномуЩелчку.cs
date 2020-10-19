@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("DeistvyiaSFailamyPoDvoinomuShchelchku")]
     [Description1C8(Name = "ДействияСФайламиПоДвойномуЩелчку", Comment = "", Synonym = "Действия с файлами по двойному щелчку")]
     public class ДействияСФайламиПоДвойномуЩелчку:EnumItem
     {

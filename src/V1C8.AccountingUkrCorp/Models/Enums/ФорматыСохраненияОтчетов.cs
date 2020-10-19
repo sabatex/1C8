@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("FormatySokhranenyiaOtchetov")]
     [Description1C8(Name = "ФорматыСохраненияОтчетов", Comment = "", Synonym = "Форматы сохранения отчетов")]
     public class ФорматыСохраненияОтчетов:EnumItem
     {

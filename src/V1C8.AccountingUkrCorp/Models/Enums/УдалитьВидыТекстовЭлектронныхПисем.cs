@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("UdalytVydyTekstovЕlektronnykhPysem")]
     [Description1C8(Name = "УдалитьВидыТекстовЭлектронныхПисем", Comment = "", Synonym = "(не используется) Виды текстов электронных писем")]
     public class УдалитьВидыТекстовЭлектронныхПисем:EnumItem
     {

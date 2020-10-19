@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("KodyOperatsyiVzaymoraschetySRabotnykamyOrhanyzatsyi")]
     [Description1C8(Name = "КодыОперацийВзаиморасчетыСРаботникамиОрганизаций", Comment = "", Synonym = "Коды операций: Взаиморасчеты с работниками организации")]
     public class КодыОперацийВзаиморасчетыСРаботникамиОрганизаций:EnumItem
     {

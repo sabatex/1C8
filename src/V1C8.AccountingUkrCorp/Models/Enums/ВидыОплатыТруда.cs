@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("VydyOplatyTruda")]
     [Description1C8(Name = "ВидыОплатыТруда", Comment = "ФОТ неФОТ", Synonym = "Виды оплаты труда")]
     public class ВидыОплатыТруда:EnumItem
     {

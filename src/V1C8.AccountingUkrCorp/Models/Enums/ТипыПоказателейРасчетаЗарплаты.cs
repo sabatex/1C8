@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("TypyPokazateleiRaschetaZarplaty")]
     [Description1C8(Name = "ТипыПоказателейРасчетаЗарплаты", Comment = "", Synonym = "Типы показателей расчета зарплаты")]
     public class ТипыПоказателейРасчетаЗарплаты:EnumItem
     {

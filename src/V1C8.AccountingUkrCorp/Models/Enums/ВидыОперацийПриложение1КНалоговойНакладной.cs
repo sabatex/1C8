@@ -5,9 +5,11 @@ using System.Text;
 using System.ComponentModel.DataAnnotations;
 using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Models.Enums
 {
+    [Table("VydyOperatsyiPrylozhenye1KNalohovoiNakladnoi")]
     [Description1C8(Name = "ВидыОперацийПриложение1КНалоговойНакладной", Comment = "(Общ)", Synonym = "Виды операций документа 'Приложение 1 к налоговой накладной'")]
     public class ВидыОперацийПриложение1КНалоговойНакладной:EnumItem
     {

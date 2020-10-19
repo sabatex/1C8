@@ -8,7 +8,7 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public TypesMetaData Types{get=>GetProperty<TypesMetaData>("Types");}
+        public TypesMetaData Types()=>Method<TypesMetaData>("Types");
         
     }
 }

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sabatex.V1C8.Enums
+namespace sabatex.V1C8.EnumTypes
 {
-    public class EnumItemBase:V1C8COMObject
+    public class EnumItem:V1C8COMObject
     {
-        public EnumItemBase(EnumTypeBase owner, object handle) : base(owner, handle)
+        public EnumItem(EnumBase owner, object handle) : base(owner, handle)
         {
         }
 

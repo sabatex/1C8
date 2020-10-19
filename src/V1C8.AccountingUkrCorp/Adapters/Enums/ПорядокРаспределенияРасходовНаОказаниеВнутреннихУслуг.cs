@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ПорядокРаспределенияРасходовНаОказаниеВнутреннихУслуг:V1C8COMObject
     {
+        public ПорядокРаспределенияРасходовНаОказаниеВнутреннихУслуг(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПоПлановымЦенам => GetProperty<EnumItemBase>();
+        public EnumItemBase ПоОбъемуВыпуска => GetProperty<EnumItemBase>();
+        public EnumItemBase ПоПлановымЦенамИОбъемуВыпуска => GetProperty<EnumItemBase>();
     }
 }

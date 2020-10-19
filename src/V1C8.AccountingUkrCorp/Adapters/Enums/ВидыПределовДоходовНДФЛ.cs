@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВидыПределовДоходовНДФЛ:V1C8COMObject
     {
+        public ВидыПределовДоходовНДФЛ(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase Годовой => GetProperty<EnumItemBase>();
+        public EnumItemBase Разовый => GetProperty<EnumItemBase>();
     }
 }

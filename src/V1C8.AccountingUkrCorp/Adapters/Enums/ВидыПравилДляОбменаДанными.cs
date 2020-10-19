@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВидыПравилДляОбменаДанными:V1C8COMObject
     {
+        public ВидыПравилДляОбменаДанными(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПравилаКонвертацииОбъектов => GetProperty<EnumItemBase>();
+        public EnumItemBase ПравилаРегистрацииОбъектов => GetProperty<EnumItemBase>();
     }
 }

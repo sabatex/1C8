@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВедениеВзаиморасчетовПоДоговорам:V1C8COMObject
     {
+        public ВедениеВзаиморасчетовПоДоговорам(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПоДоговоруВЦелом => GetProperty<EnumItemBase>();
+        public EnumItemBase ПоРасчетнымДокументам => GetProperty<EnumItemBase>();
     }
 }

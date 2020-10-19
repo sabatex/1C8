@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class НазначенияПоказателейРасчетаЗарплаты:V1C8COMObject
     {
+        public НазначенияПоказателейРасчетаЗарплаты(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ДляСотрудника => GetProperty<EnumItemBase>();
+        public EnumItemBase ДляПодразделения => GetProperty<EnumItemBase>();
+        public EnumItemBase ДляОрганизации => GetProperty<EnumItemBase>();
     }
 }

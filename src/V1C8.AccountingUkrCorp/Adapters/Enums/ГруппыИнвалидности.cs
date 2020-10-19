@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ГруппыИнвалидности:V1C8COMObject
     {
+        public ГруппыИнвалидности(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПерваяГруппа => GetProperty<EnumItemBase>();
+        public EnumItemBase ВтораяГруппа => GetProperty<EnumItemBase>();
+        public EnumItemBase ТретьяГруппа => GetProperty<EnumItemBase>();
     }
 }

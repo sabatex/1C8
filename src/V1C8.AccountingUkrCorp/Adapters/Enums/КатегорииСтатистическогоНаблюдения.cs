@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class КатегорииСтатистическогоНаблюдения:V1C8COMObject
     {
+        public КатегорииСтатистическогоНаблюдения(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ВыплатаСоциальногоХарактера => GetProperty<EnumItemBase>();
+        public EnumItemBase ЗаработнаяПлатаРаботников => GetProperty<EnumItemBase>();
     }
 }

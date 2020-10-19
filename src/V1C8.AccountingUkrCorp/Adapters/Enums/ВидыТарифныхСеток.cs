@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВидыТарифныхСеток:V1C8COMObject
     {
+        public ВидыТарифныхСеток(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase Тариф => GetProperty<EnumItemBase>();
+        public EnumItemBase Надбавка => GetProperty<EnumItemBase>();
     }
 }

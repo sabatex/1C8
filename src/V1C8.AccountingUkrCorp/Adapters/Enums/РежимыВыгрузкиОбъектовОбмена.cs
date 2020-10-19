@@ -8,5 +8,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class РежимыВыгрузкиОбъектовОбмена:V1C8COMObject
     {
+        public РежимыВыгрузкиОбъектовОбмена(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ВыгружатьВсегда => GetProperty<EnumItemBase>();
+        public EnumItemBase ВыгружатьПоУсловию => GetProperty<EnumItemBase>();
+        public EnumItemBase ВыгружатьПриНеобходимости => GetProperty<EnumItemBase>();
+        public EnumItemBase ВыгружатьВручную => GetProperty<EnumItemBase>();
+        public EnumItemBase НеВыгружать => GetProperty<EnumItemBase>();
     }
 }

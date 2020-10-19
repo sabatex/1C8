@@ -8,5 +8,19 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВидыОперацийНалоговаяНакладная:V1C8COMObject
     {
+        public ВидыОперацийНалоговаяНакладная(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ОблагаемыеОперации => GetProperty<EnumItemBase>();
+        public EnumItemBase ОсвобожденныеОперации => GetProperty<EnumItemBase>();
+        public EnumItemBase НеНДСОперации => GetProperty<EnumItemBase>();
+        public EnumItemBase ИтоговаяРозницаОблагаемыеОперации => GetProperty<EnumItemBase>();
+        public EnumItemBase ИтоговаяРозницаОсвобожденныеОперации => GetProperty<EnumItemBase>();
+        public EnumItemBase РозницаКонрагентуОблагаемыеОперации => GetProperty<EnumItemBase>();
+        public EnumItemBase РозницаКонрагентуОсвобожденныеОперации => GetProperty<EnumItemBase>();
+        public EnumItemBase УсловнаяПродажа => GetProperty<EnumItemBase>();
+        public EnumItemBase УсловнаяПродажаСписаниеОС => GetProperty<EnumItemBase>();
+        public EnumItemBase РаботыОтНерезидента => GetProperty<EnumItemBase>();
+        public EnumItemBase СводнаяНаПревышениеБазыНадЦенойПоставки => GetProperty<EnumItemBase>();
     }
 }

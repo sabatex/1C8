@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВариантыИспользованияВнешнихКомпонент:V1C8COMObject
     {
+        public ВариантыИспользованияВнешнихКомпонент(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase Используется => GetProperty<EnumItemBase>();
+        public EnumItemBase Отключена => GetProperty<EnumItemBase>();
     }
 }

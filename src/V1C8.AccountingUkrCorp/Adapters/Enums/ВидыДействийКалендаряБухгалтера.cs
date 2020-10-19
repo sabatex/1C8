@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВидыДействийКалендаряБухгалтера:V1C8COMObject
     {
+        public ВидыДействийКалендаряБухгалтера(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase Отчет => GetProperty<EnumItemBase>();
+        public EnumItemBase УплатаНалога => GetProperty<EnumItemBase>();
     }
 }

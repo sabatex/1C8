@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class СтатусыИзвлеченияТекстаФайлов:V1C8COMObject
     {
+        public СтатусыИзвлеченияТекстаФайлов(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase НеИзвлечен => GetProperty<EnumItemBase>();
+        public EnumItemBase Извлечен => GetProperty<EnumItemBase>();
+        public EnumItemBase ИзвлечьНеУдалось => GetProperty<EnumItemBase>();
     }
 }

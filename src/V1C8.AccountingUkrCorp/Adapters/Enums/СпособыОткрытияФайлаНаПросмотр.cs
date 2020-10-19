@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class СпособыОткрытияФайлаНаПросмотр:V1C8COMObject
     {
+        public СпособыОткрытияФайлаНаПросмотр(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase СтандартнымПриложением => GetProperty<EnumItemBase>();
+        public EnumItemBase ВоВстроенномРедакторе => GetProperty<EnumItemBase>();
     }
 }

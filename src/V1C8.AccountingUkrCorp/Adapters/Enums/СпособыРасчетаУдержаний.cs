@@ -8,5 +8,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class СпособыРасчетаУдержаний:V1C8COMObject
     {
+        public СпособыРасчетаУдержаний(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ФиксированнойСуммой => GetProperty<EnumItemBase>();
+        public EnumItemBase Процентом => GetProperty<EnumItemBase>();
+        public EnumItemBase ПроизвольнаяФормула => GetProperty<EnumItemBase>();
+        public EnumItemBase ИсполнительныйЛист => GetProperty<EnumItemBase>();
+        public EnumItemBase ВознаграждениеПлатежногоАгента => GetProperty<EnumItemBase>();
     }
 }

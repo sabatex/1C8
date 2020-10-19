@@ -8,5 +8,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ТипыФайловДляВстроенногоРедактора:V1C8COMObject
     {
+        public ТипыФайловДляВстроенногоРедактора(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ГеографическиеСхемы => GetProperty<EnumItemBase>();
+        public EnumItemBase ГрафическиеСхемы => GetProperty<EnumItemBase>();
+        public EnumItemBase ТабличныеФайлы => GetProperty<EnumItemBase>();
+        public EnumItemBase ТекстовыеФайлы => GetProperty<EnumItemBase>();
     }
 }

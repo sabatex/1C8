@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class МетодыРаспределенияРБП:V1C8COMObject
     {
+        public МетодыРаспределенияРБП(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПоДням => GetProperty<EnumItemBase>();
+        public EnumItemBase ПоМесяцам => GetProperty<EnumItemBase>();
     }
 }

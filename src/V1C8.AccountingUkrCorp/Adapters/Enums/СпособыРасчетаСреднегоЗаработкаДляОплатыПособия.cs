@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class СпособыРасчетаСреднегоЗаработкаДляОплатыПособия:V1C8COMObject
     {
+        public СпособыРасчетаСреднегоЗаработкаДляОплатыПособия(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase СреднийЗаработок => GetProperty<EnumItemBase>();
+        public EnumItemBase ИсходяИзТарифнойСтавки => GetProperty<EnumItemBase>();
+        public EnumItemBase ИсходяИзМРОТ => GetProperty<EnumItemBase>();
     }
 }

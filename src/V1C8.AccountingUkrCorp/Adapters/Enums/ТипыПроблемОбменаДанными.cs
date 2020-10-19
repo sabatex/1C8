@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ТипыПроблемОбменаДанными:V1C8COMObject
     {
+        public ТипыПроблемОбменаДанными(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase НепроведенныйДокумент => GetProperty<EnumItemBase>();
+        public EnumItemBase НезаполненныеРеквизиты => GetProperty<EnumItemBase>();
     }
 }

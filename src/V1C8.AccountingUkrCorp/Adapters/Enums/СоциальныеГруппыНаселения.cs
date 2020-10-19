@@ -8,5 +8,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class СоциальныеГруппыНаселения:V1C8COMObject
     {
+        public СоциальныеГруппыНаселения(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ДетиДо6 => GetProperty<EnumItemBase>();
+        public EnumItemBase ДетиДо18 => GetProperty<EnumItemBase>();
+        public EnumItemBase Трудоспособные => GetProperty<EnumItemBase>();
+        public EnumItemBase НеТрудоспособные => GetProperty<EnumItemBase>();
     }
 }

@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВидыПризовПодарков:V1C8COMObject
     {
+        public ВидыПризовПодарков(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase Подарок => GetProperty<EnumItemBase>();
+        public EnumItemBase Приз => GetProperty<EnumItemBase>();
     }
 }

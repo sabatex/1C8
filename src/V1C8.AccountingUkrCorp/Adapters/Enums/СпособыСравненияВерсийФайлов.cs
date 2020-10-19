@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class СпособыСравненияВерсийФайлов:V1C8COMObject
     {
+        public СпособыСравненияВерсийФайлов(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase MicrosoftOfficeWord => GetProperty<EnumItemBase>();
+        public EnumItemBase OpenOfficeOrgWriter => GetProperty<EnumItemBase>();
     }
 }

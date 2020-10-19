@@ -8,5 +8,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ФорматыСканированногоИзображения:V1C8COMObject
     {
+        public ФорматыСканированногоИзображения(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase BMP => GetProperty<EnumItemBase>();
+        public EnumItemBase JPG => GetProperty<EnumItemBase>();
+        public EnumItemBase GIF => GetProperty<EnumItemBase>();
+        public EnumItemBase PNG => GetProperty<EnumItemBase>();
+        public EnumItemBase TIF => GetProperty<EnumItemBase>();
     }
 }

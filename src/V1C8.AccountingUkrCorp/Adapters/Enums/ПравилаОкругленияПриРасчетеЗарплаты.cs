@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ПравилаОкругленияПриРасчетеЗарплаты:V1C8COMObject
     {
+        public ПравилаОкругленияПриРасчетеЗарплаты(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase Авто => GetProperty<EnumItemBase>();
+        public EnumItemBase ВМеньшуюСторону => GetProperty<EnumItemBase>();
+        public EnumItemBase ВБольшуюСторону => GetProperty<EnumItemBase>();
     }
 }

@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class РежимыВыбораПартий:V1C8COMObject
     {
+        public РежимыВыбораПартий(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ВыборИзПолногоСпискаПартий => GetProperty<EnumItemBase>();
+        public EnumItemBase ВыборИзПартийПоНоменклатуре => GetProperty<EnumItemBase>();
+        public EnumItemBase ВыборИзПартийИмеющихОстатки => GetProperty<EnumItemBase>();
     }
 }

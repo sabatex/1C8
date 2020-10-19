@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ДействияСФайламиПоДвойномуЩелчку:V1C8COMObject
     {
+        public ДействияСФайламиПоДвойномуЩелчку(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ОткрыватьФайл => GetProperty<EnumItemBase>();
+        public EnumItemBase ОткрыватьКарточку => GetProperty<EnumItemBase>();
     }
 }

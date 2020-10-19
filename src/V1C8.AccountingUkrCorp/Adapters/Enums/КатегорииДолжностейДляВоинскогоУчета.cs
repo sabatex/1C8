@@ -8,5 +8,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class КатегорииДолжностейДляВоинскогоУчета:V1C8COMObject
     {
+        public КатегорииДолжностейДляВоинскогоУчета(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase Руководители => GetProperty<EnumItemBase>();
+        public EnumItemBase Специалисты => GetProperty<EnumItemBase>();
+        public EnumItemBase ДругиеСлужащие => GetProperty<EnumItemBase>();
+        public EnumItemBase Рабочие => GetProperty<EnumItemBase>();
     }
 }

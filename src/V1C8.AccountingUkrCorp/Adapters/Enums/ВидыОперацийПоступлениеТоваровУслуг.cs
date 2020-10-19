@@ -8,5 +8,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ВидыОперацийПоступлениеТоваровУслуг:V1C8COMObject
     {
+        public ВидыОперацийПоступлениеТоваровУслуг(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПокупкаКомиссия => GetProperty<EnumItemBase>();
+        public EnumItemBase ВПереработку => GetProperty<EnumItemBase>();
+        public EnumItemBase Оборудование => GetProperty<EnumItemBase>();
+        public EnumItemBase ОбъектыСтроительства => GetProperty<EnumItemBase>();
+        public EnumItemBase БланкиСтрогогоУчета => GetProperty<EnumItemBase>();
     }
 }

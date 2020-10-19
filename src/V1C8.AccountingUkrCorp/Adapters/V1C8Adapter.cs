@@ -8,7 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters
 {
     public class V1C8Adapter:V1C8COMConnector
     {
-        public EnumsType Enums { get => GetProperty<EnumsType>("Enums"); }
-        public EnumsType Перечисления { get => GetProperty<EnumsType>("Enums"); }
+        public V1C8Adapter(string connectionString) :base(connectionString)
+        {
+        }
+        public Enums Enums { get => GetProperty<Enums>("Enums"); }
+        public Enums Перечисления { get => GetProperty<Enums>("Enums"); }
     }
 }

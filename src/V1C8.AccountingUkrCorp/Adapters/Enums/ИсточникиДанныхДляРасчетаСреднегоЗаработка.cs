@@ -8,5 +8,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class ИсточникиДанныхДляРасчетаСреднегоЗаработка:V1C8COMObject
     {
+        public ИсточникиДанныхДляРасчетаСреднегоЗаработка(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПереносДанных => GetProperty<EnumItemBase>();
+        public EnumItemBase СведенияДоНачалаЭксплуатации => GetProperty<EnumItemBase>();
+        public EnumItemBase Начисления => GetProperty<EnumItemBase>();
+        public EnumItemBase Исправления => GetProperty<EnumItemBase>();
     }
 }

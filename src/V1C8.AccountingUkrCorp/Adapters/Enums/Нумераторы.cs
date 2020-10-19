@@ -8,5 +8,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class Нумераторы:V1C8COMObject
     {
+        public Нумераторы(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase ПлатежноеПоручение => GetProperty<EnumItemBase>();
+        public EnumItemBase РасходныйКассовыйОрдер => GetProperty<EnumItemBase>();
+        public EnumItemBase ПриходныйКассовыйОрдер => GetProperty<EnumItemBase>();
     }
 }

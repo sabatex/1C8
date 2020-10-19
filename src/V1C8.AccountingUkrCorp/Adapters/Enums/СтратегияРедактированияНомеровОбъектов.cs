@@ -8,5 +8,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Adapters.Enums
 {
     public class СтратегияРедактированияНомеровОбъектов:V1C8COMObject
     {
+        public СтратегияРедактированияНомеровОбъектов(EnumsType owner, object handle) : base(owner, handle)
+        {
+        }
+        public EnumItemBase НеДоступно => GetProperty<EnumItemBase>();
+        public EnumItemBase Доступно => GetProperty<EnumItemBase>();
     }
 }

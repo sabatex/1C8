@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СтатусыРегистрацииВЕРНННалоговыхДокументов:V1C8COMObject
+    public class СтатусыРегистрацииВЕРНННалоговыхДокументов:EnumBase
     {
         public СтатусыРегистрацииВЕРНННалоговыхДокументов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НеЗарегистрированВЕРНН => GetProperty<EnumItemBase>("НеЗарегистрированВЕРНН");
-        public EnumItemBase НаправленНаРегистрациюВЕРНН => GetProperty<EnumItemBase>("НаправленНаРегистрациюВЕРНН");
-        public EnumItemBase ОтказаноВРегистрацииВЕРНН => GetProperty<EnumItemBase>("ОтказаноВРегистрацииВЕРНН");
-        public EnumItemBase ЗарегистрированВЕРНН => GetProperty<EnumItemBase>("ЗарегистрированВЕРНН");
+        public EnumItem НеЗарегистрированВЕРНН => GetProperty<EnumItem>("НеЗарегистрированВЕРНН");
+        public EnumItem НаправленНаРегистрациюВЕРНН => GetProperty<EnumItem>("НаправленНаРегистрациюВЕРНН");
+        public EnumItem ОтказаноВРегистрацииВЕРНН => GetProperty<EnumItem>("ОтказаноВРегистрацииВЕРНН");
+        public EnumItem ЗарегистрированВЕРНН => GetProperty<EnumItem>("ЗарегистрированВЕРНН");
     }
 }

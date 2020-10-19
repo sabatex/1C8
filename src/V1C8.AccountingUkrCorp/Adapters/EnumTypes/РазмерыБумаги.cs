@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class РазмерыБумаги:V1C8COMObject
+    public class РазмерыБумаги:EnumBase
     {
         public РазмерыБумаги(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НеЗадано => GetProperty<EnumItemBase>("НеЗадано");
-        public EnumItemBase A3 => GetProperty<EnumItemBase>("A3");
-        public EnumItemBase A4 => GetProperty<EnumItemBase>("A4");
-        public EnumItemBase A5 => GetProperty<EnumItemBase>("A5");
-        public EnumItemBase B4 => GetProperty<EnumItemBase>("B4");
-        public EnumItemBase B5 => GetProperty<EnumItemBase>("B5");
-        public EnumItemBase B6 => GetProperty<EnumItemBase>("B6");
-        public EnumItemBase C4 => GetProperty<EnumItemBase>("C4");
-        public EnumItemBase C5 => GetProperty<EnumItemBase>("C5");
-        public EnumItemBase C6 => GetProperty<EnumItemBase>("C6");
-        public EnumItemBase USExecutive => GetProperty<EnumItemBase>("USExecutive");
-        public EnumItemBase USLegal => GetProperty<EnumItemBase>("USLegal");
-        public EnumItemBase USLetter => GetProperty<EnumItemBase>("USLetter");
+        public EnumItem НеЗадано => GetProperty<EnumItem>("НеЗадано");
+        public EnumItem A3 => GetProperty<EnumItem>("A3");
+        public EnumItem A4 => GetProperty<EnumItem>("A4");
+        public EnumItem A5 => GetProperty<EnumItem>("A5");
+        public EnumItem B4 => GetProperty<EnumItem>("B4");
+        public EnumItem B5 => GetProperty<EnumItem>("B5");
+        public EnumItem B6 => GetProperty<EnumItem>("B6");
+        public EnumItem C4 => GetProperty<EnumItem>("C4");
+        public EnumItem C5 => GetProperty<EnumItem>("C5");
+        public EnumItem C6 => GetProperty<EnumItem>("C6");
+        public EnumItem USExecutive => GetProperty<EnumItem>("USExecutive");
+        public EnumItem USLegal => GetProperty<EnumItem>("USLegal");
+        public EnumItem USLetter => GetProperty<EnumItem>("USLetter");
     }
 }

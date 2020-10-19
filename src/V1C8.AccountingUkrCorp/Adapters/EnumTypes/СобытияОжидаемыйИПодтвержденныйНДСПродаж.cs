@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СобытияОжидаемыйИПодтвержденныйНДСПродаж:V1C8COMObject
+    public class СобытияОжидаемыйИПодтвержденныйНДСПродаж:EnumBase
     {
         public СобытияОжидаемыйИПодтвержденныйНДСПродаж(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Реализация => GetProperty<EnumItemBase>("Реализация");
-        public EnumItemBase Возврат => GetProperty<EnumItemBase>("Возврат");
-        public EnumItemBase РеализацияРозница => GetProperty<EnumItemBase>("РеализацияРозница");
-        public EnumItemBase ВозвратРозница => GetProperty<EnumItemBase>("ВозвратРозница");
-        public EnumItemBase УсловнаяПродажа => GetProperty<EnumItemBase>("УсловнаяПродажа");
-        public EnumItemBase УсловнаяПродажаВозврат => GetProperty<EnumItemBase>("УсловнаяПродажаВозврат");
+        public EnumItem Реализация => GetProperty<EnumItem>("Реализация");
+        public EnumItem Возврат => GetProperty<EnumItem>("Возврат");
+        public EnumItem РеализацияРозница => GetProperty<EnumItem>("РеализацияРозница");
+        public EnumItem ВозвратРозница => GetProperty<EnumItem>("ВозвратРозница");
+        public EnumItem УсловнаяПродажа => GetProperty<EnumItem>("УсловнаяПродажа");
+        public EnumItem УсловнаяПродажаВозврат => GetProperty<EnumItem>("УсловнаяПродажаВозврат");
     }
 }

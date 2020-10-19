@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class МетодыКорректировкиНалоговогоКредита:V1C8COMObject
+    public class МетодыКорректировкиНалоговогоКредита:EnumBase
     {
         public МетодыКорректировкиНалоговогоКредита(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НаНалоговыйКредит => GetProperty<EnumItemBase>("НаНалоговыйКредит");
-        public EnumItemBase НаНалоговыеОбязательства => GetProperty<EnumItemBase>("НаНалоговыеОбязательства");
-        public EnumItemBase НеКорректировать => GetProperty<EnumItemBase>("НеКорректировать");
+        public EnumItem НаНалоговыйКредит => GetProperty<EnumItem>("НаНалоговыйКредит");
+        public EnumItem НаНалоговыеОбязательства => GetProperty<EnumItem>("НаНалоговыеОбязательства");
+        public EnumItem НеКорректировать => GetProperty<EnumItem>("НеКорректировать");
     }
 }

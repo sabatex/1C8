@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыРаспределенияКосвенныхРасходов:V1C8COMObject
+    public class СпособыРаспределенияКосвенныхРасходов:EnumBase
     {
         public СпособыРаспределенияКосвенныхРасходов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОбъемВыпуска => GetProperty<EnumItemBase>("ОбъемВыпуска");
-        public EnumItemBase ПлановаяСебестоимость => GetProperty<EnumItemBase>("ПлановаяСебестоимость");
-        public EnumItemBase ОплатаТруда => GetProperty<EnumItemBase>("ОплатаТруда");
-        public EnumItemBase МатериальныеЗатраты => GetProperty<EnumItemBase>("МатериальныеЗатраты");
-        public EnumItemBase ПрямыеЗатраты => GetProperty<EnumItemBase>("ПрямыеЗатраты");
-        public EnumItemBase ОтдельныеСтатьиПрямыхЗатрат => GetProperty<EnumItemBase>("ОтдельныеСтатьиПрямыхЗатрат");
-        public EnumItemBase НеРаспределяется => GetProperty<EnumItemBase>("НеРаспределяется");
+        public EnumItem ОбъемВыпуска => GetProperty<EnumItem>("ОбъемВыпуска");
+        public EnumItem ПлановаяСебестоимость => GetProperty<EnumItem>("ПлановаяСебестоимость");
+        public EnumItem ОплатаТруда => GetProperty<EnumItem>("ОплатаТруда");
+        public EnumItem МатериальныеЗатраты => GetProperty<EnumItem>("МатериальныеЗатраты");
+        public EnumItem ПрямыеЗатраты => GetProperty<EnumItem>("ПрямыеЗатраты");
+        public EnumItem ОтдельныеСтатьиПрямыхЗатрат => GetProperty<EnumItem>("ОтдельныеСтатьиПрямыхЗатрат");
+        public EnumItem НеРаспределяется => GetProperty<EnumItem>("НеРаспределяется");
     }
 }

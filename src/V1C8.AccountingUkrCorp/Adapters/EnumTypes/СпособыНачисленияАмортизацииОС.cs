@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыНачисленияАмортизацииОС:V1C8COMObject
+    public class СпособыНачисленияАмортизацииОС:EnumBase
     {
         public СпособыНачисленияАмортизацииОС(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Прямолинейный => GetProperty<EnumItemBase>("Прямолинейный");
-        public EnumItemBase Налоговый => GetProperty<EnumItemBase>("Налоговый");
-        public EnumItemBase УменьшенияОстатка => GetProperty<EnumItemBase>("УменьшенияОстатка");
-        public EnumItemBase Кумулятивный => GetProperty<EnumItemBase>("Кумулятивный");
-        public EnumItemBase Производственный => GetProperty<EnumItemBase>("Производственный");
-        public EnumItemBase УскоренногоУменьшенияОстатка => GetProperty<EnumItemBase>("УскоренногоУменьшенияОстатка");
-        public EnumItemBase _100 => GetProperty<EnumItemBase>("_100");
-        public EnumItemBase _50_50 => GetProperty<EnumItemBase>("_50_50");
+        public EnumItem Прямолинейный => GetProperty<EnumItem>("Прямолинейный");
+        public EnumItem Налоговый => GetProperty<EnumItem>("Налоговый");
+        public EnumItem УменьшенияОстатка => GetProperty<EnumItem>("УменьшенияОстатка");
+        public EnumItem Кумулятивный => GetProperty<EnumItem>("Кумулятивный");
+        public EnumItem Производственный => GetProperty<EnumItem>("Производственный");
+        public EnumItem УскоренногоУменьшенияОстатка => GetProperty<EnumItem>("УскоренногоУменьшенияОстатка");
+        public EnumItem _100 => GetProperty<EnumItem>("_100");
+        public EnumItem _50_50 => GetProperty<EnumItem>("_50_50");
     }
 }

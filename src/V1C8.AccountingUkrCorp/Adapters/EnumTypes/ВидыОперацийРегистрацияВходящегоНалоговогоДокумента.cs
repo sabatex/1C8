@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыОперацийРегистрацияВходящегоНалоговогоДокумента:V1C8COMObject
+    public class ВидыОперацийРегистрацияВходящегоНалоговогоДокумента:EnumBase
     {
         public ВидыОперацийРегистрацияВходящегоНалоговогоДокумента(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НалоговаяНакладная => GetProperty<EnumItemBase>("НалоговаяНакладная");
-        public EnumItemBase РасчетКорректировкиВозврат => GetProperty<EnumItemBase>("РасчетКорректировкиВозврат");
-        public EnumItemBase РасчетКорректировкиКорректировка => GetProperty<EnumItemBase>("РасчетКорректировкиКорректировка");
-        public EnumItemBase РаботыОтНерезидентаПрошлогоПериода => GetProperty<EnumItemBase>("РаботыОтНерезидентаПрошлогоПериода");
-        public EnumItemBase ПогашениеНалоговогоВекселя => GetProperty<EnumItemBase>("ПогашениеНалоговогоВекселя");
-        public EnumItemBase BeксeльПpoшлoгoПepиoдa => GetProperty<EnumItemBase>("BeксeльПpoшлoгoПepиoдa");
-        public EnumItemBase ТаможенноеОформлениеТоваровКомитента => GetProperty<EnumItemBase>("ТаможенноеОформлениеТоваровКомитента");
-        public EnumItemBase ИсправлениеОшибки => GetProperty<EnumItemBase>("ИсправлениеОшибки");
-        public EnumItemBase ВосстановлениеНалоговогоКредита => GetProperty<EnumItemBase>("ВосстановлениеНалоговогоКредита");
-        public EnumItemBase ТоварныйЧек => GetProperty<EnumItemBase>("ТоварныйЧек");
+        public EnumItem НалоговаяНакладная => GetProperty<EnumItem>("НалоговаяНакладная");
+        public EnumItem РасчетКорректировкиВозврат => GetProperty<EnumItem>("РасчетКорректировкиВозврат");
+        public EnumItem РасчетКорректировкиКорректировка => GetProperty<EnumItem>("РасчетКорректировкиКорректировка");
+        public EnumItem РаботыОтНерезидентаПрошлогоПериода => GetProperty<EnumItem>("РаботыОтНерезидентаПрошлогоПериода");
+        public EnumItem ПогашениеНалоговогоВекселя => GetProperty<EnumItem>("ПогашениеНалоговогоВекселя");
+        public EnumItem BeксeльПpoшлoгoПepиoдa => GetProperty<EnumItem>("BeксeльПpoшлoгoПepиoдa");
+        public EnumItem ТаможенноеОформлениеТоваровКомитента => GetProperty<EnumItem>("ТаможенноеОформлениеТоваровКомитента");
+        public EnumItem ИсправлениеОшибки => GetProperty<EnumItem>("ИсправлениеОшибки");
+        public EnumItem ВосстановлениеНалоговогоКредита => GetProperty<EnumItem>("ВосстановлениеНалоговогоКредита");
+        public EnumItem ТоварныйЧек => GetProperty<EnumItem>("ТоварныйЧек");
     }
 }

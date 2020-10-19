@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СтатусыИзвлеченияТекстаФайлов:V1C8COMObject
+    public class СтатусыИзвлеченияТекстаФайлов:EnumBase
     {
         public СтатусыИзвлеченияТекстаФайлов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НеИзвлечен => GetProperty<EnumItemBase>("НеИзвлечен");
-        public EnumItemBase Извлечен => GetProperty<EnumItemBase>("Извлечен");
-        public EnumItemBase ИзвлечьНеУдалось => GetProperty<EnumItemBase>("ИзвлечьНеУдалось");
+        public EnumItem НеИзвлечен => GetProperty<EnumItem>("НеИзвлечен");
+        public EnumItem Извлечен => GetProperty<EnumItem>("Извлечен");
+        public EnumItem ИзвлечьНеУдалось => GetProperty<EnumItem>("ИзвлечьНеУдалось");
     }
 }

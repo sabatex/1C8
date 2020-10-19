@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыПоворотаИзображения:V1C8COMObject
+    public class СпособыПоворотаИзображения:EnumBase
     {
         public СпособыПоворотаИзображения(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НетПоворота => GetProperty<EnumItemBase>("НетПоворота");
-        public EnumItemBase ВправоНа90 => GetProperty<EnumItemBase>("ВправоНа90");
-        public EnumItemBase ВправоНа180 => GetProperty<EnumItemBase>("ВправоНа180");
-        public EnumItemBase ВлевоНа90 => GetProperty<EnumItemBase>("ВлевоНа90");
+        public EnumItem НетПоворота => GetProperty<EnumItem>("НетПоворота");
+        public EnumItem ВправоНа90 => GetProperty<EnumItem>("ВправоНа90");
+        public EnumItem ВправоНа180 => GetProperty<EnumItem>("ВправоНа180");
+        public EnumItem ВлевоНа90 => GetProperty<EnumItem>("ВлевоНа90");
     }
 }

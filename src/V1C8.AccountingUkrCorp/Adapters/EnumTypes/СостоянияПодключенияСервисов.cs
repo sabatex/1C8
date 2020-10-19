@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СостоянияПодключенияСервисов:V1C8COMObject
+    public class СостоянияПодключенияСервисов:EnumBase
     {
         public СостоянияПодключенияСервисов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НеПодключен => GetProperty<EnumItemBase>("НеПодключен");
-        public EnumItemBase ОшибкаПодключения => GetProperty<EnumItemBase>("ОшибкаПодключения");
-        public EnumItemBase Подключен => GetProperty<EnumItemBase>("Подключен");
-        public EnumItemBase Подключение => GetProperty<EnumItemBase>("Подключение");
-        public EnumItemBase ПодключениеНедоступно => GetProperty<EnumItemBase>("ПодключениеНедоступно");
+        public EnumItem НеПодключен => GetProperty<EnumItem>("НеПодключен");
+        public EnumItem ОшибкаПодключения => GetProperty<EnumItem>("ОшибкаПодключения");
+        public EnumItem Подключен => GetProperty<EnumItem>("Подключен");
+        public EnumItem Подключение => GetProperty<EnumItem>("Подключение");
+        public EnumItem ПодключениеНедоступно => GetProperty<EnumItem>("ПодключениеНедоступно");
     }
 }

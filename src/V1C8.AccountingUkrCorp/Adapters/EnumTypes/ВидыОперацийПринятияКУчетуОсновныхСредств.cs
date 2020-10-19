@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыОперацийПринятияКУчетуОсновныхСредств:V1C8COMObject
+    public class ВидыОперацийПринятияКУчетуОсновныхСредств:EnumBase
     {
         public ВидыОперацийПринятияКУчетуОсновныхСредств(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Оборудование => GetProperty<EnumItemBase>("Оборудование");
-        public EnumItemBase ОбъектыСтроительства => GetProperty<EnumItemBase>("ОбъектыСтроительства");
-        public EnumItemBase ПоРезультатамИнвентаризации => GetProperty<EnumItemBase>("ПоРезультатамИнвентаризации");
+        public EnumItem Оборудование => GetProperty<EnumItem>("Оборудование");
+        public EnumItem ОбъектыСтроительства => GetProperty<EnumItem>("ОбъектыСтроительства");
+        public EnumItem ПоРезультатамИнвентаризации => GetProperty<EnumItem>("ПоРезультатамИнвентаризации");
     }
 }

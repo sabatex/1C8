@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СостоянияИнтеграцииОбъектов:V1C8COMObject
+    public class СостоянияИнтеграцииОбъектов:EnumBase
     {
         public СостоянияИнтеграцииОбъектов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Ожидание => GetProperty<EnumItemBase>("Ожидание");
-        public EnumItemBase Интегрирован => GetProperty<EnumItemBase>("Интегрирован");
-        public EnumItemBase Ошибка => GetProperty<EnumItemBase>("Ошибка");
+        public EnumItem Ожидание => GetProperty<EnumItem>("Ожидание");
+        public EnumItem Интегрирован => GetProperty<EnumItem>("Интегрирован");
+        public EnumItem Ошибка => GetProperty<EnumItem>("Ошибка");
     }
 }

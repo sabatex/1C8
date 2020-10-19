@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СрокиХраненияВерсий:V1C8COMObject
+    public class СрокиХраненияВерсий:EnumBase
     {
         public СрокиХраненияВерсий(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ЗаПоследнююНеделю => GetProperty<EnumItemBase>("ЗаПоследнююНеделю");
-        public EnumItemBase ЗаПоследнийМесяц => GetProperty<EnumItemBase>("ЗаПоследнийМесяц");
-        public EnumItemBase ЗаПоследниеТриМесяца => GetProperty<EnumItemBase>("ЗаПоследниеТриМесяца");
-        public EnumItemBase ЗаПоследниеШестьМесяцев => GetProperty<EnumItemBase>("ЗаПоследниеШестьМесяцев");
-        public EnumItemBase ЗаПоследнийГод => GetProperty<EnumItemBase>("ЗаПоследнийГод");
-        public EnumItemBase Бессрочно => GetProperty<EnumItemBase>("Бессрочно");
+        public EnumItem ЗаПоследнююНеделю => GetProperty<EnumItem>("ЗаПоследнююНеделю");
+        public EnumItem ЗаПоследнийМесяц => GetProperty<EnumItem>("ЗаПоследнийМесяц");
+        public EnumItem ЗаПоследниеТриМесяца => GetProperty<EnumItem>("ЗаПоследниеТриМесяца");
+        public EnumItem ЗаПоследниеШестьМесяцев => GetProperty<EnumItem>("ЗаПоследниеШестьМесяцев");
+        public EnumItem ЗаПоследнийГод => GetProperty<EnumItem>("ЗаПоследнийГод");
+        public EnumItem Бессрочно => GetProperty<EnumItem>("Бессрочно");
     }
 }

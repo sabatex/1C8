@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыНачисленияАмортизацииНМА:V1C8COMObject
+    public class СпособыНачисленияАмортизацииНМА:EnumBase
     {
         public СпособыНачисленияАмортизацииНМА(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Прямолинейный => GetProperty<EnumItemBase>("Прямолинейный");
-        public EnumItemBase УменьшенияОстатка => GetProperty<EnumItemBase>("УменьшенияОстатка");
-        public EnumItemBase Производственный => GetProperty<EnumItemBase>("Производственный");
-        public EnumItemBase Кумулятивный => GetProperty<EnumItemBase>("Кумулятивный");
-        public EnumItemBase УскоренногоУменьшенияОстатка => GetProperty<EnumItemBase>("УскоренногоУменьшенияОстатка");
+        public EnumItem Прямолинейный => GetProperty<EnumItem>("Прямолинейный");
+        public EnumItem УменьшенияОстатка => GetProperty<EnumItem>("УменьшенияОстатка");
+        public EnumItem Производственный => GetProperty<EnumItem>("Производственный");
+        public EnumItem Кумулятивный => GetProperty<EnumItem>("Кумулятивный");
+        public EnumItem УскоренногоУменьшенияОстатка => GetProperty<EnumItem>("УскоренногоУменьшенияОстатка");
     }
 }

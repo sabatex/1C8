@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class БонусныеПрограммыБанков:V1C8COMObject
+    public class БонусныеПрограммыБанков:EnumBase
     {
         public БонусныеПрограммыБанков(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase AE => GetProperty<EnumItemBase>("AE");
-        public EnumItemBase GM => GetProperty<EnumItemBase>("GM");
-        public EnumItemBase PG => GetProperty<EnumItemBase>("PG");
+        public EnumItem AE => GetProperty<EnumItem>("AE");
+        public EnumItem GM => GetProperty<EnumItem>("GM");
+        public EnumItem PG => GetProperty<EnumItem>("PG");
     }
 }

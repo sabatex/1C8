@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыКодовДляНалоговойНакладной:V1C8COMObject
+    public class ВидыКодовДляНалоговойНакладной:EnumBase
     {
         public ВидыКодовДляНалоговойНакладной(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase КодТовара => GetProperty<EnumItemBase>("КодТовара");
-        public EnumItemBase КодТовараИмпортированного => GetProperty<EnumItemBase>("КодТовараИмпортированного");
-        public EnumItemBase КодУслуги => GetProperty<EnumItemBase>("КодУслуги");
+        public EnumItem КодТовара => GetProperty<EnumItem>("КодТовара");
+        public EnumItem КодТовараИмпортированного => GetProperty<EnumItem>("КодТовараИмпортированного");
+        public EnumItem КодУслуги => GetProperty<EnumItem>("КодУслуги");
     }
 }

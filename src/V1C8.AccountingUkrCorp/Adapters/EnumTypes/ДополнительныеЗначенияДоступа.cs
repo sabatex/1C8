@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ДополнительныеЗначенияДоступа:V1C8COMObject
+    public class ДополнительныеЗначенияДоступа:EnumBase
     {
         public ДополнительныеЗначенияДоступа(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ДоступРазрешен => GetProperty<EnumItemBase>("ДоступРазрешен");
-        public EnumItemBase ДоступЗапрещен => GetProperty<EnumItemBase>("ДоступЗапрещен");
-        public EnumItemBase Истина => GetProperty<EnumItemBase>("Истина");
-        public EnumItemBase Ложь => GetProperty<EnumItemBase>("Ложь");
-        public EnumItemBase ПустаяСсылкаЛюбогоТипа => GetProperty<EnumItemBase>("ПустаяСсылкаЛюбогоТипа");
-        public EnumItemBase Неопределено => GetProperty<EnumItemBase>("Неопределено");
-        public EnumItemBase Null => GetProperty<EnumItemBase>("Null");
-        public EnumItemBase ТипРазрешенный => GetProperty<EnumItemBase>("ТипРазрешенный");
-        public EnumItemBase ТипЗапрещенный => GetProperty<EnumItemBase>("ТипЗапрещенный");
+        public EnumItem ДоступРазрешен => GetProperty<EnumItem>("ДоступРазрешен");
+        public EnumItem ДоступЗапрещен => GetProperty<EnumItem>("ДоступЗапрещен");
+        public EnumItem Истина => GetProperty<EnumItem>("Истина");
+        public EnumItem Ложь => GetProperty<EnumItem>("Ложь");
+        public EnumItem ПустаяСсылкаЛюбогоТипа => GetProperty<EnumItem>("ПустаяСсылкаЛюбогоТипа");
+        public EnumItem Неопределено => GetProperty<EnumItem>("Неопределено");
+        public EnumItem Null => GetProperty<EnumItem>("Null");
+        public EnumItem ТипРазрешенный => GetProperty<EnumItem>("ТипРазрешенный");
+        public EnumItem ТипЗапрещенный => GetProperty<EnumItem>("ТипЗапрещенный");
     }
 }

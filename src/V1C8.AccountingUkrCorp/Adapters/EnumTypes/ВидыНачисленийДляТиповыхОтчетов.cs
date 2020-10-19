@@ -3,64 +3,64 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыНачисленийДляТиповыхОтчетов:V1C8COMObject
+    public class ВидыНачисленийДляТиповыхОтчетов:EnumBase
     {
         public ВидыНачисленийДляТиповыхОтчетов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase БольничныеЗаСчетПредприятия => GetProperty<EnumItemBase>("БольничныеЗаСчетПредприятия");
-        public EnumItemBase ВзносыПредприятийНаМедИПенсСтрахование => GetProperty<EnumItemBase>("ВзносыПредприятийНаМедИПенсСтрахование");
-        public EnumItemBase ВысокоеПрофессиональноеМастерство => GetProperty<EnumItemBase>("ВысокоеПрофессиональноеМастерство");
-        public EnumItemBase ВознагражденияРазовогоХарактера => GetProperty<EnumItemBase>("ВознагражденияРазовогоХарактера");
-        public EnumItemBase ВыплатыСоциальногоХарактера => GetProperty<EnumItemBase>("ВыплатыСоциальногоХарактера");
-        public EnumItemBase ВыполнениеОбязанностейВременноОтсутствующегоРаботника => GetProperty<EnumItemBase>("ВыполнениеОбязанностейВременноОтсутствующегоРаботника");
-        public EnumItemBase ВыполнениеОсобоВажнойРаботы => GetProperty<EnumItemBase>("ВыполнениеОсобоВажнойРаботы");
-        public EnumItemBase ВысокиеДостиженияТруда => GetProperty<EnumItemBase>("ВысокиеДостиженияТруда");
-        public EnumItemBase ГонорарАвторскоеВознаграждение => GetProperty<EnumItemBase>("ГонорарАвторскоеВознаграждение");
-        public EnumItemBase ДивидендыПроцентыВыплатыЗаПаями => GetProperty<EnumItemBase>("ДивидендыПроцентыВыплатыЗаПаями");
-        public EnumItemBase ДопускКГосударственнойТайне => GetProperty<EnumItemBase>("ДопускКГосударственнойТайне");
-        public EnumItemBase ДругиеВидыНачисленийДопФОТ => GetProperty<EnumItemBase>("ДругиеВидыНачисленийДопФОТ");
-        public EnumItemBase ДругиеВидыНачисленийНеФОТ => GetProperty<EnumItemBase>("ДругиеВидыНачисленийНеФОТ");
-        public EnumItemBase ДругиеВидыНачисленийФОТ => GetProperty<EnumItemBase>("ДругиеВидыНачисленийФОТ");
-        public EnumItemBase ДругиеВыплатыНеФОТ => GetProperty<EnumItemBase>("ДругиеВыплатыНеФОТ");
-        public EnumItemBase ДругиеНадбавкиИДоплаты => GetProperty<EnumItemBase>("ДругиеНадбавкиИДоплаты");
-        public EnumItemBase ДругиеНачисленияЗаНеотработанноеВремя => GetProperty<EnumItemBase>("ДругиеНачисленияЗаНеотработанноеВремя");
-        public EnumItemBase ДругиеПоощрительныеИКомпенсационныеВыплаты => GetProperty<EnumItemBase>("ДругиеПоощрительныеИКомпенсационныеВыплаты");
-        public EnumItemBase ЗначениеПеречисления1 => GetProperty<EnumItemBase>("ЗначениеПеречисления1");
-        public EnumItemBase ЗатратыНаБесплатныйПроезд => GetProperty<EnumItemBase>("ЗатратыНаБесплатныйПроезд");
-        public EnumItemBase ЗатратыНаКомандировки => GetProperty<EnumItemBase>("ЗатратыНаКомандировки");
-        public EnumItemBase ЗнаниеИностранногоЯзыка => GetProperty<EnumItemBase>("ЗнаниеИностранногоЯзыка");
-        public EnumItemBase ИндексацияЗарплаты => GetProperty<EnumItemBase>("ИндексацияЗарплаты");
-        public EnumItemBase ИнтенсивностьТруда => GetProperty<EnumItemBase>("ИнтенсивностьТруда");
-        public EnumItemBase КлассностьВодителямТранспортныхСредств => GetProperty<EnumItemBase>("КлассностьВодителямТранспортныхСредств");
-        public EnumItemBase КомиссионныеОтРеализацииПродукции => GetProperty<EnumItemBase>("КомиссионныеОтРеализацииПродукции");
-        public EnumItemBase КомпенсацияЗаНарушениеСроковВыплатыЗП => GetProperty<EnumItemBase>("КомпенсацияЗаНарушениеСроковВыплатыЗП");
-        public EnumItemBase МатпомощьРазовогоХарактера => GetProperty<EnumItemBase>("МатпомощьРазовогоХарактера");
-        public EnumItemBase НаучнаяСтепень => GetProperty<EnumItemBase>("НаучнаяСтепень");
-        public EnumItemBase НормативноеВремяПередвиженияВШахте => GetProperty<EnumItemBase>("НормативноеВремяПередвиженияВШахте");
-        public EnumItemBase ОплатаДнейОтдыха => GetProperty<EnumItemBase>("ОплатаДнейОтдыха");
-        public EnumItemBase ОплатаЗаПрофобучение => GetProperty<EnumItemBase>("ОплатаЗаПрофобучение");
-        public EnumItemBase ОплатаРаботыСверхурочноВПраздникиНерабочиеДни => GetProperty<EnumItemBase>("ОплатаРаботыСверхурочноВПраздникиНерабочиеДни");
-        public EnumItemBase ОплатаТрудаВКомандировке => GetProperty<EnumItemBase>("ОплатаТрудаВКомандировке");
-        public EnumItemBase Отпускные => GetProperty<EnumItemBase>("Отпускные");
-        public EnumItemBase ПомощьИДругиеВыплатыЗаСчетФСС => GetProperty<EnumItemBase>("ПомощьИДругиеВыплатыЗаСчетФСС");
-        public EnumItemBase Премия => GetProperty<EnumItemBase>("Премия");
-        public EnumItemBase ПроцентныеКомиссионныеВознаграждения => GetProperty<EnumItemBase>("ПроцентныеКомиссионныеВознаграждения");
-        public EnumItemBase РаботаВНочноеВремя => GetProperty<EnumItemBase>("РаботаВНочноеВремя");
-        public EnumItemBase РаботаВТяжелыхВредныхУсловиях => GetProperty<EnumItemBase>("РаботаВТяжелыхВредныхУсловиях");
-        public EnumItemBase РаботаНаТерриторияхРадиоактивногоЗагрязнения => GetProperty<EnumItemBase>("РаботаНаТерриторияхРадиоактивногоЗагрязнения");
-        public EnumItemBase РангиЗвания => GetProperty<EnumItemBase>("РангиЗвания");
-        public EnumItemBase РасширениеЗоныОбслуживания => GetProperty<EnumItemBase>("РасширениеЗоныОбслуживания");
-        public EnumItemBase РуководствоБригадой => GetProperty<EnumItemBase>("РуководствоБригадой");
-        public EnumItemBase СистематическаяМатпомощь => GetProperty<EnumItemBase>("СистематическаяМатпомощь");
-        public EnumItemBase СовмещениеПрофессий => GetProperty<EnumItemBase>("СовмещениеПрофессий");
-        public EnumItemBase СтоимостьПродукцииПриНатуральнойОплатеТруда => GetProperty<EnumItemBase>("СтоимостьПродукцииПриНатуральнойОплатеТруда");
-        public EnumItemBase СтоимостьФорменнойОдежды => GetProperty<EnumItemBase>("СтоимостьФорменнойОдежды");
-        public EnumItemBase ТарифнаяСтавкаОклад => GetProperty<EnumItemBase>("ТарифнаяСтавкаОклад");
-        public EnumItemBase ПрофсоюзныйВзнос => GetProperty<EnumItemBase>("ПрофсоюзныйВзнос");
+        public EnumItem БольничныеЗаСчетПредприятия => GetProperty<EnumItem>("БольничныеЗаСчетПредприятия");
+        public EnumItem ВзносыПредприятийНаМедИПенсСтрахование => GetProperty<EnumItem>("ВзносыПредприятийНаМедИПенсСтрахование");
+        public EnumItem ВысокоеПрофессиональноеМастерство => GetProperty<EnumItem>("ВысокоеПрофессиональноеМастерство");
+        public EnumItem ВознагражденияРазовогоХарактера => GetProperty<EnumItem>("ВознагражденияРазовогоХарактера");
+        public EnumItem ВыплатыСоциальногоХарактера => GetProperty<EnumItem>("ВыплатыСоциальногоХарактера");
+        public EnumItem ВыполнениеОбязанностейВременноОтсутствующегоРаботника => GetProperty<EnumItem>("ВыполнениеОбязанностейВременноОтсутствующегоРаботника");
+        public EnumItem ВыполнениеОсобоВажнойРаботы => GetProperty<EnumItem>("ВыполнениеОсобоВажнойРаботы");
+        public EnumItem ВысокиеДостиженияТруда => GetProperty<EnumItem>("ВысокиеДостиженияТруда");
+        public EnumItem ГонорарАвторскоеВознаграждение => GetProperty<EnumItem>("ГонорарАвторскоеВознаграждение");
+        public EnumItem ДивидендыПроцентыВыплатыЗаПаями => GetProperty<EnumItem>("ДивидендыПроцентыВыплатыЗаПаями");
+        public EnumItem ДопускКГосударственнойТайне => GetProperty<EnumItem>("ДопускКГосударственнойТайне");
+        public EnumItem ДругиеВидыНачисленийДопФОТ => GetProperty<EnumItem>("ДругиеВидыНачисленийДопФОТ");
+        public EnumItem ДругиеВидыНачисленийНеФОТ => GetProperty<EnumItem>("ДругиеВидыНачисленийНеФОТ");
+        public EnumItem ДругиеВидыНачисленийФОТ => GetProperty<EnumItem>("ДругиеВидыНачисленийФОТ");
+        public EnumItem ДругиеВыплатыНеФОТ => GetProperty<EnumItem>("ДругиеВыплатыНеФОТ");
+        public EnumItem ДругиеНадбавкиИДоплаты => GetProperty<EnumItem>("ДругиеНадбавкиИДоплаты");
+        public EnumItem ДругиеНачисленияЗаНеотработанноеВремя => GetProperty<EnumItem>("ДругиеНачисленияЗаНеотработанноеВремя");
+        public EnumItem ДругиеПоощрительныеИКомпенсационныеВыплаты => GetProperty<EnumItem>("ДругиеПоощрительныеИКомпенсационныеВыплаты");
+        public EnumItem ЗначениеПеречисления1 => GetProperty<EnumItem>("ЗначениеПеречисления1");
+        public EnumItem ЗатратыНаБесплатныйПроезд => GetProperty<EnumItem>("ЗатратыНаБесплатныйПроезд");
+        public EnumItem ЗатратыНаКомандировки => GetProperty<EnumItem>("ЗатратыНаКомандировки");
+        public EnumItem ЗнаниеИностранногоЯзыка => GetProperty<EnumItem>("ЗнаниеИностранногоЯзыка");
+        public EnumItem ИндексацияЗарплаты => GetProperty<EnumItem>("ИндексацияЗарплаты");
+        public EnumItem ИнтенсивностьТруда => GetProperty<EnumItem>("ИнтенсивностьТруда");
+        public EnumItem КлассностьВодителямТранспортныхСредств => GetProperty<EnumItem>("КлассностьВодителямТранспортныхСредств");
+        public EnumItem КомиссионныеОтРеализацииПродукции => GetProperty<EnumItem>("КомиссионныеОтРеализацииПродукции");
+        public EnumItem КомпенсацияЗаНарушениеСроковВыплатыЗП => GetProperty<EnumItem>("КомпенсацияЗаНарушениеСроковВыплатыЗП");
+        public EnumItem МатпомощьРазовогоХарактера => GetProperty<EnumItem>("МатпомощьРазовогоХарактера");
+        public EnumItem НаучнаяСтепень => GetProperty<EnumItem>("НаучнаяСтепень");
+        public EnumItem НормативноеВремяПередвиженияВШахте => GetProperty<EnumItem>("НормативноеВремяПередвиженияВШахте");
+        public EnumItem ОплатаДнейОтдыха => GetProperty<EnumItem>("ОплатаДнейОтдыха");
+        public EnumItem ОплатаЗаПрофобучение => GetProperty<EnumItem>("ОплатаЗаПрофобучение");
+        public EnumItem ОплатаРаботыСверхурочноВПраздникиНерабочиеДни => GetProperty<EnumItem>("ОплатаРаботыСверхурочноВПраздникиНерабочиеДни");
+        public EnumItem ОплатаТрудаВКомандировке => GetProperty<EnumItem>("ОплатаТрудаВКомандировке");
+        public EnumItem Отпускные => GetProperty<EnumItem>("Отпускные");
+        public EnumItem ПомощьИДругиеВыплатыЗаСчетФСС => GetProperty<EnumItem>("ПомощьИДругиеВыплатыЗаСчетФСС");
+        public EnumItem Премия => GetProperty<EnumItem>("Премия");
+        public EnumItem ПроцентныеКомиссионныеВознаграждения => GetProperty<EnumItem>("ПроцентныеКомиссионныеВознаграждения");
+        public EnumItem РаботаВНочноеВремя => GetProperty<EnumItem>("РаботаВНочноеВремя");
+        public EnumItem РаботаВТяжелыхВредныхУсловиях => GetProperty<EnumItem>("РаботаВТяжелыхВредныхУсловиях");
+        public EnumItem РаботаНаТерриторияхРадиоактивногоЗагрязнения => GetProperty<EnumItem>("РаботаНаТерриторияхРадиоактивногоЗагрязнения");
+        public EnumItem РангиЗвания => GetProperty<EnumItem>("РангиЗвания");
+        public EnumItem РасширениеЗоныОбслуживания => GetProperty<EnumItem>("РасширениеЗоныОбслуживания");
+        public EnumItem РуководствоБригадой => GetProperty<EnumItem>("РуководствоБригадой");
+        public EnumItem СистематическаяМатпомощь => GetProperty<EnumItem>("СистематическаяМатпомощь");
+        public EnumItem СовмещениеПрофессий => GetProperty<EnumItem>("СовмещениеПрофессий");
+        public EnumItem СтоимостьПродукцииПриНатуральнойОплатеТруда => GetProperty<EnumItem>("СтоимостьПродукцииПриНатуральнойОплатеТруда");
+        public EnumItem СтоимостьФорменнойОдежды => GetProperty<EnumItem>("СтоимостьФорменнойОдежды");
+        public EnumItem ТарифнаяСтавкаОклад => GetProperty<EnumItem>("ТарифнаяСтавкаОклад");
+        public EnumItem ПрофсоюзныйВзнос => GetProperty<EnumItem>("ПрофсоюзныйВзнос");
     }
 }

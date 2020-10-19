@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КатегорииДолжностейДляСтатистическогоУчета:V1C8COMObject
+    public class КатегорииДолжностейДляСтатистическогоУчета:EnumBase
     {
         public КатегорииДолжностейДляСтатистическогоУчета(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Руководители => GetProperty<EnumItemBase>("Руководители");
-        public EnumItemBase Специалисты => GetProperty<EnumItemBase>("Специалисты");
-        public EnumItemBase ДругиеСлужащие => GetProperty<EnumItemBase>("ДругиеСлужащие");
-        public EnumItemBase Рабочие => GetProperty<EnumItemBase>("Рабочие");
+        public EnumItem Руководители => GetProperty<EnumItem>("Руководители");
+        public EnumItem Специалисты => GetProperty<EnumItem>("Специалисты");
+        public EnumItem ДругиеСлужащие => GetProperty<EnumItem>("ДругиеСлужащие");
+        public EnumItem Рабочие => GetProperty<EnumItem>("Рабочие");
     }
 }

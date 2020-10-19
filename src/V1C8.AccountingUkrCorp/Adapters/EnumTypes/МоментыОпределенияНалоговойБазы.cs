@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class МоментыОпределенияНалоговойБазы:V1C8COMObject
+    public class МоментыОпределенияНалоговойБазы:EnumBase
     {
         public МоментыОпределенияНалоговойБазы(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ПоОплате => GetProperty<EnumItemBase>("ПоОплате");
-        public EnumItemBase ПоОтгрузке => GetProperty<EnumItemBase>("ПоОтгрузке");
-        public EnumItemBase ПоПервомуСобытию => GetProperty<EnumItemBase>("ПоПервомуСобытию");
-        public EnumItemBase НеОпределять => GetProperty<EnumItemBase>("НеОпределять");
+        public EnumItem ПоОплате => GetProperty<EnumItem>("ПоОплате");
+        public EnumItem ПоОтгрузке => GetProperty<EnumItem>("ПоОтгрузке");
+        public EnumItem ПоПервомуСобытию => GetProperty<EnumItem>("ПоПервомуСобытию");
+        public EnumItem НеОпределять => GetProperty<EnumItem>("НеОпределять");
     }
 }

@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ПорядкиОкругления:V1C8COMObject
+    public class ПорядкиОкругления:EnumBase
     {
         public ПорядкиОкругления(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Окр0_01 => GetProperty<EnumItemBase>("Окр0_01");
-        public EnumItemBase Окр0_05 => GetProperty<EnumItemBase>("Окр0_05");
-        public EnumItemBase Окр0_1 => GetProperty<EnumItemBase>("Окр0_1");
-        public EnumItemBase Окр0_5 => GetProperty<EnumItemBase>("Окр0_5");
-        public EnumItemBase Окр1 => GetProperty<EnumItemBase>("Окр1");
-        public EnumItemBase Окр5 => GetProperty<EnumItemBase>("Окр5");
-        public EnumItemBase Окр10 => GetProperty<EnumItemBase>("Окр10");
-        public EnumItemBase Окр50 => GetProperty<EnumItemBase>("Окр50");
-        public EnumItemBase Окр100 => GetProperty<EnumItemBase>("Окр100");
+        public EnumItem Окр0_01 => GetProperty<EnumItem>("Окр0_01");
+        public EnumItem Окр0_05 => GetProperty<EnumItem>("Окр0_05");
+        public EnumItem Окр0_1 => GetProperty<EnumItem>("Окр0_1");
+        public EnumItem Окр0_5 => GetProperty<EnumItem>("Окр0_5");
+        public EnumItem Окр1 => GetProperty<EnumItem>("Окр1");
+        public EnumItem Окр5 => GetProperty<EnumItem>("Окр5");
+        public EnumItem Окр10 => GetProperty<EnumItem>("Окр10");
+        public EnumItem Окр50 => GetProperty<EnumItem>("Окр50");
+        public EnumItem Окр100 => GetProperty<EnumItem>("Окр100");
     }
 }

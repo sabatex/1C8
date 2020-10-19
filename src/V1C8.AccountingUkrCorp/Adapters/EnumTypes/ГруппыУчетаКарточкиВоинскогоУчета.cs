@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ГруппыУчетаКарточкиВоинскогоУчета:V1C8COMObject
+    public class ГруппыУчетаКарточкиВоинскогоУчета:EnumBase
     {
         public ГруппыУчетаКарточкиВоинскогоУчета(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОфицерскийСостав => GetProperty<EnumItemBase>("ОфицерскийСостав");
-        public EnumItemBase РедовойСержантскийСтаршинскийСостав => GetProperty<EnumItemBase>("РедовойСержантскийСтаршинскийСостав");
-        public EnumItemBase Женщины => GetProperty<EnumItemBase>("Женщины");
-        public EnumItemBase Призывники => GetProperty<EnumItemBase>("Призывники");
+        public EnumItem ОфицерскийСостав => GetProperty<EnumItem>("ОфицерскийСостав");
+        public EnumItem РедовойСержантскийСтаршинскийСостав => GetProperty<EnumItem>("РедовойСержантскийСтаршинскийСостав");
+        public EnumItem Женщины => GetProperty<EnumItem>("Женщины");
+        public EnumItem Призывники => GetProperty<EnumItem>("Призывники");
     }
 }

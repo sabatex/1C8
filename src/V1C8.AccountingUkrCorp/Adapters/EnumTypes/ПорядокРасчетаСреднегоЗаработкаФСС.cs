@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ПорядокРасчетаСреднегоЗаработкаФСС:V1C8COMObject
+    public class ПорядокРасчетаСреднегоЗаработкаФСС:EnumBase
     {
         public ПорядокРасчетаСреднегоЗаработкаФСС(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Постановление2010 => GetProperty<EnumItemBase>("Постановление2010");
-        public EnumItemBase Постановление2011 => GetProperty<EnumItemBase>("Постановление2011");
+        public EnumItem Постановление2010 => GetProperty<EnumItem>("Постановление2010");
+        public EnumItem Постановление2011 => GetProperty<EnumItem>("Постановление2011");
     }
 }

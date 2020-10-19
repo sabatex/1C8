@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыАутентификации:V1C8COMObject
+    public class СпособыАутентификации:EnumBase
     {
         public СпособыАутентификации(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Анонимный => GetProperty<EnumItemBase>("Анонимный");
-        public EnumItemBase ОбычнаяПроверка => GetProperty<EnumItemBase>("ОбычнаяПроверка");
+        public EnumItem Анонимный => GetProperty<EnumItem>("Анонимный");
+        public EnumItem ОбычнаяПроверка => GetProperty<EnumItem>("ОбычнаяПроверка");
     }
 }

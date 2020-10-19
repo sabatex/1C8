@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class УстарелоВыплаченностьЗарплаты:V1C8COMObject
+    public class УстарелоВыплаченностьЗарплаты:EnumBase
     {
         public УстарелоВыплаченностьЗарплаты(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НеВыплачено => GetProperty<EnumItemBase>("НеВыплачено");
-        public EnumItemBase Выплачено => GetProperty<EnumItemBase>("Выплачено");
-        public EnumItemBase Задепонировано => GetProperty<EnumItemBase>("Задепонировано");
+        public EnumItem НеВыплачено => GetProperty<EnumItem>("НеВыплачено");
+        public EnumItem Выплачено => GetProperty<EnumItem>("Выплачено");
+        public EnumItem Задепонировано => GetProperty<EnumItem>("Задепонировано");
     }
 }

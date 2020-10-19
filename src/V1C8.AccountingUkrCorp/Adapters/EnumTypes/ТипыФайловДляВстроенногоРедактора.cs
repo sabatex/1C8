@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ТипыФайловДляВстроенногоРедактора:V1C8COMObject
+    public class ТипыФайловДляВстроенногоРедактора:EnumBase
     {
         public ТипыФайловДляВстроенногоРедактора(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ГеографическиеСхемы => GetProperty<EnumItemBase>("ГеографическиеСхемы");
-        public EnumItemBase ГрафическиеСхемы => GetProperty<EnumItemBase>("ГрафическиеСхемы");
-        public EnumItemBase ТабличныеФайлы => GetProperty<EnumItemBase>("ТабличныеФайлы");
-        public EnumItemBase ТекстовыеФайлы => GetProperty<EnumItemBase>("ТекстовыеФайлы");
+        public EnumItem ГеографическиеСхемы => GetProperty<EnumItem>("ГеографическиеСхемы");
+        public EnumItem ГрафическиеСхемы => GetProperty<EnumItem>("ГрафическиеСхемы");
+        public EnumItem ТабличныеФайлы => GetProperty<EnumItem>("ТабличныеФайлы");
+        public EnumItem ТекстовыеФайлы => GetProperty<EnumItem>("ТекстовыеФайлы");
     }
 }

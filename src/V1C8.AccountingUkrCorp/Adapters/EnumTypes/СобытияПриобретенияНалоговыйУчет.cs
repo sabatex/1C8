@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СобытияПриобретенияНалоговыйУчет:V1C8COMObject
+    public class СобытияПриобретенияНалоговыйУчет:EnumBase
     {
         public СобытияПриобретенияНалоговыйУчет(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОплатаПоставщику => GetProperty<EnumItemBase>("ОплатаПоставщику");
-        public EnumItemBase ВозвратОплатыПоставщиком => GetProperty<EnumItemBase>("ВозвратОплатыПоставщиком");
-        public EnumItemBase ПоступлениеОтПоставщика => GetProperty<EnumItemBase>("ПоступлениеОтПоставщика");
-        public EnumItemBase ВозвратПоставщику => GetProperty<EnumItemBase>("ВозвратПоставщику");
+        public EnumItem ОплатаПоставщику => GetProperty<EnumItem>("ОплатаПоставщику");
+        public EnumItem ВозвратОплатыПоставщиком => GetProperty<EnumItem>("ВозвратОплатыПоставщиком");
+        public EnumItem ПоступлениеОтПоставщика => GetProperty<EnumItem>("ПоступлениеОтПоставщика");
+        public EnumItem ВозвратПоставщику => GetProperty<EnumItem>("ВозвратПоставщику");
     }
 }

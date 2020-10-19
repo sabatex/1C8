@@ -3,29 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыДокументовМежрасчетныхНачислений:V1C8COMObject
+    public class ВидыДокументовМежрасчетныхНачислений:EnumBase
     {
         public ВидыДокументовМежрасчетныхНачислений(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase БольничныйЛист => GetProperty<EnumItemBase>("БольничныйЛист");
-        public EnumItemBase ВозвратНДФЛ => GetProperty<EnumItemBase>("ВозвратНДФЛ");
-        public EnumItemBase ЕдиновременноеПособиеЗаСчетФСС => GetProperty<EnumItemBase>("ЕдиновременноеПособиеЗаСчетФСС");
-        public EnumItemBase Командировка => GetProperty<EnumItemBase>("Командировка");
-        public EnumItemBase КомпенсацияЗаЗадержкуЗарплаты => GetProperty<EnumItemBase>("КомпенсацияЗаЗадержкуЗарплаты");
-        public EnumItemBase МатериальнаяПомощь => GetProperty<EnumItemBase>("МатериальнаяПомощь");
-        public EnumItemBase НачислениеЗарплаты => GetProperty<EnumItemBase>("НачислениеЗарплаты");
-        public EnumItemBase ОплатаДнейУходаЗаДетьмиИнвалидами => GetProperty<EnumItemBase>("ОплатаДнейУходаЗаДетьмиИнвалидами");
-        public EnumItemBase ОплатаПоСреднемуЗаработку => GetProperty<EnumItemBase>("ОплатаПоСреднемуЗаработку");
-        public EnumItemBase Отпуск => GetProperty<EnumItemBase>("Отпуск");
-        public EnumItemBase ОтпускПоУходуЗаРебенком => GetProperty<EnumItemBase>("ОтпускПоУходуЗаРебенком");
-        public EnumItemBase Премия => GetProperty<EnumItemBase>("Премия");
-        public EnumItemBase ПростойСотрудников => GetProperty<EnumItemBase>("ПростойСотрудников");
-        public EnumItemBase РазовоеНачисление => GetProperty<EnumItemBase>("РазовоеНачисление");
-        public EnumItemBase Увольнение => GetProperty<EnumItemBase>("Увольнение");
+        public EnumItem БольничныйЛист => GetProperty<EnumItem>("БольничныйЛист");
+        public EnumItem ВозвратНДФЛ => GetProperty<EnumItem>("ВозвратНДФЛ");
+        public EnumItem ЕдиновременноеПособиеЗаСчетФСС => GetProperty<EnumItem>("ЕдиновременноеПособиеЗаСчетФСС");
+        public EnumItem Командировка => GetProperty<EnumItem>("Командировка");
+        public EnumItem КомпенсацияЗаЗадержкуЗарплаты => GetProperty<EnumItem>("КомпенсацияЗаЗадержкуЗарплаты");
+        public EnumItem МатериальнаяПомощь => GetProperty<EnumItem>("МатериальнаяПомощь");
+        public EnumItem НачислениеЗарплаты => GetProperty<EnumItem>("НачислениеЗарплаты");
+        public EnumItem ОплатаДнейУходаЗаДетьмиИнвалидами => GetProperty<EnumItem>("ОплатаДнейУходаЗаДетьмиИнвалидами");
+        public EnumItem ОплатаПоСреднемуЗаработку => GetProperty<EnumItem>("ОплатаПоСреднемуЗаработку");
+        public EnumItem Отпуск => GetProperty<EnumItem>("Отпуск");
+        public EnumItem ОтпускПоУходуЗаРебенком => GetProperty<EnumItem>("ОтпускПоУходуЗаРебенком");
+        public EnumItem Премия => GetProperty<EnumItem>("Премия");
+        public EnumItem ПростойСотрудников => GetProperty<EnumItem>("ПростойСотрудников");
+        public EnumItem РазовоеНачисление => GetProperty<EnumItem>("РазовоеНачисление");
+        public EnumItem Увольнение => GetProperty<EnumItem>("Увольнение");
     }
 }

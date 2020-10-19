@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КлассыУсловийТрудаПоРезультатамСпециальнойОценки:V1C8COMObject
+    public class КлассыУсловийТрудаПоРезультатамСпециальнойОценки:EnumBase
     {
         public КлассыУсловийТрудаПоРезультатамСпециальнойОценки(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Опасный => GetProperty<EnumItemBase>("Опасный");
-        public EnumItemBase Вредный1 => GetProperty<EnumItemBase>("Вредный1");
-        public EnumItemBase Вредный2 => GetProperty<EnumItemBase>("Вредный2");
-        public EnumItemBase Вредный3 => GetProperty<EnumItemBase>("Вредный3");
-        public EnumItemBase Вредный4 => GetProperty<EnumItemBase>("Вредный4");
-        public EnumItemBase Допустимый => GetProperty<EnumItemBase>("Допустимый");
-        public EnumItemBase Оптимальный => GetProperty<EnumItemBase>("Оптимальный");
+        public EnumItem Опасный => GetProperty<EnumItem>("Опасный");
+        public EnumItem Вредный1 => GetProperty<EnumItem>("Вредный1");
+        public EnumItem Вредный2 => GetProperty<EnumItem>("Вредный2");
+        public EnumItem Вредный3 => GetProperty<EnumItem>("Вредный3");
+        public EnumItem Вредный4 => GetProperty<EnumItem>("Вредный4");
+        public EnumItem Допустимый => GetProperty<EnumItem>("Допустимый");
+        public EnumItem Оптимальный => GetProperty<EnumItem>("Оптимальный");
     }
 }

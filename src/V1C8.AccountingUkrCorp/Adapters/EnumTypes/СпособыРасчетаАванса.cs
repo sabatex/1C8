@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыРасчетаАванса:V1C8COMObject
+    public class СпособыРасчетаАванса:EnumBase
     {
         public СпособыРасчетаАванса(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ФиксированнойСуммой => GetProperty<EnumItemBase>("ФиксированнойСуммой");
-        public EnumItemBase ПроцентомОтТарифа => GetProperty<EnumItemBase>("ПроцентомОтТарифа");
-        public EnumItemBase РасчетомЗаПервуюПоловинуМесяца => GetProperty<EnumItemBase>("РасчетомЗаПервуюПоловинуМесяца");
+        public EnumItem ФиксированнойСуммой => GetProperty<EnumItem>("ФиксированнойСуммой");
+        public EnumItem ПроцентомОтТарифа => GetProperty<EnumItem>("ПроцентомОтТарифа");
+        public EnumItem РасчетомЗаПервуюПоловинуМесяца => GetProperty<EnumItem>("РасчетомЗаПервуюПоловинуМесяца");
     }
 }

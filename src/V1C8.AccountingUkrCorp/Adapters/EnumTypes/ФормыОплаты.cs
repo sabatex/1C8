@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ФормыОплаты:V1C8COMObject
+    public class ФормыОплаты:EnumBase
     {
         public ФормыОплаты(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Наличная => GetProperty<EnumItemBase>("Наличная");
-        public EnumItemBase Безналичная => GetProperty<EnumItemBase>("Безналичная");
-        public EnumItemBase ПлатежнаяКарта => GetProperty<EnumItemBase>("ПлатежнаяКарта");
-        public EnumItemBase Взаимозачет => GetProperty<EnumItemBase>("Взаимозачет");
-        public EnumItemBase БонусныеБаллы => GetProperty<EnumItemBase>("БонусныеБаллы");
-        public EnumItemBase ПодарочныйСертификат => GetProperty<EnumItemBase>("ПодарочныйСертификат");
+        public EnumItem Наличная => GetProperty<EnumItem>("Наличная");
+        public EnumItem Безналичная => GetProperty<EnumItem>("Безналичная");
+        public EnumItem ПлатежнаяКарта => GetProperty<EnumItem>("ПлатежнаяКарта");
+        public EnumItem Взаимозачет => GetProperty<EnumItem>("Взаимозачет");
+        public EnumItem БонусныеБаллы => GetProperty<EnumItem>("БонусныеБаллы");
+        public EnumItem ПодарочныйСертификат => GetProperty<EnumItem>("ПодарочныйСертификат");
     }
 }

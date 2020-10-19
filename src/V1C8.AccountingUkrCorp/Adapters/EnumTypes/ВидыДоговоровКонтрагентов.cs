@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыДоговоровКонтрагентов:V1C8COMObject
+    public class ВидыДоговоровКонтрагентов:EnumBase
     {
         public ВидыДоговоровКонтрагентов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase СПоставщиком => GetProperty<EnumItemBase>("СПоставщиком");
-        public EnumItemBase СПокупателем => GetProperty<EnumItemBase>("СПокупателем");
-        public EnumItemBase СКомитентом => GetProperty<EnumItemBase>("СКомитентом");
-        public EnumItemBase СКомиссионером => GetProperty<EnumItemBase>("СКомиссионером");
-        public EnumItemBase Бартерный => GetProperty<EnumItemBase>("Бартерный");
-        public EnumItemBase Прочее => GetProperty<EnumItemBase>("Прочее");
+        public EnumItem СПоставщиком => GetProperty<EnumItem>("СПоставщиком");
+        public EnumItem СПокупателем => GetProperty<EnumItem>("СПокупателем");
+        public EnumItem СКомитентом => GetProperty<EnumItem>("СКомитентом");
+        public EnumItem СКомиссионером => GetProperty<EnumItem>("СКомиссионером");
+        public EnumItem Бартерный => GetProperty<EnumItem>("Бартерный");
+        public EnumItem Прочее => GetProperty<EnumItem>("Прочее");
     }
 }

@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыВызоваДополнительныхОбработок:V1C8COMObject
+    public class СпособыВызоваДополнительныхОбработок:EnumBase
     {
         public СпособыВызоваДополнительныхОбработок(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ВызовКлиентскогоМетода => GetProperty<EnumItemBase>("ВызовКлиентскогоМетода");
-        public EnumItemBase ВызовСерверногоМетода => GetProperty<EnumItemBase>("ВызовСерверногоМетода");
-        public EnumItemBase ЗаполнениеФормы => GetProperty<EnumItemBase>("ЗаполнениеФормы");
-        public EnumItemBase ОткрытиеФормы => GetProperty<EnumItemBase>("ОткрытиеФормы");
-        public EnumItemBase СценарийВБезопасномРежиме => GetProperty<EnumItemBase>("СценарийВБезопасномРежиме");
-        public EnumItemBase ЗагрузкаДанныхИзФайла => GetProperty<EnumItemBase>("ЗагрузкаДанныхИзФайла");
+        public EnumItem ВызовКлиентскогоМетода => GetProperty<EnumItem>("ВызовКлиентскогоМетода");
+        public EnumItem ВызовСерверногоМетода => GetProperty<EnumItem>("ВызовСерверногоМетода");
+        public EnumItem ЗаполнениеФормы => GetProperty<EnumItem>("ЗаполнениеФормы");
+        public EnumItem ОткрытиеФормы => GetProperty<EnumItem>("ОткрытиеФормы");
+        public EnumItem СценарийВБезопасномРежиме => GetProperty<EnumItem>("СценарийВБезопасномРежиме");
+        public EnumItem ЗагрузкаДанныхИзФайла => GetProperty<EnumItem>("ЗагрузкаДанныхИзФайла");
     }
 }

@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class РазделыМонитораРуководителя:V1C8COMObject
+    public class РазделыМонитораРуководителя:EnumBase
     {
         public РазделыМонитораРуководителя(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОстаткиДенежныхСредств => GetProperty<EnumItemBase>("ОстаткиДенежныхСредств");
-        public EnumItemBase ДвижениеДенежныхСредств => GetProperty<EnumItemBase>("ДвижениеДенежныхСредств");
-        public EnumItemBase ПродажиПоКонтрагентам => GetProperty<EnumItemBase>("ПродажиПоКонтрагентам");
-        public EnumItemBase ПродажиПоНоменклатурнымГруппам => GetProperty<EnumItemBase>("ПродажиПоНоменклатурнымГруппам");
-        public EnumItemBase ЗадолженностьПокупателей => GetProperty<EnumItemBase>("ЗадолженностьПокупателей");
-        public EnumItemBase ПросроченнаяЗадолженностьПокупателей => GetProperty<EnumItemBase>("ПросроченнаяЗадолженностьПокупателей");
-        public EnumItemBase ЗадолженностьПоставщикам => GetProperty<EnumItemBase>("ЗадолженностьПоставщикам");
-        public EnumItemBase ПросроченнаяЗадолженностьПоставщикам => GetProperty<EnumItemBase>("ПросроченнаяЗадолженностьПоставщикам");
+        public EnumItem ОстаткиДенежныхСредств => GetProperty<EnumItem>("ОстаткиДенежныхСредств");
+        public EnumItem ДвижениеДенежныхСредств => GetProperty<EnumItem>("ДвижениеДенежныхСредств");
+        public EnumItem ПродажиПоКонтрагентам => GetProperty<EnumItem>("ПродажиПоКонтрагентам");
+        public EnumItem ПродажиПоНоменклатурнымГруппам => GetProperty<EnumItem>("ПродажиПоНоменклатурнымГруппам");
+        public EnumItem ЗадолженностьПокупателей => GetProperty<EnumItem>("ЗадолженностьПокупателей");
+        public EnumItem ПросроченнаяЗадолженностьПокупателей => GetProperty<EnumItem>("ПросроченнаяЗадолженностьПокупателей");
+        public EnumItem ЗадолженностьПоставщикам => GetProperty<EnumItem>("ЗадолженностьПоставщикам");
+        public EnumItem ПросроченнаяЗадолженностьПоставщикам => GetProperty<EnumItem>("ПросроченнаяЗадолженностьПоставщикам");
     }
 }

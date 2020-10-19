@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыОперацийПриложение2КНалоговойНакладной:V1C8COMObject
+    public class ВидыОперацийПриложение2КНалоговойНакладной:EnumBase
     {
         public ВидыОперацийПриложение2КНалоговойНакладной(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОблагаемыеОперацииВозврат => GetProperty<EnumItemBase>("ОблагаемыеОперацииВозврат");
-        public EnumItemBase ОблагаемыеОперацииКорректировка => GetProperty<EnumItemBase>("ОблагаемыеОперацииКорректировка");
-        public EnumItemBase ОсвобожденныеОперацииВозврат => GetProperty<EnumItemBase>("ОсвобожденныеОперацииВозврат");
-        public EnumItemBase ОсвобожденныеОперацииКорректировка => GetProperty<EnumItemBase>("ОсвобожденныеОперацииКорректировка");
-        public EnumItemBase НеНДСОперацииВозврат => GetProperty<EnumItemBase>("НеНДСОперацииВозврат");
-        public EnumItemBase НеНДСОперацииКорректировка => GetProperty<EnumItemBase>("НеНДСОперацииКорректировка");
-        public EnumItemBase ИтоговаяРозницаОблагаемыеОперацииВозврат => GetProperty<EnumItemBase>("ИтоговаяРозницаОблагаемыеОперацииВозврат");
-        public EnumItemBase ИтоговаяРозницаОсвобожденныеОперацииВозврат => GetProperty<EnumItemBase>("ИтоговаяРозницаОсвобожденныеОперацииВозврат");
-        public EnumItemBase РозницаКонрагентуОблагаемыеОперацииВозврат => GetProperty<EnumItemBase>("РозницаКонрагентуОблагаемыеОперацииВозврат");
-        public EnumItemBase РозницаКонрагентуОсвобожденныеОперацииВозврат => GetProperty<EnumItemBase>("РозницаКонрагентуОсвобожденныеОперацииВозврат");
-        public EnumItemBase РаботыОтНерезидентаКорректировка => GetProperty<EnumItemBase>("РаботыОтНерезидентаКорректировка");
-        public EnumItemBase УсловнаяПродажаВозврат => GetProperty<EnumItemBase>("УсловнаяПродажаВозврат");
-        public EnumItemBase СводнаяНаПревышениеБазыНадЦенойПоставки => GetProperty<EnumItemBase>("СводнаяНаПревышениеБазыНадЦенойПоставки");
+        public EnumItem ОблагаемыеОперацииВозврат => GetProperty<EnumItem>("ОблагаемыеОперацииВозврат");
+        public EnumItem ОблагаемыеОперацииКорректировка => GetProperty<EnumItem>("ОблагаемыеОперацииКорректировка");
+        public EnumItem ОсвобожденныеОперацииВозврат => GetProperty<EnumItem>("ОсвобожденныеОперацииВозврат");
+        public EnumItem ОсвобожденныеОперацииКорректировка => GetProperty<EnumItem>("ОсвобожденныеОперацииКорректировка");
+        public EnumItem НеНДСОперацииВозврат => GetProperty<EnumItem>("НеНДСОперацииВозврат");
+        public EnumItem НеНДСОперацииКорректировка => GetProperty<EnumItem>("НеНДСОперацииКорректировка");
+        public EnumItem ИтоговаяРозницаОблагаемыеОперацииВозврат => GetProperty<EnumItem>("ИтоговаяРозницаОблагаемыеОперацииВозврат");
+        public EnumItem ИтоговаяРозницаОсвобожденныеОперацииВозврат => GetProperty<EnumItem>("ИтоговаяРозницаОсвобожденныеОперацииВозврат");
+        public EnumItem РозницаКонрагентуОблагаемыеОперацииВозврат => GetProperty<EnumItem>("РозницаКонрагентуОблагаемыеОперацииВозврат");
+        public EnumItem РозницаКонрагентуОсвобожденныеОперацииВозврат => GetProperty<EnumItem>("РозницаКонрагентуОсвобожденныеОперацииВозврат");
+        public EnumItem РаботыОтНерезидентаКорректировка => GetProperty<EnumItem>("РаботыОтНерезидентаКорректировка");
+        public EnumItem УсловнаяПродажаВозврат => GetProperty<EnumItem>("УсловнаяПродажаВозврат");
+        public EnumItem СводнаяНаПревышениеБазыНадЦенойПоставки => GetProperty<EnumItem>("СводнаяНаПревышениеБазыНадЦенойПоставки");
     }
 }

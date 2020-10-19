@@ -18,7 +18,7 @@
         <RepositoryType>GIT</RepositoryType>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="sabatex.V1C8" Version="5.0.100-beta.1.12" />
+        <PackageReference Include="sabatex.V1C8" Version="5.0.100-beta.1.13" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Models\sabatex.V1C8.AccountingUkrCorp.Models.csproj" />

@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыПримененияЛьготРаботников:V1C8COMObject
+    public class СпособыПримененияЛьготРаботников:EnumBase
     {
         public СпособыПримененияЛьготРаботников(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Основной => GetProperty<EnumItemBase>("Основной");
-        public EnumItemBase НаКаждогоРебенка => GetProperty<EnumItemBase>("НаКаждогоРебенка");
-        public EnumItemBase НаКаждогоРебенкаИнвалида => GetProperty<EnumItemBase>("НаКаждогоРебенкаИнвалида");
-        public EnumItemBase НаТроихДетей => GetProperty<EnumItemBase>("НаТроихДетей");
+        public EnumItem Основной => GetProperty<EnumItem>("Основной");
+        public EnumItem НаКаждогоРебенка => GetProperty<EnumItem>("НаКаждогоРебенка");
+        public EnumItem НаКаждогоРебенкаИнвалида => GetProperty<EnumItem>("НаКаждогоРебенкаИнвалида");
+        public EnumItem НаТроихДетей => GetProperty<EnumItem>("НаТроихДетей");
     }
 }

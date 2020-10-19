@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ТипыОценочныхОбязательств:V1C8COMObject
+    public class ТипыОценочныхОбязательств:EnumBase
     {
         public ТипыОценочныхОбязательств(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОценочныеОбязательстваПоВознаграждениям => GetProperty<EnumItemBase>("ОценочныеОбязательстваПоВознаграждениям");
-        public EnumItemBase ОценочныеОбязательстваПоСтраховымВзносам => GetProperty<EnumItemBase>("ОценочныеОбязательстваПоСтраховымВзносам");
-        public EnumItemBase ОценочныеОбязательстваПоВзносамФССНСиПЗ => GetProperty<EnumItemBase>("ОценочныеОбязательстваПоВзносамФССНСиПЗ");
+        public EnumItem ОценочныеОбязательстваПоВознаграждениям => GetProperty<EnumItem>("ОценочныеОбязательстваПоВознаграждениям");
+        public EnumItem ОценочныеОбязательстваПоСтраховымВзносам => GetProperty<EnumItem>("ОценочныеОбязательстваПоСтраховымВзносам");
+        public EnumItem ОценочныеОбязательстваПоВзносамФССНСиПЗ => GetProperty<EnumItem>("ОценочныеОбязательстваПоВзносамФССНСиПЗ");
     }
 }

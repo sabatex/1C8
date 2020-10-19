@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class РолиФизическихЛиц:V1C8COMObject
+    public class РолиФизическихЛиц:EnumBase
     {
         public РолиФизическихЛиц(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Сотрудник => GetProperty<EnumItemBase>("Сотрудник");
-        public EnumItemBase БывшийСотрудник => GetProperty<EnumItemBase>("БывшийСотрудник");
-        public EnumItemBase Акционер => GetProperty<EnumItemBase>("Акционер");
-        public EnumItemBase ПрочийПолучательДоходов => GetProperty<EnumItemBase>("ПрочийПолучательДоходов");
-        public EnumItemBase РаздатчикЗарплаты => GetProperty<EnumItemBase>("РаздатчикЗарплаты");
-        public EnumItemBase Кандидат => GetProperty<EnumItemBase>("Кандидат");
+        public EnumItem Сотрудник => GetProperty<EnumItem>("Сотрудник");
+        public EnumItem БывшийСотрудник => GetProperty<EnumItem>("БывшийСотрудник");
+        public EnumItem Акционер => GetProperty<EnumItem>("Акционер");
+        public EnumItem ПрочийПолучательДоходов => GetProperty<EnumItem>("ПрочийПолучательДоходов");
+        public EnumItem РаздатчикЗарплаты => GetProperty<EnumItem>("РаздатчикЗарплаты");
+        public EnumItem Кандидат => GetProperty<EnumItem>("Кандидат");
     }
 }

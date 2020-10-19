@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ОтношениеКВоинскомуУчету:V1C8COMObject
+    public class ОтношениеКВоинскомуУчету:EnumBase
     {
         public ОтношениеКВоинскомуУчету(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Состоит => GetProperty<EnumItemBase>("Состоит");
-        public EnumItemBase Встает => GetProperty<EnumItemBase>("Встает");
-        public EnumItemBase НеСостоит => GetProperty<EnumItemBase>("НеСостоит");
-        public EnumItemBase СнятПоВозрасту => GetProperty<EnumItemBase>("СнятПоВозрасту");
-        public EnumItemBase СнятПоСостояниюЗдоровья => GetProperty<EnumItemBase>("СнятПоСостояниюЗдоровья");
-        public EnumItemBase ПризванНаВоинскуюСлужбу => GetProperty<EnumItemBase>("ПризванНаВоинскуюСлужбу");
-        public EnumItemBase СлужбаПоКонтракту => GetProperty<EnumItemBase>("СлужбаПоКонтракту");
+        public EnumItem Состоит => GetProperty<EnumItem>("Состоит");
+        public EnumItem Встает => GetProperty<EnumItem>("Встает");
+        public EnumItem НеСостоит => GetProperty<EnumItem>("НеСостоит");
+        public EnumItem СнятПоВозрасту => GetProperty<EnumItem>("СнятПоВозрасту");
+        public EnumItem СнятПоСостояниюЗдоровья => GetProperty<EnumItem>("СнятПоСостояниюЗдоровья");
+        public EnumItem ПризванНаВоинскуюСлужбу => GetProperty<EnumItem>("ПризванНаВоинскуюСлужбу");
+        public EnumItem СлужбаПоКонтракту => GetProperty<EnumItem>("СлужбаПоКонтракту");
     }
 }

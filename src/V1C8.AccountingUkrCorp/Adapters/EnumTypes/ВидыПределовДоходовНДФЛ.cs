@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыПределовДоходовНДФЛ:V1C8COMObject
+    public class ВидыПределовДоходовНДФЛ:EnumBase
     {
         public ВидыПределовДоходовНДФЛ(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Годовой => GetProperty<EnumItemBase>("Годовой");
-        public EnumItemBase Разовый => GetProperty<EnumItemBase>("Разовый");
+        public EnumItem Годовой => GetProperty<EnumItem>("Годовой");
+        public EnumItem Разовый => GetProperty<EnumItem>("Разовый");
     }
 }

@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СоциальныеГруппыНаселения:V1C8COMObject
+    public class СоциальныеГруппыНаселения:EnumBase
     {
         public СоциальныеГруппыНаселения(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ДетиДо6 => GetProperty<EnumItemBase>("ДетиДо6");
-        public EnumItemBase ДетиДо18 => GetProperty<EnumItemBase>("ДетиДо18");
-        public EnumItemBase Трудоспособные => GetProperty<EnumItemBase>("Трудоспособные");
-        public EnumItemBase НеТрудоспособные => GetProperty<EnumItemBase>("НеТрудоспособные");
+        public EnumItem ДетиДо6 => GetProperty<EnumItem>("ДетиДо6");
+        public EnumItem ДетиДо18 => GetProperty<EnumItem>("ДетиДо18");
+        public EnumItem Трудоспособные => GetProperty<EnumItem>("Трудоспособные");
+        public EnumItem НеТрудоспособные => GetProperty<EnumItem>("НеТрудоспособные");
     }
 }

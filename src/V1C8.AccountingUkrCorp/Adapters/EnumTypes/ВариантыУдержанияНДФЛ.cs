@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВариантыУдержанияНДФЛ:V1C8COMObject
+    public class ВариантыУдержанияНДФЛ:EnumBase
     {
         public ВариантыУдержанияНДФЛ(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Удержано => GetProperty<EnumItemBase>("Удержано");
-        public EnumItemBase ПереданоНаВзысканиеВНалоговыйОрган => GetProperty<EnumItemBase>("ПереданоНаВзысканиеВНалоговыйОрган");
-        public EnumItemBase ВозвращеноНалоговымАгентом => GetProperty<EnumItemBase>("ВозвращеноНалоговымАгентом");
-        public EnumItemBase ЗачетАвансовыхПлатежей => GetProperty<EnumItemBase>("ЗачетАвансовыхПлатежей");
+        public EnumItem Удержано => GetProperty<EnumItem>("Удержано");
+        public EnumItem ПереданоНаВзысканиеВНалоговыйОрган => GetProperty<EnumItem>("ПереданоНаВзысканиеВНалоговыйОрган");
+        public EnumItem ВозвращеноНалоговымАгентом => GetProperty<EnumItem>("ВозвращеноНалоговымАгентом");
+        public EnumItem ЗачетАвансовыхПлатежей => GetProperty<EnumItem>("ЗачетАвансовыхПлатежей");
     }
 }

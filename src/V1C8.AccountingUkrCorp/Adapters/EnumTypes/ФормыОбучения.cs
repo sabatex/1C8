@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ФормыОбучения:V1C8COMObject
+    public class ФормыОбучения:EnumBase
     {
         public ФормыОбучения(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Очная => GetProperty<EnumItemBase>("Очная");
-        public EnumItemBase Заочная => GetProperty<EnumItemBase>("Заочная");
-        public EnumItemBase Вечерняя => GetProperty<EnumItemBase>("Вечерняя");
-        public EnumItemBase Экстернат => GetProperty<EnumItemBase>("Экстернат");
-        public EnumItemBase Прочее => GetProperty<EnumItemBase>("Прочее");
+        public EnumItem Очная => GetProperty<EnumItem>("Очная");
+        public EnumItem Заочная => GetProperty<EnumItem>("Заочная");
+        public EnumItem Вечерняя => GetProperty<EnumItem>("Вечерняя");
+        public EnumItem Экстернат => GetProperty<EnumItem>("Экстернат");
+        public EnumItem Прочее => GetProperty<EnumItem>("Прочее");
     }
 }

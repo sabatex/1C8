@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КатегорииСведенийОФизическихЛицах:V1C8COMObject
+    public class КатегорииСведенийОФизическихЛицах:EnumBase
     {
         public КатегорииСведенийОФизическихЛицах(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Должность => GetProperty<EnumItemBase>("Должность");
-        public EnumItemBase Инвалидность => GetProperty<EnumItemBase>("Инвалидность");
-        public EnumItemBase КонтактнаяИнформация => GetProperty<EnumItemBase>("КонтактнаяИнформация");
-        public EnumItemBase Образование => GetProperty<EnumItemBase>("Образование");
-        public EnumItemBase Организация => GetProperty<EnumItemBase>("Организация");
-        public EnumItemBase Подразделение => GetProperty<EnumItemBase>("Подразделение");
-        public EnumItemBase СемейноеПоложение => GetProperty<EnumItemBase>("СемейноеПоложение");
-        public EnumItemBase СоставСемьи => GetProperty<EnumItemBase>("СоставСемьи");
+        public EnumItem Должность => GetProperty<EnumItem>("Должность");
+        public EnumItem Инвалидность => GetProperty<EnumItem>("Инвалидность");
+        public EnumItem КонтактнаяИнформация => GetProperty<EnumItem>("КонтактнаяИнформация");
+        public EnumItem Образование => GetProperty<EnumItem>("Образование");
+        public EnumItem Организация => GetProperty<EnumItem>("Организация");
+        public EnumItem Подразделение => GetProperty<EnumItem>("Подразделение");
+        public EnumItem СемейноеПоложение => GetProperty<EnumItem>("СемейноеПоложение");
+        public EnumItem СоставСемьи => GetProperty<EnumItem>("СоставСемьи");
     }
 }

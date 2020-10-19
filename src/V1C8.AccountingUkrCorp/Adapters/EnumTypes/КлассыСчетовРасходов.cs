@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КлассыСчетовРасходов:V1C8COMObject
+    public class КлассыСчетовРасходов:EnumBase
     {
         public КлассыСчетовРасходов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Класс8 => GetProperty<EnumItemBase>("Класс8");
-        public EnumItemBase Класс9 => GetProperty<EnumItemBase>("Класс9");
-        public EnumItemBase Класс8и9 => GetProperty<EnumItemBase>("Класс8и9");
+        public EnumItem Класс8 => GetProperty<EnumItem>("Класс8");
+        public EnumItem Класс9 => GetProperty<EnumItem>("Класс9");
+        public EnumItem Класс8и9 => GetProperty<EnumItem>("Класс8и9");
     }
 }

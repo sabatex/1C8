@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ТипыПоказателейРасчетаЗарплаты:V1C8COMObject
+    public class ТипыПоказателейРасчетаЗарплаты:EnumBase
     {
         public ТипыПоказателейРасчетаЗарплаты(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Денежный => GetProperty<EnumItemBase>("Денежный");
-        public EnumItemBase Числовой => GetProperty<EnumItemBase>("Числовой");
-        public EnumItemBase ЧисловойЗависящийОтДругогоПоказателя => GetProperty<EnumItemBase>("ЧисловойЗависящийОтДругогоПоказателя");
-        public EnumItemBase ЧисловойЗависящийОтСтажа => GetProperty<EnumItemBase>("ЧисловойЗависящийОтСтажа");
+        public EnumItem Денежный => GetProperty<EnumItem>("Денежный");
+        public EnumItem Числовой => GetProperty<EnumItem>("Числовой");
+        public EnumItem ЧисловойЗависящийОтДругогоПоказателя => GetProperty<EnumItem>("ЧисловойЗависящийОтДругогоПоказателя");
+        public EnumItem ЧисловойЗависящийОтСтажа => GetProperty<EnumItem>("ЧисловойЗависящийОтСтажа");
     }
 }

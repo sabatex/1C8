@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class УчетНачисленийВСреднемЗаработкеОбщий:V1C8COMObject
+    public class УчетНачисленийВСреднемЗаработкеОбщий:EnumBase
     {
         public УчетНачисленийВСреднемЗаработкеОбщий(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОбщийЗаработок => GetProperty<EnumItemBase>("ОбщийЗаработок");
-        public EnumItemBase ПремияФиксированнойСуммой => GetProperty<EnumItemBase>("ПремияФиксированнойСуммой");
-        public EnumItemBase ПремияПроцентом => GetProperty<EnumItemBase>("ПремияПроцентом");
-        public EnumItemBase ПремияГодоваяФиксированнойСуммой => GetProperty<EnumItemBase>("ПремияГодоваяФиксированнойСуммой");
-        public EnumItemBase ПремияГодоваяПроцентом => GetProperty<EnumItemBase>("ПремияГодоваяПроцентом");
-        public EnumItemBase НеВключать => GetProperty<EnumItemBase>("НеВключать");
+        public EnumItem ОбщийЗаработок => GetProperty<EnumItem>("ОбщийЗаработок");
+        public EnumItem ПремияФиксированнойСуммой => GetProperty<EnumItem>("ПремияФиксированнойСуммой");
+        public EnumItem ПремияПроцентом => GetProperty<EnumItem>("ПремияПроцентом");
+        public EnumItem ПремияГодоваяФиксированнойСуммой => GetProperty<EnumItem>("ПремияГодоваяФиксированнойСуммой");
+        public EnumItem ПремияГодоваяПроцентом => GetProperty<EnumItem>("ПремияГодоваяПроцентом");
+        public EnumItem НеВключать => GetProperty<EnumItem>("НеВключать");
     }
 }

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыУчетаВремениДляСредней:V1C8COMObject
+    public class ВидыУчетаВремениДляСредней:EnumBase
     {
         public ВидыУчетаВремениДляСредней(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ПоРабочимДням => GetProperty<EnumItemBase>("ПоРабочимДням");
-        public EnumItemBase ПоРабочимЧасам => GetProperty<EnumItemBase>("ПоРабочимЧасам");
+        public EnumItem ПоРабочимДням => GetProperty<EnumItem>("ПоРабочимДням");
+        public EnumItem ПоРабочимЧасам => GetProperty<EnumItem>("ПоРабочимЧасам");
     }
 }

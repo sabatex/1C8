@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыДоговоровССотрудниками:V1C8COMObject
+    public class ВидыДоговоровССотрудниками:EnumBase
     {
         public ВидыДоговоровССотрудниками(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ТрудовойДоговор => GetProperty<EnumItemBase>("ТрудовойДоговор");
-        public EnumItemBase КонтрактГосслужащего => GetProperty<EnumItemBase>("КонтрактГосслужащего");
-        public EnumItemBase ДоговорМуниципальногоСлужащего => GetProperty<EnumItemBase>("ДоговорМуниципальногоСлужащего");
-        public EnumItemBase КонтрактВоеннослужащего => GetProperty<EnumItemBase>("КонтрактВоеннослужащего");
-        public EnumItemBase ВоеннослужащийПоПризыву => GetProperty<EnumItemBase>("ВоеннослужащийПоПризыву");
+        public EnumItem ТрудовойДоговор => GetProperty<EnumItem>("ТрудовойДоговор");
+        public EnumItem КонтрактГосслужащего => GetProperty<EnumItem>("КонтрактГосслужащего");
+        public EnumItem ДоговорМуниципальногоСлужащего => GetProperty<EnumItem>("ДоговорМуниципальногоСлужащего");
+        public EnumItem КонтрактВоеннослужащего => GetProperty<EnumItem>("КонтрактВоеннослужащего");
+        public EnumItem ВоеннослужащийПоПризыву => GetProperty<EnumItem>("ВоеннослужащийПоПризыву");
     }
 }

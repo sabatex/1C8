@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КодыОперацийОжидаемыйИПодтвержденныйНДСПродаж:V1C8COMObject
+    public class КодыОперацийОжидаемыйИПодтвержденныйНДСПродаж:EnumBase
     {
         public КодыОперацийОжидаемыйИПодтвержденныйНДСПродаж(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОжидаемыйНДС => GetProperty<EnumItemBase>("ОжидаемыйНДС");
-        public EnumItemBase ПодтвержденныйНДС => GetProperty<EnumItemBase>("ПодтвержденныйНДС");
-        public EnumItemBase КорректировкаОжидаемогоНДСПоВидамДеятельностиОплат => GetProperty<EnumItemBase>("КорректировкаОжидаемогоНДСПоВидамДеятельностиОплат");
-        public EnumItemBase РегистрацияАвансов => GetProperty<EnumItemBase>("РегистрацияАвансов");
-        public EnumItemBase ОтменаРегистрацииАвансов => GetProperty<EnumItemBase>("ОтменаРегистрацииАвансов");
-        public EnumItemBase КорректировкаНеправильноОформленныхНалоговыхДокументов => GetProperty<EnumItemBase>("КорректировкаНеправильноОформленныхНалоговыхДокументов");
-        public EnumItemBase ПереводОФвСоставНепроизводственных => GetProperty<EnumItemBase>("ПереводОФвСоставНепроизводственных");
+        public EnumItem ОжидаемыйНДС => GetProperty<EnumItem>("ОжидаемыйНДС");
+        public EnumItem ПодтвержденныйНДС => GetProperty<EnumItem>("ПодтвержденныйНДС");
+        public EnumItem КорректировкаОжидаемогоНДСПоВидамДеятельностиОплат => GetProperty<EnumItem>("КорректировкаОжидаемогоНДСПоВидамДеятельностиОплат");
+        public EnumItem РегистрацияАвансов => GetProperty<EnumItem>("РегистрацияАвансов");
+        public EnumItem ОтменаРегистрацииАвансов => GetProperty<EnumItem>("ОтменаРегистрацииАвансов");
+        public EnumItem КорректировкаНеправильноОформленныхНалоговыхДокументов => GetProperty<EnumItem>("КорректировкаНеправильноОформленныхНалоговыхДокументов");
+        public EnumItem ПереводОФвСоставНепроизводственных => GetProperty<EnumItem>("ПереводОФвСоставНепроизводственных");
     }
 }

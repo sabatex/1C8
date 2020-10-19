@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВариантыАлгоритмовРасчетНДФЛ17:V1C8COMObject
+    public class ВариантыАлгоритмовРасчетНДФЛ17:EnumBase
     {
         public ВариантыАлгоритмовРасчетНДФЛ17(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ДоначислениеНаСуммуПревышения => GetProperty<EnumItemBase>("ДоначислениеНаСуммуПревышения");
-        public EnumItemBase ОтдельныйРасчетБазы => GetProperty<EnumItemBase>("ОтдельныйРасчетБазы");
+        public EnumItem ДоначислениеНаСуммуПревышения => GetProperty<EnumItem>("ДоначислениеНаСуммуПревышения");
+        public EnumItem ОтдельныйРасчетБазы => GetProperty<EnumItem>("ОтдельныйРасчетБазы");
     }
 }

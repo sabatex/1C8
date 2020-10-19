@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ОтношениеКВоинскойОбязанности:V1C8COMObject
+    public class ОтношениеКВоинскойОбязанности:EnumBase
     {
         public ОтношениеКВоинскойОбязанности(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Военнообязанный => GetProperty<EnumItemBase>("Военнообязанный");
-        public EnumItemBase НеВоеннообязанный => GetProperty<EnumItemBase>("НеВоеннообязанный");
-        public EnumItemBase Призывник => GetProperty<EnumItemBase>("Призывник");
+        public EnumItem Военнообязанный => GetProperty<EnumItem>("Военнообязанный");
+        public EnumItem НеВоеннообязанный => GetProperty<EnumItem>("НеВоеннообязанный");
+        public EnumItem Призывник => GetProperty<EnumItem>("Призывник");
     }
 }

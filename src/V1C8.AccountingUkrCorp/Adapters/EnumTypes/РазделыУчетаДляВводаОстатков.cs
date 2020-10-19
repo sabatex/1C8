@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class РазделыУчетаДляВводаОстатков:V1C8COMObject
+    public class РазделыУчетаДляВводаОстатков:EnumBase
     {
         public РазделыУчетаДляВводаОстатков(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОсновныеСредства => GetProperty<EnumItemBase>("ОсновныеСредства");
-        public EnumItemBase МалоценныеАктивыВЭксплуатации => GetProperty<EnumItemBase>("МалоценныеАктивыВЭксплуатации");
-        public EnumItemBase НематериальныеАктивы => GetProperty<EnumItemBase>("НематериальныеАктивы");
-        public EnumItemBase КапитальныеИнвестиции => GetProperty<EnumItemBase>("КапитальныеИнвестиции");
-        public EnumItemBase ЗапасыСебестоимость => GetProperty<EnumItemBase>("ЗапасыСебестоимость");
-        public EnumItemBase ТранспортноЗаготовительныеРасходыНаОтдельныхСубсчетах => GetProperty<EnumItemBase>("ТранспортноЗаготовительныеРасходыНаОтдельныхСубсчетах");
-        public EnumItemBase ЗапасыПереданные => GetProperty<EnumItemBase>("ЗапасыПереданные");
-        public EnumItemBase НезавершенноеПроизводство => GetProperty<EnumItemBase>("НезавершенноеПроизводство");
-        public EnumItemBase ТоварыПоПродажнойЦене => GetProperty<EnumItemBase>("ТоварыПоПродажнойЦене");
-        public EnumItemBase ДенежныеСредства => GetProperty<EnumItemBase>("ДенежныеСредства");
-        public EnumItemBase ВзаиморасчетыСКонтрагентами => GetProperty<EnumItemBase>("ВзаиморасчетыСКонтрагентами");
-        public EnumItemBase ВзаиморасчетыСПодотчетнымиЛицами => GetProperty<EnumItemBase>("ВзаиморасчетыСПодотчетнымиЛицами");
-        public EnumItemBase РасходыБудущихПериодов => GetProperty<EnumItemBase>("РасходыБудущихПериодов");
-        public EnumItemBase ЗарплатаИОтчисления => GetProperty<EnumItemBase>("ЗарплатаИОтчисления");
-        public EnumItemBase ТоварыНаКомиссии => GetProperty<EnumItemBase>("ТоварыНаКомиссии");
-        public EnumItemBase ПрочиеСчетаБухгалтерскогоУчета => GetProperty<EnumItemBase>("ПрочиеСчетаБухгалтерскогоУчета");
-        public EnumItemBase ОтсроченныеНалоговыеАктивыИОбязательства => GetProperty<EnumItemBase>("ОтсроченныеНалоговыеАктивыИОбязательства");
-        public EnumItemBase ДанныеНалоговогоУчета => GetProperty<EnumItemBase>("ДанныеНалоговогоУчета");
-        public EnumItemBase ГруппыОСНалоговыйУчет => GetProperty<EnumItemBase>("ГруппыОСНалоговыйУчет");
+        public EnumItem ОсновныеСредства => GetProperty<EnumItem>("ОсновныеСредства");
+        public EnumItem МалоценныеАктивыВЭксплуатации => GetProperty<EnumItem>("МалоценныеАктивыВЭксплуатации");
+        public EnumItem НематериальныеАктивы => GetProperty<EnumItem>("НематериальныеАктивы");
+        public EnumItem КапитальныеИнвестиции => GetProperty<EnumItem>("КапитальныеИнвестиции");
+        public EnumItem ЗапасыСебестоимость => GetProperty<EnumItem>("ЗапасыСебестоимость");
+        public EnumItem ТранспортноЗаготовительныеРасходыНаОтдельныхСубсчетах => GetProperty<EnumItem>("ТранспортноЗаготовительныеРасходыНаОтдельныхСубсчетах");
+        public EnumItem ЗапасыПереданные => GetProperty<EnumItem>("ЗапасыПереданные");
+        public EnumItem НезавершенноеПроизводство => GetProperty<EnumItem>("НезавершенноеПроизводство");
+        public EnumItem ТоварыПоПродажнойЦене => GetProperty<EnumItem>("ТоварыПоПродажнойЦене");
+        public EnumItem ДенежныеСредства => GetProperty<EnumItem>("ДенежныеСредства");
+        public EnumItem ВзаиморасчетыСКонтрагентами => GetProperty<EnumItem>("ВзаиморасчетыСКонтрагентами");
+        public EnumItem ВзаиморасчетыСПодотчетнымиЛицами => GetProperty<EnumItem>("ВзаиморасчетыСПодотчетнымиЛицами");
+        public EnumItem РасходыБудущихПериодов => GetProperty<EnumItem>("РасходыБудущихПериодов");
+        public EnumItem ЗарплатаИОтчисления => GetProperty<EnumItem>("ЗарплатаИОтчисления");
+        public EnumItem ТоварыНаКомиссии => GetProperty<EnumItem>("ТоварыНаКомиссии");
+        public EnumItem ПрочиеСчетаБухгалтерскогоУчета => GetProperty<EnumItem>("ПрочиеСчетаБухгалтерскогоУчета");
+        public EnumItem ОтсроченныеНалоговыеАктивыИОбязательства => GetProperty<EnumItem>("ОтсроченныеНалоговыеАктивыИОбязательства");
+        public EnumItem ДанныеНалоговогоУчета => GetProperty<EnumItem>("ДанныеНалоговогоУчета");
+        public EnumItem ГруппыОСНалоговыйУчет => GetProperty<EnumItem>("ГруппыОСНалоговыйУчет");
     }
 }

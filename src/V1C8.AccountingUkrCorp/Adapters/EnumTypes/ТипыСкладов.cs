@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ТипыСкладов:V1C8COMObject
+    public class ТипыСкладов:EnumBase
     {
         public ТипыСкладов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОптовыйСклад => GetProperty<EnumItemBase>("ОптовыйСклад");
-        public EnumItemBase РозничныйМагазин => GetProperty<EnumItemBase>("РозничныйМагазин");
-        public EnumItemBase НеавтоматизированнаяТорговаяТочка => GetProperty<EnumItemBase>("НеавтоматизированнаяТорговаяТочка");
+        public EnumItem ОптовыйСклад => GetProperty<EnumItem>("ОптовыйСклад");
+        public EnumItem РозничныйМагазин => GetProperty<EnumItem>("РозничныйМагазин");
+        public EnumItem НеавтоматизированнаяТорговаяТочка => GetProperty<EnumItem>("НеавтоматизированнаяТорговаяТочка");
     }
 }

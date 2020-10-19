@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ОперацииАдминистрированияПрофилейБезопасности:V1C8COMObject
+    public class ОперацииАдминистрированияПрофилейБезопасности:EnumBase
     {
         public ОперацииАдминистрированияПрофилейБезопасности(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Создание => GetProperty<EnumItemBase>("Создание");
-        public EnumItemBase Назначение => GetProperty<EnumItemBase>("Назначение");
-        public EnumItemBase Обновление => GetProperty<EnumItemBase>("Обновление");
-        public EnumItemBase Удаление => GetProperty<EnumItemBase>("Удаление");
-        public EnumItemBase УдалениеНазначения => GetProperty<EnumItemBase>("УдалениеНазначения");
+        public EnumItem Создание => GetProperty<EnumItem>("Создание");
+        public EnumItem Назначение => GetProperty<EnumItem>("Назначение");
+        public EnumItem Обновление => GetProperty<EnumItem>("Обновление");
+        public EnumItem Удаление => GetProperty<EnumItem>("Удаление");
+        public EnumItem УдалениеНазначения => GetProperty<EnumItem>("УдалениеНазначения");
     }
 }

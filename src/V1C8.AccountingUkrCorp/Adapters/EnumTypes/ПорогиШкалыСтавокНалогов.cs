@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ПорогиШкалыСтавокНалогов:V1C8COMObject
+    public class ПорогиШкалыСтавокНалогов:EnumBase
     {
         public ПорогиШкалыСтавокНалогов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Порог1 => GetProperty<EnumItemBase>("Порог1");
-        public EnumItemBase Порог2 => GetProperty<EnumItemBase>("Порог2");
-        public EnumItemBase Порог3 => GetProperty<EnumItemBase>("Порог3");
-        public EnumItemBase Порог4 => GetProperty<EnumItemBase>("Порог4");
-        public EnumItemBase Порог5 => GetProperty<EnumItemBase>("Порог5");
-        public EnumItemBase Порог6 => GetProperty<EnumItemBase>("Порог6");
-        public EnumItemBase Порог7 => GetProperty<EnumItemBase>("Порог7");
-        public EnumItemBase Порог8 => GetProperty<EnumItemBase>("Порог8");
-        public EnumItemBase Порог9 => GetProperty<EnumItemBase>("Порог9");
+        public EnumItem Порог1 => GetProperty<EnumItem>("Порог1");
+        public EnumItem Порог2 => GetProperty<EnumItem>("Порог2");
+        public EnumItem Порог3 => GetProperty<EnumItem>("Порог3");
+        public EnumItem Порог4 => GetProperty<EnumItem>("Порог4");
+        public EnumItem Порог5 => GetProperty<EnumItem>("Порог5");
+        public EnumItem Порог6 => GetProperty<EnumItem>("Порог6");
+        public EnumItem Порог7 => GetProperty<EnumItem>("Порог7");
+        public EnumItem Порог8 => GetProperty<EnumItem>("Порог8");
+        public EnumItem Порог9 => GetProperty<EnumItem>("Порог9");
     }
 }

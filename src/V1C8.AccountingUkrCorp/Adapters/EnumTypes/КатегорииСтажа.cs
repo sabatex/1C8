@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КатегорииСтажа:V1C8COMObject
+    public class КатегорииСтажа:EnumBase
     {
         public КатегорииСтажа(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ВыслугаЛет => GetProperty<EnumItemBase>("ВыслугаЛет");
-        public EnumItemBase Медицинский => GetProperty<EnumItemBase>("Медицинский");
-        public EnumItemBase Непрерывный => GetProperty<EnumItemBase>("Непрерывный");
-        public EnumItemBase Общий => GetProperty<EnumItemBase>("Общий");
-        public EnumItemBase ОбщийНаучноПедагогический => GetProperty<EnumItemBase>("ОбщийНаучноПедагогический");
-        public EnumItemBase Педагогический => GetProperty<EnumItemBase>("Педагогический");
-        public EnumItemBase Прочее => GetProperty<EnumItemBase>("Прочее");
-        public EnumItemBase РасширенныйСтраховой => GetProperty<EnumItemBase>("РасширенныйСтраховой");
-        public EnumItemBase Северный => GetProperty<EnumItemBase>("Северный");
-        public EnumItemBase Страховой => GetProperty<EnumItemBase>("Страховой");
-        public EnumItemBase ВыслугаЛетНаГосударственнойСлужбе => GetProperty<EnumItemBase>("ВыслугаЛетНаГосударственнойСлужбе");
-        public EnumItemBase ВыслугаЛетНаВоеннойСлужбе => GetProperty<EnumItemBase>("ВыслугаЛетНаВоеннойСлужбе");
+        public EnumItem ВыслугаЛет => GetProperty<EnumItem>("ВыслугаЛет");
+        public EnumItem Медицинский => GetProperty<EnumItem>("Медицинский");
+        public EnumItem Непрерывный => GetProperty<EnumItem>("Непрерывный");
+        public EnumItem Общий => GetProperty<EnumItem>("Общий");
+        public EnumItem ОбщийНаучноПедагогический => GetProperty<EnumItem>("ОбщийНаучноПедагогический");
+        public EnumItem Педагогический => GetProperty<EnumItem>("Педагогический");
+        public EnumItem Прочее => GetProperty<EnumItem>("Прочее");
+        public EnumItem РасширенныйСтраховой => GetProperty<EnumItem>("РасширенныйСтраховой");
+        public EnumItem Северный => GetProperty<EnumItem>("Северный");
+        public EnumItem Страховой => GetProperty<EnumItem>("Страховой");
+        public EnumItem ВыслугаЛетНаГосударственнойСлужбе => GetProperty<EnumItem>("ВыслугаЛетНаГосударственнойСлужбе");
+        public EnumItem ВыслугаЛетНаВоеннойСлужбе => GetProperty<EnumItem>("ВыслугаЛетНаВоеннойСлужбе");
     }
 }

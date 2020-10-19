@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class УдалитьВидыТекстовЭлектронныхПисем:V1C8COMObject
+    public class УдалитьВидыТекстовЭлектронныхПисем:EnumBase
     {
         public УдалитьВидыТекстовЭлектронныхПисем(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase HTML => GetProperty<EnumItemBase>("HTML");
-        public EnumItemBase Текст => GetProperty<EnumItemBase>("Текст");
-        public EnumItemBase Прочее => GetProperty<EnumItemBase>("Прочее");
-        public EnumItemBase HTMLСКартинками => GetProperty<EnumItemBase>("HTMLСКартинками");
+        public EnumItem HTML => GetProperty<EnumItem>("HTML");
+        public EnumItem Текст => GetProperty<EnumItem>("Текст");
+        public EnumItem Прочее => GetProperty<EnumItem>("Прочее");
+        public EnumItem HTMLСКартинками => GetProperty<EnumItem>("HTMLСКартинками");
     }
 }

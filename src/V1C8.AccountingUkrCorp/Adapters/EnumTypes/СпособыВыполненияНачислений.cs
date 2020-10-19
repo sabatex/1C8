@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыВыполненияНачислений:V1C8COMObject
+    public class СпособыВыполненияНачислений:EnumBase
     {
         public СпособыВыполненияНачислений(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ЕжемесячноПриОкончательномРасчете => GetProperty<EnumItemBase>("ЕжемесячноПриОкончательномРасчете");
-        public EnumItemBase ПоОтдельномуДокументуДоОкончательногоРасчета => GetProperty<EnumItemBase>("ПоОтдельномуДокументуДоОкончательногоРасчета");
-        public EnumItemBase ВЗаданныхМесяцахПриОкончательномРасчете => GetProperty<EnumItemBase>("ВЗаданныхМесяцахПриОкончательномРасчете");
-        public EnumItemBase ПоЗначениюПоказателяПриОкончательномРасчете => GetProperty<EnumItemBase>("ПоЗначениюПоказателяПриОкончательномРасчете");
-        public EnumItemBase ПоЗначениюВидаВремениПриОкончательномРасчете => GetProperty<EnumItemBase>("ПоЗначениюВидаВремениПриОкончательномРасчете");
-        public EnumItemBase ЗаПраздничныеДниПриОкончательномРасчете => GetProperty<EnumItemBase>("ЗаПраздничныеДниПриОкончательномРасчете");
+        public EnumItem ЕжемесячноПриОкончательномРасчете => GetProperty<EnumItem>("ЕжемесячноПриОкончательномРасчете");
+        public EnumItem ПоОтдельномуДокументуДоОкончательногоРасчета => GetProperty<EnumItem>("ПоОтдельномуДокументуДоОкончательногоРасчета");
+        public EnumItem ВЗаданныхМесяцахПриОкончательномРасчете => GetProperty<EnumItem>("ВЗаданныхМесяцахПриОкончательномРасчете");
+        public EnumItem ПоЗначениюПоказателяПриОкончательномРасчете => GetProperty<EnumItem>("ПоЗначениюПоказателяПриОкончательномРасчете");
+        public EnumItem ПоЗначениюВидаВремениПриОкончательномРасчете => GetProperty<EnumItem>("ПоЗначениюВидаВремениПриОкончательномРасчете");
+        public EnumItem ЗаПраздничныеДниПриОкончательномРасчете => GetProperty<EnumItem>("ЗаПраздничныеДниПриОкончательномРасчете");
     }
 }

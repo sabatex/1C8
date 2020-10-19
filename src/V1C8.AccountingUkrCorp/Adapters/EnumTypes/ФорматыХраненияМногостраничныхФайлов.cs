@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ФорматыХраненияМногостраничныхФайлов:V1C8COMObject
+    public class ФорматыХраненияМногостраничныхФайлов:EnumBase
     {
         public ФорматыХраненияМногостраничныхФайлов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase PDF => GetProperty<EnumItemBase>("PDF");
-        public EnumItemBase TIF => GetProperty<EnumItemBase>("TIF");
+        public EnumItem PDF => GetProperty<EnumItem>("PDF");
+        public EnumItem TIF => GetProperty<EnumItem>("TIF");
     }
 }

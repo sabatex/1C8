@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыДнейПроизводственногоКалендаря:V1C8COMObject
+    public class ВидыДнейПроизводственногоКалендаря:EnumBase
     {
         public ВидыДнейПроизводственногоКалендаря(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Рабочий => GetProperty<EnumItemBase>("Рабочий");
-        public EnumItemBase Суббота => GetProperty<EnumItemBase>("Суббота");
-        public EnumItemBase Воскресенье => GetProperty<EnumItemBase>("Воскресенье");
-        public EnumItemBase Предпраздничный => GetProperty<EnumItemBase>("Предпраздничный");
-        public EnumItemBase Праздник => GetProperty<EnumItemBase>("Праздник");
-        public EnumItemBase Нерабочий => GetProperty<EnumItemBase>("Нерабочий");
+        public EnumItem Рабочий => GetProperty<EnumItem>("Рабочий");
+        public EnumItem Суббота => GetProperty<EnumItem>("Суббота");
+        public EnumItem Воскресенье => GetProperty<EnumItem>("Воскресенье");
+        public EnumItem Предпраздничный => GetProperty<EnumItem>("Предпраздничный");
+        public EnumItem Праздник => GetProperty<EnumItem>("Праздник");
+        public EnumItem Нерабочий => GetProperty<EnumItem>("Нерабочий");
     }
 }

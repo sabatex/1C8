@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class РежимыФормированияПечатныхФорм:V1C8COMObject
+    public class РежимыФормированияПечатныхФорм:EnumBase
     {
         public РежимыФормированияПечатныхФорм(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НаЯзыкеИнформационнойБазы => GetProperty<EnumItemBase>("НаЯзыкеИнформационнойБазы");
-        public EnumItemBase НаЯзыкеИнтерфейсаПользователя => GetProperty<EnumItemBase>("НаЯзыкеИнтерфейсаПользователя");
-        public EnumItemBase НаРусскомЯзыке => GetProperty<EnumItemBase>("НаРусскомЯзыке");
-        public EnumItemBase НаУкраинскомЯзыке => GetProperty<EnumItemBase>("НаУкраинскомЯзыке");
+        public EnumItem НаЯзыкеИнформационнойБазы => GetProperty<EnumItem>("НаЯзыкеИнформационнойБазы");
+        public EnumItem НаЯзыкеИнтерфейсаПользователя => GetProperty<EnumItem>("НаЯзыкеИнтерфейсаПользователя");
+        public EnumItem НаРусскомЯзыке => GetProperty<EnumItem>("НаРусскомЯзыке");
+        public EnumItem НаУкраинскомЯзыке => GetProperty<EnumItem>("НаУкраинскомЯзыке");
     }
 }

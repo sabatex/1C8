@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыОграниченияПособия:V1C8COMObject
+    public class ВидыОграниченияПособия:EnumBase
     {
         public ВидыОграниченияПособия(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОбщееОграничение => GetProperty<EnumItemBase>("ОбщееОграничение");
-        public EnumItemBase ОграничениеВРазмереММОТ => GetProperty<EnumItemBase>("ОграничениеВРазмереММОТ");
-        public EnumItemBase БезОграничений => GetProperty<EnumItemBase>("БезОграничений");
-        public EnumItemBase МаксимальныйРазмерЕжемесячнойСтраховойВыплаты => GetProperty<EnumItemBase>("МаксимальныйРазмерЕжемесячнойСтраховойВыплаты");
-        public EnumItemBase ОграничениеВРазмереДвухММОТ => GetProperty<EnumItemBase>("ОграничениеВРазмереДвухММОТ");
+        public EnumItem ОбщееОграничение => GetProperty<EnumItem>("ОбщееОграничение");
+        public EnumItem ОграничениеВРазмереММОТ => GetProperty<EnumItem>("ОграничениеВРазмереММОТ");
+        public EnumItem БезОграничений => GetProperty<EnumItem>("БезОграничений");
+        public EnumItem МаксимальныйРазмерЕжемесячнойСтраховойВыплаты => GetProperty<EnumItem>("МаксимальныйРазмерЕжемесячнойСтраховойВыплаты");
+        public EnumItem ОграничениеВРазмереДвухММОТ => GetProperty<EnumItem>("ОграничениеВРазмереДвухММОТ");
     }
 }

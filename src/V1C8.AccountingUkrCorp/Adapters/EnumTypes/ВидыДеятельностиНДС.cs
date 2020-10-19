@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыДеятельностиНДС:V1C8COMObject
+    public class ВидыДеятельностиНДС:EnumBase
     {
         public ВидыДеятельностиНДС(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Облагаемая => GetProperty<EnumItemBase>("Облагаемая");
-        public EnumItemBase Необлагаемая => GetProperty<EnumItemBase>("Необлагаемая");
-        public EnumItemBase ПропорциональноОблагаемая => GetProperty<EnumItemBase>("ПропорциональноОблагаемая");
+        public EnumItem Облагаемая => GetProperty<EnumItem>("Облагаемая");
+        public EnumItem Необлагаемая => GetProperty<EnumItem>("Необлагаемая");
+        public EnumItem ПропорциональноОблагаемая => GetProperty<EnumItem>("ПропорциональноОблагаемая");
     }
 }

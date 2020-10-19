@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыВзаиморасчетовССотрудниками:V1C8COMObject
+    public class ВидыВзаиморасчетовССотрудниками:EnumBase
     {
         public ВидыВзаиморасчетовССотрудниками(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ВыплатаАванса => GetProperty<EnumItemBase>("ВыплатаАванса");
-        public EnumItemBase ВыплатаЗарплаты => GetProperty<EnumItemBase>("ВыплатаЗарплаты");
-        public EnumItemBase ВыплатаВМежрасчетныйПериод => GetProperty<EnumItemBase>("ВыплатаВМежрасчетныйПериод");
-        public EnumItemBase ПогашениеЗадолженностиПоЗарплате => GetProperty<EnumItemBase>("ПогашениеЗадолженностиПоЗарплате");
-        public EnumItemBase ВнеочередноеПогашениеЗайма => GetProperty<EnumItemBase>("ВнеочередноеПогашениеЗайма");
-        public EnumItemBase ПереносЗадолженности => GetProperty<EnumItemBase>("ПереносЗадолженности");
-        public EnumItemBase НачальнаяЗадолженность => GetProperty<EnumItemBase>("НачальнаяЗадолженность");
+        public EnumItem ВыплатаАванса => GetProperty<EnumItem>("ВыплатаАванса");
+        public EnumItem ВыплатаЗарплаты => GetProperty<EnumItem>("ВыплатаЗарплаты");
+        public EnumItem ВыплатаВМежрасчетныйПериод => GetProperty<EnumItem>("ВыплатаВМежрасчетныйПериод");
+        public EnumItem ПогашениеЗадолженностиПоЗарплате => GetProperty<EnumItem>("ПогашениеЗадолженностиПоЗарплате");
+        public EnumItem ВнеочередноеПогашениеЗайма => GetProperty<EnumItem>("ВнеочередноеПогашениеЗайма");
+        public EnumItem ПереносЗадолженности => GetProperty<EnumItem>("ПереносЗадолженности");
+        public EnumItem НачальнаяЗадолженность => GetProperty<EnumItem>("НачальнаяЗадолженность");
     }
 }

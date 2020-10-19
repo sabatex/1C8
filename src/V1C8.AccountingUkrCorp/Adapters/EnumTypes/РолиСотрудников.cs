@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class РолиСотрудников:V1C8COMObject
+    public class РолиСотрудников:EnumBase
     {
         public РолиСотрудников(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Работник => GetProperty<EnumItemBase>("Работник");
-        public EnumItemBase Договорник => GetProperty<EnumItemBase>("Договорник");
+        public EnumItem Работник => GetProperty<EnumItem>("Работник");
+        public EnumItem Договорник => GetProperty<EnumItem>("Договорник");
     }
 }

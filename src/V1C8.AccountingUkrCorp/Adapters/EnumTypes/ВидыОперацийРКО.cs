@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыОперацийРКО:V1C8COMObject
+    public class ВидыОперацийРКО:EnumBase
     {
         public ВидыОперацийРКО(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОплатаПоставщику => GetProperty<EnumItemBase>("ОплатаПоставщику");
-        public EnumItemBase ВозвратДенежныхСредствПокупателю => GetProperty<EnumItemBase>("ВозвратДенежныхСредствПокупателю");
-        public EnumItemBase ВыдачаДенежныхСредствПодотчетнику => GetProperty<EnumItemBase>("ВыдачаДенежныхСредствПодотчетнику");
-        public EnumItemBase ВыплатаЗаработнойПлатыПоВедомостям => GetProperty<EnumItemBase>("ВыплатаЗаработнойПлатыПоВедомостям");
-        public EnumItemBase ВыплатаЗарплатыРаздатчиком => GetProperty<EnumItemBase>("ВыплатаЗарплатыРаздатчиком");
-        public EnumItemBase ВыплатаЗаработнойПлатыРаботнику => GetProperty<EnumItemBase>("ВыплатаЗаработнойПлатыРаботнику");
-        public EnumItemBase ВыдачаЗаймаСотруднику => GetProperty<EnumItemBase>("ВыдачаЗаймаСотруднику");
-        public EnumItemBase ВзносНаличнымиВБанк => GetProperty<EnumItemBase>("ВзносНаличнымиВБанк");
-        public EnumItemBase РасчетыПоКредитамИЗаймамСКонтрагентами => GetProperty<EnumItemBase>("РасчетыПоКредитамИЗаймамСКонтрагентами");
-        public EnumItemBase ИнкассацияДенежныхСредств => GetProperty<EnumItemBase>("ИнкассацияДенежныхСредств");
-        public EnumItemBase РасходДенежныхСредствПрочее => GetProperty<EnumItemBase>("РасходДенежныхСредствПрочее");
+        public EnumItem ОплатаПоставщику => GetProperty<EnumItem>("ОплатаПоставщику");
+        public EnumItem ВозвратДенежныхСредствПокупателю => GetProperty<EnumItem>("ВозвратДенежныхСредствПокупателю");
+        public EnumItem ВыдачаДенежныхСредствПодотчетнику => GetProperty<EnumItem>("ВыдачаДенежныхСредствПодотчетнику");
+        public EnumItem ВыплатаЗаработнойПлатыПоВедомостям => GetProperty<EnumItem>("ВыплатаЗаработнойПлатыПоВедомостям");
+        public EnumItem ВыплатаЗарплатыРаздатчиком => GetProperty<EnumItem>("ВыплатаЗарплатыРаздатчиком");
+        public EnumItem ВыплатаЗаработнойПлатыРаботнику => GetProperty<EnumItem>("ВыплатаЗаработнойПлатыРаботнику");
+        public EnumItem ВыдачаЗаймаСотруднику => GetProperty<EnumItem>("ВыдачаЗаймаСотруднику");
+        public EnumItem ВзносНаличнымиВБанк => GetProperty<EnumItem>("ВзносНаличнымиВБанк");
+        public EnumItem РасчетыПоКредитамИЗаймамСКонтрагентами => GetProperty<EnumItem>("РасчетыПоКредитамИЗаймамСКонтрагентами");
+        public EnumItem ИнкассацияДенежныхСредств => GetProperty<EnumItem>("ИнкассацияДенежныхСредств");
+        public EnumItem РасходДенежныхСредствПрочее => GetProperty<EnumItem>("РасходДенежныхСредствПрочее");
     }
 }

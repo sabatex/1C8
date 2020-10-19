@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ДействияСПозициямиШтатногоРасписания:V1C8COMObject
+    public class ДействияСПозициямиШтатногоРасписания:EnumBase
     {
         public ДействияСПозициямиШтатногоРасписания(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase СоздатьНовуюПозицию => GetProperty<EnumItemBase>("СоздатьНовуюПозицию");
-        public EnumItemBase ЗакрытьПозицию => GetProperty<EnumItemBase>("ЗакрытьПозицию");
+        public EnumItem СоздатьНовуюПозицию => GetProperty<EnumItem>("СоздатьНовуюПозицию");
+        public EnumItem ЗакрытьПозицию => GetProperty<EnumItem>("ЗакрытьПозицию");
     }
 }

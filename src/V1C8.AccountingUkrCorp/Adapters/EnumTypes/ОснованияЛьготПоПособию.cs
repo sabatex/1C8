@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ОснованияЛьготПоПособию:V1C8COMObject
+    public class ОснованияЛьготПоПособию:EnumBase
     {
         public ОснованияЛьготПоПособию(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Чернобыль => GetProperty<EnumItemBase>("Чернобыль");
-        public EnumItemBase ВетераныВойны => GetProperty<EnumItemBase>("ВетераныВойны");
-        public EnumItemBase ЖертвыНацистскихПреследований => GetProperty<EnumItemBase>("ЖертвыНацистскихПреследований");
-        public EnumItemBase РодительРебенкаЧернобыльца => GetProperty<EnumItemBase>("РодительРебенкаЧернобыльца");
-        public EnumItemBase Донор => GetProperty<EnumItemBase>("Донор");
-        public EnumItemBase УчастникРеволюцииДостоинства => GetProperty<EnumItemBase>("УчастникРеволюцииДостоинства");
+        public EnumItem Чернобыль => GetProperty<EnumItem>("Чернобыль");
+        public EnumItem ВетераныВойны => GetProperty<EnumItem>("ВетераныВойны");
+        public EnumItem ЖертвыНацистскихПреследований => GetProperty<EnumItem>("ЖертвыНацистскихПреследований");
+        public EnumItem РодительРебенкаЧернобыльца => GetProperty<EnumItem>("РодительРебенкаЧернобыльца");
+        public EnumItem Донор => GetProperty<EnumItem>("Донор");
+        public EnumItem УчастникРеволюцииДостоинства => GetProperty<EnumItem>("УчастникРеволюцииДостоинства");
     }
 }

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыОперацийПередачаТоваров:V1C8COMObject
+    public class ВидыОперацийПередачаТоваров:EnumBase
     {
         public ВидыОперацийПередачаТоваров(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ВПереработку => GetProperty<EnumItemBase>("ВПереработку");
-        public EnumItemBase ИзПереработки => GetProperty<EnumItemBase>("ИзПереработки");
+        public EnumItem ВПереработку => GetProperty<EnumItem>("ВПереработку");
+        public EnumItem ИзПереработки => GetProperty<EnumItem>("ИзПереработки");
     }
 }

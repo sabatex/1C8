@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыТрудовогоСтажа:V1C8COMObject
+    public class ВидыТрудовогоСтажа:EnumBase
     {
         public ВидыТрудовогоСтажа(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОбщийТрудовойСтаж => GetProperty<EnumItemBase>("ОбщийТрудовойСтаж");
-        public EnumItemBase ТерриториальныеУсловия => GetProperty<EnumItemBase>("ТерриториальныеУсловия");
-        public EnumItemBase ОсобыеУсловияТруда => GetProperty<EnumItemBase>("ОсобыеУсловияТруда");
-        public EnumItemBase ВыслугаЛет => GetProperty<EnumItemBase>("ВыслугаЛет");
+        public EnumItem ОбщийТрудовойСтаж => GetProperty<EnumItem>("ОбщийТрудовойСтаж");
+        public EnumItem ТерриториальныеУсловия => GetProperty<EnumItem>("ТерриториальныеУсловия");
+        public EnumItem ОсобыеУсловияТруда => GetProperty<EnumItem>("ОсобыеУсловияТруда");
+        public EnumItem ВыслугаЛет => GetProperty<EnumItem>("ВыслугаЛет");
     }
 }

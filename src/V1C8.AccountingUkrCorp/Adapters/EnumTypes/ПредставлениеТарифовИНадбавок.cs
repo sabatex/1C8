@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ПредставлениеТарифовИНадбавок:V1C8COMObject
+    public class ПредставлениеТарифовИНадбавок:EnumBase
     {
         public ПредставлениеТарифовИНадбавок(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase МесячныйРазмерВГривнах => GetProperty<EnumItemBase>("МесячныйРазмерВГривнах");
-        public EnumItemBase ТарифыКоэффициенты => GetProperty<EnumItemBase>("ТарифыКоэффициенты");
-        public EnumItemBase МесячныйРазмерВГривнахИТарифыКоэффициенты => GetProperty<EnumItemBase>("МесячныйРазмерВГривнахИТарифыКоэффициенты");
+        public EnumItem МесячныйРазмерВГривнах => GetProperty<EnumItem>("МесячныйРазмерВГривнах");
+        public EnumItem ТарифыКоэффициенты => GetProperty<EnumItem>("ТарифыКоэффициенты");
+        public EnumItem МесячныйРазмерВГривнахИТарифыКоэффициенты => GetProperty<EnumItem>("МесячныйРазмерВГривнахИТарифыКоэффициенты");
     }
 }

@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыОстатковНДСПриобретенийОжидаемый:V1C8COMObject
+    public class ВидыОстатковНДСПриобретенийОжидаемый:EnumBase
     {
         public ВидыОстатковНДСПриобретенийОжидаемый(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ПравильнаяРегистрация => GetProperty<EnumItemBase>("ПравильнаяРегистрация");
-        public EnumItemBase ЕщеНеПолучены => GetProperty<EnumItemBase>("ЕщеНеПолучены");
-        public EnumItemBase НеБудутПолучены => GetProperty<EnumItemBase>("НеБудутПолучены");
+        public EnumItem ПравильнаяРегистрация => GetProperty<EnumItem>("ПравильнаяРегистрация");
+        public EnumItem ЕщеНеПолучены => GetProperty<EnumItem>("ЕщеНеПолучены");
+        public EnumItem НеБудутПолучены => GetProperty<EnumItem>("НеБудутПолучены");
     }
 }

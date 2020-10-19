@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КодыОперацийВзаиморасчетыСРаботникамиОрганизаций:V1C8COMObject
+    public class КодыОперацийВзаиморасчетыСРаботникамиОрганизаций:EnumBase
     {
         public КодыОперацийВзаиморасчетыСРаботникамиОрганизаций(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Начисления => GetProperty<EnumItemBase>("Начисления");
-        public EnumItemBase Взносы => GetProperty<EnumItemBase>("Взносы");
-        public EnumItemBase НДФЛ => GetProperty<EnumItemBase>("НДФЛ");
-        public EnumItemBase Удержания => GetProperty<EnumItemBase>("Удержания");
-        public EnumItemBase Выплата => GetProperty<EnumItemBase>("Выплата");
-        public EnumItemBase ПереносКопеекНаСледующийМесяц => GetProperty<EnumItemBase>("ПереносКопеекНаСледующийМесяц");
-        public EnumItemBase УдалитьВыплатаАванса => GetProperty<EnumItemBase>("УдалитьВыплатаАванса");
-        public EnumItemBase УдалитьВыплатаМежрасчетная => GetProperty<EnumItemBase>("УдалитьВыплатаМежрасчетная");
-        public EnumItemBase УдалитьВыплатаОчередная => GetProperty<EnumItemBase>("УдалитьВыплатаОчередная");
-        public EnumItemBase УдалитьВыплатаДивидендов => GetProperty<EnumItemBase>("УдалитьВыплатаДивидендов");
-        public EnumItemBase УдалитьВыплатаДепонента => GetProperty<EnumItemBase>("УдалитьВыплатаДепонента");
-        public EnumItemBase УдалитьПогашениеНачисленийПоФактуВыплаты => GetProperty<EnumItemBase>("УдалитьПогашениеНачисленийПоФактуВыплаты");
-        public EnumItemBase УдалитьВключениеКопеекПредыдущегоМесяца => GetProperty<EnumItemBase>("УдалитьВключениеКопеекПредыдущегоМесяца");
+        public EnumItem Начисления => GetProperty<EnumItem>("Начисления");
+        public EnumItem Взносы => GetProperty<EnumItem>("Взносы");
+        public EnumItem НДФЛ => GetProperty<EnumItem>("НДФЛ");
+        public EnumItem Удержания => GetProperty<EnumItem>("Удержания");
+        public EnumItem Выплата => GetProperty<EnumItem>("Выплата");
+        public EnumItem ПереносКопеекНаСледующийМесяц => GetProperty<EnumItem>("ПереносКопеекНаСледующийМесяц");
+        public EnumItem УдалитьВыплатаАванса => GetProperty<EnumItem>("УдалитьВыплатаАванса");
+        public EnumItem УдалитьВыплатаМежрасчетная => GetProperty<EnumItem>("УдалитьВыплатаМежрасчетная");
+        public EnumItem УдалитьВыплатаОчередная => GetProperty<EnumItem>("УдалитьВыплатаОчередная");
+        public EnumItem УдалитьВыплатаДивидендов => GetProperty<EnumItem>("УдалитьВыплатаДивидендов");
+        public EnumItem УдалитьВыплатаДепонента => GetProperty<EnumItem>("УдалитьВыплатаДепонента");
+        public EnumItem УдалитьПогашениеНачисленийПоФактуВыплаты => GetProperty<EnumItem>("УдалитьПогашениеНачисленийПоФактуВыплаты");
+        public EnumItem УдалитьВключениеКопеекПредыдущегоМесяца => GetProperty<EnumItem>("УдалитьВключениеКопеекПредыдущегоМесяца");
     }
 }

@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ПорядокРасчетаСтоимостиЕдиницыВремениОплатыТруда:V1C8COMObject
+    public class ПорядокРасчетаСтоимостиЕдиницыВремениОплатыТруда:EnumBase
     {
         public ПорядокРасчетаСтоимостиЕдиницыВремениОплатыТруда(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ПоНормеВремениГрафикаСотрудника => GetProperty<EnumItemBase>("ПоНормеВремениГрафикаСотрудника");
-        public EnumItemBase ПоНормеВремениПроизводственногоКалендаря => GetProperty<EnumItemBase>("ПоНормеВремениПроизводственногоКалендаря");
-        public EnumItemBase ПоСреднегодовомуЗначению => GetProperty<EnumItemBase>("ПоСреднегодовомуЗначению");
+        public EnumItem ПоНормеВремениГрафикаСотрудника => GetProperty<EnumItem>("ПоНормеВремениГрафикаСотрудника");
+        public EnumItem ПоНормеВремениПроизводственногоКалендаря => GetProperty<EnumItem>("ПоНормеВремениПроизводственногоКалендаря");
+        public EnumItem ПоСреднегодовомуЗначению => GetProperty<EnumItem>("ПоСреднегодовомуЗначению");
     }
 }

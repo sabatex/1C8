@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СпособыРедактированияЭлектронныхПисем:V1C8COMObject
+    public class СпособыРедактированияЭлектронныхПисем:EnumBase
     {
         public СпособыРедактированияЭлектронныхПисем(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ОбычныйТекст => GetProperty<EnumItemBase>("ОбычныйТекст");
-        public EnumItemBase HTML => GetProperty<EnumItemBase>("HTML");
+        public EnumItem ОбычныйТекст => GetProperty<EnumItem>("ОбычныйТекст");
+        public EnumItem HTML => GetProperty<EnumItem>("HTML");
     }
 }

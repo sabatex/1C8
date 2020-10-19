@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВариантыСжатияTIFF:V1C8COMObject
+    public class ВариантыСжатияTIFF:EnumBase
     {
         public ВариантыСжатияTIFF(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase CCITT3 => GetProperty<EnumItemBase>("CCITT3");
-        public EnumItemBase CCITT4 => GetProperty<EnumItemBase>("CCITT4");
-        public EnumItemBase LZW => GetProperty<EnumItemBase>("LZW");
-        public EnumItemBase RLE => GetProperty<EnumItemBase>("RLE");
-        public EnumItemBase БезСжатия => GetProperty<EnumItemBase>("БезСжатия");
+        public EnumItem CCITT3 => GetProperty<EnumItem>("CCITT3");
+        public EnumItem CCITT4 => GetProperty<EnumItem>("CCITT4");
+        public EnumItem LZW => GetProperty<EnumItem>("LZW");
+        public EnumItem RLE => GetProperty<EnumItem>("RLE");
+        public EnumItem БезСжатия => GetProperty<EnumItem>("БезСжатия");
     }
 }

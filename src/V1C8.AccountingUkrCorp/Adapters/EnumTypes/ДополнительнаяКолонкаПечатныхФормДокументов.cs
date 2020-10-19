@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ДополнительнаяКолонкаПечатныхФормДокументов:V1C8COMObject
+    public class ДополнительнаяКолонкаПечатныхФормДокументов:EnumBase
     {
         public ДополнительнаяКолонкаПечатныхФормДокументов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НеВыводить => GetProperty<EnumItemBase>("НеВыводить");
-        public EnumItemBase Артикул => GetProperty<EnumItemBase>("Артикул");
-        public EnumItemBase Код => GetProperty<EnumItemBase>("Код");
+        public EnumItem НеВыводить => GetProperty<EnumItem>("НеВыводить");
+        public EnumItem Артикул => GetProperty<EnumItem>("Артикул");
+        public EnumItem Код => GetProperty<EnumItem>("Код");
     }
 }

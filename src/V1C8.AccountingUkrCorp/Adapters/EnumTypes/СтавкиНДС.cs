@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СтавкиНДС:V1C8COMObject
+    public class СтавкиНДС:EnumBase
     {
         public СтавкиНДС(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase НДС20 => GetProperty<EnumItemBase>("НДС20");
-        public EnumItemBase НДС7 => GetProperty<EnumItemBase>("НДС7");
-        public EnumItemBase НДС0 => GetProperty<EnumItemBase>("НДС0");
-        public EnumItemBase БезНДС => GetProperty<EnumItemBase>("БезНДС");
-        public EnumItemBase НеНДС => GetProperty<EnumItemBase>("НеНДС");
+        public EnumItem НДС20 => GetProperty<EnumItem>("НДС20");
+        public EnumItem НДС7 => GetProperty<EnumItem>("НДС7");
+        public EnumItem НДС0 => GetProperty<EnumItem>("НДС0");
+        public EnumItem БезНДС => GetProperty<EnumItem>("БезНДС");
+        public EnumItem НеНДС => GetProperty<EnumItem>("НеНДС");
     }
 }

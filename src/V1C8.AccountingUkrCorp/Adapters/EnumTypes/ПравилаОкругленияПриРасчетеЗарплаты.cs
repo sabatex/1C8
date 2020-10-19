@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ПравилаОкругленияПриРасчетеЗарплаты:V1C8COMObject
+    public class ПравилаОкругленияПриРасчетеЗарплаты:EnumBase
     {
         public ПравилаОкругленияПриРасчетеЗарплаты(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Авто => GetProperty<EnumItemBase>("Авто");
-        public EnumItemBase ВМеньшуюСторону => GetProperty<EnumItemBase>("ВМеньшуюСторону");
-        public EnumItemBase ВБольшуюСторону => GetProperty<EnumItemBase>("ВБольшуюСторону");
+        public EnumItem Авто => GetProperty<EnumItem>("Авто");
+        public EnumItem ВМеньшуюСторону => GetProperty<EnumItem>("ВМеньшуюСторону");
+        public EnumItem ВБольшуюСторону => GetProperty<EnumItem>("ВБольшуюСторону");
     }
 }

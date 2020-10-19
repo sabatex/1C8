@@ -3,42 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class СостоянияСотрудника:V1C8COMObject
+    public class СостоянияСотрудника:EnumBase
     {
         public СостоянияСотрудника(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Работа => GetProperty<EnumItemBase>("Работа");
-        public EnumItemBase РаботаВОтпускеПоУходуЗаРебенком => GetProperty<EnumItemBase>("РаботаВОтпускеПоУходуЗаРебенком");
-        public EnumItemBase Прогул => GetProperty<EnumItemBase>("Прогул");
-        public EnumItemBase ВынужденныйПрогул => GetProperty<EnumItemBase>("ВынужденныйПрогул");
-        public EnumItemBase ПростойПоВинеРаботника => GetProperty<EnumItemBase>("ПростойПоВинеРаботника");
-        public EnumItemBase ПростойПоВинеРаботодателя => GetProperty<EnumItemBase>("ПростойПоВинеРаботодателя");
-        public EnumItemBase ПростойНеЗависящийОтРаботодателяИРаботника => GetProperty<EnumItemBase>("ПростойНеЗависящийОтРаботодателяИРаботника");
-        public EnumItemBase ОтпускОсновной => GetProperty<EnumItemBase>("ОтпускОсновной");
-        public EnumItemBase ДополнительныйОтпуск => GetProperty<EnumItemBase>("ДополнительныйОтпуск");
-        public EnumItemBase ДополнительныйОтпускНеоплачиваемый => GetProperty<EnumItemBase>("ДополнительныйОтпускНеоплачиваемый");
-        public EnumItemBase ОтпускУчебныйОплачиваемый => GetProperty<EnumItemBase>("ОтпускУчебныйОплачиваемый");
-        public EnumItemBase ОтпускУчебныйНеоплачиваемый => GetProperty<EnumItemBase>("ОтпускУчебныйНеоплачиваемый");
-        public EnumItemBase ОтпускНеоплачиваемыйПоРазрешениюРаботодателя => GetProperty<EnumItemBase>("ОтпускНеоплачиваемыйПоРазрешениюРаботодателя");
-        public EnumItemBase ОтпускНеоплачиваемыйПоЗаконодательству => GetProperty<EnumItemBase>("ОтпускНеоплачиваемыйПоЗаконодательству");
-        public EnumItemBase ОтпускПоУходуЗаРебенком => GetProperty<EnumItemBase>("ОтпускПоУходуЗаРебенком");
-        public EnumItemBase Командировка => GetProperty<EnumItemBase>("Командировка");
-        public EnumItemBase ОтсутствиеССохранениемОплаты => GetProperty<EnumItemBase>("ОтсутствиеССохранениемОплаты");
-        public EnumItemBase ВыполнениеГосударственныхОбязанностей => GetProperty<EnumItemBase>("ВыполнениеГосударственныхОбязанностей");
-        public EnumItemBase ДополнительныеВыходныеДниОплачиваемые => GetProperty<EnumItemBase>("ДополнительныеВыходныеДниОплачиваемые");
-        public EnumItemBase ДополнительныеВыходныеДниНеОплачиваемые => GetProperty<EnumItemBase>("ДополнительныеВыходныеДниНеОплачиваемые");
-        public EnumItemBase ОтсутствиеПоНевыясненнымПричинам => GetProperty<EnumItemBase>("ОтсутствиеПоНевыясненнымПричинам");
-        public EnumItemBase ОтпускПоБеременностиИРодам => GetProperty<EnumItemBase>("ОтпускПоБеременностиИРодам");
-        public EnumItemBase ОтпускНаСанаторноКурортноеЛечение => GetProperty<EnumItemBase>("ОтпускНаСанаторноКурортноеЛечение");
-        public EnumItemBase Болезнь => GetProperty<EnumItemBase>("Болезнь");
-        public EnumItemBase БолезньБезОплаты => GetProperty<EnumItemBase>("БолезньБезОплаты");
-        public EnumItemBase Факт => GetProperty<EnumItemBase>("Факт");
-        public EnumItemBase Увольнение => GetProperty<EnumItemBase>("Увольнение");
-        public EnumItemBase ОтпускПоУходуЗаРебенком6лет => GetProperty<EnumItemBase>("ОтпускПоУходуЗаРебенком6лет");
+        public EnumItem Работа => GetProperty<EnumItem>("Работа");
+        public EnumItem РаботаВОтпускеПоУходуЗаРебенком => GetProperty<EnumItem>("РаботаВОтпускеПоУходуЗаРебенком");
+        public EnumItem Прогул => GetProperty<EnumItem>("Прогул");
+        public EnumItem ВынужденныйПрогул => GetProperty<EnumItem>("ВынужденныйПрогул");
+        public EnumItem ПростойПоВинеРаботника => GetProperty<EnumItem>("ПростойПоВинеРаботника");
+        public EnumItem ПростойПоВинеРаботодателя => GetProperty<EnumItem>("ПростойПоВинеРаботодателя");
+        public EnumItem ПростойНеЗависящийОтРаботодателяИРаботника => GetProperty<EnumItem>("ПростойНеЗависящийОтРаботодателяИРаботника");
+        public EnumItem ОтпускОсновной => GetProperty<EnumItem>("ОтпускОсновной");
+        public EnumItem ДополнительныйОтпуск => GetProperty<EnumItem>("ДополнительныйОтпуск");
+        public EnumItem ДополнительныйОтпускНеоплачиваемый => GetProperty<EnumItem>("ДополнительныйОтпускНеоплачиваемый");
+        public EnumItem ОтпускУчебныйОплачиваемый => GetProperty<EnumItem>("ОтпускУчебныйОплачиваемый");
+        public EnumItem ОтпускУчебныйНеоплачиваемый => GetProperty<EnumItem>("ОтпускУчебныйНеоплачиваемый");
+        public EnumItem ОтпускНеоплачиваемыйПоРазрешениюРаботодателя => GetProperty<EnumItem>("ОтпускНеоплачиваемыйПоРазрешениюРаботодателя");
+        public EnumItem ОтпускНеоплачиваемыйПоЗаконодательству => GetProperty<EnumItem>("ОтпускНеоплачиваемыйПоЗаконодательству");
+        public EnumItem ОтпускПоУходуЗаРебенком => GetProperty<EnumItem>("ОтпускПоУходуЗаРебенком");
+        public EnumItem Командировка => GetProperty<EnumItem>("Командировка");
+        public EnumItem ОтсутствиеССохранениемОплаты => GetProperty<EnumItem>("ОтсутствиеССохранениемОплаты");
+        public EnumItem ВыполнениеГосударственныхОбязанностей => GetProperty<EnumItem>("ВыполнениеГосударственныхОбязанностей");
+        public EnumItem ДополнительныеВыходныеДниОплачиваемые => GetProperty<EnumItem>("ДополнительныеВыходныеДниОплачиваемые");
+        public EnumItem ДополнительныеВыходныеДниНеОплачиваемые => GetProperty<EnumItem>("ДополнительныеВыходныеДниНеОплачиваемые");
+        public EnumItem ОтсутствиеПоНевыясненнымПричинам => GetProperty<EnumItem>("ОтсутствиеПоНевыясненнымПричинам");
+        public EnumItem ОтпускПоБеременностиИРодам => GetProperty<EnumItem>("ОтпускПоБеременностиИРодам");
+        public EnumItem ОтпускНаСанаторноКурортноеЛечение => GetProperty<EnumItem>("ОтпускНаСанаторноКурортноеЛечение");
+        public EnumItem Болезнь => GetProperty<EnumItem>("Болезнь");
+        public EnumItem БолезньБезОплаты => GetProperty<EnumItem>("БолезньБезОплаты");
+        public EnumItem Факт => GetProperty<EnumItem>("Факт");
+        public EnumItem Увольнение => GetProperty<EnumItem>("Увольнение");
+        public EnumItem ОтпускПоУходуЗаРебенком6лет => GetProperty<EnumItem>("ОтпускПоУходуЗаРебенком6лет");
     }
 }

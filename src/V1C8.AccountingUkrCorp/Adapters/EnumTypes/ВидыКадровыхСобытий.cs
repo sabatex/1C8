@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыКадровыхСобытий:V1C8COMObject
+    public class ВидыКадровыхСобытий:EnumBase
     {
         public ВидыКадровыхСобытий(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Прием => GetProperty<EnumItemBase>("Прием");
-        public EnumItemBase Перемещение => GetProperty<EnumItemBase>("Перемещение");
-        public EnumItemBase Увольнение => GetProperty<EnumItemBase>("Увольнение");
-        public EnumItemBase НачальныеДанные => GetProperty<EnumItemBase>("НачальныеДанные");
+        public EnumItem Прием => GetProperty<EnumItem>("Прием");
+        public EnumItem Перемещение => GetProperty<EnumItem>("Перемещение");
+        public EnumItem Увольнение => GetProperty<EnumItem>("Увольнение");
+        public EnumItem НачальныеДанные => GetProperty<EnumItem>("НачальныеДанные");
     }
 }

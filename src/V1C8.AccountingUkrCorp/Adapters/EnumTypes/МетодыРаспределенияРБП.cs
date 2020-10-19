@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class МетодыРаспределенияРБП:V1C8COMObject
+    public class МетодыРаспределенияРБП:EnumBase
     {
         public МетодыРаспределенияРБП(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase ПоДням => GetProperty<EnumItemBase>("ПоДням");
-        public EnumItemBase ПоМесяцам => GetProperty<EnumItemBase>("ПоМесяцам");
+        public EnumItem ПоДням => GetProperty<EnumItem>("ПоДням");
+        public EnumItem ПоМесяцам => GetProperty<EnumItem>("ПоМесяцам");
     }
 }

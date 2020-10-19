@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ВидыДействияСНачислением:V1C8COMObject
+    public class ВидыДействияСНачислением:EnumBase
     {
         public ВидыДействияСНачислением(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Начать => GetProperty<EnumItemBase>("Начать");
-        public EnumItemBase Изменить => GetProperty<EnumItemBase>("Изменить");
-        public EnumItemBase НеИзменять => GetProperty<EnumItemBase>("НеИзменять");
-        public EnumItemBase Прекратить => GetProperty<EnumItemBase>("Прекратить");
+        public EnumItem Начать => GetProperty<EnumItem>("Начать");
+        public EnumItem Изменить => GetProperty<EnumItem>("Изменить");
+        public EnumItem НеИзменять => GetProperty<EnumItem>("НеИзменять");
+        public EnumItem Прекратить => GetProperty<EnumItem>("Прекратить");
     }
 }

@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class ТипыОплат:V1C8COMObject
+    public class ТипыОплат:EnumBase
     {
         public ТипыОплат(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Наличные => GetProperty<EnumItemBase>("Наличные");
-        public EnumItemBase ПлатежнаяКарта => GetProperty<EnumItemBase>("ПлатежнаяКарта");
-        public EnumItemBase БанковскийКредит => GetProperty<EnumItemBase>("БанковскийКредит");
+        public EnumItem Наличные => GetProperty<EnumItem>("Наличные");
+        public EnumItem ПлатежнаяКарта => GetProperty<EnumItem>("ПлатежнаяКарта");
+        public EnumItem БанковскийКредит => GetProperty<EnumItem>("БанковскийКредит");
     }
 }

@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.Enums;
+using sabatex.V1C8.EnumTypes;
 
 namespace sabatex.V1C8.AccountingUkrCorp.Adapters.EnumTypes
 {
-    public class КатегорииРасчетов:V1C8COMObject
+    public class КатегорииРасчетов:EnumBase
     {
         public КатегорииРасчетов(Enums owner, object handle) : base(owner, handle)
         {
         }
-        public EnumItemBase Первичное => GetProperty<EnumItemBase>("Первичное");
-        public EnumItemBase ЗависимоеПервогоУровня => GetProperty<EnumItemBase>("ЗависимоеПервогоУровня");
-        public EnumItemBase ЗависимоеВторогоУровня => GetProperty<EnumItemBase>("ЗависимоеВторогоУровня");
-        public EnumItemBase ЗависимоеТретьегоУровня => GetProperty<EnumItemBase>("ЗависимоеТретьегоУровня");
+        public EnumItem Первичное => GetProperty<EnumItem>("Первичное");
+        public EnumItem ЗависимоеПервогоУровня => GetProperty<EnumItem>("ЗависимоеПервогоУровня");
+        public EnumItem ЗависимоеВторогоУровня => GetProperty<EnumItem>("ЗависимоеВторогоУровня");
+        public EnumItem ЗависимоеТретьегоУровня => GetProperty<EnumItem>("ЗависимоеТретьегоУровня");
     }
 }

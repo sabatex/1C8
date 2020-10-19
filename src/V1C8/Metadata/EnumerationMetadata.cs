@@ -8,7 +8,7 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public int Count { get => MethodInt("Count"); }
+        public int Count()=>MethodSruct<int>("Count");
         public T Get<T>(int i) where T:V1C8COMObject=>Method<T>("Get",i);
     }
 }

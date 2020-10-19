@@ -9,6 +9,7 @@ namespace sabatex.V1C8.Metadata
             
         }
         public TypesMetaData Types()=>Method<TypesMetaData>("Types");
+        public StringQualifiersMetaData StringQualifiers{get=>GetProperty<StringQualifiersMetaData>("StringQualifiers");}
         
     }
 }

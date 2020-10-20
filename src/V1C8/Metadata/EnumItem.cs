@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sabatex.V1C8.EnumTypes
+namespace sabatex.V1C8.Metadata
 {
-    public class EnumItem:MetaDataBae
+    public class EnumItemMetaData:MetaDataBase
     {
-        public EnumItem(EnumBase owner, object handle) : base(owner, handle)
+        public EnumItemMetaData(V1C8COMObject owner, object handle) : base(owner, handle)
         {
         }
 

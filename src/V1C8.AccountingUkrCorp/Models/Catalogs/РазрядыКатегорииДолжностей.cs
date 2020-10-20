@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RazriadyKatehoryyDolzhnostei")]
     [Description1C8(Name = "РазрядыКатегорииДолжностей", Comment = "", Synonym = "Квалификационные разряды (категории)")]
-    public class РазрядыКатегорииДолжностей:EnumItem
+    public class РазрядыКатегорииДолжностей
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -30,7 +30,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НаименованиеПолное", Comment = "", Synonym = "Наименование полное")]
     public string НаименованиеПолное {get; set;}
     [Description1C8(Name = "ТарифнаяСетка", Comment = "", Synonym = "Тарифная сетка")]
-    public DBNull ТарифнаяСетка {get; set;}
+    public Catalogs.ТарифныеСетки ТарифнаяСетка {get; set;}
     #endregion реквізити
     }
 }

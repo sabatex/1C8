@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VaryantyOtchetov")]
     [Description1C8(Name = "ВариантыОтчетов", Comment = "", Synonym = "Отчеты")]
-    public class ВариантыОтчетов:EnumItem
+    public class ВариантыОтчетов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "", Synonym = "Автор")]
-    public DBNull Автор {get; set;}
+    public Catalogs.ВнешниеПользователи Автор {get; set;}
     [Description1C8(Name = "ВидимостьПоУмолчанию", Comment = "", Synonym = "По умолчанию виден в панелях отчетов")]
     public bool ВидимостьПоУмолчанию {get; set;}
     [Description1C8(Name = "ВидимостьПоУмолчаниюПереопределена", Comment = "Когда Истина то вместо флажка ВидимостьПоУмолчанию используется значение аналогичного флажка предопределенного варианта отчета.", Synonym = "Видимость по умолчанию переопределена")]
@@ -47,13 +47,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "Отчет", Comment = "", Synonym = "Отчет")]
-    public DBNull Отчет {get; set;}
+    public Catalogs.ИдентификаторыОбъектовРасширений Отчет {get; set;}
     [Description1C8(Name = "Пользовательский", Comment = "", Synonym = "Пользовательский")]
     public bool Пользовательский {get; set;}
     [Description1C8(Name = "ПредопределенныйВариант", Comment = "Вариант конфигурации", Synonym = "Предопределенный вариант")]
-    public DBNull ПредопределенныйВариант {get; set;}
+    public Catalogs.ПредопределенныеВариантыОтчетовРасширений ПредопределенныйВариант {get; set;}
     [Description1C8(Name = "ТипОтчета", Comment = "", Synonym = "Тип отчета")]
-    public DBNull ТипОтчета {get; set;}
+    public Enums.ТипыОтчетов ТипОтчета {get; set;}
     [Description1C8(Name = "ТолькоДляАвтора", Comment = "", Synonym = "Только для автора")]
     public bool ТолькоДляАвтора {get; set;}
     [Description1C8(Name = "УдалитьКлючОбъекта", Comment = "", Synonym = "(не используется) Ключ объекта")]

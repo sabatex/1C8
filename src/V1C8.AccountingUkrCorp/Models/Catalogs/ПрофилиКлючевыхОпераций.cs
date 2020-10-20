@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ProfylyKliuchevykhOperatsyi")]
     [Description1C8(Name = "ПрофилиКлючевыхОпераций", Comment = "", Synonym = "Профили ключевых операций")]
-    public class ПрофилиКлючевыхОпераций:EnumItem
+    public class ПрофилиКлючевыхОпераций
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

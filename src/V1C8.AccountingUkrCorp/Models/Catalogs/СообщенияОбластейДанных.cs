@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SoobshchenyiaOblasteiDannykh")]
     [Description1C8(Name = "СообщенияОбластейДанных", Comment = "", Synonym = "Сообщения областей данных")]
-    public class СообщенияОбластейДанных:EnumItem
+    public class СообщенияОбластейДанных
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -28,9 +28,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Сховище значень
     public byte[] ТелоСообщения {get; set;}
     [Description1C8(Name = "Отправитель", Comment = "", Synonym = "Отправитель")]
-    public DBNull Отправитель {get; set;}
+    public ПланОбмена.ОбменСообщениями Отправитель {get; set;}
     [Description1C8(Name = "Получатель", Comment = "", Synonym = "Получатель")]
-    public DBNull Получатель {get; set;}
+    public ПланОбмена.ОбменСообщениями Получатель {get; set;}
     [Description1C8(Name = "Заблокировано", Comment = "", Synonym = "Заблокировано")]
     public bool Заблокировано {get; set;}
     [Description1C8(Name = "КоличествоПопытокОбработкиСообщения", Comment = "", Synonym = "Количество попыток обработки сообщения")]

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NaznachenyiaYspolzovanyia")]
     [Description1C8(Name = "НазначенияИспользования", Comment = "", Synonym = "Назначения использования")]
-    public class НазначенияИспользования:EnumItem
+    public class НазначенияИспользования
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -31,18 +31,18 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 15.3
     public decimal Количество {get; set;}
     [Description1C8(Name = "СпособОтраженияРасходов", Comment = "", Synonym = "Способ отражения расходов")]
-    public DBNull СпособОтраженияРасходов {get; set;}
+    public Catalogs.СпособыОтраженияРасходовПоАмортизации СпособОтраженияРасходов {get; set;}
     [Description1C8(Name = "ВидМалоценногоАктива", Comment = "", Synonym = "Вид малоценного актива")]
-    public DBNull ВидМалоценногоАктива {get; set;}
+    public Enums.ВидыМалоценныхАктивов ВидМалоценногоАктива {get; set;}
     [Description1C8(Name = "СчетПередачиБУ", Comment = "", Synonym = "Счет передачи БУ")]
-    public DBNull СчетПередачиБУ {get; set;}
+    public ПланСчетов.Хозрасчетный СчетПередачиБУ {get; set;}
     [Description1C8(Name = "СчетАмортизацииБУ", Comment = "", Synonym = "Счет амортизации БУ")]
-    public DBNull СчетАмортизацииБУ {get; set;}
+    public ПланСчетов.Хозрасчетный СчетАмортизацииБУ {get; set;}
     [Description1C8(Name = "СчетБУДляПечати", Comment = "", Synonym = "Счет БУ для печати")]
     [StringLength(25)]
     public string СчетБУДляПечати {get; set;}
     [Description1C8(Name = "ЕдиницаИзмерения", Comment = "(Общ)", Synonym = "Единица измерения")]
-    public DBNull ЕдиницаИзмерения {get; set;}
+    public Catalogs.КлассификаторЕдиницИзмерения ЕдиницаИзмерения {get; set;}
     [Description1C8(Name = "Коэффициент", Comment = "(Общ)", Synonym = "Коэффициент")]
     // Format 10.3
     public decimal Коэффициент {get; set;}

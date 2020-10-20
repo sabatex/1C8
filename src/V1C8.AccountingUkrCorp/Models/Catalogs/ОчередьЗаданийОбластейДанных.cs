@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("OcheredZadanyiOblasteiDannykh")]
     [Description1C8(Name = "ОчередьЗаданийОбластейДанных", Comment = "", Synonym = "Очередь заданий областей данных")]
-    public class ОчередьЗаданийОбластейДанных:EnumItem
+    public class ОчередьЗаданийОбластейДанных
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -29,13 +29,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ЗапланированныйМоментЗапуска", Comment = "", Synonym = "Запланированный момент запуска")]
     public DateTime ЗапланированныйМоментЗапуска {get; set;}
     [Description1C8(Name = "СостояниеЗадания", Comment = "", Synonym = "Состояние задания")]
-    public DBNull СостояниеЗадания {get; set;}
+    public Enums.СостоянияЗаданий СостояниеЗадания {get; set;}
     [Description1C8(Name = "ИсполняющееФоновоеЗадание", Comment = "", Synonym = "Исполняющее фоновое задание")]
     public Guid ИсполняющееФоновоеЗадание {get; set;}
     [Description1C8(Name = "ЭксклюзивноеВыполнение", Comment = "", Synonym = "Эксклюзивное выполнение")]
     public bool ЭксклюзивноеВыполнение {get; set;}
     [Description1C8(Name = "Шаблон", Comment = "", Synonym = "Шаблон")]
-    public DBNull Шаблон {get; set;}
+    public Catalogs.ШаблоныЗаданийОчереди Шаблон {get; set;}
     [Description1C8(Name = "НомерПопытки", Comment = "", Synonym = "Номер попытки")]
     // Format 3.0
     public long НомерПопытки {get; set;}

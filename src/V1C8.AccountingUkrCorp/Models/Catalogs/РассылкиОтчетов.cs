@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RassylkyOtchetov")]
     [Description1C8(Name = "РассылкиОтчетов", Comment = "", Synonym = "Рассылки отчетов")]
-    public class РассылкиОтчетов:EnumItem
+    public class РассылкиОтчетов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -39,14 +39,14 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string FTPСервер {get; set;}
     [Description1C8(Name = "Автор", Comment = "", Synonym = "Ответственный")]
-    public DBNull Автор {get; set;}
+    public Catalogs.Пользователи Автор {get; set;}
     [Description1C8(Name = "АдресОтвета", Comment = "", Synonym = "Адрес ответа")]
     [StringLength(100)]
     public string АдресОтвета {get; set;}
     [Description1C8(Name = "Архивировать", Comment = "", Synonym = "Архивировать")]
     public bool Архивировать {get; set;}
     [Description1C8(Name = "ВидПочтовогоАдресаПолучателей", Comment = "", Synonym = "Почтовый адрес")]
-    public DBNull ВидПочтовогоАдресаПолучателей {get; set;}
+    public Catalogs.ВидыКонтактнойИнформации ВидПочтовогоАдресаПолучателей {get; set;}
     [Description1C8(Name = "ВыполнятьПоРасписанию", Comment = "", Synonym = "Выполнять по расписанию")]
     public bool ВыполнятьПоРасписанию {get; set;}
     [Description1C8(Name = "ИмяАрхива", Comment = "", Synonym = "Имя архива")]
@@ -66,9 +66,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Личная", Comment = "", Synonym = "Личная")]
     public bool Личная {get; set;}
     [Description1C8(Name = "Папка", Comment = "", Synonym = "Папка")]
-    public DBNull Папка {get; set;}
+    public Catalogs.ПапкиФайлов Папка {get; set;}
     [Description1C8(Name = "ПериодичностьРасписания", Comment = "", Synonym = "Периодичность расписания")]
-    public DBNull ПериодичностьРасписания {get; set;}
+    public Enums.ПериодичностиРасписанийРассылокОтчетов ПериодичностьРасписания {get; set;}
     [Description1C8(Name = "Персонализирована", Comment = "", Synonym = "Персонализирована")]
     public bool Персонализирована {get; set;}
     [Description1C8(Name = "ПисьмоВФорматеHTML", Comment = "", Synonym = "Письмо в формате HTML")]
@@ -92,7 +92,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ТемаПисьма", Comment = "", Synonym = "Тема")]
     public string ТемаПисьма {get; set;}
     [Description1C8(Name = "ТипПолучателейРассылки", Comment = "", Synonym = "Кому")]
-    public DBNull ТипПолучателейРассылки {get; set;}
+    public Catalogs.ИдентификаторыОбъектовМетаданных ТипПолучателейРассылки {get; set;}
     [Description1C8(Name = "ТолькоУведомить", Comment = "", Synonym = "Отправлять только уведомления")]
     public bool ТолькоУведомить {get; set;}
     [Description1C8(Name = "ТранслитерироватьИменаФайлов", Comment = "", Synonym = "Транслитерировать имена файлов")]
@@ -104,7 +104,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(75)]
     public string УдалитьПарольАрхива {get; set;}
     [Description1C8(Name = "УчетнаяЗапись", Comment = "", Synonym = "От")]
-    public DBNull УчетнаяЗапись {get; set;}
+    public Catalogs.УчетныеЗаписиЭлектроннойПочты УчетнаяЗапись {get; set;}
     [Description1C8(Name = "СозданаИзФормыОтчета", Comment = "", Synonym = "Создана из формы отчета")]
     public bool СозданаИзФормыОтчета {get; set;}
     #endregion реквізити

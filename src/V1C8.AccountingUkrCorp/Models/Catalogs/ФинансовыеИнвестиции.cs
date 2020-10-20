@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("FynansovyeYnvestytsyy")]
     [Description1C8(Name = "ФинансовыеИнвестиции", Comment = "(Регл)", Synonym = "Финансовые инвестиции")]
-    public class ФинансовыеИнвестиции:EnumItem
+    public class ФинансовыеИнвестиции
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

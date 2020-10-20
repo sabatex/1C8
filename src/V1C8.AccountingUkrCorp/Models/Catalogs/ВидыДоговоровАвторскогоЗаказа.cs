@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyDohovorovAvtorskohoZakaza")]
     [Description1C8(Name = "ВидыДоговоровАвторскогоЗаказа", Comment = "", Synonym = "Виды авторских договоров")]
-    public class ВидыДоговоровАвторскогоЗаказа:EnumItem
+    public class ВидыДоговоровАвторскогоЗаказа
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КодДоходаНДФЛ", Comment = "", Synonym = "Код дохода НДФЛ")]
-    public DBNull КодДоходаНДФЛ {get; set;}
+    public Catalogs.ВидыДоходовНДФЛ КодДоходаНДФЛ {get; set;}
     [Description1C8(Name = "ВидЕСВ", Comment = "", Synonym = "Вид ЕСВ")]
-    public DBNull ВидЕСВ {get; set;}
+    public Enums.ВидыЕСВ ВидЕСВ {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("OsnovnyeSredstva")]
     [Description1C8(Name = "ОсновныеСредства", Comment = "", Synonym = "Основные средства")]
-    public class ОсновныеСредства:EnumItem
+    public class ОсновныеСредства
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

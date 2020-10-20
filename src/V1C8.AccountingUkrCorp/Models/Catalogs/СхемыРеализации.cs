@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SkhemyRealyzatsyy")]
     [Description1C8(Name = "СхемыРеализации", Comment = "(Регл)", Synonym = "Схемы реализации")]
-    public class СхемыРеализации:EnumItem
+    public class СхемыРеализации
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,37 +25,37 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "СчетДоходов", Comment = "", Synonym = "Счет доходов")]
-    public DBNull СчетДоходов {get; set;}
+    public ПланСчетов.Хозрасчетный СчетДоходов {get; set;}
     [Description1C8(Name = "СубконтоДоходов1", Comment = "", Synonym = "Субконто доходов1")]
-    public DBNull СубконтоДоходов1 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоДоходов1 {get; set;}
     [Description1C8(Name = "СубконтоДоходов2", Comment = "", Synonym = "Субконто доходов 2")]
-    public DBNull СубконтоДоходов2 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоДоходов2 {get; set;}
     [Description1C8(Name = "СубконтоДоходов3", Comment = "", Synonym = "Субконто доходов 3")]
-    public DBNull СубконтоДоходов3 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоДоходов3 {get; set;}
     [Description1C8(Name = "СчетСебестоимости", Comment = "", Synonym = "Счет себестоимости")]
-    public DBNull СчетСебестоимости {get; set;}
+    public ПланСчетов.Хозрасчетный СчетСебестоимости {get; set;}
     [Description1C8(Name = "СубконтоСебестоимости1", Comment = "", Synonym = "Субконто себестоимости1")]
-    public DBNull СубконтоСебестоимости1 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоСебестоимости1 {get; set;}
     [Description1C8(Name = "СубконтоСебестоимости2", Comment = "", Synonym = "Субконто себестоимости1")]
-    public DBNull СубконтоСебестоимости2 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоСебестоимости2 {get; set;}
     [Description1C8(Name = "СубконтоСебестоимости3", Comment = "", Synonym = "Субконто себестоимости1")]
-    public DBNull СубконтоСебестоимости3 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоСебестоимости3 {get; set;}
     [Description1C8(Name = "СчетВычетовИзДоходов", Comment = "", Synonym = "Счет вычетов из доходов")]
-    public DBNull СчетВычетовИзДоходов {get; set;}
+    public ПланСчетов.Хозрасчетный СчетВычетовИзДоходов {get; set;}
     [Description1C8(Name = "СубконтоВычетовИзДоходов1", Comment = "", Synonym = "Субконто вычетов из доходов1")]
-    public DBNull СубконтоВычетовИзДоходов1 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоВычетовИзДоходов1 {get; set;}
     [Description1C8(Name = "СубконтоВычетовИзДоходов2", Comment = "", Synonym = "Субконто вычетов из доходов2")]
-    public DBNull СубконтоВычетовИзДоходов2 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоВычетовИзДоходов2 {get; set;}
     [Description1C8(Name = "СубконтоВычетовИзДоходов3", Comment = "", Synonym = "Субконто вычетов из доходов3")]
-    public DBNull СубконтоВычетовИзДоходов3 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоВычетовИзДоходов3 {get; set;}
     [Description1C8(Name = "СчетСебестоимостиПриВозврате", Comment = "", Synonym = "Счет себестоимости при возврате")]
-    public DBNull СчетСебестоимостиПриВозврате {get; set;}
+    public ПланСчетов.Хозрасчетный СчетСебестоимостиПриВозврате {get; set;}
     [Description1C8(Name = "СубконтоСебестоимостиПриВозврате1", Comment = "", Synonym = "Субконто себестоимости при возврате")]
-    public DBNull СубконтоСебестоимостиПриВозврате1 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоСебестоимостиПриВозврате1 {get; set;}
     [Description1C8(Name = "СубконтоСебестоимостиПриВозврате2", Comment = "", Synonym = "Субконто себестоимости при возврате")]
-    public DBNull СубконтоСебестоимостиПриВозврате2 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоСебестоимостиПриВозврате2 {get; set;}
     [Description1C8(Name = "СубконтоСебестоимостиПриВозврате3", Comment = "", Synonym = "Субконто себестоимости при возврате")]
-    public DBNull СубконтоСебестоимостиПриВозврате3 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности СубконтоСебестоимостиПриВозврате3 {get; set;}
     #endregion реквізити
     }
 }

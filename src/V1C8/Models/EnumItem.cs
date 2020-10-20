@@ -9,7 +9,7 @@ namespace sabatex.V1C8.Models
         public string Name { get; set; }
         public string Synonym { get; set; }
         public string Comment { get; set; }
-        public string Owner { get; set; }
+
     }
 
 }

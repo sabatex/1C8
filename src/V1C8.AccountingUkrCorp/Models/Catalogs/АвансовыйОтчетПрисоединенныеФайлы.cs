@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("AvansovyiOtchetPrysoedynennyeFaily")]
     [Description1C8(Name = "АвансовыйОтчетПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Авансовый отчет)")]
-    public class АвансовыйОтчетПрисоединенныеФайлы:EnumItem
+    public class АвансовыйОтчетПрисоединенныеФайлы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "", Synonym = "Автор")]
-    public DBNull Автор {get; set;}
+    public Catalogs.ВнешниеПользователи Автор {get; set;}
     [Description1C8(Name = "ВладелецФайла", Comment = "", Synonym = "Размещение")]
-    public DBNull ВладелецФайла {get; set;}
+    public Документ.АвансовыйОтчет ВладелецФайла {get; set;}
     [Description1C8(Name = "ДатаМодификацииУниверсальная", Comment = "", Synonym = "Дата изменения (универсальное время)")]
     public DateTime ДатаМодификацииУниверсальная {get; set;}
     [Description1C8(Name = "ДатаСоздания", Comment = "", Synonym = "Дата создания")]
@@ -35,7 +35,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Зашифрован", Comment = "", Synonym = "Зашифрован")]
     public bool Зашифрован {get; set;}
     [Description1C8(Name = "Изменил", Comment = "", Synonym = "Отредактировал")]
-    public DBNull Изменил {get; set;}
+    public Catalogs.ВнешниеПользователи Изменил {get; set;}
     [Description1C8(Name = "ИндексКартинки", Comment = "", Synonym = "Индекс значка")]
     // Format 10.0
     public long ИндексКартинки {get; set;}
@@ -52,16 +52,16 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string Расширение {get; set;}
     [Description1C8(Name = "Редактирует", Comment = "", Synonym = "Редактирует")]
-    public DBNull Редактирует {get; set;}
+    public Catalogs.ВнешниеПользователи Редактирует {get; set;}
     [Description1C8(Name = "СтатусИзвлеченияТекста", Comment = "", Synonym = "Статус извлечения текста")]
-    public DBNull СтатусИзвлеченияТекста {get; set;}
+    public Enums.СтатусыИзвлеченияТекстаФайлов СтатусИзвлеченияТекста {get; set;}
     [Description1C8(Name = "ТекстХранилище", Comment = "", Synonym = "Текст")]
     // Сховище значень
     public byte[] ТекстХранилище {get; set;}
     [Description1C8(Name = "ТипХраненияФайла", Comment = "", Synonym = "Тип хранения файла")]
-    public DBNull ТипХраненияФайла {get; set;}
+    public Enums.ТипыХраненияФайлов ТипХраненияФайла {get; set;}
     [Description1C8(Name = "Том", Comment = "", Synonym = "Том")]
-    public DBNull Том {get; set;}
+    public Catalogs.ТомаХраненияФайлов Том {get; set;}
     [Description1C8(Name = "ФайлХранилище", Comment = "", Synonym = "Временное хранилище файла")]
     // Сховище значень
     public byte[] ФайлХранилище {get; set;}

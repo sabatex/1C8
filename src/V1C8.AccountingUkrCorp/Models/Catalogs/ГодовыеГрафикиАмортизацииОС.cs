@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("HodovyeHrafykyAmortyzatsyyOS")]
     [Description1C8(Name = "ГодовыеГрафикиАмортизацииОС", Comment = "", Synonym = "Годовые графики амортизации ОС")]
-    public class ГодовыеГрафикиАмортизацииОС:EnumItem
+    public class ГодовыеГрафикиАмортизацииОС
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

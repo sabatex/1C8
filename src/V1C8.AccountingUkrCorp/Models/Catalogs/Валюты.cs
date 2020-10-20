@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Valiuty")]
     [Description1C8(Name = "Валюты", Comment = "", Synonym = "Валюты")]
-    public class Валюты:EnumItem
+    public class Валюты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -36,7 +36,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 10.2
     public decimal Наценка {get; set;}
     [Description1C8(Name = "ОсновнаяВалюта", Comment = "", Synonym = "Основная валюта")]
-    public DBNull ОсновнаяВалюта {get; set;}
+    public Catalogs.Валюты ОсновнаяВалюта {get; set;}
     [Description1C8(Name = "ПараметрыПрописиНаРусском", Comment = "", Synonym = "Параметры прописи на русском")]
     [StringLength(200)]
     public string ПараметрыПрописиНаРусском {get; set;}
@@ -44,7 +44,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string ФормулаРасчетаКурса {get; set;}
     [Description1C8(Name = "СпособУстановкиКурса", Comment = "", Synonym = "Способ установки курса")]
-    public DBNull СпособУстановкиКурса {get; set;}
+    public Enums.СпособыУстановкиКурсаВалюты СпособУстановкиКурса {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("OsnovanyiaZakliuchenyiaSrochnykhTrudovykhDohovorov")]
     [Description1C8(Name = "ОснованияЗаключенияСрочныхТрудовыхДоговоров", Comment = "", Synonym = "Основания заключения срочных трудовых договоров")]
-    public class ОснованияЗаключенияСрочныхТрудовыхДоговоров:EnumItem
+    public class ОснованияЗаключенияСрочныхТрудовыхДоговоров
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

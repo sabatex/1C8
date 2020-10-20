@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Kontrahenty")]
     [Description1C8(Name = "Контрагенты", Comment = "", Synonym = "Контрагенты")]
-    public class Контрагенты:EnumItem
+    public class Контрагенты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -30,9 +30,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОбособленноеПодразделение", Comment = "", Synonym = "Обособленное подразделение")]
     public bool ОбособленноеПодразделение {get; set;}
     [Description1C8(Name = "ЮридическоеФизическоеЛицо", Comment = "(Общ)", Synonym = "Юр. / физ. лицо")]
-    public DBNull ЮридическоеФизическоеЛицо {get; set;}
+    public Enums.ЮридическоеФизическоеЛицо ЮридическоеФизическоеЛицо {get; set;}
     [Description1C8(Name = "ГоловнойКонтрагент", Comment = "(Общ)", Synonym = "Головной контрагент")]
-    public DBNull ГоловнойКонтрагент {get; set;}
+    public Catalogs.Контрагенты ГоловнойКонтрагент {get; set;}
     [Description1C8(Name = "ИНН", Comment = "Идентификационный номер налогоплательщика", Synonym = "ИНН")]
     [StringLength(12)]
     public string ИНН {get; set;}
@@ -40,11 +40,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(250)]
     public string ДокументУдостоверяющийЛичность {get; set;}
     [Description1C8(Name = "ОсновнойБанковскийСчет", Comment = "", Synonym = "Банковский счет")]
-    public DBNull ОсновнойБанковскийСчет {get; set;}
+    public Catalogs.БанковскиеСчета ОсновнойБанковскийСчет {get; set;}
     [Description1C8(Name = "ОсновнойДоговорКонтрагента", Comment = "", Synonym = "Договор")]
-    public DBNull ОсновнойДоговорКонтрагента {get; set;}
+    public Catalogs.ДоговорыКонтрагентов ОсновнойДоговорКонтрагента {get; set;}
     [Description1C8(Name = "ОсновноеКонтактноеЛицо", Comment = "", Synonym = "Контактное лицо")]
-    public DBNull ОсновноеКонтактноеЛицо {get; set;}
+    public Catalogs.КонтактныеЛица ОсновноеКонтактноеЛицо {get; set;}
     [Description1C8(Name = "КодПоЕДРПОУ", Comment = "(Регл) Код по ЕДРПОУ", Synonym = "Код по ЕДРПОУ")]
     [StringLength(12)]
     public string КодПоЕДРПОУ {get; set;}

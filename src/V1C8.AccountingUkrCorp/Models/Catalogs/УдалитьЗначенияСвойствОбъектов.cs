@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UdalytZnachenyiaSvoistvObektov")]
     [Description1C8(Name = "УдалитьЗначенияСвойствОбъектов", Comment = "(Общ)", Synonym = "(не используется) Значения дополнительных реквизитов")]
-    public class УдалитьЗначенияСвойствОбъектов:EnumItem
+    public class УдалитьЗначенияСвойствОбъектов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

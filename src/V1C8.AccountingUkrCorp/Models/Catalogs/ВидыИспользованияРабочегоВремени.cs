@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyYspolzovanyiaRabochehoVremeny")]
     [Description1C8(Name = "ВидыИспользованияРабочегоВремени", Comment = "", Synonym = "Виды использования рабочего времени")]
-    public class ВидыИспользованияРабочегоВремени:EnumItem
+    public class ВидыИспользованияРабочегоВремени
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -35,7 +35,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "РабочееВремя", Comment = "", Synonym = "Рабочее время")]
     public bool РабочееВремя {get; set;}
     [Description1C8(Name = "ОсновноеВремя", Comment = "", Synonym = "Основное время")]
-    public DBNull ОсновноеВремя {get; set;}
+    public Catalogs.ВидыИспользованияРабочегоВремени ОсновноеВремя {get; set;}
     [Description1C8(Name = "Целосменное", Comment = "", Synonym = "Целосменное")]
     public bool Целосменное {get; set;}
     [Description1C8(Name = "НеИспользуется", Comment = "", Synonym = "Вид времени больше не используется")]

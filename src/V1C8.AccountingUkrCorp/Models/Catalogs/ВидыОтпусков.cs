@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyOtpuskov")]
     [Description1C8(Name = "ВидыОтпусков", Comment = "", Synonym = "Виды отпусков")]
-    public class ВидыОтпусков:EnumItem
+    public class ВидыОтпусков
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,7 +27,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОтпускЯвляетсяЕжегодным", Comment = "", Synonym = "Отпуск является ежегодным")]
     public bool ОтпускЯвляетсяЕжегодным {get; set;}
     [Description1C8(Name = "СпособРасчетаОтпуска", Comment = "", Synonym = "Способ расчета отпуска")]
-    public DBNull СпособРасчетаОтпуска {get; set;}
+    public Enums.СпособыРасчетаОтпуска СпособРасчетаОтпуска {get; set;}
     [Description1C8(Name = "ПредоставлятьОтпускВсемСотрудникам", Comment = "", Synonym = "Предоставлять отпуск всем сотрудникам")]
     public bool ПредоставлятьОтпускВсемСотрудникам {get; set;}
     [Description1C8(Name = "КоличествоДнейВГод", Comment = "", Synonym = "Количество дней в год")]
@@ -46,9 +46,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОсновнойОтпуск", Comment = "", Synonym = "Основной отпуск")]
     public bool ОсновнойОтпуск {get; set;}
     [Description1C8(Name = "ХарактерЗависимостиДнейОтпуска", Comment = "", Synonym = "зависит от стажа")]
-    public DBNull ХарактерЗависимостиДнейОтпуска {get; set;}
+    public Enums.ХарактерЗависимостиКоличестваДнейОтпуска ХарактерЗависимостиДнейОтпуска {get; set;}
     [Description1C8(Name = "ВидСтажа", Comment = "", Synonym = "Вид стажа")]
-    public DBNull ВидСтажа {get; set;}
+    public Catalogs.ВидыСтажа ВидСтажа {get; set;}
     #endregion реквізити
     }
 }

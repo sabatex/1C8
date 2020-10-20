@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YdentyfykatoryObektovMetadannykh")]
     [Description1C8(Name = "ИдентификаторыОбъектовМетаданных", Comment = "", Synonym = "Идентификаторы объектов метаданных")]
-    public class ИдентификаторыОбъектовМетаданных:EnumItem
+    public class ИдентификаторыОбъектовМетаданных
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -42,12 +42,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "БезДанных", Comment = "", Synonym = "Без данных")]
     public bool БезДанных {get; set;}
     [Description1C8(Name = "ЗначениеПустойСсылки", Comment = "", Synonym = "Значение пустой ссылки")]
-    public DBNull ЗначениеПустойСсылки {get; set;}
+    public Документ.СторнированиеНачислений ЗначениеПустойСсылки {get; set;}
     [Description1C8(Name = "КлючОбъектаМетаданных", Comment = "", Synonym = "Ключ объекта метаданных")]
     // Сховище значень
     public byte[] КлючОбъектаМетаданных {get; set;}
     [Description1C8(Name = "НоваяСсылка", Comment = "", Synonym = "Новая ссылка")]
-    public DBNull НоваяСсылка {get; set;}
+    public Catalogs.ИдентификаторыОбъектовМетаданных НоваяСсылка {get; set;}
     #endregion реквізити
     }
 }

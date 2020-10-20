@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NomenklaturaHTD")]
     [Description1C8(Name = "НоменклатураГТД", Comment = "", Synonym = "Коды номенклатуры для НН")]
-    public class НоменклатураГТД:EnumItem
+    public class НоменклатураГТД
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КодУКТВЭД", Comment = "", Synonym = "Код для НН")]
-    public DBNull КодУКТВЭД {get; set;}
+    public Catalogs.КлассификаторУКТВЭД КодУКТВЭД {get; set;}
     [Description1C8(Name = "НомерГТД", Comment = "", Synonym = "Номер ГТД")]
-    public DBNull НомерГТД {get; set;}
+    public Catalogs.НомераГТД НомерГТД {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     #endregion реквізити

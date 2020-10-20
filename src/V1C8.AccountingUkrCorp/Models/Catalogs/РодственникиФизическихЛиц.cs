@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RodstvennykyFyzycheskykhLyts")]
     [Description1C8(Name = "РодственникиФизическихЛиц", Comment = "", Synonym = "Родственники сотрудников")]
-    public class РодственникиФизическихЛиц:EnumItem
+    public class РодственникиФизическихЛиц
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "СтепеньРодства", Comment = "", Synonym = "Степень родства")]
-    public DBNull СтепеньРодства {get; set;}
+    public Catalogs.СтепениРодстваФизическихЛиц СтепеньРодства {get; set;}
     [Description1C8(Name = "ДатаРождения", Comment = "", Synonym = "Дата рождения")]
     public DateTime ДатаРождения {get; set;}
     #endregion реквізити

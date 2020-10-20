@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PolzovatelskyeNastroikyOtchetov")]
     [Description1C8(Name = "ПользовательскиеНастройкиОтчетов", Comment = "Используется для поиска настроек. Содержит только представления. Не содержит самих настроек.", Synonym = "Пользовательские настройки отчетов")]
-    public class ПользовательскиеНастройкиОтчетов:EnumItem
+    public class ПользовательскиеНастройкиОтчетов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Вариант", Comment = "", Synonym = "Вариант")]
-    public DBNull Вариант {get; set;}
+    public Catalogs.ВариантыОтчетов Вариант {get; set;}
     [Description1C8(Name = "Пользователь", Comment = "", Synonym = "Пользователь")]
-    public DBNull Пользователь {get; set;}
+    public Catalogs.ВнешниеПользователи Пользователь {get; set;}
     [Description1C8(Name = "КлючПользовательскойНастройки", Comment = "", Synonym = "Ключ пользовательской настройки")]
     [StringLength(36)]
     public string КлючПользовательскойНастройки {get; set;}

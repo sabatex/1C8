@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyDokhodovNDFL")]
     [Description1C8(Name = "ВидыДоходовНДФЛ", Comment = "", Synonym = "Виды доходов НДФЛ")]
-    public class ВидыДоходовНДФЛ:EnumItem
+    public class ВидыДоходовНДФЛ
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,19 +25,19 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ВидСтавкиРезидента", Comment = "", Synonym = "Ставка налога")]
-    public DBNull ВидСтавкиРезидента {get; set;}
+    public Enums.ВидыСтавокНДФЛ ВидСтавкиРезидента {get; set;}
     [Description1C8(Name = "СоответствуетОплатеТруда", Comment = "", Synonym = "Соответствует оплате труда")]
     public bool СоответствуетОплатеТруда {get; set;}
     [Description1C8(Name = "УчитыватьВзносы", Comment = "", Synonym = "Учитывать взносы")]
     public bool УчитыватьВзносы {get; set;}
     [Description1C8(Name = "ВидСтавкиУвеличенная", Comment = "", Synonym = "Увеличенная ставка")]
-    public DBNull ВидСтавкиУвеличенная {get; set;}
+    public Enums.ВидыСтавокНДФЛ ВидСтавкиУвеличенная {get; set;}
     [Description1C8(Name = "УчитыватьНСЛ", Comment = "", Synonym = "Учитывать НСЛ")]
     public bool УчитыватьНСЛ {get; set;}
     [Description1C8(Name = "ОблагаетсяВоеннымСбором", Comment = "", Synonym = "Облагается военным сбором")]
-    public DBNull ОблагаетсяВоеннымСбором {get; set;}
+    public Catalogs.ВидыДоходовНДФЛ ОблагаетсяВоеннымСбором {get; set;}
     [Description1C8(Name = "ОблагаетсяСверхПредела", Comment = "", Synonym = "Облагается сверх предела")]
-    public DBNull ОблагаетсяСверхПредела {get; set;}
+    public Catalogs.ВидыДоходовНДФЛ ОблагаетсяСверхПредела {get; set;}
     #endregion реквізити
     }
 }

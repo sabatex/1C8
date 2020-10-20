@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SposobyOtrazhenyiaZarplatyVBukhUchete")]
     [Description1C8(Name = "СпособыОтраженияЗарплатыВБухУчете", Comment = "", Synonym = "Способы отражения зарплаты")]
-    public class СпособыОтраженияЗарплатыВБухУчете:EnumItem
+    public class СпособыОтраженияЗарплатыВБухУчете
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -28,30 +28,30 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(1024)]
     public string Описание {get; set;}
     [Description1C8(Name = "СчетУчета", Comment = "", Synonym = "Счет учета")]
-    public DBNull СчетУчета {get; set;}
+    public ПланСчетов.Хозрасчетный СчетУчета {get; set;}
     [Description1C8(Name = "Субконто1", Comment = "", Synonym = "Субконто1")]
-    public DBNull Субконто1 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности Субконто1 {get; set;}
     [Description1C8(Name = "Субконто2", Comment = "", Synonym = "Субконто2")]
-    public DBNull Субконто2 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности Субконто2 {get; set;}
     [Description1C8(Name = "Субконто3", Comment = "", Synonym = "Субконто3")]
-    public DBNull Субконто3 {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности Субконто3 {get; set;}
     [Description1C8(Name = "РежимУчетаВзносов", Comment = "0 - совпадает с зарплатй, 1 - все взносы на отдельной статье", Synonym = "Режим учета взносов")]
     // Format 10.0
     public long РежимУчетаВзносов {get; set;}
     [Description1C8(Name = "ЕстьПрочиеОперации", Comment = "", Synonym = "Есть прочие операции")]
     public bool ЕстьПрочиеОперации {get; set;}
     [Description1C8(Name = "СчетУчетаВзносов", Comment = "", Synonym = "Счет учета взносов")]
-    public DBNull СчетУчетаВзносов {get; set;}
+    public ПланСчетов.Хозрасчетный СчетУчетаВзносов {get; set;}
     [Description1C8(Name = "Субконто1Взносов", Comment = "", Synonym = "Субконто1 взносов")]
-    public DBNull Субконто1Взносов {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности Субконто1Взносов {get; set;}
     [Description1C8(Name = "Субконто2Взносов", Comment = "", Synonym = "Субконто2 взносов")]
-    public DBNull Субконто2Взносов {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности Субконто2Взносов {get; set;}
     [Description1C8(Name = "Субконто3Взносов", Comment = "", Synonym = "Субконто3 взносов")]
-    public DBNull Субконто3Взносов {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности Субконто3Взносов {get; set;}
     [Description1C8(Name = "НалоговоеНазначениеДоходовИЗатрат", Comment = "", Synonym = "Нал. назн. затрат (до 01.01.2015)")]
-    public DBNull НалоговоеНазначениеДоходовИЗатрат {get; set;}
+    public Catalogs.НалоговыеНазначенияАктивовИЗатрат НалоговоеНазначениеДоходовИЗатрат {get; set;}
     [Description1C8(Name = "НалоговоеНазначение", Comment = "", Synonym = "Нал. назн. (НДС)")]
-    public DBNull НалоговоеНазначение {get; set;}
+    public Catalogs.НалоговыеНазначенияАктивовИЗатрат НалоговоеНазначение {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NalohovyeNaznachenyiaAktyvovYZatrat")]
     [Description1C8(Name = "НалоговыеНазначенияАктивовИЗатрат", Comment = "(Регл)", Synonym = "Налоговые назначения активов и затрат")]
-    public class НалоговыеНазначенияАктивовИЗатрат:EnumItem
+    public class НалоговыеНазначенияАктивовИЗатрат
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,15 +25,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ВидНалоговойДеятельности", Comment = "", Synonym = "Вид налоговой деятельности")]
-    public DBNull ВидНалоговойДеятельности {get; set;}
+    public Catalogs.ВидыНалоговойДеятельности ВидНалоговойДеятельности {get; set;}
     [Description1C8(Name = "Амортизируется", Comment = "", Synonym = "не используется - Амортизируется")]
     public bool Амортизируется {get; set;}
     [Description1C8(Name = "ВидДеятельностиНДС", Comment = "", Synonym = "Вид деятельности НДС")]
-    public DBNull ВидДеятельностиНДС {get; set;}
+    public Enums.ВидыДеятельностиНДС ВидДеятельностиНДС {get; set;}
     [Description1C8(Name = "Используется", Comment = "", Synonym = "Используется")]
     public bool Используется {get; set;}
     [Description1C8(Name = "ГруппаНалоговогоНазначения", Comment = "", Synonym = "Группа налогового назначения")]
-    public DBNull ГруппаНалоговогоНазначения {get; set;}
+    public Enums.ГруппыНалоговыхНазначений ГруппаНалоговогоНазначения {get; set;}
     #endregion реквізити
     }
 }

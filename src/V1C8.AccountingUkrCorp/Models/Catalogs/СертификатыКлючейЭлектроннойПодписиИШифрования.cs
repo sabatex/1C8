@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SertyfykatyKliucheiЕlektronnoiPodpysyYShyfrovanyia")]
     [Description1C8(Name = "СертификатыКлючейЭлектроннойПодписиИШифрования", Comment = "", Synonym = "Сертификаты ключей электронной подписи и шифрования")]
-    public class СертификатыКлючейЭлектроннойПодписиИШифрования:EnumItem
+    public class СертификатыКлючейЭлектроннойПодписиИШифрования
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -58,19 +58,19 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Сховище значень
     public byte[] ДанныеСертификата {get; set;}
     [Description1C8(Name = "Программа", Comment = "", Synonym = "Программа")]
-    public DBNull Программа {get; set;}
+    public Catalogs.ПрограммыЭлектроннойПодписиИШифрования Программа {get; set;}
     [Description1C8(Name = "Отозван", Comment = "", Synonym = "Отозван")]
     public bool Отозван {get; set;}
     [Description1C8(Name = "УсиленнаяЗащитаЗакрытогоКлюча", Comment = "", Synonym = "Усиленная защита закрытого ключа")]
     public bool УсиленнаяЗащитаЗакрытогоКлюча {get; set;}
     [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
-    public DBNull Организация {get; set;}
+    public Catalogs.Организации Организация {get; set;}
     [Description1C8(Name = "Пользователь", Comment = "", Synonym = "Пользователь")]
-    public DBNull Пользователь {get; set;}
+    public Catalogs.Пользователи Пользователь {get; set;}
     [Description1C8(Name = "ПользовательОповещенОСрокеДействия", Comment = "", Synonym = "Пользователь оповещен о сроке действия")]
     public bool ПользовательОповещенОСрокеДействия {get; set;}
     [Description1C8(Name = "Добавил", Comment = "", Synonym = "Добавил")]
-    public DBNull Добавил {get; set;}
+    public Catalogs.Пользователи Добавил {get; set;}
     #endregion реквізити
     }
 }

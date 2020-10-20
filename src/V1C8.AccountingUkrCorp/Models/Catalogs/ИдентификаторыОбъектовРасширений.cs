@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YdentyfykatoryObektovRasshyrenyi")]
     [Description1C8(Name = "ИдентификаторыОбъектовРасширений", Comment = "", Synonym = "Идентификаторы объектов расширений")]
-    public class ИдентификаторыОбъектовРасширений:EnumItem
+    public class ИдентификаторыОбъектовРасширений
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -42,12 +42,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "БезДанных", Comment = "", Synonym = "Без данных")]
     public bool БезДанных {get; set;}
     [Description1C8(Name = "ЗначениеПустойСсылки", Comment = "", Synonym = "Значение пустой ссылки")]
-    public DBNull ЗначениеПустойСсылки {get; set;}
+    public Документ.СторнированиеНачислений ЗначениеПустойСсылки {get; set;}
     [Description1C8(Name = "КлючОбъектаМетаданных", Comment = "", Synonym = "Ключ объекта метаданных")]
     // Сховище значень
     public byte[] КлючОбъектаМетаданных {get; set;}
     [Description1C8(Name = "НоваяСсылка", Comment = "", Synonym = "Новая ссылка")]
-    public DBNull НоваяСсылка {get; set;}
+    public Catalogs.ИдентификаторыОбъектовРасширений НоваяСсылка {get; set;}
     [Description1C8(Name = "ИмяРасширения", Comment = "", Synonym = "Имя расширения")]
     [StringLength(128)]
     public string ИмяРасширения {get; set;}

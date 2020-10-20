@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SposobyOtrazhenyiaRaskhodovPoAmortyzatsyy")]
     [Description1C8(Name = "СпособыОтраженияРасходовПоАмортизации", Comment = "(Общ)", Synonym = "Способы отражения расходов по амортизации и улучшению")]
-    public class СпособыОтраженияРасходовПоАмортизации:EnumItem
+    public class СпособыОтраженияРасходовПоАмортизации
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
-    public DBNull Организация {get; set;}
+    public Catalogs.Организации Организация {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "(Общ)", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     #endregion реквізити

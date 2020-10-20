@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("TaryfyPlatezhnykhAhentov")]
     [Description1C8(Name = "ТарифыПлатежныхАгентов", Comment = "", Synonym = "Тарифы платежных агентов")]
-    public class ТарифыПлатежныхАгентов:EnumItem
+    public class ТарифыПлатежныхАгентов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

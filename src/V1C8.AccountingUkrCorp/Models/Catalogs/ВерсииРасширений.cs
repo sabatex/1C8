@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VersyyRasshyrenyi")]
     [Description1C8(Name = "ВерсииРасширений", Comment = "", Synonym = "Версии расширений")]
-    public class ВерсииРасширений:EnumItem
+    public class ВерсииРасширений
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

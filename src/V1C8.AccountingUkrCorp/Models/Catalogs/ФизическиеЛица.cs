@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("FyzycheskyeLytsa")]
     [Description1C8(Name = "ФизическиеЛица", Comment = "", Synonym = "Физические лица")]
-    public class ФизическиеЛица:EnumItem
+    public class ФизическиеЛица
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -32,7 +32,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "(Общ)", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "Пол", Comment = "", Synonym = "Пол")]
-    public DBNull Пол {get; set;}
+    public Enums.ПолФизическогоЛица Пол {get; set;}
     [Description1C8(Name = "УдалитьСтраховойНомерПФ", Comment = "(Регл)", Synonym = "(не используется)  Страховой номер ПФ")]
     [StringLength(14)]
     public string УдалитьСтраховойНомерПФ {get; set;}
@@ -44,9 +44,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ИмеетИзобретения", Comment = "", Synonym = "Имеет изобретения")]
     public bool ИмеетИзобретения {get; set;}
     [Description1C8(Name = "ГруппаДоступа", Comment = "", Synonym = "Группа доступа")]
-    public DBNull ГруппаДоступа {get; set;}
+    public Catalogs.ГруппыДоступаФизическихЛиц ГруппаДоступа {get; set;}
     [Description1C8(Name = "УдалитьПол", Comment = "Пол", Synonym = "(не используется) Пол")]
-    public DBNull УдалитьПол {get; set;}
+    public Enums.УдалитьПолФизическихЛиц УдалитьПол {get; set;}
     [Description1C8(Name = "ФИО", Comment = "", Synonym = "ФИО")]
     [StringLength(50)]
     public string ФИО {get; set;}
@@ -56,9 +56,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДатаРегистрации", Comment = "Дата регистрации", Synonym = "Дата регистрации")]
     public DateTime ДатаРегистрации {get; set;}
     [Description1C8(Name = "ЛьготаПриНачисленииПособий", Comment = "", Synonym = "Льгота при начислении пособий")]
-    public DBNull ЛьготаПриНачисленииПособий {get; set;}
+    public Enums.ОснованияЛьготПоПособию ЛьготаПриНачисленииПособий {get; set;}
     [Description1C8(Name = "Фотография", Comment = "", Synonym = "Фотография")]
-    public DBNull Фотография {get; set;}
+    public Catalogs.Файлы Фотография {get; set;}
     [Description1C8(Name = "НаименованиеСлужебное", Comment = "", Synonym = "Наименование служебное")]
     [StringLength(70)]
     public string НаименованиеСлужебное {get; set;}

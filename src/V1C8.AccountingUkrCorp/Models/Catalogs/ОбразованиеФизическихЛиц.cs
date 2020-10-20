@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ObrazovanyeFyzycheskykhLyts")]
     [Description1C8(Name = "ОбразованиеФизическихЛиц", Comment = "", Synonym = "Образование физических лиц")]
-    public class ОбразованиеФизическихЛиц:EnumItem
+    public class ОбразованиеФизическихЛиц
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,15 +27,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОсновноеОбразование", Comment = "", Synonym = "Основное образование")]
     public bool ОсновноеОбразование {get; set;}
     [Description1C8(Name = "ВидОбразования", Comment = "", Synonym = "Вид образования")]
-    public DBNull ВидОбразования {get; set;}
+    public Catalogs.ВидыОбразованияФизическихЛиц ВидОбразования {get; set;}
     [Description1C8(Name = "ВидПослевузовскогоОбразования", Comment = "", Synonym = "Вид послевузовского образования")]
-    public DBNull ВидПослевузовскогоОбразования {get; set;}
+    public Catalogs.ВидыОбразованияФизическихЛиц ВидПослевузовскогоОбразования {get; set;}
     [Description1C8(Name = "УчебноеЗаведение", Comment = "", Synonym = "Учебное заведение")]
-    public DBNull УчебноеЗаведение {get; set;}
+    public Catalogs.УчебныеЗаведения УчебноеЗаведение {get; set;}
     [Description1C8(Name = "Специальность", Comment = "", Synonym = "Специальность")]
-    public DBNull Специальность {get; set;}
+    public Catalogs.КлассификаторСпециальностейПоОбразованию Специальность {get; set;}
     [Description1C8(Name = "ВидДокумента", Comment = "", Synonym = "Вид документа")]
-    public DBNull ВидДокумента {get; set;}
+    public Catalogs.ВидыДокументовОбОбразовании ВидДокумента {get; set;}
     [Description1C8(Name = "Серия", Comment = "", Synonym = "Серия")]
     [StringLength(25)]
     public string Серия {get; set;}
@@ -58,7 +58,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 4.0
     public long КоличествоЧасов {get; set;}
     [Description1C8(Name = "ВидДополнительногоОбучения", Comment = "", Synonym = "Вид дополнительного обучения")]
-    public DBNull ВидДополнительногоОбучения {get; set;}
+    public Enums.ВидыПрофессиональнойПодготовки ВидДополнительногоОбучения {get; set;}
     [Description1C8(Name = "Основание", Comment = "", Synonym = "Основание")]
     [StringLength(250)]
     public string Основание {get; set;}
@@ -66,7 +66,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string УдалитьДокументОснование {get; set;}
     [Description1C8(Name = "ФормаОбучения", Comment = "", Synonym = "Форма обучения")]
-    public DBNull ФормаОбучения {get; set;}
+    public Enums.ФормыОбучения ФормаОбучения {get; set;}
     #endregion реквізити
     }
 }

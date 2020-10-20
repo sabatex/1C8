@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KatehoryyZastrakhovannykhLytsESV")]
     [Description1C8(Name = "КатегорииЗастрахованныхЛицЕСВ", Comment = "", Synonym = "Категории застрахованных лиц (ЕСВ)")]
-    public class КатегорииЗастрахованныхЛицЕСВ:EnumItem
+    public class КатегорииЗастрахованныхЛицЕСВ
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ВидЕСВ", Comment = "", Synonym = "Вид ЕСВ")]
-    public DBNull ВидЕСВ {get; set;}
+    public Enums.ВидыЕСВ ВидЕСВ {get; set;}
     #endregion реквізити
     }
 }

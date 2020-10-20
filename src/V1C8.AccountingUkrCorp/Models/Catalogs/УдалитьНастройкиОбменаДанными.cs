@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UdalytNastroikyObmenaDannymy")]
     [Description1C8(Name = "УдалитьНастройкиОбменаДанными", Comment = "", Synonym = "(не используется) Настройки обмена данными")]
-    public class УдалитьНастройкиОбменаДанными:EnumItem
+    public class УдалитьНастройкиОбменаДанными
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "УзелИнформационнойБазы", Comment = "", Synonym = "Узел информационной базы")]
-    public DBNull УзелИнформационнойБазы {get; set;}
+    public ПланОбмена.УдалитьОбменУправлениеТорговлейБухгалтерияФоновый УзелИнформационнойБазы {get; set;}
     [Description1C8(Name = "ТипНастройки", Comment = "", Synonym = "Тип настройки")]
-    public DBNull ТипНастройки {get; set;}
+    public Enums.УдалитьТипыАвтоматическогоОбменаДанными ТипНастройки {get; set;}
     [Description1C8(Name = "ПроизводитьПриемСообщений", Comment = "", Synonym = "Производить прием сообщений")]
     public bool ПроизводитьПриемСообщений {get; set;}
     [Description1C8(Name = "ПроизводитьОтправкуСообщений", Comment = "", Synonym = "Производить отправку сообщений")]
@@ -77,7 +77,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПассивноеFTPСоединение", Comment = "", Synonym = "Пассивное FTP соединение")]
     public bool ПассивноеFTPСоединение {get; set;}
     [Description1C8(Name = "УзелФоновогоОбмена", Comment = "", Synonym = "Узел фонового обмена")]
-    public DBNull УзелФоновогоОбмена {get; set;}
+    public ПланОбмена.УдалитьОбменУправлениеТорговлейБухгалтерияФоновый УзелФоновогоОбмена {get; set;}
     [Description1C8(Name = "ПравилаОбмена", Comment = "", Synonym = "Правила обмена")]
     // Сховище значень
     public byte[] ПравилаОбмена {get; set;}
@@ -115,7 +115,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(255)]
     public string ИмяФайлаПротоколаОбменаOnLineОбмен {get; set;}
     [Description1C8(Name = "ТипУзлаИнформационнойБазы", Comment = "", Synonym = "Тип узла информационной базы")]
-    public DBNull ТипУзлаИнформационнойБазы {get; set;}
+    public ПланОбмена.УдалитьОбменУправлениеТорговлейБухгалтерияФоновый ТипУзлаИнформационнойБазы {get; set;}
     [Description1C8(Name = "ПослеОшибкиОтложенногоПроведенияПрекратитьОперации", Comment = "", Synonym = "После ошибки отложенного проведения прекратить операции")]
     public bool ПослеОшибкиОтложенногоПроведенияПрекратитьОперации {get; set;}
     [Description1C8(Name = "КоличествоОшибокОтложенногоПроведенияДляПрекращенияОперации", Comment = "", Synonym = "Количество ошибок отложенного проведения для прекращения операции")]
@@ -150,7 +150,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 10.0
     public long МаксимальныйРазмерОтправляемогоПакетаЧерезПочту {get; set;}
     [Description1C8(Name = "Ответственный", Comment = "", Synonym = "Пользователь")]
-    public DBNull Ответственный {get; set;}
+    public Catalogs.Пользователи Ответственный {get; set;}
     [Description1C8(Name = "ВыполнятьАвтоматически", Comment = "", Synonym = "Выполнять периодически")]
     public bool ВыполнятьАвтоматически {get; set;}
     [Description1C8(Name = "КаталогПроверкиДоступности", Comment = "", Synonym = "Каталог проверки доступности")]
@@ -186,7 +186,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(50)]
     public string ПротоколПроксиFTP {get; set;}
     [Description1C8(Name = "ВерсияПодсистемыОбменаДанными", Comment = "", Synonym = "Версия подсистемы обмена данными")]
-    public DBNull ВерсияПодсистемыОбменаДанными {get; set;}
+    public Enums.ВерсииПодсистемыОбменаДанными ВерсияПодсистемыОбменаДанными {get; set;}
     #endregion реквізити
     }
 }

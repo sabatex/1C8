@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NomenklaturnyeHruppy")]
     [Description1C8(Name = "НоменклатурныеГруппы", Comment = "", Synonym = "Номенклатурные группы")]
-    public class НоменклатурныеГруппы:EnumItem
+    public class НоменклатурныеГруппы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "НалоговоеНазначениеВПроизводстве", Comment = "", Synonym = "Нал. назн. (НДС) в производстве")]
-    public DBNull НалоговоеНазначениеВПроизводстве {get; set;}
+    public Catalogs.НалоговыеНазначенияАктивовИЗатрат НалоговоеНазначениеВПроизводстве {get; set;}
     #endregion реквізити
     }
 }

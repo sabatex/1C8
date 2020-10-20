@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ParametryVyrabotkyOS")]
     [Description1C8(Name = "ПараметрыВыработкиОС", Comment = "", Synonym = "Параметры выработки ОС")]
-    public class ПараметрыВыработкиОС:EnumItem
+    public class ПараметрыВыработкиОС
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ЕдиницаИзмерения", Comment = "", Synonym = "Единица измерения")]
-    public DBNull ЕдиницаИзмерения {get; set;}
+    public Catalogs.КлассификаторЕдиницИзмерения ЕдиницаИзмерения {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ZvanyiaHrazhdanskohoVoynskohoUcheta")]
     [Description1C8(Name = "ЗванияГражданскогоВоинскогоУчета", Comment = "", Synonym = "Воинские звания")]
-    public class ЗванияГражданскогоВоинскогоУчета:EnumItem
+    public class ЗванияГражданскогоВоинскогоУчета
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,12 +25,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ОбщевойсковоеЗвание", Comment = "", Synonym = "Общевойсковое звание")]
-    public DBNull ОбщевойсковоеЗвание {get; set;}
+    public Enums.КлассификаторВоинскихЗваний ОбщевойсковоеЗвание {get; set;}
     [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
     // Format 5.0
     public long РеквизитДопУпорядочивания {get; set;}
     [Description1C8(Name = "Состав", Comment = "", Synonym = "Состав")]
-    public DBNull Состав {get; set;}
+    public Catalogs.СоставыВоеннослужащих Состав {get; set;}
     #endregion реквізити
     }
 }

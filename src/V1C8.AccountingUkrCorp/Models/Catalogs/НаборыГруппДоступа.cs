@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NaboryHruppDostupa")]
     [Description1C8(Name = "НаборыГруппДоступа", Comment = "", Synonym = "Наборы групп доступа")]
-    public class НаборыГруппДоступа:EnumItem
+    public class НаборыГруппДоступа
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,19 +27,19 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДляВнешнихПользователей", Comment = "", Synonym = "Для внешних пользователей")]
     public bool ДляВнешнихПользователей {get; set;}
     [Description1C8(Name = "ТипЭлементовНабора", Comment = "", Synonym = "Тип элементов набора")]
-    public DBNull ТипЭлементовНабора {get; set;}
+    public Catalogs.ГруппыДоступа ТипЭлементовНабора {get; set;}
     [Description1C8(Name = "НеИспользуетсяС", Comment = "", Synonym = "Не используется с")]
     public DateTime НеИспользуетсяС {get; set;}
     [Description1C8(Name = "Пользователь", Comment = "", Synonym = "Пользователь")]
-    public DBNull Пользователь {get; set;}
+    public Catalogs.ВнешниеПользователи Пользователь {get; set;}
     [Description1C8(Name = "РазрешенныйНаборГруппДоступа", Comment = "", Synonym = "Разрешенный набор групп доступа")]
-    public DBNull РазрешенныйНаборГруппДоступа {get; set;}
+    public Catalogs.НаборыГруппДоступа РазрешенныйНаборГруппДоступа {get; set;}
     [Description1C8(Name = "РазрешенныйНаборГруппПользователей", Comment = "", Synonym = "Разрешенный набор групп пользователей")]
-    public DBNull РазрешенныйНаборГруппПользователей {get; set;}
+    public Catalogs.НаборыГруппДоступа РазрешенныйНаборГруппПользователей {get; set;}
     [Description1C8(Name = "НовыйНаборГруппДоступа", Comment = "", Synonym = "Новый набор групп доступа")]
-    public DBNull НовыйНаборГруппДоступа {get; set;}
+    public Catalogs.НаборыГруппДоступа НовыйНаборГруппДоступа {get; set;}
     [Description1C8(Name = "НовыйНаборГруппПользователей", Comment = "", Synonym = "Новый набор групп пользователей")]
-    public DBNull НовыйНаборГруппПользователей {get; set;}
+    public Catalogs.НаборыГруппДоступа НовыйНаборГруппПользователей {get; set;}
     #endregion реквізити
     }
 }

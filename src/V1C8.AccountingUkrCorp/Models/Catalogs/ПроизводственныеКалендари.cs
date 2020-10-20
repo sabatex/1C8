@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ProyzvodstvennyeKalendary")]
     [Description1C8(Name = "ПроизводственныеКалендари", Comment = "", Synonym = "Производственные календари")]
-    public class ПроизводственныеКалендари:EnumItem
+    public class ПроизводственныеКалендари
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "БазовыйКалендарь", Comment = "", Synonym = "Базовый календарь")]
-    public DBNull БазовыйКалендарь {get; set;}
+    public Catalogs.ПроизводственныеКалендари БазовыйКалендарь {get; set;}
     #endregion реквізити
     }
 }

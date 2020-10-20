@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("TypyTsenNomenklatury")]
     [Description1C8(Name = "ТипыЦенНоменклатуры", Comment = "", Synonym = "Типы цен номенклатуры")]
-    public class ТипыЦенНоменклатуры:EnumItem
+    public class ТипыЦенНоменклатуры
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,11 +25,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ВалютаЦены", Comment = "", Synonym = "Валюта цены по умолчанию")]
-    public DBNull ВалютаЦены {get; set;}
+    public Catalogs.Валюты ВалютаЦены {get; set;}
     [Description1C8(Name = "ЦенаВключаетНДС", Comment = "", Synonym = "Цена включает НДС")]
     public bool ЦенаВключаетНДС {get; set;}
     [Description1C8(Name = "ПорядокОкругления", Comment = "", Synonym = "Округлять до")]
-    public DBNull ПорядокОкругления {get; set;}
+    public Enums.ПорядкиОкругления ПорядокОкругления {get; set;}
     [Description1C8(Name = "ОкруглятьВБольшуюСторону", Comment = "", Synonym = "Метод округления")]
     public bool ОкруглятьВБольшуюСторону {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]

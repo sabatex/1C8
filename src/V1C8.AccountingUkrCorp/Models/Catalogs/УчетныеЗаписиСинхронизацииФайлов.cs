@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UchetnyeZapysySynkhronyzatsyyFailov")]
     [Description1C8(Name = "УчетныеЗаписиСинхронизацииФайлов", Comment = "", Synonym = "Учетные записи синхронизации файлов")]
-    public class УчетныеЗаписиСинхронизацииФайлов:EnumItem
+    public class УчетныеЗаписиСинхронизацииФайлов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -31,7 +31,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(30)]
     public string КорневаяПапка {get; set;}
     [Description1C8(Name = "АвторФайлов", Comment = "", Synonym = "Автор файлов")]
-    public DBNull АвторФайлов {get; set;}
+    public Catalogs.ВнешниеПользователи АвторФайлов {get; set;}
     #endregion реквізити
     }
 }

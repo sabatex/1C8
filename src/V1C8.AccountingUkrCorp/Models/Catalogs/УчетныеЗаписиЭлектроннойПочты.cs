@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UchetnyeZapysyЕlektronnoiPochty")]
     [Description1C8(Name = "УчетныеЗаписиЭлектроннойПочты", Comment = "", Synonym = "Учетные записи электронной почты")]
-    public class УчетныеЗаписиЭлектроннойПочты:EnumItem
+    public class УчетныеЗаписиЭлектроннойПочты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "SMTPАутентификация", Comment = "", Synonym = "SMTP аутентификация")]
-    public DBNull SMTPАутентификация {get; set;}
+    public Enums.ВариантыSMTPАутентификации SMTPАутентификация {get; set;}
     [Description1C8(Name = "АдресЭлектроннойПочты", Comment = "", Synonym = "Адрес электронной почты")]
     [StringLength(255)]
     public string АдресЭлектроннойПочты {get; set;}
@@ -74,15 +74,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(300)]
     public string СерверИсходящейПочты {get; set;}
     [Description1C8(Name = "СпособPOP3Аутентификации", Comment = "", Synonym = "Способ POP3 аутентификации")]
-    public DBNull СпособPOP3Аутентификации {get; set;}
+    public Enums.СпособыPOP3Аутентификации СпособPOP3Аутентификации {get; set;}
     [Description1C8(Name = "СпособSMTPАутентификации", Comment = "", Synonym = "Способ SMTP аутентификации")]
-    public DBNull СпособSMTPАутентификации {get; set;}
+    public Enums.СпособыSMTPАутентификации СпособSMTPАутентификации {get; set;}
     [Description1C8(Name = "ТребуетсяВходНаСерверПередОтправкой", Comment = "", Synonym = "Требуется вход на сервер перед отправкой")]
     public bool ТребуетсяВходНаСерверПередОтправкой {get; set;}
     [Description1C8(Name = "УдалитьВПредставлениеВключатьИмяПользователя", Comment = "", Synonym = "(не используется) В представление включать имя пользователя")]
     public bool УдалитьВПредставлениеВключатьИмяПользователя {get; set;}
     [Description1C8(Name = "УдалитьОтветственныйЗаОбработкуПисем", Comment = "", Synonym = "(не используется) Ответственный за обработку писем")]
-    public DBNull УдалитьОтветственныйЗаОбработкуПисем {get; set;}
+    public Catalogs.Пользователи УдалитьОтветственныйЗаОбработкуПисем {get; set;}
     [Description1C8(Name = "УдалитьПароль", Comment = "", Synonym = "(не используется) Пароль")]
     [StringLength(100)]
     public string УдалитьПароль {get; set;}
@@ -92,7 +92,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОтправлятьСкрытыеКопииПисемНаЭтотАдрес", Comment = "", Synonym = "Отправлять скрытые копии писем на этот адрес")]
     public bool ОтправлятьСкрытыеКопииПисемНаЭтотАдрес {get; set;}
     [Description1C8(Name = "ВладелецУчетнойЗаписи", Comment = "", Synonym = "Владелец учетной записи")]
-    public DBNull ВладелецУчетнойЗаписи {get; set;}
+    public Catalogs.Пользователи ВладелецУчетнойЗаписи {get; set;}
     #endregion реквізити
     }
 }

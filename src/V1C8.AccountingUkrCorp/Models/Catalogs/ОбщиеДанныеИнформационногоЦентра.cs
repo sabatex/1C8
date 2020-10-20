@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ObshchyeDannyeYnformatsyonnohoTsentra")]
     [Description1C8(Name = "ОбщиеДанныеИнформационногоЦентра", Comment = "", Synonym = "Общие данные информационного центра")]
-    public class ОбщиеДанныеИнформационногоЦентра:EnumItem
+    public class ОбщиеДанныеИнформационногоЦентра
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -43,7 +43,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ТекстHTML", Comment = "", Synonym = "Текст HTML")]
     public string ТекстHTML {get; set;}
     [Description1C8(Name = "ТипИнформации", Comment = "", Synonym = "Тип информации")]
-    public DBNull ТипИнформации {get; set;}
+    public Catalogs.ТипыИнформацииИнформационногоЦентра ТипИнформации {get; set;}
     #endregion реквізити
     }
 }

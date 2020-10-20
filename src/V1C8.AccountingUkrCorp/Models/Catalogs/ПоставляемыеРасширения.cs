@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PostavliaemyeRasshyrenyia")]
     [Description1C8(Name = "ПоставляемыеРасширения", Comment = "", Synonym = "Поставляемые расширения")]
-    public class ПоставляемыеРасширения:EnumItem
+    public class ПоставляемыеРасширения
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -41,7 +41,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Отключено", Comment = "", Synonym = "Отключено")]
     public bool Отключено {get; set;}
     [Description1C8(Name = "ПричинаОтключения", Comment = "", Synonym = "Причина отключения")]
-    public DBNull ПричинаОтключения {get; set;}
+    public Enums.ПричиныОтключенияРасширенийВМоделиСервиса ПричинаОтключения {get; set;}
     #endregion реквізити
     }
 }

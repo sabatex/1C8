@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyDokumentovVvodDannykhDliaRaschetaZarplaty")]
     [Description1C8(Name = "ВидыДокументовВводДанныхДляРасчетаЗарплаты", Comment = "", Synonym = "Шаблоны ввода исходных данных")]
-    public class ВидыДокументовВводДанныхДляРасчетаЗарплаты:EnumItem
+    public class ВидыДокументовВводДанныхДляРасчетаЗарплаты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -39,9 +39,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НесколькоСотрудников", Comment = "", Synonym = "Несколько сотрудников")]
     public bool НесколькоСотрудников {get; set;}
     [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
-    public DBNull Организация {get; set;}
+    public Catalogs.Организации Организация {get; set;}
     [Description1C8(Name = "Подразделение", Comment = "", Synonym = "Подразделение")]
-    public DBNull Подразделение {get; set;}
+    public Catalogs.ПодразделенияОрганизаций Подразделение {get; set;}
     [Description1C8(Name = "ЗаполнятьСписокОбъектов", Comment = "", Synonym = "Заполнять список объектов автоматически")]
     public bool ЗаполнятьСписокОбъектов {get; set;}
     [Description1C8(Name = "ПоказыватьПодразделение", Comment = "", Synonym = "Показывать подразделение в документах")]
@@ -49,7 +49,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПроверятьЗаполнениеПодразделения", Comment = "", Synonym = "Подразделение обязательно для заполнения")]
     public bool ПроверятьЗаполнениеПодразделения {get; set;}
     [Description1C8(Name = "СпособПримененияЗначенийПоказателей", Comment = "", Synonym = "Способ применения значений показателей")]
-    public DBNull СпособПримененияЗначенийПоказателей {get; set;}
+    public Enums.СпособыПримененияЗначенийПоказателейРасчетаЗарплаты СпособПримененияЗначенийПоказателей {get; set;}
     [Description1C8(Name = "ИспользоватьПериодОкончания", Comment = "", Synonym = "Использовать период окончания")]
     public bool ИспользоватьПериодОкончания {get; set;}
     [Description1C8(Name = "ЗначенияПоказателейВводятсяНаРазныеДаты", Comment = "", Synonym = "Значения показателей вводятся на разные даты")]

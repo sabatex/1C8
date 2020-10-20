@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UstareloVedomostNaVyplatuZarplatyVKassuPrysoedynennyeFaily")]
     [Description1C8(Name = "УстарелоВедомостьНаВыплатуЗарплатыВКассуПрисоединенныеФайлы", Comment = "", Synonym = "ѳ(устарело) Присоединенные файлы (Ведомость на выплату зарплаты в кассу)")]
-    public class УстарелоВедомостьНаВыплатуЗарплатыВКассуПрисоединенныеФайлы:EnumItem
+    public class УстарелоВедомостьНаВыплатуЗарплатыВКассуПрисоединенныеФайлы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "Автор - пользователь, добавивший файл", Synonym = "Автор")]
-    public DBNull Автор {get; set;}
+    public Catalogs.УчетныеЗаписиСинхронизацииФайлов Автор {get; set;}
     [Description1C8(Name = "ВладелецФайла", Comment = "", Synonym = "Владелец файла")]
-    public DBNull ВладелецФайла {get; set;}
+    public Документ.УстарелоВедомостьНаВыплатуЗарплатыВКассу ВладелецФайла {get; set;}
     [Description1C8(Name = "ДатаМодификацииУниверсальная", Comment = "", Synonym = "Дата модификации универсальная")]
     public DateTime ДатаМодификацииУниверсальная {get; set;}
     [Description1C8(Name = "ДатаСоздания", Comment = "Дата добавления файла в базу", Synonym = "Дата создания")]
@@ -35,7 +35,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Зашифрован", Comment = "", Synonym = "Зашифрован")]
     public bool Зашифрован {get; set;}
     [Description1C8(Name = "Изменил", Comment = "Автор - пользователь, добавивший файл", Synonym = "Изменил")]
-    public DBNull Изменил {get; set;}
+    public Catalogs.УчетныеЗаписиСинхронизацииФайлов Изменил {get; set;}
     [Description1C8(Name = "ИндексКартинки", Comment = "Индекс иконки, соответствующей расширению файла, для показа в списке", Synonym = "Индекс картинки")]
     // Format 10.0
     public long ИндексКартинки {get; set;}
@@ -52,16 +52,16 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string Расширение {get; set;}
     [Description1C8(Name = "Редактирует", Comment = "Пользователь, занявший файл для редактирования", Synonym = "Редактирует")]
-    public DBNull Редактирует {get; set;}
+    public Catalogs.УчетныеЗаписиСинхронизацииФайлов Редактирует {get; set;}
     [Description1C8(Name = "СтатусИзвлеченияТекста", Comment = "", Synonym = "Статус извлечения текста")]
-    public DBNull СтатусИзвлеченияТекста {get; set;}
+    public Enums.СтатусыИзвлеченияТекстаФайлов СтатусИзвлеченияТекста {get; set;}
     [Description1C8(Name = "ТекстХранилище", Comment = "Текст, извлеченный из файла - для полнотекстового поиска", Synonym = "Текст")]
     // Сховище значень
     public byte[] ТекстХранилище {get; set;}
     [Description1C8(Name = "ТипХраненияФайла", Comment = "Где хранятся файлы - в базе как ХранилищеЗначения или в каталоге на диске", Synonym = "Тип хранения файла")]
-    public DBNull ТипХраненияФайла {get; set;}
+    public Enums.ТипыХраненияФайлов ТипХраненияФайла {get; set;}
     [Description1C8(Name = "Том", Comment = "Ссылка на том (в случае если ТипХраненияФайла - на диске)", Synonym = "Том")]
-    public DBNull Том {get; set;}
+    public Catalogs.ТомаХраненияФайлов Том {get; set;}
     [Description1C8(Name = "ФайлХранилище", Comment = "Служебное поле для обмена файлами в РИБ", Synonym = "Файл хранилище")]
     // Сховище значень
     public byte[] ФайлХранилище {get; set;}

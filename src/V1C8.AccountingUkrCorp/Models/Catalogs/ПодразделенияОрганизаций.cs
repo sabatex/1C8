@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PodrazdelenyiaOrhanyzatsyi")]
     [Description1C8(Name = "ПодразделенияОрганизаций", Comment = "", Synonym = "Подразделения")]
-    public class ПодразделенияОрганизаций:EnumItem
+    public class ПодразделенияОрганизаций
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -39,7 +39,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string РеквизитДопУпорядочиванияИерархического {get; set;}
     [Description1C8(Name = "ГрафикРаботыСотрудников", Comment = "", Synonym = "График работы")]
-    public DBNull ГрафикРаботыСотрудников {get; set;}
+    public Catalogs.ГрафикиРаботыСотрудников ГрафикРаботыСотрудников {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyOperatsyiRaschetaZarplaty")]
     [Description1C8(Name = "ВидыОперацийРасчетаЗарплаты", Comment = "", Synonym = "Виды операций расчета зарплаты")]
-    public class ВидыОперацийРасчетаЗарплаты:EnumItem
+    public class ВидыОперацийРасчетаЗарплаты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

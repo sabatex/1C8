@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UdalytNastroikyVypolnenyiaObmena")]
     [Description1C8(Name = "УдалитьНастройкиВыполненияОбмена", Comment = "", Synonym = "(не используется) Настройки выполнения обмена")]
-    public class УдалитьНастройкиВыполненияОбмена:EnumItem
+    public class УдалитьНастройкиВыполненияОбмена
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -34,7 +34,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДинамическиИзменятьИнтервалМеждуОбменами", Comment = "", Synonym = "Динамически изменять интервал между обменами")]
     public bool ДинамическиИзменятьИнтервалМеждуОбменами {get; set;}
     [Description1C8(Name = "Ответственный", Comment = "", Synonym = "Пользователь")]
-    public DBNull Ответственный {get; set;}
+    public Catalogs.Пользователи Ответственный {get; set;}
     [Description1C8(Name = "КаждыйЗапускПрограммы", Comment = "", Synonym = "Каждый запуск программы")]
     public bool КаждыйЗапускПрограммы {get; set;}
     [Description1C8(Name = "КаждоеЗавершениеРаботыСПрограммой", Comment = "", Synonym = "Каждое завершение работы с программой")]

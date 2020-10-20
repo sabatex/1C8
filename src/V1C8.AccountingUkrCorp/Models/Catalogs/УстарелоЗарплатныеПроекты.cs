@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UstareloZarplatnyeProekty")]
     [Description1C8(Name = "УстарелоЗарплатныеПроекты", Comment = "", Synonym = "ѳ(устарело) Зарплатные проекты")]
-    public class УстарелоЗарплатныеПроекты:EnumItem
+    public class УстарелоЗарплатныеПроекты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
-    public DBNull Организация {get; set;}
+    public Catalogs.Организации Организация {get; set;}
     [Description1C8(Name = "Банк", Comment = "", Synonym = "Банк")]
-    public DBNull Банк {get; set;}
+    public Catalogs.Контрагенты Банк {get; set;}
     #endregion реквізити
     }
 }

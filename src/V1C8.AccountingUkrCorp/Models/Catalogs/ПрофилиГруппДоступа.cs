@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ProfylyHruppDostupa")]
     [Description1C8(Name = "ПрофилиГруппДоступа", Comment = "", Synonym = "Профили групп доступа")]
-    public class ПрофилиГруппДоступа:EnumItem
+    public class ПрофилиГруппДоступа
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

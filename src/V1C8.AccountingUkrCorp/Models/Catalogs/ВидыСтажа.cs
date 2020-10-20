@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyStazha")]
     [Description1C8(Name = "ВидыСтажа", Comment = "", Synonym = "Виды стажа")]
-    public class ВидыСтажа:EnumItem
+    public class ВидыСтажа
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КатегорияСтажа", Comment = "", Synonym = "Категория стажа")]
-    public DBNull КатегорияСтажа {get; set;}
+    public Enums.КатегорииСтажа КатегорияСтажа {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PostavliaemyeDopolnytelnyeOtchetyYObrabotky")]
     [Description1C8(Name = "ПоставляемыеДополнительныеОтчетыИОбработки", Comment = "", Synonym = "Поставляемые дополнительные отчеты и обработки")]
-    public class ПоставляемыеДополнительныеОтчетыИОбработки:EnumItem
+    public class ПоставляемыеДополнительныеОтчетыИОбработки
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,15 +25,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
-    public DBNull Вид {get; set;}
+    public Enums.ВидыДополнительныхОтчетовИОбработок Вид {get; set;}
     [Description1C8(Name = "ИспользоватьДляФормыОбъекта", Comment = "", Synonym = "Использовать для формы объекта")]
     public bool ИспользоватьДляФормыОбъекта {get; set;}
     [Description1C8(Name = "ИспользоватьДляФормыСписка", Comment = "", Synonym = "Использовать для формы списка")]
     public bool ИспользоватьДляФормыСписка {get; set;}
     [Description1C8(Name = "Публикация", Comment = "", Synonym = "Публикация")]
-    public DBNull Публикация {get; set;}
+    public Enums.ВариантыПубликацииДополнительныхОтчетовИОбработок Публикация {get; set;}
     [Description1C8(Name = "ПричинаОтключения", Comment = "", Synonym = "Причина отключения")]
-    public DBNull ПричинаОтключения {get; set;}
+    public Enums.ПричиныОтключенияДополнительныхОтчетовИОбработокВМоделиСервиса ПричинаОтключения {get; set;}
     [Description1C8(Name = "Информация", Comment = "", Synonym = "Информация")]
     [StringLength(1024)]
     public string Информация {get; set;}
@@ -61,7 +61,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ИспользуетХранилищеВариантов", Comment = "", Synonym = "Использует хранилище вариантов")]
     public bool ИспользуетХранилищеВариантов {get; set;}
     [Description1C8(Name = "РежимСовместимостиРазрешений", Comment = "", Synonym = "Режим совместимости разрешений")]
-    public DBNull РежимСовместимостиРазрешений {get; set;}
+    public Enums.РежимыСовместимостиРазрешенийДополнительныхОтчетовИОбработок РежимСовместимостиРазрешений {get; set;}
     #endregion реквізити
     }
 }

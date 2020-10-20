@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Rezervy")]
     [Description1C8(Name = "Резервы", Comment = "(Регл)", Synonym = "Резервы")]
-    public class Резервы:EnumItem
+    public class Резервы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

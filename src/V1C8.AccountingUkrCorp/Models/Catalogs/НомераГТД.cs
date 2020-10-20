@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NomeraHTD")]
     [Description1C8(Name = "НомераГТД", Comment = "", Synonym = "Номера ГТД")]
-    public class НомераГТД:EnumItem
+    public class НомераГТД
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SpetsyfykatsyyNomenklatury")]
     [Description1C8(Name = "СпецификацииНоменклатуры", Comment = "", Synonym = "Спецификации номенклатуры")]
-    public class СпецификацииНоменклатуры:EnumItem
+    public class СпецификацииНоменклатуры
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -28,7 +28,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 15.3
     public decimal Количество {get; set;}
     [Description1C8(Name = "ЕдиницаИзмерения", Comment = "(Общ)", Synonym = "Единица измерения")]
-    public DBNull ЕдиницаИзмерения {get; set;}
+    public Catalogs.КлассификаторЕдиницИзмерения ЕдиницаИзмерения {get; set;}
     [Description1C8(Name = "Коэффициент", Comment = "(Общ)", Synonym = "Коэффициент")]
     // Format 10.3
     public decimal Коэффициент {get; set;}

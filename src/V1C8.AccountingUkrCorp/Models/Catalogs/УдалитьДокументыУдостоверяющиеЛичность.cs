@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UdalytDokumentyUdostoveriaiushchyeLychnost")]
     [Description1C8(Name = "УдалитьДокументыУдостоверяющиеЛичность", Comment = "(Общ)", Synonym = "(не используется) Документы, удостоверяющие личность")]
-    public class УдалитьДокументыУдостоверяющиеЛичность:EnumItem
+    public class УдалитьДокументыУдостоверяющиеЛичность
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

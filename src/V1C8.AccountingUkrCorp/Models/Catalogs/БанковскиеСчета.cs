@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("BankovskyeScheta")]
     [Description1C8(Name = "БанковскиеСчета", Comment = "(Общ)", Synonym = "Банковские счета")]
-    public class БанковскиеСчета:EnumItem
+    public class БанковскиеСчета
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -28,11 +28,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(34)]
     public string НомерСчета {get; set;}
     [Description1C8(Name = "Банк", Comment = "(Общ)", Synonym = "Банк")]
-    public DBNull Банк {get; set;}
+    public Catalogs.Банки Банк {get; set;}
     [Description1C8(Name = "Валютный", Comment = "", Synonym = "Валютный")]
     public bool Валютный {get; set;}
     [Description1C8(Name = "ВалютаДенежныхСредств", Comment = "(Общ) Валюта, в которой хранятся денежные средства", Synonym = "Валюта денежных средств")]
-    public DBNull ВалютаДенежныхСредств {get; set;}
+    public Catalogs.Валюты ВалютаДенежныхСредств {get; set;}
     [Description1C8(Name = "НомерИДатаРазрешения", Comment = "(Регл) Номер и дата разрешения открытия счета", Synonym = "Номер и дата разрешения")]
     [StringLength(30)]
     public string НомерИДатаРазрешения {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ProchyeNeoborotnyeAktyvy")]
     [Description1C8(Name = "ПрочиеНеоборотныеАктивы", Comment = "(Общ)", Synonym = "Прочие необоротные активы")]
-    public class ПрочиеНеоборотныеАктивы:EnumItem
+    public class ПрочиеНеоборотныеАктивы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

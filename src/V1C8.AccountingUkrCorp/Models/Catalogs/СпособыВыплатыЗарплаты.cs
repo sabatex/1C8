@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SposobyVyplatyZarplaty")]
     [Description1C8(Name = "СпособыВыплатыЗарплаты", Comment = "", Synonym = "Способы выплаты зарплаты")]
-    public class СпособыВыплатыЗарплаты:EnumItem
+    public class СпособыВыплатыЗарплаты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,11 +27,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Поставляемый", Comment = "", Synonym = "Поставляемый")]
     public bool Поставляемый {get; set;}
     [Description1C8(Name = "ХарактерВыплаты", Comment = "", Synonym = "Характер выплаты")]
-    public DBNull ХарактерВыплаты {get; set;}
+    public Enums.ХарактерВыплатыЗарплаты ХарактерВыплаты {get; set;}
     [Description1C8(Name = "ВидДокументаОснования", Comment = "", Synonym = "Вид документа основания")]
-    public DBNull ВидДокументаОснования {get; set;}
+    public Enums.ВидыДокументовМежрасчетныхНачислений ВидДокументаОснования {get; set;}
     [Description1C8(Name = "Округление", Comment = "", Synonym = "Округление")]
-    public DBNull Округление {get; set;}
+    public Catalogs.СпособыОкругленияПриРасчетеЗарплаты Округление {get; set;}
     [Description1C8(Name = "ПроцентВыплаты", Comment = "", Synonym = "Процент выплаты")]
     // Format 3.0
     public long ПроцентВыплаты {get; set;}
@@ -42,11 +42,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string УдалитьСпособПолученияЗарплатыКВыплате {get; set;}
     [Description1C8(Name = "ГруппаУчетаНачислений", Comment = "", Synonym = "Группа учета начислений")]
-    public DBNull ГруппаУчетаНачислений {get; set;}
+    public Catalogs.ГруппыУчетаНачисленийИУдержаний ГруппаУчетаНачислений {get; set;}
     [Description1C8(Name = "КодДоходаНДФЛ", Comment = "", Synonym = "Код дохода НДФЛ")]
-    public DBNull КодДоходаНДФЛ {get; set;}
+    public Catalogs.ВидыДоходовНДФЛ КодДоходаНДФЛ {get; set;}
     [Description1C8(Name = "КодДоходаВС", Comment = "", Synonym = "Код дохода ВС")]
-    public DBNull КодДоходаВС {get; set;}
+    public Catalogs.ВидыДоходовНДФЛ КодДоходаВС {get; set;}
     #endregion реквізити
     }
 }

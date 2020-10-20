@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ParametryTypovoiOperatsyy")]
     [Description1C8(Name = "ПараметрыТиповойОперации", Comment = "", Synonym = "Параметры типовой операции")]
-    public class ПараметрыТиповойОперации:EnumItem
+    public class ПараметрыТиповойОперации
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -34,7 +34,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(200)]
     public string Подсказка {get; set;}
     [Description1C8(Name = "СвязьПоВладельцу", Comment = "", Synonym = "Связь по владельцу")]
-    public DBNull СвязьПоВладельцу {get; set;}
+    public Catalogs.ПараметрыТиповойОперации СвязьПоВладельцу {get; set;}
     #endregion реквізити
     }
 }

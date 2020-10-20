@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Nomenklatura")]
     [Description1C8(Name = "Номенклатура", Comment = "(Общ)", Synonym = "Номенклатура")]
-    public class Номенклатура:EnumItem
+    public class Номенклатура
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -31,9 +31,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(25)]
     public string Артикул {get; set;}
     [Description1C8(Name = "БазоваяЕдиницаИзмерения", Comment = "(Общ)", Synonym = "Базовая единица")]
-    public DBNull БазоваяЕдиницаИзмерения {get; set;}
+    public Catalogs.КлассификаторЕдиницИзмерения БазоваяЕдиницаИзмерения {get; set;}
     [Description1C8(Name = "СтавкаНДС", Comment = "(Общ) Ставка НДС по умолчанию для оформления документов", Synonym = "% НДС")]
-    public DBNull СтавкаНДС {get; set;}
+    public Enums.СтавкиНДС СтавкаНДС {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "(Общ) Любая дополнительная информация", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "Услуга", Comment = "(Общ)", Synonym = "Услуга")]
@@ -53,17 +53,17 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УчитываетсяПоНоминальнойСтоимости", Comment = "", Synonym = "Учитывается по номинальной стоимости")]
     public bool УчитываетсяПоНоминальнойСтоимости {get; set;}
     [Description1C8(Name = "НоменклатурнаяГруппа", Comment = "(Общ)", Synonym = "Номенклатурная группа")]
-    public DBNull НоменклатурнаяГруппа {get; set;}
+    public Catalogs.НоменклатурныеГруппы НоменклатурнаяГруппа {get; set;}
     [Description1C8(Name = "СтатьяЗатрат", Comment = "", Synonym = "Статья затрат")]
-    public DBNull СтатьяЗатрат {get; set;}
+    public Catalogs.СтатьиЗатрат СтатьяЗатрат {get; set;}
     [Description1C8(Name = "ОсновнаяСпецификацияНоменклатуры", Comment = "", Synonym = "Спецификация")]
-    public DBNull ОсновнаяСпецификацияНоменклатуры {get; set;}
+    public Catalogs.СпецификацииНоменклатуры ОсновнаяСпецификацияНоменклатуры {get; set;}
     [Description1C8(Name = "НоменклатураГТД", Comment = "", Synonym = "Код для НН (по-умолч.)")]
-    public DBNull НоменклатураГТД {get; set;}
+    public Catalogs.НоменклатураГТД НоменклатураГТД {get; set;}
     [Description1C8(Name = "ПодакцизныйТовар", Comment = "", Synonym = "Облагается акцизным налогом в рознице")]
     public bool ПодакцизныйТовар {get; set;}
     [Description1C8(Name = "СтатьяДекларацииПоАкцизномуНалогу", Comment = "", Synonym = "Статья декларации по акцизному налогу")]
-    public DBNull СтатьяДекларацииПоАкцизномуНалогу {get; set;}
+    public Catalogs.СтатьиНалоговыхДеклараций СтатьяДекларацииПоАкцизномуНалогу {get; set;}
     [Description1C8(Name = "КодЛьготы", Comment = "", Synonym = "Код льготы по НДС (согласно Справочников налоговых льгот)")]
     [StringLength(8)]
     public string КодЛьготы {get; set;}

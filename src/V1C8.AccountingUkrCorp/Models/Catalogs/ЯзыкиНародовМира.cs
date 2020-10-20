@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YazykyNarodovMyra")]
     [Description1C8(Name = "ЯзыкиНародовМира", Comment = "", Synonym = "Языки народов мира")]
-    public class ЯзыкиНародовМира:EnumItem
+    public class ЯзыкиНародовМира
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

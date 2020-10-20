@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NemateryalnyeAktyvy")]
     [Description1C8(Name = "НематериальныеАктивы", Comment = "", Synonym = "Нематериальные активы")]
-    public class НематериальныеАктивы:EnumItem
+    public class НематериальныеАктивы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -30,7 +30,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПрочиеСведения", Comment = "", Synonym = "Прочие сведения")]
     public string ПрочиеСведения {get; set;}
     [Description1C8(Name = "НалоговоеНазначение", Comment = "", Synonym = "Налоговое назначение")]
-    public DBNull НалоговоеНазначение {get; set;}
+    public Catalogs.НалоговыеНазначенияАктивовИЗатрат НалоговоеНазначение {get; set;}
     #endregion реквізити
     }
 }

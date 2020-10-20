@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyRehystrovUcheta")]
     [Description1C8(Name = "ВидыРегистровУчета", Comment = "", Synonym = "Виды регистров учета")]
-    public class ВидыРегистровУчета:EnumItem
+    public class ВидыРегистровУчета
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Отчет", Comment = "", Synonym = "Отчет")]
-    public DBNull Отчет {get; set;}
+    public Catalogs.ИдентификаторыОбъектовМетаданных Отчет {get; set;}
     [Description1C8(Name = "ВариантОтчета", Comment = "", Synonym = "Вариант отчета")]
     [StringLength(255)]
     public string ВариантОтчета {get; set;}

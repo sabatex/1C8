@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyNalohovoiDeiatelnosty")]
     [Description1C8(Name = "ВидыНалоговойДеятельности", Comment = "(Регл) Виды деятельности по налогу на прибыль", Synonym = "Виды налоговой деятельности")]
-    public class ВидыНалоговойДеятельности:EnumItem
+    public class ВидыНалоговойДеятельности
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ТипНалоговойДеятельности", Comment = "", Synonym = "Тип деятельности")]
-    public DBNull ТипНалоговойДеятельности {get; set;}
+    public Enums.ТипНалоговойДеятельности ТипНалоговойДеятельности {get; set;}
     #endregion реквізити
     }
 }

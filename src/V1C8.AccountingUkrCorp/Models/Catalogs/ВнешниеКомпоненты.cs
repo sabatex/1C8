@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VneshnyeKomponenty")]
     [Description1C8(Name = "ВнешниеКомпоненты", Comment = "", Synonym = "Внешние компоненты")]
-    public class ВнешниеКомпоненты:EnumItem
+    public class ВнешниеКомпоненты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Использование", Comment = "", Synonym = "Использование")]
-    public DBNull Использование {get; set;}
+    public Enums.ВариантыИспользованияВнешнихКомпонент Использование {get; set;}
     [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
     [StringLength(150)]
     public string Идентификатор {get; set;}

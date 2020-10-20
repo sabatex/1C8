@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ShtatnoeRaspysanye")]
     [Description1C8(Name = "ШтатноеРасписание", Comment = "", Synonym = "Штатное расписание")]
-    public class ШтатноеРасписание:EnumItem
+    public class ШтатноеРасписание
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,13 +25,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Подразделение", Comment = "", Synonym = "Подразделение")]
-    public DBNull Подразделение {get; set;}
+    public Catalogs.ПодразделенияОрганизаций Подразделение {get; set;}
     [Description1C8(Name = "Должность", Comment = "", Synonym = "Должность")]
-    public DBNull Должность {get; set;}
+    public Catalogs.Должности Должность {get; set;}
     [Description1C8(Name = "РазрядКатегория", Comment = "", Synonym = "Разряд (категория)")]
-    public DBNull РазрядКатегория {get; set;}
+    public Catalogs.РазрядыКатегорииДолжностей РазрядКатегория {get; set;}
     [Description1C8(Name = "ГрафикРаботыСотрудников", Comment = "", Synonym = "График работы")]
-    public DBNull ГрафикРаботыСотрудников {get; set;}
+    public Catalogs.ГрафикиРаботыСотрудников ГрафикРаботыСотрудников {get; set;}
     [Description1C8(Name = "КоличествоСтавок", Comment = "", Synonym = "Количество ставок")]
     // Format 7.2
     public decimal КоличествоСтавок {get; set;}
@@ -66,15 +66,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УсловияПриема", Comment = "", Synonym = "Условия приема на работу, характер работы")]
     public string УсловияПриема {get; set;}
     [Description1C8(Name = "СпособОтраженияЗарплатыВБухучете", Comment = "", Synonym = "Способ отражения")]
-    public DBNull СпособОтраженияЗарплатыВБухучете {get; set;}
+    public Catalogs.СпособыОтраженияЗарплатыВБухУчете СпособОтраженияЗарплатыВБухучете {get; set;}
     [Description1C8(Name = "СтатьяФинансирования", Comment = "", Synonym = "Финансирование")]
-    public DBNull СтатьяФинансирования {get; set;}
+    public Catalogs.СтатьиФинансированияЗарплата СтатьяФинансирования {get; set;}
     [Description1C8(Name = "ТарифнаяСетка", Comment = "", Synonym = "Тарифная группа")]
-    public DBNull ТарифнаяСетка {get; set;}
+    public Catalogs.ТарифныеСетки ТарифнаяСетка {get; set;}
     [Description1C8(Name = "ТарифнаяСеткаНадбавки", Comment = "", Synonym = "Тарифная группа надбавки")]
-    public DBNull ТарифнаяСеткаНадбавки {get; set;}
+    public Catalogs.ТарифныеСетки ТарифнаяСеткаНадбавки {get; set;}
     [Description1C8(Name = "РазрядКатегорияНадбавки", Comment = "", Synonym = "Разряд (категория) надбавки")]
-    public DBNull РазрядКатегорияНадбавки {get; set;}
+    public Catalogs.РазрядыКатегорииДолжностей РазрядКатегорияНадбавки {get; set;}
     [Description1C8(Name = "НадбавкаЗаВредностьРазмер", Comment = "", Synonym = "Надбавка за вредность размер")]
     // Format 15.2
     public decimal НадбавкаЗаВредностьРазмер {get; set;}

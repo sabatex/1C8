@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UdalytVydyKontaktnoiYnformatsyy")]
     [Description1C8(Name = "УдалитьВидыКонтактнойИнформации", Comment = "", Synonym = "(не используется) Виды контактной информации")]
-    public class УдалитьВидыКонтактнойИнформации:EnumItem
+    public class УдалитьВидыКонтактнойИнформации
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Тип", Comment = "", Synonym = "Тип")]
-    public DBNull Тип {get; set;}
+    public Enums.ТипыКонтактнойИнформации Тип {get; set;}
     [Description1C8(Name = "ВидОбъектаКонтактнойИнформации", Comment = "", Synonym = "Вид объекта контактной информации")]
-    public DBNull ВидОбъектаКонтактнойИнформации {get; set;}
+    public Enums.УдалитьВидыОбъектовКонтактнойИнформации ВидОбъектаКонтактнойИнформации {get; set;}
     #endregion реквізити
     }
 }

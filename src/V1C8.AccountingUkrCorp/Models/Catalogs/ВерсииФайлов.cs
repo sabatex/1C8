@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VersyyFailov")]
     [Description1C8(Name = "ВерсииФайлов", Comment = "", Synonym = "Версии файлов")]
-    public class ВерсииФайлов:EnumItem
+    public class ВерсииФайлов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "", Synonym = "Автор")]
-    public DBNull Автор {get; set;}
+    public Catalogs.УчетныеЗаписиСинхронизацииФайлов Автор {get; set;}
     [Description1C8(Name = "ДатаМодификацииУниверсальная", Comment = "", Synonym = "Дата изменения (универсальное время)")]
     public DateTime ДатаМодификацииУниверсальная {get; set;}
     [Description1C8(Name = "ДатаМодификацииФайла", Comment = "", Synonym = "Дата изменения (местное время)")]
@@ -56,16 +56,16 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string Расширение {get; set;}
     [Description1C8(Name = "РодительскаяВерсия", Comment = "", Synonym = "Родительская версия")]
-    public DBNull РодительскаяВерсия {get; set;}
+    public Catalogs.ВерсииФайлов РодительскаяВерсия {get; set;}
     [Description1C8(Name = "СтатусИзвлеченияТекста", Comment = "", Synonym = "Статус извлечения текста")]
-    public DBNull СтатусИзвлеченияТекста {get; set;}
+    public Enums.СтатусыИзвлеченияТекстаФайлов СтатусИзвлеченияТекста {get; set;}
     [Description1C8(Name = "ТекстХранилище", Comment = "", Synonym = "Текст")]
     // Сховище значень
     public byte[] ТекстХранилище {get; set;}
     [Description1C8(Name = "ТипХраненияФайла", Comment = "", Synonym = "Тип хранения версии файла")]
-    public DBNull ТипХраненияФайла {get; set;}
+    public Enums.ТипыХраненияФайлов ТипХраненияФайла {get; set;}
     [Description1C8(Name = "Том", Comment = "", Synonym = "Том")]
-    public DBNull Том {get; set;}
+    public Catalogs.ТомаХраненияФайлов Том {get; set;}
     [Description1C8(Name = "ФайлХранилище", Comment = "", Synonym = "Временное хранилище версии файла")]
     // Сховище значень
     public byte[] ФайлХранилище {get; set;}

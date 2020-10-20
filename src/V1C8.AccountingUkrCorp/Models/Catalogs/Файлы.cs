@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Faily")]
     [Description1C8(Name = "Файлы", Comment = "Файлы в папках", Synonym = "Файлы")]
-    public class Файлы:EnumItem
+    public class Файлы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "", Synonym = "Автор")]
-    public DBNull Автор {get; set;}
+    public Catalogs.ВнешниеПользователи Автор {get; set;}
     [Description1C8(Name = "ВладелецФайла", Comment = "", Synonym = "Размещение")]
-    public DBNull ВладелецФайла {get; set;}
+    public Catalogs.ПапкиФайлов ВладелецФайла {get; set;}
     [Description1C8(Name = "ДатаЗаема", Comment = "", Synonym = "Дата заема")]
     public DateTime ДатаЗаема {get; set;}
     [Description1C8(Name = "ДатаМодификацииУниверсальная", Comment = "", Synonym = "Дата модификации универсальная")]
@@ -47,14 +47,14 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(256)]
     public string УдалитьПолноеНаименование {get; set;}
     [Description1C8(Name = "Редактирует", Comment = "", Synonym = "Редактирует")]
-    public DBNull Редактирует {get; set;}
+    public Catalogs.УчетныеЗаписиСинхронизацииФайлов Редактирует {get; set;}
     [Description1C8(Name = "ТекстХранилище", Comment = "", Synonym = "Текст")]
     // Сховище значень
     public byte[] ТекстХранилище {get; set;}
     [Description1C8(Name = "ТекущаяВерсия", Comment = "", Synonym = "Активная версия")]
-    public DBNull ТекущаяВерсия {get; set;}
+    public Catalogs.ВерсииФайлов ТекущаяВерсия {get; set;}
     [Description1C8(Name = "Изменил", Comment = "", Synonym = "Отредактировал")]
-    public DBNull Изменил {get; set;}
+    public Catalogs.Пользователи Изменил {get; set;}
     [Description1C8(Name = "УдалитьТекущаяВерсияДатаМодификацииФайла", Comment = "", Synonym = "(не используется) Дата изменения (местное время)")]
     public DateTime УдалитьТекущаяВерсияДатаМодификацииФайла {get; set;}
     [Description1C8(Name = "УдалитьТекущаяВерсияДатаСоздания", Comment = "", Synonym = "(не используется) Дата редактирования")]
@@ -74,13 +74,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string Расширение {get; set;}
     [Description1C8(Name = "Том", Comment = "", Synonym = "Том")]
-    public DBNull Том {get; set;}
+    public Catalogs.ТомаХраненияФайлов Том {get; set;}
     [Description1C8(Name = "ХранитьВерсии", Comment = "", Synonym = "Хранить версии")]
     public bool ХранитьВерсии {get; set;}
     [Description1C8(Name = "ТипХраненияФайла", Comment = "", Synonym = "Тип хранения файла")]
-    public DBNull ТипХраненияФайла {get; set;}
+    public Enums.ТипыХраненияФайлов ТипХраненияФайла {get; set;}
     [Description1C8(Name = "СтатусИзвлеченияТекста", Comment = "", Synonym = "Статус извлечения текста")]
-    public DBNull СтатусИзвлеченияТекста {get; set;}
+    public Enums.СтатусыИзвлеченияТекстаФайлов СтатусИзвлеченияТекста {get; set;}
     [Description1C8(Name = "ФайлХранилище", Comment = "", Synonym = "Временное хранилище файла")]
     // Сховище значень
     public byte[] ФайлХранилище {get; set;}

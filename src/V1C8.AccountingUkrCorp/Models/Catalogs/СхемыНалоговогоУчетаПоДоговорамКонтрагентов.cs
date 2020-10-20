@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SkhemyNalohovohoUchetaPoDohovoramKontrahentov")]
     [Description1C8(Name = "СхемыНалоговогоУчетаПоДоговорамКонтрагентов", Comment = "(Регл)", Synonym = "Схемы налогового учета по договорам контрагентов")]
-    public class СхемыНалоговогоУчетаПоДоговорамКонтрагентов:EnumItem
+    public class СхемыНалоговогоУчетаПоДоговорамКонтрагентов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "МоментОпределенияБазыНДСПоПокупкам", Comment = "", Synonym = "Момент определения базы НДС по покупкам")]
-    public DBNull МоментОпределенияБазыНДСПоПокупкам {get; set;}
+    public Enums.МоментыОпределенияНалоговойБазы МоментОпределенияБазыНДСПоПокупкам {get; set;}
     [Description1C8(Name = "МоментОпределенияБазыНДСПоПродажам", Comment = "", Synonym = "Момент определения базы НДС по продажам")]
-    public DBNull МоментОпределенияБазыНДСПоПродажам {get; set;}
+    public Enums.МоментыОпределенияНалоговойБазы МоментОпределенияБазыНДСПоПродажам {get; set;}
     #endregion реквізити
     }
 }

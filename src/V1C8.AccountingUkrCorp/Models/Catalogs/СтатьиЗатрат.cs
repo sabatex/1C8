@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("StatyZatrat")]
     [Description1C8(Name = "СтатьиЗатрат", Comment = "(Общ)", Synonym = "Статьи затрат")]
-    public class СтатьиЗатрат:EnumItem
+    public class СтатьиЗатрат
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,11 +27,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПостояннаяЗатрата", Comment = "", Synonym = "Постоянная затрата")]
     public bool ПостояннаяЗатрата {get; set;}
     [Description1C8(Name = "ВидЗатрат", Comment = "(Общ)", Synonym = "Вид затрат")]
-    public DBNull ВидЗатрат {get; set;}
+    public Enums.ВидыЗатрат ВидЗатрат {get; set;}
     [Description1C8(Name = "Счет8Класса", Comment = "", Synonym = "Счет 8 класса")]
-    public DBNull Счет8Класса {get; set;}
+    public ПланСчетов.Хозрасчетный Счет8Класса {get; set;}
     [Description1C8(Name = "СтатьяДекларацииПоНалогуНаПрибыль", Comment = "", Synonym = "Ст. декл. по налогу на прибыль (до 01.01.2015)")]
-    public DBNull СтатьяДекларацииПоНалогуНаПрибыль {get; set;}
+    public Catalogs.СтатьиНалоговыхДеклараций СтатьяДекларацииПоНалогуНаПрибыль {get; set;}
     #endregion реквізити
     }
 }

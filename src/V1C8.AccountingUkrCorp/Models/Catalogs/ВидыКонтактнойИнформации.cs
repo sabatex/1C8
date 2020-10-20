@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyKontaktnoiYnformatsyy")]
     [Description1C8(Name = "ВидыКонтактнойИнформации", Comment = "", Synonym = "Виды контактной информации")]
-    public class ВидыКонтактнойИнформации:EnumItem
+    public class ВидыКонтактнойИнформации
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -53,7 +53,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ТелефонCДобавочнымНомером", Comment = "", Synonym = "Телефон c добавочным номером")]
     public bool ТелефонCДобавочнымНомером {get; set;}
     [Description1C8(Name = "Тип", Comment = "", Synonym = "Тип")]
-    public DBNull Тип {get; set;}
+    public Enums.ТипыКонтактнойИнформации Тип {get; set;}
     [Description1C8(Name = "ХранитьИсториюИзменений", Comment = "", Synonym = "Хранить историю изменений")]
     public bool ХранитьИсториюИзменений {get; set;}
     [Description1C8(Name = "МеждународныйФорматАдреса", Comment = "", Synonym = "Международный формат адреса")]

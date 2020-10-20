@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("StatyDvyzhenyiaDenezhnykhSredstv")]
     [Description1C8(Name = "СтатьиДвиженияДенежныхСредств", Comment = "", Synonym = "Статьи движения денежных средств")]
-    public class СтатьиДвиженияДенежныхСредств:EnumItem
+    public class СтатьиДвиженияДенежныхСредств
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

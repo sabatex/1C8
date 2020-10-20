@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Kalendary")]
     [Description1C8(Name = "Календари", Comment = "", Synonym = "ѳ(устарело) Графики работы")]
-    public class Календари:EnumItem
+    public class Календари
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,9 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ПроизводственныйКалендарь", Comment = "", Synonym = "Производственный календарь")]
-    public DBNull ПроизводственныйКалендарь {get; set;}
+    public Catalogs.ПроизводственныеКалендари ПроизводственныйКалендарь {get; set;}
     [Description1C8(Name = "СпособЗаполнения", Comment = "", Synonym = "Способ заполнения")]
-    public DBNull СпособЗаполнения {get; set;}
+    public Enums.СпособыЗаполненияГрафикаРаботы СпособЗаполнения {get; set;}
     [Description1C8(Name = "ДатаНачала", Comment = "", Synonym = "Дата начала")]
     public DateTime ДатаНачала {get; set;}
     [Description1C8(Name = "ДатаОкончания", Comment = "", Synonym = "Дата окончания")]
@@ -42,9 +42,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 3.0
     public long ГоризонтПланирования {get; set;}
     [Description1C8(Name = "ВладелецГрафика", Comment = "", Synonym = "Владелец графика")]
-    public DBNull ВладелецГрафика {get; set;}
+    public Catalogs.СпособыОтраженияЗарплатыВБухУчете ВладелецГрафика {get; set;}
     [Description1C8(Name = "УдалитьВидКалендаря", Comment = "", Synonym = "(Не используется) вид календаря")]
-    public DBNull УдалитьВидКалендаря {get; set;}
+    public Enums.УдалитьВидыКалендарей УдалитьВидКалендаря {get; set;}
     #endregion реквізити
     }
 }

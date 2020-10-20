@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YnformatsyonnyeSsylkyDliaForm")]
     [Description1C8(Name = "ИнформационныеСсылкиДляФорм", Comment = "", Synonym = "Информационные ссылки для форм")]
-    public class ИнформационныеСсылкиДляФорм:EnumItem
+    public class ИнформационныеСсылкиДляФорм
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -44,7 +44,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(200)]
     public string Подсказка {get; set;}
     [Description1C8(Name = "ПолныйПутьКФорме", Comment = "", Synonym = "Полный путь к форме")]
-    public DBNull ПолныйПутьКФорме {get; set;}
+    public Catalogs.ПолныеПутиКФормам ПолныйПутьКФорме {get; set;}
     #endregion реквізити
     }
 }

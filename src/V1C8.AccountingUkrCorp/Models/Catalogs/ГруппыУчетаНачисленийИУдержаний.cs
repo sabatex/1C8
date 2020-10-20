@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("HruppyUchetaNachyslenyiYUderzhanyi")]
     [Description1C8(Name = "ГруппыУчетаНачисленийИУдержаний", Comment = "", Synonym = "Группы учета начислений и удержаний")]
-    public class ГруппыУчетаНачисленийИУдержаний:EnumItem
+    public class ГруппыУчетаНачисленийИУдержаний
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,11 +25,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
-    public DBNull Вид {get; set;}
+    public Enums.ВидыГруппУчетаНачисленийИУдержаний Вид {get; set;}
     [Description1C8(Name = "СчетУчета", Comment = "", Synonym = "Счет учета")]
-    public DBNull СчетУчета {get; set;}
+    public ПланСчетов.Хозрасчетный СчетУчета {get; set;}
     [Description1C8(Name = "СубконтоУчета", Comment = "", Synonym = "Субконто учета")]
-    public DBNull СубконтоУчета {get; set;}
+    public ПланВидовХарактеристик.ВидыСубконтоХозрасчетные СубконтоУчета {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KlassyfykatorKOATUU")]
     [Description1C8(Name = "КлассификаторКОАТУУ", Comment = "(Общ)", Synonym = "Классификатор КОАТУУ")]
-    public class КлассификаторКОАТУУ:EnumItem
+    public class КлассификаторКОАТУУ
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "НалоговаяИнспекция", Comment = "(Общ)", Synonym = "Налоговая инспекция")]
-    public DBNull НалоговаяИнспекция {get; set;}
+    public Catalogs.НалоговыеИнспекции НалоговаяИнспекция {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     #endregion реквізити

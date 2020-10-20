@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("DopolnytelnyeOtchetyYObrabotky")]
     [Description1C8(Name = "ДополнительныеОтчетыИОбработки", Comment = "", Synonym = "Дополнительные отчеты и обработки")]
-    public class ДополнительныеОтчетыИОбработки:EnumItem
+    public class ДополнительныеОтчетыИОбработки
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -30,7 +30,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string Версия {get; set;}
     [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
-    public DBNull Вид {get; set;}
+    public Enums.ВидыДополнительныхОтчетовИОбработок Вид {get; set;}
     [Description1C8(Name = "ИмяОбъекта", Comment = "", Synonym = "Имя объекта")]
     [StringLength(256)]
     public string ИмяОбъекта {get; set;}
@@ -47,9 +47,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "Ответственный", Comment = "", Synonym = "Ответственный")]
-    public DBNull Ответственный {get; set;}
+    public Catalogs.Пользователи Ответственный {get; set;}
     [Description1C8(Name = "Публикация", Comment = "", Synonym = "Публикация")]
-    public DBNull Публикация {get; set;}
+    public Enums.ВариантыПубликацииДополнительныхОтчетовИОбработок Публикация {get; set;}
     [Description1C8(Name = "ХранилищеНастроек", Comment = "", Synonym = "Хранилище настроек")]
     // Сховище значень
     public byte[] ХранилищеНастроек {get; set;}
@@ -61,7 +61,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ТеснаяИнтеграцияСФормойОтчета", Comment = "Когда Истина то у отчета есть программный интерфейс для тесной интеграции с общей формой 'ФормаОтчета'.", Synonym = "Тесная интеграция с формой отчета")]
     public bool ТеснаяИнтеграцияСФормойОтчета {get; set;}
     [Description1C8(Name = "РежимСовместимостиРазрешений", Comment = "", Synonym = "Режим совместимости разрешений")]
-    public DBNull РежимСовместимостиРазрешений {get; set;}
+    public Enums.РежимыСовместимостиРазрешенийДополнительныхОтчетовИОбработок РежимСовместимостиРазрешений {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyLhotPoNDFL")]
     [Description1C8(Name = "ВидыЛьготПоНДФЛ", Comment = "", Synonym = "Виды льгот по НДФЛ")]
-    public class ВидыЛьготПоНДФЛ:EnumItem
+    public class ВидыЛьготПоНДФЛ
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -31,13 +31,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 5.2
     public decimal РазмерНДФЛ {get; set;}
     [Description1C8(Name = "СпособПримененияНДФЛ", Comment = "", Synonym = "Способ применения льготы по НДФЛ")]
-    public DBNull СпособПримененияНДФЛ {get; set;}
+    public Enums.СпособыПримененияЛьготРаботников СпособПримененияНДФЛ {get; set;}
     [Description1C8(Name = "ГруппаЛьгот", Comment = "", Synonym = "Группа льгот")]
     public bool ГруппаЛьгот {get; set;}
     [Description1C8(Name = "Льгота1", Comment = "", Synonym = "Льгота1")]
-    public DBNull Льгота1 {get; set;}
+    public Catalogs.ВидыЛьготПоНДФЛ Льгота1 {get; set;}
     [Description1C8(Name = "Льгота2", Comment = "", Synonym = "Льгота2")]
-    public DBNull Льгота2 {get; set;}
+    public Catalogs.ВидыЛьготПоНДФЛ Льгота2 {get; set;}
     #endregion реквізити
     }
 }

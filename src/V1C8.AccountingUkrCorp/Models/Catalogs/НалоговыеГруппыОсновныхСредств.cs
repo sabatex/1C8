@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NalohovyeHruppyOsnovnykhSredstv")]
     [Description1C8(Name = "НалоговыеГруппыОсновныхСредств", Comment = "", Synonym = "Налоговые группы основных средств")]
-    public class НалоговыеГруппыОсновныхСредств:EnumItem
+    public class НалоговыеГруппыОсновныхСредств
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ВидНалоговойГруппыНА", Comment = "", Synonym = "Вид налоговой группы")]
-    public DBNull ВидНалоговойГруппыНА {get; set;}
+    public Enums.ВидыНалоговыхГруппНА ВидНалоговойГруппыНА {get; set;}
     #endregion реквізити
     }
 }

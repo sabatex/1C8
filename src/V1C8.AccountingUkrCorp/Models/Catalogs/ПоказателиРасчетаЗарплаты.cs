@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PokazatelyRaschetaZarplaty")]
     [Description1C8(Name = "ПоказателиРасчетаЗарплаты", Comment = "", Synonym = "Показатели расчета зарплаты")]
-    public class ПоказателиРасчетаЗарплаты:EnumItem
+    public class ПоказателиРасчетаЗарплаты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -31,17 +31,17 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string Идентификатор {get; set;}
     [Description1C8(Name = "НазначениеПоказателя", Comment = "", Synonym = "Назначение показателя")]
-    public DBNull НазначениеПоказателя {get; set;}
+    public Enums.НазначенияПоказателейРасчетаЗарплаты НазначениеПоказателя {get; set;}
     [Description1C8(Name = "ТипПоказателя", Comment = "", Synonym = "Тип показателя")]
-    public DBNull ТипПоказателя {get; set;}
+    public Enums.ТипыПоказателейРасчетаЗарплаты ТипПоказателя {get; set;}
     [Description1C8(Name = "ЗначениеРассчитываетсяАвтоматически", Comment = "Признак определяет возможность ввода значения пользователем", Synonym = "Значение рассчитывается автоматически")]
     public bool ЗначениеРассчитываетсяАвтоматически {get; set;}
     [Description1C8(Name = "СпособПримененияЗначений", Comment = "", Synonym = "Способ применения значений")]
-    public DBNull СпособПримененияЗначений {get; set;}
+    public Enums.СпособыПримененияЗначенийПоказателейРасчетаЗарплаты СпособПримененияЗначений {get; set;}
     [Description1C8(Name = "СпособВводаЗначений", Comment = "", Synonym = "Способ ввода значений")]
-    public DBNull СпособВводаЗначений {get; set;}
+    public Enums.СпособыВводаЗначенийПоказателейРасчетаЗарплаты СпособВводаЗначений {get; set;}
     [Description1C8(Name = "ВидСтажа", Comment = "", Synonym = "Вид стажа")]
-    public DBNull ВидСтажа {get; set;}
+    public Catalogs.ВидыСтажа ВидСтажа {get; set;}
     [Description1C8(Name = "Точность", Comment = "", Synonym = "Точность")]
     // Format 1.0
     public long Точность {get; set;}
@@ -51,9 +51,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string ИдентификаторСлужебный {get; set;}
     [Description1C8(Name = "БазовыйПоказатель", Comment = "", Synonym = "Базовый показатель")]
-    public DBNull БазовыйПоказатель {get; set;}
+    public Catalogs.ПоказателиРасчетаЗарплаты БазовыйПоказатель {get; set;}
     [Description1C8(Name = "ВидТарифнойСтавки", Comment = "", Synonym = "Вид тарифной ставки")]
-    public DBNull ВидТарифнойСтавки {get; set;}
+    public Enums.ВидыТарифныхСтавок ВидТарифнойСтавки {get; set;}
     [Description1C8(Name = "УдалитьИдентификаторОбъекта", Comment = "", Synonym = "(не используется) Идентификатор объекта")]
     [StringLength(256)]
     public string УдалитьИдентификаторОбъекта {get; set;}

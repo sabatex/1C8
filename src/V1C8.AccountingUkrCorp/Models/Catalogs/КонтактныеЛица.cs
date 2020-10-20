@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KontaktnyeLytsa")]
     [Description1C8(Name = "КонтактныеЛица", Comment = "", Synonym = "Контактные лица")]
-    public class КонтактныеЛица:EnumItem
+    public class КонтактныеЛица
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -36,18 +36,18 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДатаРождения", Comment = "", Synonym = "Дата рождения")]
     public DateTime ДатаРождения {get; set;}
     [Description1C8(Name = "Роль", Comment = "", Synonym = "Роль")]
-    public DBNull Роль {get; set;}
+    public Catalogs.РолиКонтактныхЛиц Роль {get; set;}
     [Description1C8(Name = "Должность", Comment = "", Synonym = "Должность")]
     [StringLength(100)]
     public string Должность {get; set;}
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "ОбъектВладелец", Comment = "", Synonym = "Объект владелец")]
-    public DBNull ОбъектВладелец {get; set;}
+    public Catalogs.Контрагенты ОбъектВладелец {get; set;}
     [Description1C8(Name = "ВидКонтактногоЛица", Comment = "", Synonym = "Вид контактного лица")]
-    public DBNull ВидКонтактногоЛица {get; set;}
+    public Enums.ВидыКонтактныхЛиц ВидКонтактногоЛица {get; set;}
     [Description1C8(Name = "ПользовательЛичногоКонтакта", Comment = "", Synonym = "Пользователь личного контакта")]
-    public DBNull ПользовательЛичногоКонтакта {get; set;}
+    public Catalogs.Пользователи ПользовательЛичногоКонтакта {get; set;}
     #endregion реквізити
     }
 }

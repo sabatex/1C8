@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KlassyfykatorUKTVЕD")]
     [Description1C8(Name = "КлассификаторУКТВЭД", Comment = "", Synonym = "Классификатор кодов для НН")]
-    public class КлассификаторУКТВЭД:EnumItem
+    public class КлассификаторУКТВЭД
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -28,7 +28,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(500)]
     public string НаименованиеПолное {get; set;}
     [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
-    public DBNull Вид {get; set;}
+    public Enums.ВидыКодовДляНалоговойНакладной Вид {get; set;}
     [Description1C8(Name = "ВыводитьПриПечатиЧека", Comment = "", Synonym = "Требуется выводить код при печати чека")]
     public bool ВыводитьПриПечатиЧека {get; set;}
     [Description1C8(Name = "КодСХДеятельности", Comment = "", Synonym = "Код с/х деятельности")]

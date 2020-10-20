@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KliuchevyeOperatsyy")]
     [Description1C8(Name = "КлючевыеОперации", Comment = "", Synonym = "Ключевые операции")]
-    public class КлючевыеОперации:EnumItem
+    public class КлючевыеОперации
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -28,7 +28,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(1000)]
     public string Имя {get; set;}
     [Description1C8(Name = "МинимальноДопустимыйУровень", Comment = "", Synonym = "Минимально допустимый уровень")]
-    public DBNull МинимальноДопустимыйУровень {get; set;}
+    public Enums.УровниПроизводительности МинимальноДопустимыйУровень {get; set;}
     [Description1C8(Name = "Приоритет", Comment = "", Synonym = "Приоритет")]
     // Format 15.0
     public long Приоритет {get; set;}

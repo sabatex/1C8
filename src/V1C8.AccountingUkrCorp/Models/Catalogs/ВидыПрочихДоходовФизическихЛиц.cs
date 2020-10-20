@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyProchykhDokhodovFyzycheskykhLyts")]
     [Description1C8(Name = "ВидыПрочихДоходовФизическихЛиц", Comment = "", Synonym = "Виды прочих доходов физлиц")]
-    public class ВидыПрочихДоходовФизическихЛиц:EnumItem
+    public class ВидыПрочихДоходовФизическихЛиц
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,13 +25,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КодДоходаНДФЛ", Comment = "", Synonym = "Код дохода НДФЛ")]
-    public DBNull КодДоходаНДФЛ {get; set;}
+    public Catalogs.ВидыДоходовНДФЛ КодДоходаНДФЛ {get; set;}
     [Description1C8(Name = "УдержатьНДФЛИзЗарплаты", Comment = "", Synonym = "Удерживать НДФЛ из зарплаты")]
     public bool УдержатьНДФЛИзЗарплаты {get; set;}
     [Description1C8(Name = "ДоходВНатуральнойФорме", Comment = "", Synonym = "Доход в натуральной форме")]
     public bool ДоходВНатуральнойФорме {get; set;}
     [Description1C8(Name = "ГруппаУчета", Comment = "", Synonym = "Группа учета")]
-    public DBNull ГруппаУчета {get; set;}
+    public Catalogs.ГруппыУчетаНачисленийИУдержаний ГруппаУчета {get; set;}
     [Description1C8(Name = "ОтражатьТолькоНДФЛ", Comment = "", Synonym = "Отражать только НДФЛ для 1ДФ")]
     public bool ОтражатьТолькоНДФЛ {get; set;}
     #endregion реквізити

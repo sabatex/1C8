@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UstareloVydyVyplat")]
     [Description1C8(Name = "УстарелоВидыВыплат", Comment = "", Synonym = "ѳ(устарело) Виды выплат")]
-    public class УстарелоВидыВыплат:EnumItem
+    public class УстарелоВидыВыплат
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,13 +25,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "УДАЛИТЬВидРасчета", Comment = "", Synonym = "(не используется) Вид расчета")]
-    public DBNull УДАЛИТЬВидРасчета {get; set;}
+    public ПланВидовРасчета.УстарелоНачисления УДАЛИТЬВидРасчета {get; set;}
     [Description1C8(Name = "РасчетОтОбратного", Comment = "", Synonym = "Расчет от обратного")]
     public bool РасчетОтОбратного {get; set;}
     [Description1C8(Name = "РасчитыватьВзносы", Comment = "", Synonym = "Расчитывать взносы")]
     public bool РасчитыватьВзносы {get; set;}
     [Description1C8(Name = "СчетУчета", Comment = "", Synonym = "Счет учета")]
-    public DBNull СчетУчета {get; set;}
+    public ПланСчетов.Хозрасчетный СчетУчета {get; set;}
     #endregion реквізити
     }
 }

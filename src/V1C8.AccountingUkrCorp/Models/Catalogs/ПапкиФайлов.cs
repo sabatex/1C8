@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PapkyFailov")]
     [Description1C8(Name = "ПапкиФайлов", Comment = "Структура папок для хранения файлов", Synonym = "Папки")]
-    public class ПапкиФайлов:EnumItem
+    public class ПапкиФайлов
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,7 +27,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "Ответственный", Comment = "", Synonym = "Ответственный")]
-    public DBNull Ответственный {get; set;}
+    public Catalogs.Пользователи Ответственный {get; set;}
     [Description1C8(Name = "ДатаСоздания", Comment = "", Synonym = "Дата создания")]
     public DateTime ДатаСоздания {get; set;}
     #endregion реквізити

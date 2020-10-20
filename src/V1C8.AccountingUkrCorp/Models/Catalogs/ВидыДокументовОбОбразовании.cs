@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyDokumentovObObrazovanyy")]
     [Description1C8(Name = "ВидыДокументовОбОбразовании", Comment = "", Synonym = "Виды документов об образовании")]
-    public class ВидыДокументовОбОбразовании:EnumItem
+    public class ВидыДокументовОбОбразовании
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

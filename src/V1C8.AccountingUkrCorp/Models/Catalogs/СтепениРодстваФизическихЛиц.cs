@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("StepenyRodstvaFyzycheskykhLyts")]
     [Description1C8(Name = "СтепениРодстваФизическихЛиц", Comment = "", Synonym = "Степени родства")]
-    public class СтепениРодстваФизическихЛиц:EnumItem
+    public class СтепениРодстваФизическихЛиц
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

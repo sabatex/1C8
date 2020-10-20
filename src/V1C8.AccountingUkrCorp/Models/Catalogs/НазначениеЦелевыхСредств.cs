@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NaznachenyeTselevykhSredstv")]
     [Description1C8(Name = "НазначениеЦелевыхСредств", Comment = "(Общ)", Synonym = "Назначение целевых средств")]
-    public class НазначениеЦелевыхСредств:EnumItem
+    public class НазначениеЦелевыхСредств
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

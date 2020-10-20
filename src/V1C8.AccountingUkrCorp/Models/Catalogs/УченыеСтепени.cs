@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UchenyeStepeny")]
     [Description1C8(Name = "УченыеСтепени", Comment = "", Synonym = "Ученые степени")]
-    public class УченыеСтепени:EnumItem
+    public class УченыеСтепени
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

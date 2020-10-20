@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SobytyiaOS")]
     [Description1C8(Name = "СобытияОС", Comment = "", Synonym = "События ОС")]
-    public class СобытияОС:EnumItem
+    public class СобытияОС
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,7 +27,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "ВидСобытияОС", Comment = "", Synonym = "Вид события ОС")]
-    public DBNull ВидСобытияОС {get; set;}
+    public Enums.ВидыСобытийОС ВидСобытияОС {get; set;}
     #endregion реквізити
     }
 }

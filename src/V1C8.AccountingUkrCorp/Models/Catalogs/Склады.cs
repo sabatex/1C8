@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Sklady")]
     [Description1C8(Name = "Склады", Comment = "", Synonym = "Склады (места хранения)")]
-    public class Склады:EnumItem
+    public class Склады
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,11 +27,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "(Общ) Любая дополнительная информация", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "ТипЦенРозничнойТорговли", Comment = "(Общ)", Synonym = "Тип цен розничной торговли")]
-    public DBNull ТипЦенРозничнойТорговли {get; set;}
+    public Catalogs.ТипыЦенНоменклатуры ТипЦенРозничнойТорговли {get; set;}
     [Description1C8(Name = "ТипСклада", Comment = "", Synonym = "Тип склада")]
-    public DBNull ТипСклада {get; set;}
+    public Enums.ТипыСкладов ТипСклада {get; set;}
     [Description1C8(Name = "ТерриторияПоКОАТУУ", Comment = "Название и код территории по КОАТУУ, на которой расположен склад (торговая точка)", Synonym = "Территория по КОАТУУ")]
-    public DBNull ТерриторияПоКОАТУУ {get; set;}
+    public Catalogs.КлассификаторКОАТУУ ТерриторияПоКОАТУУ {get; set;}
     [Description1C8(Name = "Местонахождение", Comment = "", Synonym = "Местонахождение")]
     public string Местонахождение {get; set;}
     #endregion реквізити

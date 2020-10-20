@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PostavliaemyeDannye")]
     [Description1C8(Name = "ПоставляемыеДанные", Comment = "", Synonym = "Поставляемые данные")]
-    public class ПоставляемыеДанные:EnumItem
+    public class ПоставляемыеДанные
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -35,9 +35,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПутьКФайлу", Comment = "", Synonym = "Путь к файлу")]
     public string ПутьКФайлу {get; set;}
     [Description1C8(Name = "Том", Comment = "", Synonym = "Том")]
-    public DBNull Том {get; set;}
+    public Catalogs.ТомаХраненияФайлов Том {get; set;}
     [Description1C8(Name = "ТипХраненияФайла", Comment = "", Synonym = "Тип хранения файла")]
-    public DBNull ТипХраненияФайла {get; set;}
+    public Enums.ТипыХраненияФайлов ТипХраненияФайла {get; set;}
     [Description1C8(Name = "ИдентификаторФайла", Comment = "", Synonym = "Идентификатор файла")]
     public Guid ИдентификаторФайла {get; set;}
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyOplatOrhanyzatsyi")]
     [Description1C8(Name = "ВидыОплатОрганизаций", Comment = "", Synonym = "Виды оплат")]
-    public class ВидыОплатОрганизаций:EnumItem
+    public class ВидыОплатОрганизаций
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,18 +25,18 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
-    public DBNull Организация {get; set;}
+    public Catalogs.Организации Организация {get; set;}
     [Description1C8(Name = "ТипОплаты", Comment = "", Synonym = "Тип оплаты")]
-    public DBNull ТипОплаты {get; set;}
+    public Enums.ТипыОплат ТипОплаты {get; set;}
     [Description1C8(Name = "Контрагент", Comment = "", Synonym = "Контрагент")]
-    public DBNull Контрагент {get; set;}
+    public Catalogs.Контрагенты Контрагент {get; set;}
     [Description1C8(Name = "ДоговорКонтрагента", Comment = "", Synonym = "Договор контрагента")]
-    public DBNull ДоговорКонтрагента {get; set;}
+    public Catalogs.ДоговорыКонтрагентов ДоговорКонтрагента {get; set;}
     [Description1C8(Name = "ПроцентБанковскойКомиссии", Comment = "", Synonym = "Процент банковской комиссии")]
     // Format 5.2
     public decimal ПроцентБанковскойКомиссии {get; set;}
     [Description1C8(Name = "СчетДеньгиВПути", Comment = "", Synonym = "Счет деньги в пути")]
-    public DBNull СчетДеньгиВПути {get; set;}
+    public ПланСчетов.Хозрасчетный СчетДеньгиВПути {get; set;}
     #endregion реквізити
     }
 }

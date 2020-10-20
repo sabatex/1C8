@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PostavshchykyUsluhServysa")]
     [Description1C8(Name = "ПоставщикиУслугСервиса", Comment = "", Synonym = "Поставщики услуг сервиса")]
-    public class ПоставщикиУслугСервиса:EnumItem
+    public class ПоставщикиУслугСервиса
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

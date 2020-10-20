@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SposobyOkruhlenyiaPryRascheteZarplaty")]
     [Description1C8(Name = "СпособыОкругленияПриРасчетеЗарплаты", Comment = "", Synonym = "Способы округления зарплаты")]
-    public class СпособыОкругленияПриРасчетеЗарплаты:EnumItem
+    public class СпособыОкругленияПриРасчетеЗарплаты
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -28,7 +28,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 7.2
     public decimal Точность {get; set;}
     [Description1C8(Name = "ПравилоОкругления", Comment = "", Synonym = "Правило округления")]
-    public DBNull ПравилоОкругления {get; set;}
+    public Enums.ПравилаОкругленияПриРасчетеЗарплаты ПравилоОкругления {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ByolohycheskyeAktyvy")]
     [Description1C8(Name = "БиологическиеАктивы", Comment = "(Общ)", Synonym = "Биологические активы")]
-    public class БиологическиеАктивы:EnumItem
+    public class БиологическиеАктивы
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

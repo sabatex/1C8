@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Sotrudnyky")]
     [Description1C8(Name = "Сотрудники", Comment = "", Synonym = "Сотрудники")]
-    public class Сотрудники:EnumItem
+    public class Сотрудники
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,24 +25,24 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ФизическоеЛицо", Comment = "", Synonym = "Физическое лицо")]
-    public DBNull ФизическоеЛицо {get; set;}
+    public Catalogs.ФизическиеЛица ФизическоеЛицо {get; set;}
     [Description1C8(Name = "Актуальность", Comment = "", Synonym = "Актуальность")]
     public bool Актуальность {get; set;}
     [Description1C8(Name = "ГоловнаяОрганизация", Comment = "", Synonym = "Головная организация")]
-    public DBNull ГоловнаяОрганизация {get; set;}
+    public Catalogs.Организации ГоловнаяОрганизация {get; set;}
     [Description1C8(Name = "УдалитьВидЗанятости", Comment = "", Synonym = "(не используется) Вид занятости")]
-    public DBNull УдалитьВидЗанятости {get; set;}
+    public Enums.УстарелоВидыЗанятости УдалитьВидЗанятости {get; set;}
     [Description1C8(Name = "ВАрхиве", Comment = "", Synonym = "В архиве")]
     public bool ВАрхиве {get; set;}
     [Description1C8(Name = "ОсновноеНазначение", Comment = "", Synonym = "Основное назначение")]
-    public DBNull ОсновноеНазначение {get; set;}
+    public Catalogs.Сотрудники ОсновноеНазначение {get; set;}
     [Description1C8(Name = "ПоНаправлениюОргановЗанятости", Comment = "", Synonym = "По направлению органов занятости")]
     public bool ПоНаправлениюОргановЗанятости {get; set;}
     [Description1C8(Name = "УточнениеНаименования", Comment = "", Synonym = "Уточнение наименования")]
     [StringLength(40)]
     public string УточнениеНаименования {get; set;}
     [Description1C8(Name = "ГоловнойСотрудник", Comment = "", Synonym = "Основной сотрудник")]
-    public DBNull ГоловнойСотрудник {get; set;}
+    public Catalogs.Сотрудники ГоловнойСотрудник {get; set;}
     #endregion реквізити
     }
 }

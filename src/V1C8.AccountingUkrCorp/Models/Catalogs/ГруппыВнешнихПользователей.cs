@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("HruppyVneshnykhPolzovatelei")]
     [Description1C8(Name = "ГруппыВнешнихПользователей", Comment = "", Synonym = "Группы внешних пользователей")]
-    public class ГруппыВнешнихПользователей:EnumItem
+    public class ГруппыВнешнихПользователей
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

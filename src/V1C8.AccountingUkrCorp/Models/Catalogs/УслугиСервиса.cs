@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UsluhyServysa")]
     [Description1C8(Name = "УслугиСервиса", Comment = "", Synonym = "Услуги сервиса")]
-    public class УслугиСервиса:EnumItem
+    public class УслугиСервиса
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -30,11 +30,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПоказыватьПриДобавленииВТариф", Comment = "", Synonym = "Показывать при добавлении в тариф")]
     public bool ПоказыватьПриДобавленииВТариф {get; set;}
     [Description1C8(Name = "ПоставщикУслуги", Comment = "", Synonym = "Поставщик услуги")]
-    public DBNull ПоставщикУслуги {get; set;}
+    public Catalogs.ПоставщикиУслугСервиса ПоставщикУслуги {get; set;}
     [Description1C8(Name = "Тарифицируется", Comment = "", Synonym = "Тарифицируется")]
     public bool Тарифицируется {get; set;}
     [Description1C8(Name = "ТипУслуги", Comment = "", Synonym = "Тип услуги")]
-    public DBNull ТипУслуги {get; set;}
+    public Enums.ТипыУслуг ТипУслуги {get; set;}
     #endregion реквізити
     }
 }

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PerechenDolzhnosteiDliaBronyrovanyiaHrazhdan")]
     [Description1C8(Name = "ПереченьДолжностейДляБронированияГраждан", Comment = "", Synonym = "Перечень должностей для бронирования")]
-    public class ПереченьДолжностейДляБронированияГраждан:EnumItem
+    public class ПереченьДолжностейДляБронированияГраждан
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

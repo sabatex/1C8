@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Polzovately")]
     [Description1C8(Name = "Пользователи", Comment = "", Synonym = "Пользователи")]
-    public class Пользователи:EnumItem
+    public class Пользователи
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -27,9 +27,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Недействителен", Comment = "", Synonym = "Недействителен")]
     public bool Недействителен {get; set;}
     [Description1C8(Name = "Подразделение", Comment = "", Synonym = "Подразделение")]
-    public DBNull Подразделение {get; set;}
+    public Catalogs.ПодразделенияОрганизаций Подразделение {get; set;}
     [Description1C8(Name = "ФизическоеЛицо", Comment = "", Synonym = "Физическое лицо")]
-    public DBNull ФизическоеЛицо {get; set;}
+    public Catalogs.ФизическиеЛица ФизическоеЛицо {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "Служебный", Comment = "", Synonym = "Служебный")]

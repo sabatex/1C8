@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PredopredelennyeVaryantyOtchetovRasshyrenyi")]
     [Description1C8(Name = "ПредопределенныеВариантыОтчетовРасширений", Comment = "Предопределенные варианты отчетов конфигурации", Synonym = "Предопределенные варианты отчетов расширений")]
-    public class ПредопределенныеВариантыОтчетовРасширений:EnumItem
+    public class ПредопределенныеВариантыОтчетовРасширений
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Отчет", Comment = "", Synonym = "Отчет")]
-    public DBNull Отчет {get; set;}
+    public Catalogs.ИдентификаторыОбъектовРасширений Отчет {get; set;}
     [Description1C8(Name = "КлючВарианта", Comment = "", Synonym = "Ключ варианта")]
     [StringLength(256)]
     public string КлючВарианта {get; set;}

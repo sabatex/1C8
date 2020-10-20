@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Dolzhnosty")]
     [Description1C8(Name = "Должности", Comment = "", Synonym = "Должности")]
-    public class Должности:EnumItem
+    public class Должности
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}
@@ -43,13 +43,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(25)]
     public string НаименованиеКраткое {get; set;}
     [Description1C8(Name = "ТарифнаяСетка", Comment = "", Synonym = "Тарифная группа")]
-    public DBNull ТарифнаяСетка {get; set;}
+    public Catalogs.ТарифныеСетки ТарифнаяСетка {get; set;}
     [Description1C8(Name = "РазрядКатегория", Comment = "", Synonym = "Разряд (категория)")]
-    public DBNull РазрядКатегория {get; set;}
+    public Catalogs.РазрядыКатегорииДолжностей РазрядКатегория {get; set;}
     [Description1C8(Name = "ТарифнаяСеткаНадбавки", Comment = "", Synonym = "Тарифная группа надбавки")]
-    public DBNull ТарифнаяСеткаНадбавки {get; set;}
+    public Catalogs.ТарифныеСетки ТарифнаяСеткаНадбавки {get; set;}
     [Description1C8(Name = "РазрядКатегорияНадбавки", Comment = "", Synonym = "Разряд (категория) надбавки")]
-    public DBNull РазрядКатегорияНадбавки {get; set;}
+    public Catalogs.РазрядыКатегорииДолжностей РазрядКатегорияНадбавки {get; set;}
     [Description1C8(Name = "ПроцентНадбавкиЗаВредность", Comment = "", Synonym = "% надбавки")]
     // Format 5.2
     public decimal ПроцентНадбавкиЗаВредность {get; set;}
@@ -62,7 +62,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(6)]
     public string КодКП {get; set;}
     [Description1C8(Name = "Категория", Comment = "", Synonym = "Категория")]
-    public DBNull Категория {get; set;}
+    public Catalogs.КатегорииДолжностей Категория {get; set;}
     [Description1C8(Name = "ЯвляетсяДолжностьюСпециальныхРабот", Comment = "", Synonym = "Является должностью специальных работ")]
     public bool ЯвляетсяДолжностьюСпециальныхРабот {get; set;}
     [Description1C8(Name = "НаименованиеПоКП", Comment = "Наименование по классификатору профессий", Synonym = "Наименование по КП")]
@@ -72,7 +72,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(6)]
     public string КодЗКППТР {get; set;}
     [Description1C8(Name = "УстарелоДолжность", Comment = "", Synonym = "")]
-    public DBNull УстарелоДолжность {get; set;}
+    public Catalogs.УстарелоДолжности УстарелоДолжность {get; set;}
     #endregion реквізити
     }
 }

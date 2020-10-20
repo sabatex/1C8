@@ -11,6 +11,7 @@ namespace sabatex.V1C8.Models
         public Guid Id { get; set; }
         public bool IsFolder { get; set; }
         public bool DeletionMark { get; set; }
+        public bool Predefined {get; set;}
         public Guid? Parent { get; set; }
         public string Code { get; set; }
         public string Description { get; set; }

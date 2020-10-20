@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "РегламентированныеОтчеты", Comment = "", Synonym = "Регламентированные отчеты")]
     public class РегламентированныеОтчеты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ИсточникОтчета", Comment = "", Synonym = "Источник отчета")]
     [StringLength(255)]
@@ -45,5 +35,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КешСхемЗвит1САктуален", Comment = "", Synonym = "Кеш схем FREDO Звіт актуален")]
     public bool КешСхемЗвит1САктуален {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "КешСхемЗвит1С", Comment = "", Synonym = "Кеш схем 'FREDO Звіт'")]
+    public List<РегламентированныеОтчеты_КешСхемЗвит1С> РегламентированныеОтчетыКешСхемЗвит1С
+    #endregion tables
     }
 }

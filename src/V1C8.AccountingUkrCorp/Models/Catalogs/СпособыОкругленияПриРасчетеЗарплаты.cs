@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СпособыОкругленияПриРасчетеЗарплаты", Comment = "", Synonym = "Способы округления зарплаты")]
     public class СпособыОкругленияПриРасчетеЗарплаты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Точность", Comment = "", Synonym = "Точность")]
     // Format 7.2
@@ -30,5 +20,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПравилоОкругления", Comment = "", Synonym = "Правило округления")]
     public Enums.ПравилаОкругленияПриРасчетеЗарплаты ПравилоОкругления {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

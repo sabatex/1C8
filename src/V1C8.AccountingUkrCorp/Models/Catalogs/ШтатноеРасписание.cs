@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ШтатноеРасписание", Comment = "", Synonym = "Штатное расписание")]
     public class ШтатноеРасписание:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Подразделение", Comment = "", Synonym = "Подразделение")]
     public Catalogs.ПодразделенияОрганизаций Подразделение {get; set;}
@@ -90,5 +80,17 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 5.2
     public decimal ПроцентНадбавкиЗаВредность {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Начисления", Comment = "", Synonym = "Начисления")]
+    public List<ШтатноеРасписание_Начисления> ШтатноеРасписаниеНачисления
+    [Description1C8(Name = "Показатели", Comment = "", Synonym = "Показатели")]
+    public List<ШтатноеРасписание_Показатели> ШтатноеРасписаниеПоказатели
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<ШтатноеРасписание_ДополнительныеРеквизиты> ШтатноеРасписаниеДополнительныеРеквизиты
+    [Description1C8(Name = "ЕжегодныеОтпуска", Comment = "", Synonym = "Ежегодные отпуска")]
+    public List<ШтатноеРасписание_ЕжегодныеОтпуска> ШтатноеРасписаниеЕжегодныеОтпуска
+    [Description1C8(Name = "Специальности", Comment = "", Synonym = "Специальности")]
+    public List<ШтатноеРасписание_Специальности> ШтатноеРасписаниеСпециальности
+    #endregion tables
     }
 }

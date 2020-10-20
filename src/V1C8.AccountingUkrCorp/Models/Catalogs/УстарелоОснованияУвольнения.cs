@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УстарелоОснованияУвольнения", Comment = "(Регл)", Synonym = "ѳ(устарело) Основания увольнения")]
     public class УстарелоОснованияУвольнения:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ТекстОснования", Comment = "", Synonym = "Текст основания")]
     [StringLength(250)]
@@ -31,5 +21,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string СтатьяЗакона {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

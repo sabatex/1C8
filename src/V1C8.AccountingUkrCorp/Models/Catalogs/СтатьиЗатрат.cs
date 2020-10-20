@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СтатьиЗатрат", Comment = "(Общ)", Synonym = "Статьи затрат")]
     public class СтатьиЗатрат:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ПостояннаяЗатрата", Comment = "", Synonym = "Постоянная затрата")]
     public bool ПостояннаяЗатрата {get; set;}
@@ -33,5 +23,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СтатьяДекларацииПоНалогуНаПрибыль", Comment = "", Synonym = "Ст. декл. по налогу на прибыль (до 01.01.2015)")]
     public Catalogs.СтатьиНалоговыхДеклараций СтатьяДекларацииПоНалогуНаПрибыль {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

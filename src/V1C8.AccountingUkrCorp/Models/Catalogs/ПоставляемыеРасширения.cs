@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПоставляемыеРасширения", Comment = "", Synonym = "Поставляемые расширения")]
     public class ПоставляемыеРасширения:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Имя", Comment = "", Synonym = "Имя")]
     [StringLength(260)]
@@ -43,5 +33,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПричинаОтключения", Comment = "", Synonym = "Причина отключения")]
     public Enums.ПричиныОтключенияРасширенийВМоделиСервиса ПричинаОтключения {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Совместимость", Comment = "", Synonym = "Совместимость")]
+    public List<ПоставляемыеРасширения_Совместимость> ПоставляемыеРасширенияСовместимость
+    [Description1C8(Name = "Разрешения", Comment = "", Synonym = "Разрешения")]
+    public List<ПоставляемыеРасширения_Разрешения> ПоставляемыеРасширенияРазрешения
+    #endregion tables
     }
 }

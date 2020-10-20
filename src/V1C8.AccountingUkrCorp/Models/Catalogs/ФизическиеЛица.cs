@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ФизическиеЛица", Comment = "", Synonym = "Физические лица")]
     public class ФизическиеЛица:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ДатаРождения", Comment = "", Synonym = "Дата рождения")]
     public DateTime ДатаРождения {get; set;}
@@ -63,5 +53,31 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(70)]
     public string НаименованиеСлужебное {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "СоставСемьи", Comment = "(Общ)", Synonym = "Состав семьи физического лица")]
+    public List<ФизическиеЛица_СоставСемьи> ФизическиеЛицаСоставСемьи
+    [Description1C8(Name = "КонтактнаяИнформация", Comment = "", Synonym = "Контактная информация")]
+    public List<ФизическиеЛица_КонтактнаяИнформация> ФизическиеЛицаКонтактнаяИнформация
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<ФизическиеЛица_ДополнительныеРеквизиты> ФизическиеЛицаДополнительныеРеквизиты
+    [Description1C8(Name = "УдалитьСоставСемьи", Comment = "", Synonym = "(не используется) Состав семьи")]
+    public List<ФизическиеЛица_УдалитьСоставСемьи> ФизическиеЛицаУдалитьСоставСемьи
+    [Description1C8(Name = "УдалитьОбразование", Comment = "", Synonym = "(не используется) Образование")]
+    public List<ФизическиеЛица_УдалитьОбразование> ФизическиеЛицаУдалитьОбразование
+    [Description1C8(Name = "УдалитьТрудоваяДеятельность", Comment = "", Synonym = "(не используется) Трудовая деятельность")]
+    public List<ФизическиеЛица_УдалитьТрудоваяДеятельность> ФизическиеЛицаУдалитьТрудоваяДеятельность
+    [Description1C8(Name = "УдалитьЗнаниеЯзыков", Comment = "", Synonym = "(не используется) Знание языков")]
+    public List<ФизическиеЛица_УдалитьЗнаниеЯзыков> ФизическиеЛицаУдалитьЗнаниеЯзыков
+    [Description1C8(Name = "УдалитьПрофессии", Comment = "", Synonym = "(не используется) Профессии")]
+    public List<ФизическиеЛица_УдалитьПрофессии> ФизическиеЛицаУдалитьПрофессии
+    [Description1C8(Name = "УдалитьСтажи", Comment = "", Synonym = "(не используется) Стажи")]
+    public List<ФизическиеЛица_УдалитьСтажи> ФизическиеЛицаУдалитьСтажи
+    [Description1C8(Name = "УдалитьНаграды", Comment = "", Synonym = "(не используется) Награды")]
+    public List<ФизическиеЛица_УдалитьНаграды> ФизическиеЛицаУдалитьНаграды
+    [Description1C8(Name = "УдалитьУченыеСтепени", Comment = "", Synonym = "(не используется) Ученые степени")]
+    public List<ФизическиеЛица_УдалитьУченыеСтепени> ФизическиеЛицаУдалитьУченыеСтепени
+    [Description1C8(Name = "УдалитьУченыеЗвания", Comment = "", Synonym = "(не используется) Ученые звания")]
+    public List<ФизическиеЛица_УдалитьУченыеЗвания> ФизическиеЛицаУдалитьУченыеЗвания
+    #endregion tables
     }
 }

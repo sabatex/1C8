@@ -13,21 +13,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СпособыОтраженияРасходовПоАмортизации", Comment = "(Общ)", Synonym = "Способы отражения расходов по амортизации и улучшению")]
     public class СпособыОтраженияРасходовПоАмортизации:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
     public Catalogs.Организации Организация {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "(Общ)", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Способы", Comment = "(Общ)", Synonym = "Способы")]
+    public List<СпособыОтраженияРасходовПоАмортизации_Способы> СпособыОтраженияРасходовПоАмортизацииСпособы
+    #endregion tables
     }
 }

@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОрганизацииПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Организации)")]
     public class ОрганизацииПрисоединенныеФайлы:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "Автор - пользователь, добавивший файл", Synonym = "Автор")]
     public Catalogs.УчетныеЗаписиСинхронизацииФайлов Автор {get; set;}
@@ -70,5 +60,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ХранитьВерсии", Comment = "", Synonym = "Хранить версии")]
     public bool ХранитьВерсии {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "УдалитьЭлектронныеЦифровыеПодписи", Comment = "", Synonym = "(не используется) Электронные цифровые подписи")]
+    public List<ОрганизацииПрисоединенныеФайлы_УдалитьЭлектронныеЦифровыеПодписи> ОрганизацииПрисоединенныеФайлыУдалитьЭлектронныеЦифровыеПодписи
+    [Description1C8(Name = "УдалитьСертификатыШифрования", Comment = "", Synonym = "(не используется) Сертификаты шифрования")]
+    public List<ОрганизацииПрисоединенныеФайлы_УдалитьСертификатыШифрования> ОрганизацииПрисоединенныеФайлыУдалитьСертификатыШифрования
+    #endregion tables
     }
 }

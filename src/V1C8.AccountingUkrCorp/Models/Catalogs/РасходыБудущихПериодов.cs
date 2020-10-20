@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "РасходыБудущихПериодов", Comment = "(Общ)", Synonym = "Расходы будущих периодов")]
     public class РасходыБудущихПериодов:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ДатаНачалаСписания", Comment = "(Общ)", Synonym = "Начало списания")]
     public DateTime ДатаНачалаСписания {get; set;}
@@ -45,5 +35,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "МетодРаспределения", Comment = "", Synonym = "Метод распределения")]
     public Enums.МетодыРаспределенияРБП МетодРаспределения {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

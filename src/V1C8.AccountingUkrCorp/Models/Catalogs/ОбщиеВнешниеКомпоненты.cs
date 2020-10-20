@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОбщиеВнешниеКомпоненты", Comment = "", Synonym = "Общие внешние компоненты")]
     public class ОбщиеВнешниеКомпоненты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
     [StringLength(150)]
@@ -62,5 +52,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "MacOS_x86_64_Safari", Comment = "", Synonym = "Mac OS x86_64 Safari")]
     public bool MacOS_x86_64_Safari {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УдалитьВнешниеОбработки", Comment = "", Synonym = "(не используется) Внешние обработки, печатные формы, обработки по заполнению табличных частей")]
     public class УдалитьВнешниеОбработки:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ХранилищеВнешнейОбработки", Comment = "", Synonym = "Хранилище внешней обработки")]
     // Сховище значень
@@ -35,5 +25,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КомментарийКФайлуИсточнику", Comment = "(Общ) Любая дополнительная информация", Synonym = "Комментарий к файлу источнику")]
     public string КомментарийКФайлуИсточнику {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Принадлежность", Comment = "", Synonym = "Принадлежность")]
+    public List<УдалитьВнешниеОбработки_Принадлежность> УдалитьВнешниеОбработкиПринадлежность
+    #endregion tables
     }
 }

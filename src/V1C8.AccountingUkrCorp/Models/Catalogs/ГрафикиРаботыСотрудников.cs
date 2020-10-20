@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ГрафикиРаботыСотрудников", Comment = "", Synonym = "Графики работы сотрудников")]
     public class ГрафикиРаботыСотрудников:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ПроизводственныйКалендарь", Comment = "", Synonym = "Производственный календарь")]
     public Catalogs.ПроизводственныеКалендари ПроизводственныйКалендарь {get; set;}
@@ -55,5 +45,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УчитыватьПредпраздничныеДни", Comment = "", Synonym = "Учитывать предпраздничные дни")]
     public bool УчитыватьПредпраздничныеДни {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ШаблонЗаполнения", Comment = "", Synonym = "Шаблон заполнения")]
+    public List<ГрафикиРаботыСотрудников_ШаблонЗаполнения> ГрафикиРаботыСотрудниковШаблонЗаполнения
+    [Description1C8(Name = "ВидыВремени", Comment = "", Synonym = "Виды времени")]
+    public List<ГрафикиРаботыСотрудников_ВидыВремени> ГрафикиРаботыСотрудниковВидыВремени
+    [Description1C8(Name = "ДанныеОРабочихЧасах", Comment = "", Synonym = "Данные о рабочих часах")]
+    public List<ГрафикиРаботыСотрудников_ДанныеОРабочихЧасах> ГрафикиРаботыСотрудниковДанныеОРабочихЧасах
+    #endregion tables
     }
 }

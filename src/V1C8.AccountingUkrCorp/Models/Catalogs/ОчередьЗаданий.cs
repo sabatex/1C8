@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОчередьЗаданий", Comment = "", Synonym = "Очередь заданий")]
     public class ОчередьЗаданий:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Использование", Comment = "", Synonym = "Использование")]
     public bool Использование {get; set;}
@@ -60,5 +50,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 10.0
     public long КоличествоПовторовПриАварийномЗавершении {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

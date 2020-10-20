@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "АвансовыйОтчетПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Авансовый отчет)")]
     public class АвансовыйОтчетПрисоединенныеФайлы:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "", Synonym = "Автор")]
     public Catalogs.ВнешниеПользователи Автор {get; set;}
@@ -70,5 +60,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ХранитьВерсии", Comment = "", Synonym = "Хранить версии")]
     public bool ХранитьВерсии {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

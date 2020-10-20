@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УдалитьНастройкиОбменаДанными", Comment = "", Synonym = "(не используется) Настройки обмена данными")]
     public class УдалитьНастройкиОбменаДанными:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "УзелИнформационнойБазы", Comment = "", Synonym = "Узел информационной базы")]
     public ПланОбмена.УдалитьОбменУправлениеТорговлейБухгалтерияФоновый УзелИнформационнойБазы {get; set;}
@@ -188,5 +178,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВерсияПодсистемыОбменаДанными", Comment = "", Synonym = "Версия подсистемы обмена данными")]
     public Enums.ВерсииПодсистемыОбменаДанными ВерсияПодсистемыОбменаДанными {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "УбратьСообщенияНеЯвляющиесяОшибками", Comment = "", Synonym = "Убрать сообщения не являющиеся ошибками")]
+    public List<УдалитьНастройкиОбменаДанными_УбратьСообщенияНеЯвляющиесяОшибками> УдалитьНастройкиОбменаДаннымиУбратьСообщенияНеЯвляющиесяОшибками
+    [Description1C8(Name = "УбратьНастройкаВариантовПоискаОбъектов", Comment = "", Synonym = "Убрать настройка вариантов поиска объектов")]
+    public List<УдалитьНастройкиОбменаДанными_УбратьНастройкаВариантовПоискаОбъектов> УдалитьНастройкиОбменаДаннымиУбратьНастройкаВариантовПоискаОбъектов
+    [Description1C8(Name = "УбратьНастройкаВыгрузкиДанных", Comment = "", Synonym = "Убрать настройка выгрузки данных")]
+    public List<УдалитьНастройкиОбменаДанными_УбратьНастройкаВыгрузкиДанных> УдалитьНастройкиОбменаДаннымиУбратьНастройкаВыгрузкиДанных
+    #endregion tables
     }
 }

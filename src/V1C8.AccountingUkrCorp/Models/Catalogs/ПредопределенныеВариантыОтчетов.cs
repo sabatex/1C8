@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПредопределенныеВариантыОтчетов", Comment = "Предопределенные варианты отчетов конфигурации", Synonym = "Предопределенные варианты отчетов")]
     public class ПредопределенныеВариантыОтчетов:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Отчет", Comment = "", Synonym = "Отчет")]
     public Catalogs.ИдентификаторыОбъектовМетаданных Отчет {get; set;}
@@ -50,5 +40,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(135)]
     public string КлючЗамеров {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Размещение", Comment = "", Synonym = "Размещение")]
+    public List<ПредопределенныеВариантыОтчетов_Размещение> ПредопределенныеВариантыОтчетовРазмещение
+    #endregion tables
     }
 }

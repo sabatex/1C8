@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДоговорыКонтрагентов", Comment = "", Synonym = "Договоры контрагентов")]
     public class ДоговорыКонтрагентов:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ВалютаВзаиморасчетов", Comment = "(Общ) Определяет валюту взаиморасчетов по договору, не может меняться, если по договору проведен хотя бы один документ", Synonym = "Валюта взаиморасчетов")]
     public Catalogs.Валюты ВалютаВзаиморасчетов {get; set;}
@@ -80,5 +70,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "МногостороннееСоглашениеОРазделеПродукции", Comment = "", Synonym = "Многостороннее соглашение о разделе продукции")]
     public bool МногостороннееСоглашениеОРазделеПродукции {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<ДоговорыКонтрагентов_ДополнительныеРеквизиты> ДоговорыКонтрагентовДополнительныеРеквизиты
+    #endregion tables
     }
 }

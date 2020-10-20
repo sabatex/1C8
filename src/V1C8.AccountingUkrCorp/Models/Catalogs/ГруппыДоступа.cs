@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ГруппыДоступа", Comment = "", Synonym = "Группы доступа")]
     public class ГруппыДоступа:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Профиль", Comment = "", Synonym = "Профиль")]
     public Catalogs.ПрофилиГруппДоступа Профиль {get; set;}
@@ -35,5 +25,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОсновнаяГруппаДоступаПоставляемогоПрофиля", Comment = "", Synonym = "Основная группа доступа поставляемого профиля")]
     public bool ОсновнаяГруппаДоступаПоставляемогоПрофиля {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Пользователи", Comment = "", Synonym = "Пользователи")]
+    public List<ГруппыДоступа_Пользователи> ГруппыДоступаПользователи
+    [Description1C8(Name = "ВидыДоступа", Comment = "", Synonym = "Виды доступа")]
+    public List<ГруппыДоступа_ВидыДоступа> ГруппыДоступаВидыДоступа
+    [Description1C8(Name = "ЗначенияДоступа", Comment = "", Synonym = "Значения доступа")]
+    public List<ГруппыДоступа_ЗначенияДоступа> ГруппыДоступаЗначенияДоступа
+    #endregion tables
     }
 }

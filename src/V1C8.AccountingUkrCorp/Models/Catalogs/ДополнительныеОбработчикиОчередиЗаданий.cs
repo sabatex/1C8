@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДополнительныеОбработчикиОчередиЗаданий", Comment = "", Synonym = "Дополнительные обработчики очереди заданий")]
     public class ДополнительныеОбработчикиОчередиЗаданий:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КоличествоЗаданий", Comment = "", Synonym = "Количество заданий")]
     // Format 2.0
@@ -31,5 +21,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 4.0
     public long ДлительностьЗадания {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Методы", Comment = "", Synonym = "Методы")]
+    public List<ДополнительныеОбработчикиОчередиЗаданий_Методы> ДополнительныеОбработчикиОчередиЗаданийМетоды
+    #endregion tables
     }
 }

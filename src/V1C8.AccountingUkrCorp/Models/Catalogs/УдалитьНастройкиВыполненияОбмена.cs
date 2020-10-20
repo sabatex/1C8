@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УдалитьНастройкиВыполненияОбмена", Comment = "", Synonym = "(не используется) Настройки выполнения обмена")]
     public class УдалитьНастройкиВыполненияОбмена:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ВыполнятьДействияПодПолнымиПравами", Comment = "", Synonym = "Выполнять действия под полными правами")]
     public bool ВыполнятьДействияПодПолнымиПравами {get; set;}
@@ -60,5 +50,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "НастройкиОбмена", Comment = "", Synonym = "Настройки обмена")]
+    public List<УдалитьНастройкиВыполненияОбмена_НастройкиОбмена> УдалитьНастройкиВыполненияОбменаНастройкиОбмена
+    [Description1C8(Name = "СообщенияНеЯвляющиесяОшибками", Comment = "", Synonym = "Сообщения не являющиеся ошибками")]
+    public List<УдалитьНастройкиВыполненияОбмена_СообщенияНеЯвляющиесяОшибками> УдалитьНастройкиВыполненияОбменаСообщенияНеЯвляющиесяОшибками
+    #endregion tables
     }
 }

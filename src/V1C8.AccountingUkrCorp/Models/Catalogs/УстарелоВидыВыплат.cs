@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УстарелоВидыВыплат", Comment = "", Synonym = "ѳ(устарело) Виды выплат")]
     public class УстарелоВидыВыплат:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "УДАЛИТЬВидРасчета", Comment = "", Synonym = "(не используется) Вид расчета")]
     public ПланВидовРасчета.УстарелоНачисления УДАЛИТЬВидРасчета {get; set;}
@@ -33,5 +23,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СчетУчета", Comment = "", Synonym = "Счет учета")]
     public ПланСчетов.Хозрасчетный СчетУчета {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Начисления", Comment = "", Synonym = "Начисления")]
+    public List<УстарелоВидыВыплат_Начисления> УстарелоВидыВыплатНачисления
+    #endregion tables
     }
 }

@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыРаботСотрудников", Comment = "", Synonym = "Виды работ сотрудников")]
     public class ВидыРаботСотрудников:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ЕдиницаИзмерения", Comment = "", Synonym = "Единица измерения")]
     [StringLength(10)]
@@ -34,5 +24,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 15.3
     public decimal КратностьТрудоемкости {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<ВидыРаботСотрудников_ДополнительныеРеквизиты> ВидыРаботСотрудниковДополнительныеРеквизиты
+    #endregion tables
     }
 }

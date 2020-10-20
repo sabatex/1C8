@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОсновныеСредства", Comment = "", Synonym = "Основные средства")]
     public class ОсновныеСредства:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ)", Synonym = "Полное наименование")]
     [StringLength(1000)]
@@ -45,5 +35,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Модель", Comment = "(Регл)", Synonym = "Модель, тип, марка")]
     public string Модель {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<ОсновныеСредства_ДополнительныеРеквизиты> ОсновныеСредстваДополнительныеРеквизиты
+    [Description1C8(Name = "КонтактнаяИнформация", Comment = "", Synonym = "Контактная информация")]
+    public List<ОсновныеСредства_КонтактнаяИнформация> ОсновныеСредстваКонтактнаяИнформация
+    #endregion tables
     }
 }

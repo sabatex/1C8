@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Контрагенты", Comment = "", Synonym = "Контрагенты")]
     public class Контрагенты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ)", Synonym = "Полное наименование")]
     [StringLength(250)]
@@ -65,5 +55,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ИспользоватьЭДО1СЗвит", Comment = "", Synonym = "Использовать FREDO ДокМен")]
     public bool ИспользоватьЭДО1СЗвит {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "КонтактнаяИнформация", Comment = "", Synonym = "Контактная информация")]
+    public List<Контрагенты_КонтактнаяИнформация> КонтрагентыКонтактнаяИнформация
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<Контрагенты_ДополнительныеРеквизиты> КонтрагентыДополнительныеРеквизиты
+    [Description1C8(Name = "ИсторияКонтактнойИнформации", Comment = "", Synonym = "История контактной информации")]
+    public List<Контрагенты_ИсторияКонтактнойИнформации> КонтрагентыИсторияКонтактнойИнформации
+    #endregion tables
     }
 }

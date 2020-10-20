@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "РассылкиОтчетов", Comment = "", Synonym = "Рассылки отчетов")]
     public class РассылкиОтчетов:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "FTPКаталог", Comment = "", Synonym = "Каталог")]
     [StringLength(200)]
@@ -108,5 +98,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СозданаИзФормыОтчета", Comment = "", Synonym = "Создана из формы отчета")]
     public bool СозданаИзФормыОтчета {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Отчеты", Comment = "", Synonym = "Отчеты")]
+    public List<РассылкиОтчетов_Отчеты> РассылкиОтчетовОтчеты
+    [Description1C8(Name = "ФорматыОтчетов", Comment = "", Synonym = "Форматы отчетов")]
+    public List<РассылкиОтчетов_ФорматыОтчетов> РассылкиОтчетовФорматыОтчетов
+    [Description1C8(Name = "Получатели", Comment = "", Synonym = "Получатели")]
+    public List<РассылкиОтчетов_Получатели> РассылкиОтчетовПолучатели
+    #endregion tables
     }
 }

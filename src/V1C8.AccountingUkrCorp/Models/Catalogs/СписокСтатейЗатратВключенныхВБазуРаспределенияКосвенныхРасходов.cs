@@ -13,17 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов", Comment = "", Synonym = "Список статей затрат, включенных в базу распределения косвенных расходов")]
     public class СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "СтатьиЗатрат", Comment = "", Synonym = "Статьи затрат")]
+    public List<СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов_СтатьиЗатрат> СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходовСтатьиЗатрат
+    #endregion tables
     }
 }

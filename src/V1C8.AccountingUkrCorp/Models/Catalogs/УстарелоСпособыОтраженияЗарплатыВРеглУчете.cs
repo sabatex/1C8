@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УстарелоСпособыОтраженияЗарплатыВРеглУчете", Comment = "(Регл)", Synonym = "ѳ(устарело) Способы отражения зарплаты в регламентированном учете")]
     public class УстарелоСпособыОтраженияЗарплатыВРеглУчете:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "СчетДт", Comment = "", Synonym = "Счет Дт")]
     public ПланСчетов.Хозрасчетный СчетДт {get; set;}
@@ -53,5 +43,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УдалитьСтатьяВаловыхРасходов", Comment = "", Synonym = "(не используется) Статья в/р")]
     public Catalogs.СтатьиНалоговыхДеклараций УдалитьСтатьяВаловыхРасходов {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

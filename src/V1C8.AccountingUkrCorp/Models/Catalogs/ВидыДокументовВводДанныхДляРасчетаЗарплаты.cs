@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыДокументовВводДанныхДляРасчетаЗарплаты", Comment = "", Synonym = "Шаблоны ввода исходных данных")]
     public class ВидыДокументовВводДанныхДляРасчетаЗарплаты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
     // Format 5.0
@@ -79,5 +69,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НеИспользуется", Comment = "", Synonym = "Шаблон документа больше не используется")]
     public bool НеИспользуется {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Показатели", Comment = "", Synonym = "Показатели")]
+    public List<ВидыДокументовВводДанныхДляРасчетаЗарплаты_Показатели> ВидыДокументовВводДанныхДляРасчетаЗарплатыПоказатели
+    [Description1C8(Name = "ВидыВремени", Comment = "", Synonym = "Виды времени")]
+    public List<ВидыДокументовВводДанныхДляРасчетаЗарплаты_ВидыВремени> ВидыДокументовВводДанныхДляРасчетаЗарплатыВидыВремени
+    [Description1C8(Name = "ВидыРабот", Comment = "", Synonym = "Виды работ")]
+    public List<ВидыДокументовВводДанныхДляРасчетаЗарплаты_ВидыРабот> ВидыДокументовВводДанныхДляРасчетаЗарплатыВидыРабот
+    [Description1C8(Name = "ВнешниеПечатныеФормы", Comment = "", Synonym = "Внешние печатные формы")]
+    public List<ВидыДокументовВводДанныхДляРасчетаЗарплаты_ВнешниеПечатныеФормы> ВидыДокументовВводДанныхДляРасчетаЗарплатыВнешниеПечатныеФормы
+    #endregion tables
     }
 }

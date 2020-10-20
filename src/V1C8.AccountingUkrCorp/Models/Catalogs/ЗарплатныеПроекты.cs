@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ЗарплатныеПроекты", Comment = "", Synonym = "Зарплатные проекты")]
     public class ЗарплатныеПроекты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Банк", Comment = "", Synonym = "Банк")]
     public Catalogs.Банки Банк {get; set;}
@@ -51,5 +41,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ФорматФайла", Comment = "", Synonym = "Формат файла")]
     public Enums.ФорматыФайловОбменаПоЗарплатномуПроекту ФорматФайла {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<ЗарплатныеПроекты_ДополнительныеРеквизиты> ЗарплатныеПроектыДополнительныеРеквизиты
+    [Description1C8(Name = "СистемыРасчетовПоБанковскимКартам", Comment = "", Synonym = "Системы расчетов по банковским картам")]
+    public List<ЗарплатныеПроекты_СистемыРасчетовПоБанковскимКартам> ЗарплатныеПроектыСистемыРасчетовПоБанковскимКартам
+    #endregion tables
     }
 }

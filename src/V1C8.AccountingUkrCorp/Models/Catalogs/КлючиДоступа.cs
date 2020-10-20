@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КлючиДоступа", Comment = "", Synonym = "Ключи доступа")]
     public class КлючиДоступа:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Список", Comment = "", Synonym = "Список")]
     public Catalogs.ИдентификаторыОбъектовМетаданных Список {get; set;}
@@ -45,5 +35,17 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Значение5", Comment = "", Synonym = "Значение 5")]
     public Catalogs.ПапкиФайлов Значение5 {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Шапка", Comment = "", Synonym = "Шапка")]
+    public List<КлючиДоступа_Шапка> КлючиДоступаШапка
+    [Description1C8(Name = "ТабличнаяЧасть1", Comment = "", Synonym = "Табличная часть 1")]
+    public List<КлючиДоступа_ТабличнаяЧасть1> КлючиДоступаТабличнаяЧасть1
+    [Description1C8(Name = "ТабличнаяЧасть2", Comment = "", Synonym = "Табличная часть 2")]
+    public List<КлючиДоступа_ТабличнаяЧасть2> КлючиДоступаТабличнаяЧасть2
+    [Description1C8(Name = "ТабличнаяЧасть3", Comment = "", Synonym = "Табличная часть 3")]
+    public List<КлючиДоступа_ТабличнаяЧасть3> КлючиДоступаТабличнаяЧасть3
+    [Description1C8(Name = "ТабличнаяЧасть4", Comment = "", Synonym = "Табличная часть 4")]
+    public List<КлючиДоступа_ТабличнаяЧасть4> КлючиДоступаТабличнаяЧасть4
+    #endregion tables
     }
 }

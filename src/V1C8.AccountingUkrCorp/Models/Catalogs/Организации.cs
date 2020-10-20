@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Организации", Comment = "", Synonym = "Организации")]
     public class Организации:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "БанковскийСчетДляРасчетовСФСС", Comment = "", Synonym = "Банковский счет (для ФСС)")]
     public Catalogs.БанковскиеСчета БанковскийСчетДляРасчетовСФСС {get; set;}
@@ -70,5 +60,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ФайлФаксимильнаяПодпись", Comment = "", Synonym = "Факсимильная подпись")]
     public Catalogs.ОрганизацииПрисоединенныеФайлы ФайлФаксимильнаяПодпись {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "КонтактнаяИнформация", Comment = "", Synonym = "Контактная информация")]
+    public List<Организации_КонтактнаяИнформация> ОрганизацииКонтактнаяИнформация
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<Организации_ДополнительныеРеквизиты> ОрганизацииДополнительныеРеквизиты
+    [Description1C8(Name = "ИсторияКонтактнойИнформации", Comment = "", Synonym = "История контактной информации")]
+    public List<Организации_ИсторияКонтактнойИнформации> ОрганизацииИсторияКонтактнойИнформации
+    #endregion tables
     }
 }

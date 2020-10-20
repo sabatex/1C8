@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПодтверждениеОткрытияЛицевыхСчетовСотрудниковПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Подтверждение открытия лицевых счетов)")]
     public class ПодтверждениеОткрытияЛицевыхСчетовСотрудниковПрисоединенныеФайлы:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "Автор - пользователь, добавивший файл", Synonym = "Автор")]
     public Catalogs.Пользователи Автор {get; set;}
@@ -66,5 +56,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Сховище значень
     public byte[] ФайлХранилище {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ЭлектронныеПодписи", Comment = "", Synonym = "Электронные подписи")]
+    public List<ПодтверждениеОткрытияЛицевыхСчетовСотрудниковПрисоединенныеФайлы_ЭлектронныеПодписи> ПодтверждениеОткрытияЛицевыхСчетовСотрудниковПрисоединенныеФайлыЭлектронныеПодписи
+    [Description1C8(Name = "СертификатыШифрования", Comment = "", Synonym = "Сертификаты шифрования")]
+    public List<ПодтверждениеОткрытияЛицевыхСчетовСотрудниковПрисоединенныеФайлы_СертификатыШифрования> ПодтверждениеОткрытияЛицевыхСчетовСотрудниковПрисоединенныеФайлыСертификатыШифрования
+    #endregion tables
     }
 }

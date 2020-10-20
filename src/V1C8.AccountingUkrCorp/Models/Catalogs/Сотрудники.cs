@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Сотрудники", Comment = "", Synonym = "Сотрудники")]
     public class Сотрудники:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ФизическоеЛицо", Comment = "", Synonym = "Физическое лицо")]
     public Catalogs.ФизическиеЛица ФизическоеЛицо {get; set;}
@@ -44,5 +34,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ГоловнойСотрудник", Comment = "", Synonym = "Основной сотрудник")]
     public Catalogs.Сотрудники ГоловнойСотрудник {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<Сотрудники_ДополнительныеРеквизиты> СотрудникиДополнительныеРеквизиты
+    [Description1C8(Name = "НаборыЗначенийДоступа", Comment = "", Synonym = "Наборы значений доступа")]
+    public List<Сотрудники_НаборыЗначенийДоступа> СотрудникиНаборыЗначенийДоступа
+    #endregion tables
     }
 }

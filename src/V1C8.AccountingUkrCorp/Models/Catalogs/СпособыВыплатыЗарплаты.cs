@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СпособыВыплатыЗарплаты", Comment = "", Synonym = "Способы выплаты зарплаты")]
     public class СпособыВыплатыЗарплаты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Поставляемый", Comment = "", Synonym = "Поставляемый")]
     public bool Поставляемый {get; set;}
@@ -48,5 +38,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КодДоходаВС", Comment = "", Synonym = "Код дохода ВС")]
     public Catalogs.ВидыДоходовНДФЛ КодДоходаВС {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

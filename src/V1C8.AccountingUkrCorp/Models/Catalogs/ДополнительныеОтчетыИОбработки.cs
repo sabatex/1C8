@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДополнительныеОтчетыИОбработки", Comment = "", Synonym = "Дополнительные отчеты и обработки")]
     public class ДополнительныеОтчетыИОбработки:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "БезопасныйРежим", Comment = "", Synonym = "Безопасный режим")]
     public bool БезопасныйРежим {get; set;}
@@ -63,5 +53,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "РежимСовместимостиРазрешений", Comment = "", Synonym = "Режим совместимости разрешений")]
     public Enums.РежимыСовместимостиРазрешенийДополнительныхОтчетовИОбработок РежимСовместимостиРазрешений {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Команды", Comment = "", Synonym = "Команды")]
+    public List<ДополнительныеОтчетыИОбработки_Команды> ДополнительныеОтчетыИОбработкиКоманды
+    [Description1C8(Name = "Назначение", Comment = "", Synonym = "Назначение")]
+    public List<ДополнительныеОтчетыИОбработки_Назначение> ДополнительныеОтчетыИОбработкиНазначение
+    [Description1C8(Name = "Разделы", Comment = "", Synonym = "Разделы")]
+    public List<ДополнительныеОтчетыИОбработки_Разделы> ДополнительныеОтчетыИОбработкиРазделы
+    [Description1C8(Name = "Разрешения", Comment = "", Synonym = "Разрешения")]
+    public List<ДополнительныеОтчетыИОбработки_Разрешения> ДополнительныеОтчетыИОбработкиРазрешения
+    #endregion tables
     }
 }

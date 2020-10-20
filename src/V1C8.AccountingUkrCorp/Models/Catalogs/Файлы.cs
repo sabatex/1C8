@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Файлы", Comment = "Файлы в папках", Synonym = "Файлы")]
     public class Файлы:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Автор", Comment = "", Synonym = "Автор")]
     public Catalogs.ВнешниеПользователи Автор {get; set;}
@@ -85,5 +75,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Сховище значень
     public byte[] ФайлХранилище {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<Файлы_ДополнительныеРеквизиты> ФайлыДополнительныеРеквизиты
+    [Description1C8(Name = "УдалитьСертификатыШифрования", Comment = "", Synonym = "(не используется) Сертификаты шифрования")]
+    public List<Файлы_УдалитьСертификатыШифрования> ФайлыУдалитьСертификатыШифрования
+    #endregion tables
     }
 }

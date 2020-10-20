@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СообщенияОбластейДанных", Comment = "", Synonym = "Сообщения областей данных")]
     public class СообщенияОбластейДанных:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ТелоСообщения", Comment = "", Synonym = "Тело сообщения")]
     // Сховище значень
@@ -41,5 +31,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ЭтоБыстроеСообщение", Comment = "Признак того, что сообщение требуется доставить и обработать быстро, вне порядка общей очереди сообщений.", Synonym = "Это быстрое сообщение")]
     public bool ЭтоБыстроеСообщение {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

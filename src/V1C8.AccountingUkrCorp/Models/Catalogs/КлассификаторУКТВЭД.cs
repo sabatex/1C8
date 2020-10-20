@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КлассификаторУКТВЭД", Comment = "", Synonym = "Классификатор кодов для НН")]
     public class КлассификаторУКТВЭД:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "НаименованиеПолное", Comment = "", Synonym = "Полное наименование")]
     [StringLength(500)]
@@ -35,5 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(3)]
     public string КодСХДеятельности {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

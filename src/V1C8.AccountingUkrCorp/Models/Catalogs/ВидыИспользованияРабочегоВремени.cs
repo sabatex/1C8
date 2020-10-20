@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыИспользованияРабочегоВремени", Comment = "", Synonym = "Виды использования рабочего времени")]
     public class ВидыИспользованияРабочегоВремени:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "БуквенныйКод", Comment = "", Synonym = "Буквенный код")]
     [StringLength(3)]
@@ -43,5 +33,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УважительнаяПричинаДляБольничных", Comment = "Является уважительной причиной для расчета больничных", Synonym = "Уважительная причина для больничных")]
     public bool УважительнаяПричинаДляБольничных {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

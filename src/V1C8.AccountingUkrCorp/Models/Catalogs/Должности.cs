@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Должности", Comment = "", Synonym = "Должности")]
     public class Должности:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
     // Format 5.0
@@ -74,5 +64,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УстарелоДолжность", Comment = "", Synonym = "")]
     public Catalogs.УстарелоДолжности УстарелоДолжность {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<Должности_ДополнительныеРеквизиты> ДолжностиДополнительныеРеквизиты
+    [Description1C8(Name = "Специальности", Comment = "", Synonym = "Специальности")]
+    public List<Должности_Специальности> ДолжностиСпециальности
+    #endregion tables
     }
 }

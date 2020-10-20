@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПоказателиРасчетаЗарплаты", Comment = "", Synonym = "Показатели расчета зарплаты")]
     public class ПоказателиРасчетаЗарплаты:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КраткоеНаименование", Comment = "", Synonym = "Краткое наименование")]
     [StringLength(20)]
@@ -63,5 +53,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 5.0
     public long РеквизитДопУпорядочивания {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ШкалаОценкиСтажа", Comment = "", Synonym = "Шкала оценки стажа")]
+    public List<ПоказателиРасчетаЗарплаты_ШкалаОценкиСтажа> ПоказателиРасчетаЗарплатыШкалаОценкиСтажа
+    #endregion tables
     }
 }

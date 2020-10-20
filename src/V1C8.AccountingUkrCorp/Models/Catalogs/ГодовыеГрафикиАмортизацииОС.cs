@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ГодовыеГрафикиАмортизацииОС", Comment = "", Synonym = "Годовые графики амортизации ОС")]
     public class ГодовыеГрафикиАмортизацииОС:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Коэффициент1", Comment = "", Synonym = "Январь")]
     // Format 6.3
@@ -63,5 +53,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

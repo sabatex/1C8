@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ИдентификаторыОбъектовМетаданных", Comment = "", Synonym = "Идентификаторы объектов метаданных")]
     public class ИдентификаторыОбъектовМетаданных:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ПорядокКоллекции", Comment = "", Synonym = "Порядок коллекции")]
     // Format 2.0
@@ -49,5 +39,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НоваяСсылка", Comment = "", Synonym = "Новая ссылка")]
     public Catalogs.ИдентификаторыОбъектовМетаданных НоваяСсылка {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

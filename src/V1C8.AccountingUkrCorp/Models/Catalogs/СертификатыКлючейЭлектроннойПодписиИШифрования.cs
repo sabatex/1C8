@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СертификатыКлючейЭлектроннойПодписиИШифрования", Comment = "", Synonym = "Сертификаты ключей электронной подписи и шифрования")]
     public class СертификатыКлючейЭлектроннойПодписиИШифрования:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КомуВыдан", Comment = "", Synonym = "Кому выдан")]
     [StringLength(430)]
@@ -72,5 +62,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Добавил", Comment = "", Synonym = "Добавил")]
     public Catalogs.Пользователи Добавил {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

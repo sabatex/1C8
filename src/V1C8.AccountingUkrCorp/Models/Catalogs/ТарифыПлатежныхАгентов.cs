@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ТарифыПлатежныхАгентов", Comment = "", Synonym = "Тарифы платежных агентов")]
     public class ТарифыПлатежныхАгентов:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ИспользуетсяШкала", Comment = "", Synonym = "Использовать шкалу")]
     public bool ИспользуетсяШкала {get; set;}
@@ -30,5 +20,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 1.0
     public long СпособВводаСуммы {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Шкала", Comment = "", Synonym = "Шкала")]
+    public List<ТарифыПлатежныхАгентов_Шкала> ТарифыПлатежныхАгентовШкала
+    #endregion tables
     }
 }

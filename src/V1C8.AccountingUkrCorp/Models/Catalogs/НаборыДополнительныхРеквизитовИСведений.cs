@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НаборыДополнительныхРеквизитовИСведений", Comment = "", Synonym = "Наборы дополнительных реквизитов и сведений")]
     public class НаборыДополнительныхРеквизитовИСведений:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КоличествоРеквизитов", Comment = "", Synonym = "Количество реквизитов")]
     [StringLength(5)]
@@ -33,5 +23,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Используется", Comment = "", Synonym = "Используется")]
     public bool Используется {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ДополнительныеРеквизиты", Comment = "", Synonym = "Дополнительные реквизиты")]
+    public List<НаборыДополнительныхРеквизитовИСведений_ДополнительныеРеквизиты> НаборыДополнительныхРеквизитовИСведенийДополнительныеРеквизиты
+    [Description1C8(Name = "ДополнительныеСведения", Comment = "", Synonym = "Дополнительные сведения")]
+    public List<НаборыДополнительныхРеквизитовИСведений_ДополнительныеСведения> НаборыДополнительныхРеквизитовИСведенийДополнительныеСведения
+    #endregion tables
     }
 }

@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СпецификацииНоменклатуры", Comment = "", Synonym = "Спецификации номенклатуры")]
     public class СпецификацииНоменклатуры:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Количество", Comment = "(Общ)", Synonym = "Количество")]
     // Format 15.3
@@ -33,5 +23,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     // Format 10.3
     public decimal Коэффициент {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ИсходныеКомплектующие", Comment = "", Synonym = "Исходные комплектующие")]
+    public List<СпецификацииНоменклатуры_ИсходныеКомплектующие> СпецификацииНоменклатурыИсходныеКомплектующие
+    #endregion tables
     }
 }

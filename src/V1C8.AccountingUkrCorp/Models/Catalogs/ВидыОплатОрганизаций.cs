@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыОплатОрганизаций", Comment = "", Synonym = "Виды оплат")]
     public class ВидыОплатОрганизаций:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
     public Catalogs.Организации Организация {get; set;}
@@ -38,5 +28,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СчетДеньгиВПути", Comment = "", Synonym = "Счет деньги в пути")]
     public ПланСчетов.Хозрасчетный СчетДеньгиВПути {get; set;}
     #endregion реквізити
+    #region tables
+    #endregion tables
     }
 }

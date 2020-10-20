@@ -13,17 +13,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "МестаРаботы", Comment = "", Synonym = "Места работы")]
     public class МестаРаботы:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "Начисления", Comment = "", Synonym = "Начисления")]
+    public List<МестаРаботы_Начисления> МестаРаботыНачисления
+    [Description1C8(Name = "Показатели", Comment = "", Synonym = "Показатели")]
+    public List<МестаРаботы_Показатели> МестаРаботыПоказатели
+    #endregion tables
     }
 }

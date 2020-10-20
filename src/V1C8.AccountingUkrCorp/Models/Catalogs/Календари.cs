@@ -13,16 +13,6 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Календари", Comment = "", Synonym = "ѳ(устарело) Графики работы")]
     public class Календари:CatalogItem
     {
-    #region Стандартні реквізити
-    public Guid Id {get; set;}
-    public bool IsFolder {get; set;}
-    public bool DeletionMark {get; set;}
-    public bool Predefined {get; set;}
-    public string Code {get; set;}
-    public string Description {get; set;}
-    public Guid? Parent {get; set;}
-    public Guid? Owner {get; set;}
-    #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ПроизводственныйКалендарь", Comment = "", Synonym = "Производственный календарь")]
     public Catalogs.ПроизводственныеКалендари ПроизводственныйКалендарь {get; set;}
@@ -46,5 +36,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УдалитьВидКалендаря", Comment = "", Synonym = "(Не используется) вид календаря")]
     public Enums.УдалитьВидыКалендарей УдалитьВидКалендаря {get; set;}
     #endregion реквізити
+    #region tables
+    [Description1C8(Name = "ШаблонЗаполнения", Comment = "", Synonym = "Шаблон заполнения")]
+    public List<Календари_ШаблонЗаполнения> КалендариШаблонЗаполнения
+    [Description1C8(Name = "РасписаниеРаботы", Comment = "", Synonym = "Расписание работы")]
+    public List<Календари_РасписаниеРаботы> КалендариРасписаниеРаботы
+    #endregion tables
     }
 }

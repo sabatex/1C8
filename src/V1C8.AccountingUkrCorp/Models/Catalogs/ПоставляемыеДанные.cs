@@ -42,8 +42,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PostavliaemyeDannye_KharakterystykyDannykh")]
     public class ПоставляемыеДанные_ХарактеристикиДанных
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Характеристика", Comment = "", Synonym = "Характеристика")]
         [StringLength(20)]
         public string Характеристика {get; set;}

@@ -50,8 +50,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("KontaktnyeLytsa_KontaktnaiaYnformatsyia")]
     public class КонтактныеЛица_КонтактнаяИнформация
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Тип", Comment = "", Synonym = "Тип")]
         public Enums.ТипыКонтактнойИнформации Тип {get; set;}
         [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
@@ -91,8 +91,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("KontaktnyeLytsa_DopolnytelnyeRekvyzyty")]
     public class КонтактныеЛица_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]

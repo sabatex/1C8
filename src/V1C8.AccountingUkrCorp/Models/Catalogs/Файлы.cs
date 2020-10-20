@@ -86,8 +86,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Faily_DopolnytelnyeRekvyzyty")]
     public class Файлы_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]
@@ -99,8 +99,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Faily_UdalytSertyfykatyShyfrovanyia")]
     public class Файлы_УдалитьСертификатыШифрования
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Отпечаток", Comment = "", Synonym = "Отпечаток")]
         [StringLength(28)]
         public string Отпечаток {get; set;}

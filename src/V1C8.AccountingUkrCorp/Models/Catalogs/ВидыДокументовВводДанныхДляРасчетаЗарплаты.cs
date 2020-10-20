@@ -84,8 +84,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VydyDokumentovVvodDannykhDliaRaschetaZarplaty_Pokazately")]
     public class ВидыДокументовВводДанныхДляРасчетаЗарплаты_Показатели
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Показатель", Comment = "", Synonym = "Показатель")]
         public Catalogs.ПоказателиРасчетаЗарплаты Показатель {get; set;}
     }
@@ -93,8 +93,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VydyDokumentovVvodDannykhDliaRaschetaZarplaty_VydyVremeny")]
     public class ВидыДокументовВводДанныхДляРасчетаЗарплаты_ВидыВремени
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидВремени", Comment = "", Synonym = "Вид времени")]
         public Catalogs.ВидыИспользованияРабочегоВремени ВидВремени {get; set;}
     }
@@ -102,8 +102,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VydyDokumentovVvodDannykhDliaRaschetaZarplaty_VydyRabot")]
     public class ВидыДокументовВводДанныхДляРасчетаЗарплаты_ВидыРабот
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидРабот", Comment = "", Synonym = "Вид работ")]
         public Catalogs.ВидыРаботСотрудников ВидРабот {get; set;}
     }
@@ -111,8 +111,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VydyDokumentovVvodDannykhDliaRaschetaZarplaty_VneshnyePechatnyeFormy")]
     public class ВидыДокументовВводДанныхДляРасчетаЗарплаты_ВнешниеПечатныеФормы
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ПечатнаяФорма", Comment = "", Synonym = "Печатная форма")]
         public Catalogs.ДополнительныеОтчетыИОбработки ПечатнаяФорма {get; set;}
     }

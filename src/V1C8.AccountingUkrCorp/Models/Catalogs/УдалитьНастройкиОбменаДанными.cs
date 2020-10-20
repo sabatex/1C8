@@ -191,8 +191,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UdalytNastroikyObmenaDannymy_UbratSoobshchenyiaNeIavliaiushchyesiaOshybkamy")]
     public class УдалитьНастройкиОбменаДанными_УбратьСообщенияНеЯвляющиесяОшибками
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ТекстСообщения", Comment = "", Synonym = "Текст сообщения")]
         [StringLength(512)]
         public string ТекстСообщения {get; set;}
@@ -201,8 +201,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UdalytNastroikyObmenaDannymy_UbratNastroikaVaryantovPoyskaObektov")]
     public class УдалитьНастройкиОбменаДанными_УбратьНастройкаВариантовПоискаОбъектов
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "КодПравилаОбмена", Comment = "", Synonym = "Код правила обмена")]
         [StringLength(150)]
         public string КодПравилаОбмена {get; set;}
@@ -227,8 +227,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UdalytNastroikyObmenaDannymy_UbratNastroikaVyhruzkyDannykh")]
     public class УдалитьНастройкиОбменаДанными_УбратьНастройкаВыгрузкиДанных
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "КодПравилаВыгрузки", Comment = "", Synonym = "Код правила выгрузки")]
         [StringLength(150)]
         public string КодПравилаВыгрузки {get; set;}

@@ -62,8 +62,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PokazatelyRaschetaZarplaty_ShkalaOtsenkyStazha")]
     public class ПоказателиРасчетаЗарплаты_ШкалаОценкиСтажа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВерхняяГраницаИнтервалаСтажа", Comment = "", Synonym = "Стаж, мес.")]
         // Format 15.3
         public decimal ВерхняяГраницаИнтервалаСтажа {get; set;}

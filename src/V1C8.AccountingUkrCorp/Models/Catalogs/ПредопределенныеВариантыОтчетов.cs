@@ -49,8 +49,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PredopredelennyeVaryantyOtchetov_Razmeshchenye")]
     public class ПредопределенныеВариантыОтчетов_Размещение
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Подсистема", Comment = "", Synonym = "Подсистема")]
         public Catalogs.ИдентификаторыОбъектовМетаданных Подсистема {get; set;}
         [Description1C8(Name = "Важный", Comment = "", Synonym = "Важный")]

@@ -26,8 +26,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HruppyPolzovatelei_Sostav")]
     public class ГруппыПользователей_Состав
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Пользователь", Comment = "", Synonym = "Пользователь")]
         public Catalogs.Пользователи Пользователь {get; set;}
     }

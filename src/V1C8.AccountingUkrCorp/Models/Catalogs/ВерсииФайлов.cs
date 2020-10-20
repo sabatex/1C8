@@ -69,8 +69,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VersyyFailov_UdalytЕlektronnyePodpysy")]
     public class ВерсииФайлов_УдалитьЭлектронныеПодписи
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ДатаПодписи", Comment = "", Synonym = "Дата подписи")]
         public DateTime ДатаПодписи {get; set;}
         [Description1C8(Name = "ИмяФайлаПодписи", Comment = "", Synonym = "Имя файла подписи")]

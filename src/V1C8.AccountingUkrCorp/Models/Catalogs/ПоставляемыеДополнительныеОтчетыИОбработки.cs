@@ -66,8 +66,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PostavliaemyeDopolnytelnyeOtchetyYObrabotky_Komandy")]
     public class ПоставляемыеДополнительныеОтчетыИОбработки_Команды
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
         [StringLength(100)]
         public string Идентификатор {get; set;}
@@ -88,8 +88,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PostavliaemyeDopolnytelnyeOtchetyYObrabotky_Sovmestymost")]
     public class ПоставляемыеДополнительныеОтчетыИОбработки_Совместимость
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Версия", Comment = "", Synonym = "Версия")]
         [StringLength(18)]
         public string Версия {get; set;}
@@ -98,8 +98,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PostavliaemyeDopolnytelnyeOtchetyYObrabotky_Razreshenyia")]
     public class ПоставляемыеДополнительныеОтчетыИОбработки_Разрешения
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидРазрешения", Comment = "", Synonym = "Вид разрешения")]
         [StringLength(255)]
         public string ВидРазрешения {get; set;}

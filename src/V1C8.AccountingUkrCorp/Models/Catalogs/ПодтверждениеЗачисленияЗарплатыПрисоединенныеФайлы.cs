@@ -67,8 +67,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PodtverzhdenyeZachyslenyiaZarplatyPrysoedynennyeFaily_ЕlektronnyePodpysy")]
     public class ПодтверждениеЗачисленияЗарплатыПрисоединенныеФайлы_ЭлектронныеПодписи
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ДатаПодписи", Comment = "", Synonym = "Дата подписи")]
         public DateTime ДатаПодписи {get; set;}
         [Description1C8(Name = "ИмяФайлаПодписи", Comment = "", Synonym = "Имя файла подписи")]
@@ -98,8 +98,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PodtverzhdenyeZachyslenyiaZarplatyPrysoedynennyeFaily_SertyfykatyShyfrovanyia")]
     public class ПодтверждениеЗачисленияЗарплатыПрисоединенныеФайлы_СертификатыШифрования
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Отпечаток", Comment = "", Synonym = "Отпечаток")]
         [StringLength(255)]
         public string Отпечаток {get; set;}

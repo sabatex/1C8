@@ -69,8 +69,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Nomenklatura_EdynytsyYzmerenyia")]
     public class Номенклатура_ЕдиницыИзмерения
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ЕдиницаИзмерения", Comment = "", Synonym = "Единица измерения")]
         public Catalogs.КлассификаторЕдиницИзмерения ЕдиницаИзмерения {get; set;}
         [Description1C8(Name = "Коэффициент", Comment = "", Synonym = "Коэффициент")]
@@ -81,8 +81,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Nomenklatura_DopolnytelnyeRekvyzyty")]
     public class Номенклатура_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]

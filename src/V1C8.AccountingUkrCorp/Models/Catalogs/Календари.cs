@@ -47,8 +47,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Kalendary_ShablonZapolnenyia")]
     public class Календари_ШаблонЗаполнения
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ДеньВключенВГрафик", Comment = "", Synonym = "День включен в график")]
         public bool ДеньВключенВГрафик {get; set;}
     }
@@ -56,8 +56,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Kalendary_RaspysanyeRaboty")]
     public class Календари_РасписаниеРаботы
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "НомерДня", Comment = "", Synonym = "Номер дня")]
         // Format 7.0
         public long НомерДня {get; set;}

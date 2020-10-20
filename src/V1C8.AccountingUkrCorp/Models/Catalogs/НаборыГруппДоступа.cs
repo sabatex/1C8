@@ -40,8 +40,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("NaboryHruppDostupa_Hruppy")]
     public class НаборыГруппДоступа_Группы
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Группа", Comment = "", Synonym = "Группа")]
         public Catalogs.ГруппыДоступа Группа {get; set;}
     }

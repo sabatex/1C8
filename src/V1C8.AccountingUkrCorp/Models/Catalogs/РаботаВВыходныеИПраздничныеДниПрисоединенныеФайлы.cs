@@ -71,8 +71,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("RabotaVVykhodnyeYPrazdnychnyeDnyPrysoedynennyeFaily_ЕlektronnyePodpysy")]
     public class РаботаВВыходныеИПраздничныеДниПрисоединенныеФайлы_ЭлектронныеПодписи
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ДатаПодписи", Comment = "", Synonym = "Дата подписи")]
         public DateTime ДатаПодписи {get; set;}
         [Description1C8(Name = "ИмяФайлаПодписи", Comment = "", Synonym = "Имя файла подписи")]
@@ -102,8 +102,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("RabotaVVykhodnyeYPrazdnychnyeDnyPrysoedynennyeFaily_SertyfykatyShyfrovanyia")]
     public class РаботаВВыходныеИПраздничныеДниПрисоединенныеФайлы_СертификатыШифрования
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Отпечаток", Comment = "", Synonym = "Отпечаток")]
         [StringLength(255)]
         public string Отпечаток {get; set;}

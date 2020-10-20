@@ -26,8 +26,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("TypovyeOperatsyy_Khozraschetnyi")]
     public class ТиповыеОперации_Хозрасчетный
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "СчетДт", Comment = "", Synonym = "Счет Дт")]
         public ПланСчетов.Хозрасчетный СчетДт {get; set;}
         [Description1C8(Name = "СубконтоДт1", Comment = "", Synonym = "Субконто Дт 1")]
@@ -81,8 +81,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("TypovyeOperatsyy_DvyzhenyiaRehystrov")]
     public class ТиповыеОперации_ДвиженияРегистров
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ИмяРегистра", Comment = "", Synonym = "Имя регистра")]
         [StringLength(100)]
         public string ИмяРегистра {get; set;}

@@ -68,8 +68,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("DopolnytelnyeOtchetyYObrabotky_Komandy")]
     public class ДополнительныеОтчетыИОбработки_Команды
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
         [StringLength(100)]
         public string Идентификатор {get; set;}
@@ -94,8 +94,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("DopolnytelnyeOtchetyYObrabotky_Naznachenye")]
     public class ДополнительныеОтчетыИОбработки_Назначение
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ОбъектНазначения", Comment = "", Synonym = "Объект назначения")]
         public Catalogs.ИдентификаторыОбъектовМетаданных ОбъектНазначения {get; set;}
         [Description1C8(Name = "УдалитьПолноеИмяОбъектаМетаданных", Comment = "", Synonym = "(не используется) Полное имя объекта метаданных")]
@@ -106,8 +106,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("DopolnytelnyeOtchetyYObrabotky_Razdely")]
     public class ДополнительныеОтчетыИОбработки_Разделы
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Раздел", Comment = "", Synonym = "Раздел")]
         public Catalogs.ИдентификаторыОбъектовМетаданных Раздел {get; set;}
         [Description1C8(Name = "УдалитьИмяРаздела", Comment = "", Synonym = "(не используется) Имя раздела")]
@@ -118,8 +118,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("DopolnytelnyeOtchetyYObrabotky_Razreshenyia")]
     public class ДополнительныеОтчетыИОбработки_Разрешения
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидРазрешения", Comment = "", Synonym = "Вид разрешения")]
         [StringLength(255)]
         public string ВидРазрешения {get; set;}

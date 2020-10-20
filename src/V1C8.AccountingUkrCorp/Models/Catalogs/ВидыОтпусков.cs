@@ -49,8 +49,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VydyOtpuskov_ShkalaOtsenkyStazha")]
     public class ВидыОтпусков_ШкалаОценкиСтажа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВерхняяГраницаИнтервалаСтажа", Comment = "", Synonym = "Верхняя граница интервала стажа")]
         // Format 3.0
         public long ВерхняяГраницаИнтервалаСтажа {get; set;}

@@ -28,8 +28,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("SposobyOtrazhenyiaRaskhodovPoAmortyzatsyy_Sposoby")]
     public class СпособыОтраженияРасходовПоАмортизации_Способы
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "СчетЗатрат", Comment = "", Synonym = "Счет затрат")]
         public ПланСчетов.Хозрасчетный СчетЗатрат {get; set;}
         [Description1C8(Name = "Субконто1", Comment = "(Регл)", Synonym = "Субконто 1")]

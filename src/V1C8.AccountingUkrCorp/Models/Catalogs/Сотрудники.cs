@@ -45,8 +45,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Sotrudnyky_DopolnytelnyeRekvyzyty")]
     public class Сотрудники_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]
@@ -58,8 +58,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Sotrudnyky_NaboryZnachenyiDostupa")]
     public class Сотрудники_НаборыЗначенийДоступа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "НомерНабора", Comment = "", Synonym = "Номер набора")]
         // Format 10.0
         public long НомерНабора {get; set;}

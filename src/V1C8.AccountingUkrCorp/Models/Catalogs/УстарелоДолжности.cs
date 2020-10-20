@@ -38,8 +38,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UstareloDolzhnosty_DopolnytelnyeRekvyzyty")]
     public class УстарелоДолжности_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]

@@ -84,8 +84,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_SostavSemy")]
     public class ФизическиеЛица_СоставСемьи
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "СтепеньРодства", Comment = "(Общ)", Synonym = "Степень родства")]
         public Catalogs.УстарелоСтепениРодстваФизЛиц СтепеньРодства {get; set;}
         [Description1C8(Name = "ФизЛицо", Comment = "(Общ)", Synonym = "Физическое лицо")]
@@ -100,8 +100,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_KontaktnaiaYnformatsyia")]
     public class ФизическиеЛица_КонтактнаяИнформация
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Тип", Comment = "", Synonym = "Тип")]
         public Enums.ТипыКонтактнойИнформации Тип {get; set;}
         [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
@@ -141,8 +141,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_DopolnytelnyeRekvyzyty")]
     public class ФизическиеЛица_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]
@@ -154,8 +154,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytSostavSemy")]
     public class ФизическиеЛица_УдалитьСоставСемьи
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "СтепеньРодства", Comment = "", Synonym = "Степень родства")]
         public Catalogs.СтепениРодстваФизическихЛиц СтепеньРодства {get; set;}
         [Description1C8(Name = "Имя", Comment = "", Synonym = "Имя")]
@@ -168,8 +168,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytObrazovanye")]
     public class ФизическиеЛица_УдалитьОбразование
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидОбразования", Comment = "", Synonym = "Вид образования")]
         public Catalogs.ВидыОбразованияФизическихЛиц ВидОбразования {get; set;}
         [Description1C8(Name = "УчебноеЗаведение", Comment = "", Synonym = "Учебное заведение")]
@@ -190,8 +190,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytTrudovaiaDeiatelnost")]
     public class ФизическиеЛица_УдалитьТрудоваяДеятельность
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]
         [StringLength(100)]
         public string Организация {get; set;}
@@ -207,8 +207,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytZnanyeIazykov")]
     public class ФизическиеЛица_УдалитьЗнаниеЯзыков
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Язык", Comment = "", Synonym = "Язык")]
         public Catalogs.ЯзыкиНародовМира Язык {get; set;}
         [Description1C8(Name = "СтепеньЗнанияЯзыка", Comment = "", Synonym = "Степень знания языка")]
@@ -218,8 +218,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytProfessyy")]
     public class ФизическиеЛица_УдалитьПрофессии
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Профессия", Comment = "", Synonym = "Профессия")]
         public Catalogs.ПрофессииРабочих Профессия {get; set;}
     }
@@ -227,8 +227,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytStazhy")]
     public class ФизическиеЛица_УдалитьСтажи
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидСтажа", Comment = "", Synonym = "Вид стажа")]
         public Catalogs.ВидыСтажа ВидСтажа {get; set;}
         [Description1C8(Name = "ДатаОтсчета", Comment = "", Synonym = "Дата отсчета")]
@@ -244,8 +244,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytNahrady")]
     public class ФизическиеЛица_УдалитьНаграды
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Награда", Comment = "", Synonym = "Награда")]
         public Catalogs.Награды Награда {get; set;}
         [Description1C8(Name = "НомерПриказа", Comment = "", Synonym = "Номер приказа")]
@@ -260,8 +260,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytUchenyeStepeny")]
     public class ФизическиеЛица_УдалитьУченыеСтепени
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "УченаяСтепень", Comment = "", Synonym = "Ученая степень")]
         public Catalogs.УченыеСтепени УченаяСтепень {get; set;}
         [Description1C8(Name = "ДатаПрисужденияУченойСтепени", Comment = "", Synonym = "Дата присуждения ученой степени")]
@@ -280,8 +280,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("FyzycheskyeLytsa_UdalytUchenyeZvanyia")]
     public class ФизическиеЛица_УдалитьУченыеЗвания
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "УченоеЗвание", Comment = "", Synonym = "Ученое звание")]
         public Catalogs.УченыеЗвания УченоеЗвание {get; set;}
         [Description1C8(Name = "ДатаПрисвоенияУченогоЗвания", Comment = "", Synonym = "Дата присвоения ученого звания")]

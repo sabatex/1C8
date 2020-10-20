@@ -29,8 +29,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("TaryfyPlatezhnykhAhentov_Shkala")]
     public class ТарифыПлатежныхАгентов_Шкала
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Порог", Comment = "", Synonym = "Сумма перевода")]
         // Format 15.2
         public decimal Порог {get; set;}

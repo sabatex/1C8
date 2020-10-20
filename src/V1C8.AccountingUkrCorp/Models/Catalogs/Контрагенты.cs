@@ -68,8 +68,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Kontrahenty_KontaktnaiaYnformatsyia")]
     public class Контрагенты_КонтактнаяИнформация
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Тип", Comment = "", Synonym = "Тип")]
         public Enums.ТипыКонтактнойИнформации Тип {get; set;}
         [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
@@ -109,8 +109,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Kontrahenty_DopolnytelnyeRekvyzyty")]
     public class Контрагенты_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]
@@ -122,8 +122,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("Kontrahenty_YstoryiaKontaktnoiYnformatsyy")]
     public class Контрагенты_ИсторияКонтактнойИнформации
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Период", Comment = "", Synonym = "Период")]
         public DateTime Период {get; set;}
         [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]

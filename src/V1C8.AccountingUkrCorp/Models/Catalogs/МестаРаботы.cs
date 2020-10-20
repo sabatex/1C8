@@ -26,8 +26,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("MestaRaboty_Nachyslenyia")]
     public class МестаРаботы_Начисления
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Начисление", Comment = "", Synonym = "Начисление")]
         public ПланВидовРасчета.Начисления Начисление {get; set;}
         [Description1C8(Name = "ИдентификаторСтрокиВидаРасчета", Comment = "", Synonym = "Идентификатор строки вида расчета")]
@@ -38,8 +38,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("MestaRaboty_Pokazately")]
     public class МестаРаботы_Показатели
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ИдентификаторСтрокиВидаРасчета", Comment = "", Synonym = "Идентификатор строки вида расчета")]
         // Format 7.0
         public long ИдентификаторСтрокиВидаРасчета {get; set;}

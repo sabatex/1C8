@@ -52,8 +52,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ZarplatnyeProekty_DopolnytelnyeRekvyzyty")]
     public class ЗарплатныеПроекты_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]
@@ -65,8 +65,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ZarplatnyeProekty_SystemyRaschetovPoBankovskymKartam")]
     public class ЗарплатныеПроекты_СистемыРасчетовПоБанковскимКартам
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "СистемаРасчетовПоБанковскимКартам", Comment = "", Synonym = "Система расчетов")]
         public string СистемаРасчетовПоБанковскимКартам {get; set;}
     }

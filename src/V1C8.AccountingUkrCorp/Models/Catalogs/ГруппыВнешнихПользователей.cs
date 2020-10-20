@@ -35,8 +35,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HruppyVneshnykhPolzovatelei_Sostav")]
     public class ГруппыВнешнихПользователей_Состав
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВнешнийПользователь", Comment = "", Synonym = "Внешний пользователь")]
         public Catalogs.ВнешниеПользователи ВнешнийПользователь {get; set;}
     }
@@ -44,8 +44,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HruppyVneshnykhPolzovatelei_Roly")]
     public class ГруппыВнешнихПользователей_Роли
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Роль", Comment = "", Synonym = "Роль")]
         public Catalogs.ИдентификаторыОбъектовМетаданных Роль {get; set;}
         [Description1C8(Name = "УдалитьРоль", Comment = "", Synonym = "(не используется) Роль")]
@@ -56,8 +56,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HruppyVneshnykhPolzovatelei_Naznachenye")]
     public class ГруппыВнешнихПользователей_Назначение
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ТипПользователей", Comment = "", Synonym = "Тип пользователей")]
         [StringLength(10)]
         public string ТипПользователей {get; set;}

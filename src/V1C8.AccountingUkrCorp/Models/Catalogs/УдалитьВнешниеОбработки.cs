@@ -34,8 +34,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UdalytVneshnyeObrabotky_Prynadlezhnost")]
     public class УдалитьВнешниеОбработки_Принадлежность
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ПредставлениеОбъекта", Comment = "", Synonym = "Представление объекта")]
         public string ПредставлениеОбъекта {get; set;}
         [Description1C8(Name = "СсылкаОбъекта", Comment = "", Synonym = "Ссылка объекта")]

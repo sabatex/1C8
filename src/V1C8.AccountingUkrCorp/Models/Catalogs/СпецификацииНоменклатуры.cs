@@ -32,8 +32,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("SpetsyfykatsyyNomenklatury_YskhodnyeKomplektuiushchye")]
     public class СпецификацииНоменклатуры_ИсходныеКомплектующие
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Номенклатура", Comment = "(Общ)", Synonym = "Номенклатура")]
         public Catalogs.Номенклатура Номенклатура {get; set;}
         [Description1C8(Name = "Количество", Comment = "(Общ)", Synonym = "Количество")]

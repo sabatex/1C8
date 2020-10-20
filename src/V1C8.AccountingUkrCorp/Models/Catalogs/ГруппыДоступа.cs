@@ -38,8 +38,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HruppyDostupa_Polzovately")]
     public class ГруппыДоступа_Пользователи
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Пользователь", Comment = "", Synonym = "Пользователь")]
         public Catalogs.ВнешниеПользователи Пользователь {get; set;}
     }
@@ -47,8 +47,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HruppyDostupa_VydyDostupa")]
     public class ГруппыДоступа_ВидыДоступа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидДоступа", Comment = "Представлен пустой ссылкой основного типа значений", Synonym = "Вид доступа")]
         public Catalogs.ПапкиФайлов ВидДоступа {get; set;}
         [Description1C8(Name = "ВсеРазрешены", Comment = "", Synonym = "Все разрешены")]
@@ -58,8 +58,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HruppyDostupa_ZnachenyiaDostupa")]
     public class ГруппыДоступа_ЗначенияДоступа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидДоступа", Comment = "Представлен пустой ссылкой основного типа значений", Synonym = "Вид доступа")]
         public Catalogs.ПапкиФайлов ВидДоступа {get; set;}
         [Description1C8(Name = "ЗначениеДоступа", Comment = "", Synonym = "Значение доступа")]

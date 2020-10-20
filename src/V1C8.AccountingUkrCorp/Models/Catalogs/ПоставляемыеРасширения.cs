@@ -44,8 +44,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PostavliaemyeRasshyrenyia_Sovmestymost")]
     public class ПоставляемыеРасширения_Совместимость
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "МинимальнаяВерсия", Comment = "", Synonym = "Минимальная версия")]
         [StringLength(18)]
         public string МинимальнаяВерсия {get; set;}
@@ -57,8 +57,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("PostavliaemyeRasshyrenyia_Razreshenyia")]
     public class ПоставляемыеРасширения_Разрешения
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидРазрешения", Comment = "", Synonym = "Вид разрешения")]
         [StringLength(255)]
         public string ВидРазрешения {get; set;}

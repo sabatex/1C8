@@ -44,8 +44,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("RehlamentyrovannyeOtchety_KeshSkhemZvyt1S")]
     public class РегламентированныеОтчеты_КешСхемЗвит1С
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ИмяСхемыЗвит1С", Comment = "", Synonym = "Имя схемы")]
         [StringLength(8)]
         public string ИмяСхемыЗвит1С {get; set;}

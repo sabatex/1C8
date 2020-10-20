@@ -24,8 +24,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ProfylyKliuchevykhOperatsyi_KliuchevyeOperatsyyProfylia")]
     public class ПрофилиКлючевыхОпераций_КлючевыеОперацииПрофиля
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "КлючеваяОперация", Comment = "", Synonym = "Ключевая операция")]
         public Catalogs.КлючевыеОперации КлючеваяОперация {get; set;}
         [Description1C8(Name = "ЦелевоеВремя", Comment = "", Synonym = "Целевое время")]

@@ -32,8 +32,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UstareloVydyVyplat_Nachyslenyia")]
     public class УстарелоВидыВыплат_Начисления
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Начисление", Comment = "", Synonym = "Начисление")]
         public ПланВидовРасчета.УстарелоНачисления Начисление {get; set;}
     }

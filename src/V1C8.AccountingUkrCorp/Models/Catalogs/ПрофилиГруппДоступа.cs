@@ -36,8 +36,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ProfylyHruppDostupa_Roly")]
     public class ПрофилиГруппДоступа_Роли
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Роль", Comment = "", Synonym = "Роль")]
         public Catalogs.ИдентификаторыОбъектовРасширений Роль {get; set;}
         [Description1C8(Name = "УдалитьРоль", Comment = "", Synonym = "(не используется) Роль")]
@@ -48,8 +48,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ProfylyHruppDostupa_VydyDostupa")]
     public class ПрофилиГруппДоступа_ВидыДоступа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидДоступа", Comment = "Представлен пустой ссылкой основного типа значений", Synonym = "Вид доступа")]
         public Catalogs.ПапкиФайлов ВидДоступа {get; set;}
         [Description1C8(Name = "Предустановленный", Comment = "", Synonym = "Предустановленный")]
@@ -61,8 +61,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ProfylyHruppDostupa_ZnachenyiaDostupa")]
     public class ПрофилиГруппДоступа_ЗначенияДоступа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидДоступа", Comment = "Представлен пустой ссылкой основного типа значений", Synonym = "Вид доступа")]
         public Catalogs.ПапкиФайлов ВидДоступа {get; set;}
         [Description1C8(Name = "ЗначениеДоступа", Comment = "", Synonym = "Значение доступа")]
@@ -72,8 +72,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ProfylyHruppDostupa_Naznachenye")]
     public class ПрофилиГруппДоступа_Назначение
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ТипПользователей", Comment = "", Synonym = "Тип пользователей")]
         public Catalogs.Пользователи ТипПользователей {get; set;}
     }

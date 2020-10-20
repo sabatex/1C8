@@ -30,8 +30,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("DopolnytelnyeObrabotchykyOcheredyZadanyi_Metody")]
     public class ДополнительныеОбработчикиОчередиЗаданий_Методы
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Метод", Comment = "", Synonym = "Метод")]
         [StringLength(255)]
         public string Метод {get; set;}

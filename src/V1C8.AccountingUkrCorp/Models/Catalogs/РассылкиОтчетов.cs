@@ -111,8 +111,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("RassylkyOtchetov_Otchety")]
     public class РассылкиОтчетов_Отчеты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Отчет", Comment = "", Synonym = "Отчет")]
         public Catalogs.ДополнительныеОтчетыИОбработки Отчет {get; set;}
         [Description1C8(Name = "ОтправлятьЕслиПустой", Comment = "", Synonym = "Отправлять пустой")]
@@ -125,8 +125,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("RassylkyOtchetov_FormatyOtchetov")]
     public class РассылкиОтчетов_ФорматыОтчетов
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Отчет", Comment = "", Synonym = "Отчет")]
         public Catalogs.ДополнительныеОтчетыИОбработки Отчет {get; set;}
         [Description1C8(Name = "Формат", Comment = "", Synonym = "Формат")]
@@ -136,8 +136,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("RassylkyOtchetov_Poluchately")]
     public class РассылкиОтчетов_Получатели
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Получатель", Comment = "", Synonym = "Получатель")]
         public Catalogs.КонтактныеЛица Получатель {get; set;}
         [Description1C8(Name = "Исключен", Comment = "", Synonym = "Исключен")]

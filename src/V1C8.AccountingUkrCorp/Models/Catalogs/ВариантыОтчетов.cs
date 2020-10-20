@@ -67,8 +67,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VaryantyOtchetov_Razmeshchenye")]
     public class ВариантыОтчетов_Размещение
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Использование", Comment = "", Synonym = "Использование")]
         public bool Использование {get; set;}
         [Description1C8(Name = "Подсистема", Comment = "", Synonym = "Раздел, Группа")]
@@ -90,8 +90,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("VaryantyOtchetov_UdalytYskliuchenyiaBystrohoDostupa")]
     public class ВариантыОтчетов_УдалитьИсключенияБыстрогоДоступа
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "УдалитьПользователь", Comment = "", Synonym = "(не используется) Пользователь")]
         public Catalogs.Пользователи УдалитьПользователь {get; set;}
     }

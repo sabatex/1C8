@@ -58,8 +58,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HrafykyRabotySotrudnykov_ShablonZapolnenyia")]
     public class ГрафикиРаботыСотрудников_ШаблонЗаполнения
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ДеньВключенВГрафик", Comment = "", Synonym = "День включен в график")]
         public bool ДеньВключенВГрафик {get; set;}
     }
@@ -67,8 +67,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HrafykyRabotySotrudnykov_VydyVremeny")]
     public class ГрафикиРаботыСотрудников_ВидыВремени
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидВремени", Comment = "", Synonym = "Вид времени")]
         public Catalogs.ВидыИспользованияРабочегоВремени ВидВремени {get; set;}
     }
@@ -76,8 +76,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("HrafykyRabotySotrudnykov_DannyeORabochykhChasakh")]
     public class ГрафикиРаботыСотрудников_ДанныеОРабочихЧасах
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "НомерДняЦикла", Comment = "", Synonym = "Номер дня цикла")]
         // Format 2.0
         public long НомерДняЦикла {get; set;}

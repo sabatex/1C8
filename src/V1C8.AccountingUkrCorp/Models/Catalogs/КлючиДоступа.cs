@@ -52,8 +52,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("KliuchyDostupa_Shapka")]
     public class КлючиДоступа_Шапка
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Значение6", Comment = "", Synonym = "Значение 6")]
         public Catalogs.ПапкиФайлов Значение6 {get; set;}
         [Description1C8(Name = "Значение7", Comment = "", Synonym = "Значение 7")]
@@ -69,8 +69,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("KliuchyDostupa_TablychnaiaChast1")]
     public class КлючиДоступа_ТабличнаяЧасть1
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Значение1", Comment = "", Synonym = "Значение 1")]
         public Catalogs.ПапкиФайлов Значение1 {get; set;}
         [Description1C8(Name = "Значение2", Comment = "", Synonym = "Значение 2")]
@@ -86,8 +86,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("KliuchyDostupa_TablychnaiaChast2")]
     public class КлючиДоступа_ТабличнаяЧасть2
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Значение1", Comment = "", Synonym = "Значение 1")]
         public Catalogs.ПапкиФайлов Значение1 {get; set;}
         [Description1C8(Name = "Значение2", Comment = "", Synonym = "Значение 2")]
@@ -103,8 +103,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("KliuchyDostupa_TablychnaiaChast3")]
     public class КлючиДоступа_ТабличнаяЧасть3
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Значение1", Comment = "", Synonym = "Значение 1")]
         public Catalogs.ПапкиФайлов Значение1 {get; set;}
         [Description1C8(Name = "Значение2", Comment = "", Synonym = "Значение 2")]
@@ -120,8 +120,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("KliuchyDostupa_TablychnaiaChast4")]
     public class КлючиДоступа_ТабличнаяЧасть4
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Значение1", Comment = "", Synonym = "Значение 1")]
         public Catalogs.ПапкиФайлов Значение1 {get; set;}
         [Description1C8(Name = "Значение2", Comment = "", Synonym = "Значение 2")]

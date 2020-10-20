@@ -61,8 +61,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UdalytNastroikyVypolnenyiaObmena_NastroikyObmena")]
     public class УдалитьНастройкиВыполненияОбмена_НастройкиОбмена
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "НастройкаОбмена", Comment = "", Synonym = "Настройка обмена")]
         public Catalogs.УдалитьНастройкиОбменаДанными НастройкаОбмена {get; set;}
         [Description1C8(Name = "ВыполняемоеДействие", Comment = "", Synonym = "Выполняемое действие")]
@@ -72,8 +72,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("UdalytNastroikyVypolnenyiaObmena_SoobshchenyiaNeIavliaiushchyesiaOshybkamy")]
     public class УдалитьНастройкиВыполненияОбмена_СообщенияНеЯвляющиесяОшибками
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ТекстСообщения", Comment = "", Synonym = "Текст сообщения")]
         [StringLength(512)]
         public string ТекстСообщения {get; set;}

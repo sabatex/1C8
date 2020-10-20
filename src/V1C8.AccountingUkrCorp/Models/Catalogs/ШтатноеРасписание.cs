@@ -97,8 +97,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ShtatnoeRaspysanye_Nachyslenyia")]
     public class ШтатноеРасписание_Начисления
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Начисление", Comment = "", Synonym = "Начисление")]
         public ПланВидовРасчета.Начисления Начисление {get; set;}
         [Description1C8(Name = "ИдентификаторСтрокиВидаРасчета", Comment = "", Synonym = "Идентификатор строки вида расчета")]
@@ -118,8 +118,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ShtatnoeRaspysanye_Pokazately")]
     public class ШтатноеРасписание_Показатели
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ИдентификаторСтрокиВидаРасчета", Comment = "", Synonym = "Идентификатор строки вида расчета")]
         // Format 7.0
         public long ИдентификаторСтрокиВидаРасчета {get; set;}
@@ -139,8 +139,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ShtatnoeRaspysanye_DopolnytelnyeRekvyzyty")]
     public class ШтатноеРасписание_ДополнительныеРеквизиты
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Свойство", Comment = "", Synonym = "Свойство")]
         public ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения Свойство {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]
@@ -152,8 +152,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ShtatnoeRaspysanye_EzhehodnyeOtpuska")]
     public class ШтатноеРасписание_ЕжегодныеОтпуска
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "ВидЕжегодногоОтпуска", Comment = "", Synonym = "Вид ежегодного отпуска")]
         public Catalogs.ВидыОтпусков ВидЕжегодногоОтпуска {get; set;}
         [Description1C8(Name = "КоличествоДнейВГод", Comment = "", Synonym = "Количество дней в год")]
@@ -164,8 +164,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Table("ShtatnoeRaspysanye_Spetsyalnosty")]
     public class ШтатноеРасписание_Специальности
     {
-    public long Id {get;set;}
-    public Guid Owner {get;set;}
+        public long Id {get;set;}
+        public Guid Owner {get;set;}
         [Description1C8(Name = "Специальность", Comment = "", Synonym = "Специальность")]
         public Catalogs.КлассификаторСпециальностейПоОбразованию Специальность {get; set;}
     }

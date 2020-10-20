@@ -12,7 +12,7 @@ namespace sabatex.V1C8.Metadata
             
         }
  
-        public CatalogAttributesMetadata Attributes{get=>GetProperty<CatalogAttributesMetadata>("Attributes");}
+        public EnumerationsMetadata<FieldMetadata> Attributes{get=>GetProperty<EnumerationsMetadata<FieldMetadata>>("Attributes");}
  
     }
 }

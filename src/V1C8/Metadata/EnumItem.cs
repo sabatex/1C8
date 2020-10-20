@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sabatex.V1C8.EnumTypes
 {
-    public class EnumItem:V1C8COMObject
+    public class EnumItem:MetaDataBae
     {
         public EnumItem(EnumBase owner, object handle) : base(owner, handle)
         {

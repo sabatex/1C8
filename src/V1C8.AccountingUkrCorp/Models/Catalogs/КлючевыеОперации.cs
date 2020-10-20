@@ -13,27 +13,27 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КлючевыеОперации", Comment = "", Synonym = "Ключевые операции")]
     public class КлючевыеОперации:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "Имя", Comment = "", Synonym = "Имя")]
-    [StringLength(1000)]
-    public string Имя {get; set;}
-    [Description1C8(Name = "МинимальноДопустимыйУровень", Comment = "", Synonym = "Минимально допустимый уровень")]
-    public Enums.УровниПроизводительности МинимальноДопустимыйУровень {get; set;}
-    [Description1C8(Name = "Приоритет", Comment = "", Synonym = "Приоритет")]
-    // Format 15.0
-    public long Приоритет {get; set;}
-    [Description1C8(Name = "ЦелевоеВремя", Comment = "", Synonym = "Целевое время")]
-    // Format 15.2
-    public decimal ЦелевоеВремя {get; set;}
-    [Description1C8(Name = "ИмяХеш", Comment = "", Synonym = "Имя хеш")]
-    [StringLength(40)]
-    public string ИмяХеш {get; set;}
-    [Description1C8(Name = "ВыполненаСОшибкой", Comment = "", Synonym = "Выполнена с ошибкой")]
-    public bool ВыполненаСОшибкой {get; set;}
-    [Description1C8(Name = "Длительная", Comment = "", Synonym = "Длительная")]
-    public bool Длительная {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "Имя", Comment = "", Synonym = "Имя")]
+        [StringLength(1000)]
+        public string Имя {get; set;}
+        [Description1C8(Name = "МинимальноДопустимыйУровень", Comment = "", Synonym = "Минимально допустимый уровень")]
+        public Enums.УровниПроизводительности МинимальноДопустимыйУровень {get; set;}
+        [Description1C8(Name = "Приоритет", Comment = "", Synonym = "Приоритет")]
+        // Format 15.0
+        public long Приоритет {get; set;}
+        [Description1C8(Name = "ЦелевоеВремя", Comment = "", Synonym = "Целевое время")]
+        // Format 15.2
+        public decimal ЦелевоеВремя {get; set;}
+        [Description1C8(Name = "ИмяХеш", Comment = "", Synonym = "Имя хеш")]
+        [StringLength(40)]
+        public string ИмяХеш {get; set;}
+        [Description1C8(Name = "ВыполненаСОшибкой", Comment = "", Synonym = "Выполнена с ошибкой")]
+        public bool ВыполненаСОшибкой {get; set;}
+        [Description1C8(Name = "Длительная", Comment = "", Synonym = "Длительная")]
+        public bool Длительная {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

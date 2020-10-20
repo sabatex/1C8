@@ -13,14 +13,14 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Работодатели", Comment = "", Synonym = "Работодатели")]
     public class Работодатели:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ)", Synonym = "Полное наименование")]
-    public string НаименованиеПолное {get; set;}
-    [Description1C8(Name = "КодПоЕДРПОУ", Comment = "", Synonym = "Код по ЕДРПОУ")]
-    [StringLength(10)]
-    public string КодПоЕДРПОУ {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ)", Synonym = "Полное наименование")]
+        public string НаименованиеПолное {get; set;}
+        [Description1C8(Name = "КодПоЕДРПОУ", Comment = "", Synonym = "Код по ЕДРПОУ")]
+        [StringLength(10)]
+        public string КодПоЕДРПОУ {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

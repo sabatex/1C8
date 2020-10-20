@@ -13,9 +13,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ТипыИнформацииИнформационногоЦентра", Comment = "", Synonym = "Типы информации информационного центра")]
     public class ТипыИнформацииИнформационногоЦентра:CatalogItem
     {
-    #region реквізити
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

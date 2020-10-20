@@ -13,11 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НалоговыеГруппыОсновныхСредств", Comment = "", Synonym = "Налоговые группы основных средств")]
     public class НалоговыеГруппыОсновныхСредств:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ВидНалоговойГруппыНА", Comment = "", Synonym = "Вид налоговой группы")]
-    public Enums.ВидыНалоговыхГруппНА ВидНалоговойГруппыНА {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ВидНалоговойГруппыНА", Comment = "", Synonym = "Вид налоговой группы")]
+        public Enums.ВидыНалоговыхГруппНА ВидНалоговойГруппыНА {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

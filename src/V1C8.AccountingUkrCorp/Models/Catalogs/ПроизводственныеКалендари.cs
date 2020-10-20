@@ -13,11 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПроизводственныеКалендари", Comment = "", Synonym = "Производственные календари")]
     public class ПроизводственныеКалендари:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "БазовыйКалендарь", Comment = "", Synonym = "Базовый календарь")]
-    public Catalogs.ПроизводственныеКалендари БазовыйКалендарь {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "БазовыйКалендарь", Comment = "", Synonym = "Базовый календарь")]
+        public Catalogs.ПроизводственныеКалендари БазовыйКалендарь {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

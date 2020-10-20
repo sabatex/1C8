@@ -13,9 +13,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыДокументовОбОбразовании", Comment = "", Synonym = "Виды документов об образовании")]
     public class ВидыДокументовОбОбразовании:CatalogItem
     {
-    #region реквізити
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

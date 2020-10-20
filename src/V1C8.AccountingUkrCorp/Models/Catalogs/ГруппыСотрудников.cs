@@ -13,14 +13,14 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ГруппыСотрудников", Comment = "", Synonym = "Группы сотрудников")]
     public class ГруппыСотрудников:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ФормироватьАвтоматически", Comment = "", Synonym = "Формировать автоматически")]
-    public bool ФормироватьАвтоматически {get; set;}
-    [Description1C8(Name = "ХранилищеНастроек", Comment = "", Synonym = "Хранилище настроек")]
-    // Сховище значень
-    public byte[] ХранилищеНастроек {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ФормироватьАвтоматически", Comment = "", Synonym = "Формировать автоматически")]
+        public bool ФормироватьАвтоматически {get; set;}
+        [Description1C8(Name = "ХранилищеНастроек", Comment = "", Synonym = "Хранилище настроек")]
+        // Сховище значень
+        public byte[] ХранилищеНастроек {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

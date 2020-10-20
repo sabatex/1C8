@@ -13,11 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ГруппыДоступаФизическихЛиц", Comment = "", Synonym = "Группы доступа физических лиц")]
     public class ГруппыДоступаФизическихЛиц:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ГруппаДоступа", Comment = "", Synonym = "Группа доступа")]
-    public Catalogs.ГруппыДоступаФизическихЛиц ГруппаДоступа {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ГруппаДоступа", Comment = "", Synonym = "Группа доступа")]
+        public Catalogs.ГруппыДоступаФизическихЛиц ГруппаДоступа {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

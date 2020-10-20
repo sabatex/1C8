@@ -13,13 +13,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НомераГТД", Comment = "", Synonym = "Номера ГТД")]
     public class НомераГТД:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "Дата", Comment = "", Synonym = "Дата")]
-    public DateTime Дата {get; set;}
-    [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
-    public string Комментарий {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "Дата", Comment = "", Synonym = "Дата")]
+        public DateTime Дата {get; set;}
+        [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
+        public string Комментарий {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

@@ -13,20 +13,20 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПараметрыСинхронизацииV77", Comment = "", Synonym = "Параметры синхронизации с v7.7")]
     public class ПараметрыСинхронизацииV77:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ИмяФайлаДанных", Comment = "", Synonym = "Имя файла данных")]
-    public string ИмяФайлаДанных {get; set;}
-    [Description1C8(Name = "НомерПоследнейЗагрузки", Comment = "", Synonym = "Номер последней загрузки")]
-    // Format 10.0
-    public long НомерПоследнейЗагрузки {get; set;}
-    [Description1C8(Name = "ОтветственныйПользователь", Comment = "", Synonym = "Ответственный пользователь")]
-    [StringLength(100)]
-    public string ОтветственныйПользователь {get; set;}
-    [Description1C8(Name = "АдресТаблицыСоответствий", Comment = "", Synonym = "Адрес таблицы соответствий")]
-    [StringLength(250)]
-    public string АдресТаблицыСоответствий {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ИмяФайлаДанных", Comment = "", Synonym = "Имя файла данных")]
+        public string ИмяФайлаДанных {get; set;}
+        [Description1C8(Name = "НомерПоследнейЗагрузки", Comment = "", Synonym = "Номер последней загрузки")]
+        // Format 10.0
+        public long НомерПоследнейЗагрузки {get; set;}
+        [Description1C8(Name = "ОтветственныйПользователь", Comment = "", Synonym = "Ответственный пользователь")]
+        [StringLength(100)]
+        public string ОтветственныйПользователь {get; set;}
+        [Description1C8(Name = "АдресТаблицыСоответствий", Comment = "", Synonym = "Адрес таблицы соответствий")]
+        [StringLength(250)]
+        public string АдресТаблицыСоответствий {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

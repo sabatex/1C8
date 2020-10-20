@@ -13,12 +13,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КлассификаторЕдиницИзмерения", Comment = "(Общ)", Synonym = "Классификатор единиц измерения")]
     public class КлассификаторЕдиницИзмерения:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ)", Synonym = "Полное наименование")]
-    [StringLength(100)]
-    public string НаименованиеПолное {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ)", Synonym = "Полное наименование")]
+        [StringLength(100)]
+        public string НаименованиеПолное {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

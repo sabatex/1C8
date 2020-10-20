@@ -13,30 +13,30 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НалоговыеИнспекции", Comment = "Налоговые инспекции", Synonym = "Налоговые инспекции")]
     public class НалоговыеИнспекции:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ТипДПИ", Comment = "", Synonym = "Тип ДПИ")]
-    [StringLength(1)]
-    public string ТипДПИ {get; set;}
-    [Description1C8(Name = "КодАдмРайона", Comment = "", Synonym = "Код адм. района")]
-    [StringLength(2)]
-    public string КодАдмРайона {get; set;}
-    [Description1C8(Name = "НаименованиеАдмРайона", Comment = "", Synonym = "Наименование адм. района")]
-    [StringLength(60)]
-    public string НаименованиеАдмРайона {get; set;}
-    [Description1C8(Name = "Адрес", Comment = "", Synonym = "Адрес")]
-    [StringLength(32)]
-    public string Адрес {get; set;}
-    [Description1C8(Name = "ЕДРПОУ", Comment = "", Synonym = "ЕДРПОУ")]
-    [StringLength(10)]
-    public string ЕДРПОУ {get; set;}
-    [Description1C8(Name = "КодДляПоиска", Comment = "", Synonym = "Код для поиска")]
-    [StringLength(6)]
-    public string КодДляПоиска {get; set;}
-    [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ) Полное наименование, например, для печати", Synonym = "Полное наименование")]
-    [StringLength(1000)]
-    public string НаименованиеПолное {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ТипДПИ", Comment = "", Synonym = "Тип ДПИ")]
+        [StringLength(1)]
+        public string ТипДПИ {get; set;}
+        [Description1C8(Name = "КодАдмРайона", Comment = "", Synonym = "Код адм. района")]
+        [StringLength(2)]
+        public string КодАдмРайона {get; set;}
+        [Description1C8(Name = "НаименованиеАдмРайона", Comment = "", Synonym = "Наименование адм. района")]
+        [StringLength(60)]
+        public string НаименованиеАдмРайона {get; set;}
+        [Description1C8(Name = "Адрес", Comment = "", Synonym = "Адрес")]
+        [StringLength(32)]
+        public string Адрес {get; set;}
+        [Description1C8(Name = "ЕДРПОУ", Comment = "", Synonym = "ЕДРПОУ")]
+        [StringLength(10)]
+        public string ЕДРПОУ {get; set;}
+        [Description1C8(Name = "КодДляПоиска", Comment = "", Synonym = "Код для поиска")]
+        [StringLength(6)]
+        public string КодДляПоиска {get; set;}
+        [Description1C8(Name = "НаименованиеПолное", Comment = "(Общ) Полное наименование, например, для печати", Synonym = "Полное наименование")]
+        [StringLength(1000)]
+        public string НаименованиеПолное {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

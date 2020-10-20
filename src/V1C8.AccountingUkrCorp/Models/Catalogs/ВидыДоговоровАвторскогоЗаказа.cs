@@ -13,13 +13,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыДоговоровАвторскогоЗаказа", Comment = "", Synonym = "Виды авторских договоров")]
     public class ВидыДоговоровАвторскогоЗаказа:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "КодДоходаНДФЛ", Comment = "", Synonym = "Код дохода НДФЛ")]
-    public Catalogs.ВидыДоходовНДФЛ КодДоходаНДФЛ {get; set;}
-    [Description1C8(Name = "ВидЕСВ", Comment = "", Synonym = "Вид ЕСВ")]
-    public Enums.ВидыЕСВ ВидЕСВ {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "КодДоходаНДФЛ", Comment = "", Synonym = "Код дохода НДФЛ")]
+        public Catalogs.ВидыДоходовНДФЛ КодДоходаНДФЛ {get; set;}
+        [Description1C8(Name = "ВидЕСВ", Comment = "", Synonym = "Вид ЕСВ")]
+        public Enums.ВидыЕСВ ВидЕСВ {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

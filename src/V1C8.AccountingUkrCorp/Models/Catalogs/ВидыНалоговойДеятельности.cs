@@ -13,11 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыНалоговойДеятельности", Comment = "(Регл) Виды деятельности по налогу на прибыль", Synonym = "Виды налоговой деятельности")]
     public class ВидыНалоговойДеятельности:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ТипНалоговойДеятельности", Comment = "", Synonym = "Тип деятельности")]
-    public Enums.ТипНалоговойДеятельности ТипНалоговойДеятельности {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ТипНалоговойДеятельности", Comment = "", Synonym = "Тип деятельности")]
+        public Enums.ТипНалоговойДеятельности ТипНалоговойДеятельности {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

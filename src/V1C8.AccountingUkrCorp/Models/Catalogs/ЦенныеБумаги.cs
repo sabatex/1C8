@@ -13,9 +13,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ЦенныеБумаги", Comment = "(Общ)", Synonym = "Ценные бумаги")]
     public class ЦенныеБумаги:CatalogItem
     {
-    #region реквізити
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

@@ -13,11 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПереченьДолжностейДляБронированияГраждан", Comment = "", Synonym = "Перечень должностей для бронирования")]
     public class ПереченьДолжностейДляБронированияГраждан:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ОписаниеПункта", Comment = "", Synonym = "Описание пункта")]
-    public string ОписаниеПункта {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ОписаниеПункта", Comment = "", Synonym = "Описание пункта")]
+        public string ОписаниеПункта {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

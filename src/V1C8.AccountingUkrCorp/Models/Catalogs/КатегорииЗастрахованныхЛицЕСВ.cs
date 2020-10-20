@@ -13,11 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "КатегорииЗастрахованныхЛицЕСВ", Comment = "", Synonym = "Категории застрахованных лиц (ЕСВ)")]
     public class КатегорииЗастрахованныхЛицЕСВ:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ВидЕСВ", Comment = "", Synonym = "Вид ЕСВ")]
-    public Enums.ВидыЕСВ ВидЕСВ {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ВидЕСВ", Comment = "", Synonym = "Вид ЕСВ")]
+        public Enums.ВидыЕСВ ВидЕСВ {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

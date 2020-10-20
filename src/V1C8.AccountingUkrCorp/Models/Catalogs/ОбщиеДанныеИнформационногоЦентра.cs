@@ -13,29 +13,29 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОбщиеДанныеИнформационногоЦентра", Comment = "", Synonym = "Общие данные информационного центра")]
     public class ОбщиеДанныеИнформационногоЦентра:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "Вложения", Comment = "", Synonym = "Вложения")]
-    // Сховище значень
-    public byte[] Вложения {get; set;}
-    [Description1C8(Name = "ВнешняяСсылка", Comment = "", Synonym = "Внешняя ссылка")]
-    public string ВнешняяСсылка {get; set;}
-    [Description1C8(Name = "Дата", Comment = "", Synonym = "Дата")]
-    public DateTime Дата {get; set;}
-    [Description1C8(Name = "ДатаНачалаАктуальности", Comment = "", Synonym = "Дата начала актуальности")]
-    public DateTime ДатаНачалаАктуальности {get; set;}
-    [Description1C8(Name = "ДатаОкончанияАктуальности", Comment = "", Synonym = "Дата окончания актуальности")]
-    public DateTime ДатаОкончанияАктуальности {get; set;}
-    [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
-    public Guid Идентификатор {get; set;}
-    [Description1C8(Name = "Критичность", Comment = "", Synonym = "Критичность")]
-    // Format 10.0
-    public long Критичность {get; set;}
-    [Description1C8(Name = "ТекстHTML", Comment = "", Synonym = "Текст HTML")]
-    public string ТекстHTML {get; set;}
-    [Description1C8(Name = "ТипИнформации", Comment = "", Synonym = "Тип информации")]
-    public Catalogs.ТипыИнформацииИнформационногоЦентра ТипИнформации {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "Вложения", Comment = "", Synonym = "Вложения")]
+        // Сховище значень
+        public byte[] Вложения {get; set;}
+        [Description1C8(Name = "ВнешняяСсылка", Comment = "", Synonym = "Внешняя ссылка")]
+        public string ВнешняяСсылка {get; set;}
+        [Description1C8(Name = "Дата", Comment = "", Synonym = "Дата")]
+        public DateTime Дата {get; set;}
+        [Description1C8(Name = "ДатаНачалаАктуальности", Comment = "", Synonym = "Дата начала актуальности")]
+        public DateTime ДатаНачалаАктуальности {get; set;}
+        [Description1C8(Name = "ДатаОкончанияАктуальности", Comment = "", Synonym = "Дата окончания актуальности")]
+        public DateTime ДатаОкончанияАктуальности {get; set;}
+        [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
+        public Guid Идентификатор {get; set;}
+        [Description1C8(Name = "Критичность", Comment = "", Synonym = "Критичность")]
+        // Format 10.0
+        public long Критичность {get; set;}
+        [Description1C8(Name = "ТекстHTML", Comment = "", Synonym = "Текст HTML")]
+        public string ТекстHTML {get; set;}
+        [Description1C8(Name = "ТипИнформации", Comment = "", Synonym = "Тип информации")]
+        public Catalogs.ТипыИнформацииИнформационногоЦентра ТипИнформации {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

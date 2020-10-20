@@ -13,11 +13,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидыСтажа", Comment = "", Synonym = "Виды стажа")]
     public class ВидыСтажа:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "КатегорияСтажа", Comment = "", Synonym = "Категория стажа")]
-    public Enums.КатегорииСтажа КатегорияСтажа {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "КатегорияСтажа", Comment = "", Synonym = "Категория стажа")]
+        public Enums.КатегорииСтажа КатегорияСтажа {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

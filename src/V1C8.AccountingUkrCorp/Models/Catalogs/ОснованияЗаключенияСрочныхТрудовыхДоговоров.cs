@@ -13,12 +13,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОснованияЗаключенияСрочныхТрудовыхДоговоров", Comment = "", Synonym = "Основания заключения срочных трудовых договоров")]
     public class ОснованияЗаключенияСрочныхТрудовыхДоговоров:CatalogItem
     {
-    #region реквізити
-    [Description1C8(Name = "ТекстОснования", Comment = "", Synonym = "Текст для приказа")]
-    [StringLength(250)]
-    public string ТекстОснования {get; set;}
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        [Description1C8(Name = "ТекстОснования", Comment = "", Synonym = "Текст для приказа")]
+        [StringLength(250)]
+        public string ТекстОснования {get; set;}
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

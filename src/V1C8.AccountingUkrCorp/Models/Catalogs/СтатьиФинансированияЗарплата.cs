@@ -13,9 +13,9 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СтатьиФинансированияЗарплата", Comment = "", Synonym = "Статьи финансирования")]
     public class СтатьиФинансированияЗарплата:CatalogItem
     {
-    #region реквізити
-    #endregion реквізити
-    #region tables
-    #endregion tables
+        #region реквізити
+        #endregion реквізити
+        #region tables
+        #endregion tables
     }
 }

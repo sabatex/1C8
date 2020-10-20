@@ -39,7 +39,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
         [Description1C8(Name = "ПредставлениеОбъекта", Comment = "", Synonym = "Представление объекта")]
         public string ПредставлениеОбъекта {get; set;}
         [Description1C8(Name = "СсылкаОбъекта", Comment = "", Synonym = "Ссылка объекта")]
-        public Документ.СторнированиеНачислений СсылкаОбъекта {get; set;}
+        public Documents.СторнированиеНачислений СсылкаОбъекта {get; set;}
         [Description1C8(Name = "ТабличнаяЧастьИмя", Comment = "", Synonym = "Табличная часть имя")]
         [StringLength(100)]
         public string ТабличнаяЧастьИмя {get; set;}

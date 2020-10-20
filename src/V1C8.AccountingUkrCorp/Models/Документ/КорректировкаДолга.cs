@@ -7,11 +7,11 @@ using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
+namespace sabatex.V1C8.AccountingUkrCorp.Models.Documents
 {
     [Table("KorrektyrovkaDolha")]
     [Description1C8(Name = "КорректировкаДолга", Comment = "(Общ)", Synonym = "Корректировка долга")]
-    public class КорректировкаДолга:CatalogItem
+    public class КорректировкаДолга:DocumentItem
     {
         #region реквізити
         [Description1C8(Name = "ВидОперации", Comment = "", Synonym = "Вид операции")]

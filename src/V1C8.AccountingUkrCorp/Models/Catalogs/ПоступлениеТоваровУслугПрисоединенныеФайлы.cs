@@ -17,7 +17,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
         [Description1C8(Name = "Автор", Comment = "Автор - пользователь, добавивший файл", Synonym = "Автор")]
         public Catalogs.УчетныеЗаписиСинхронизацииФайлов Автор {get; set;}
         [Description1C8(Name = "ВладелецФайла", Comment = "", Synonym = "Владелец файла")]
-        public Документ.ПоступлениеТоваровУслуг ВладелецФайла {get; set;}
+        public Documents.ПоступлениеТоваровУслуг ВладелецФайла {get; set;}
         [Description1C8(Name = "ДатаМодификацииУниверсальная", Comment = "", Synonym = "Дата модификации универсальная")]
         public DateTime ДатаМодификацииУниверсальная {get; set;}
         [Description1C8(Name = "ДатаСоздания", Comment = "Дата добавления файла в базу", Synonym = "Дата создания")]

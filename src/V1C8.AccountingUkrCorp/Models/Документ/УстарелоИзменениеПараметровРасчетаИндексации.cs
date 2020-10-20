@@ -7,11 +7,11 @@ using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
+namespace sabatex.V1C8.AccountingUkrCorp.Models.Documents
 {
     [Table("UstareloYzmenenyeParametrovRaschetaYndeksatsyy")]
     [Description1C8(Name = "УстарелоИзменениеПараметровРасчетаИндексации", Comment = "", Synonym = "ѳ(устарело) Изменение параметров расчета индексации")]
-    public class УстарелоИзменениеПараметровРасчетаИндексации:CatalogItem
+    public class УстарелоИзменениеПараметровРасчетаИндексации:DocumentItem
     {
         #region реквізити
         [Description1C8(Name = "Организация", Comment = "", Synonym = "Организация")]

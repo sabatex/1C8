@@ -7,11 +7,11 @@ using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
+namespace sabatex.V1C8.AccountingUkrCorp.Models.Documents
 {
     [Table("DokhodVNaturalnoiForme")]
     [Description1C8(Name = "ДоходВНатуральнойФорме", Comment = "", Synonym = "Доход в натуральной форме")]
-    public class ДоходВНатуральнойФорме:CatalogItem
+    public class ДоходВНатуральнойФорме:DocumentItem
     {
         #region реквізити
         [Description1C8(Name = "МесяцНачисления", Comment = "", Synonym = "Месяц начисления")]

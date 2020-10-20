@@ -32,7 +32,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
         [Description1C8(Name = "БезДанных", Comment = "", Synonym = "Без данных")]
         public bool БезДанных {get; set;}
         [Description1C8(Name = "ЗначениеПустойСсылки", Comment = "", Synonym = "Значение пустой ссылки")]
-        public Документ.СторнированиеНачислений ЗначениеПустойСсылки {get; set;}
+        public Documents.СторнированиеНачислений ЗначениеПустойСсылки {get; set;}
         [Description1C8(Name = "КлючОбъектаМетаданных", Comment = "", Synonym = "Ключ объекта метаданных")]
         // Сховище значень
         public byte[] КлючОбъектаМетаданных {get; set;}

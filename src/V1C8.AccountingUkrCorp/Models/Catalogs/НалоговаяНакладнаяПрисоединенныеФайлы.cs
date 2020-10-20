@@ -17,7 +17,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
         [Description1C8(Name = "Автор", Comment = "", Synonym = "Автор")]
         public Catalogs.ВнешниеПользователи Автор {get; set;}
         [Description1C8(Name = "ВладелецФайла", Comment = "", Synonym = "Размещение")]
-        public Документ.НалоговаяНакладная ВладелецФайла {get; set;}
+        public Documents.НалоговаяНакладная ВладелецФайла {get; set;}
         [Description1C8(Name = "ДатаМодификацииУниверсальная", Comment = "", Synonym = "Дата изменения (универсальное время)")]
         public DateTime ДатаМодификацииУниверсальная {get; set;}
         [Description1C8(Name = "ДатаСоздания", Comment = "", Synonym = "Дата создания")]

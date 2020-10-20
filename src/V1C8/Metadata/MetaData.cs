@@ -19,6 +19,9 @@ namespace sabatex.V1C8.Metadata
         public EnumerationsMetadata<CatalogMetaData> Catalogs{get=>GetProperty<EnumerationsMetadata<CatalogMetaData>>("Catalogs");}
         public EnumerationsMetadata<DocumentMetaData> Documents{get=>GetProperty<EnumerationsMetadata<DocumentMetaData>>("Documents");}
 
+        public EnumerationsMetadata<ChartOfAccountMetaData> ChartsOfAccounts{get=>GetProperty<EnumerationsMetadata<ChartOfAccountMetaData>>("ChartsOfAccounts");}
+
+
      }
 
     

@@ -7,11 +7,11 @@ using sabatex.V1C8.ComponentModel.DataAnnotations;
 using sabatex.V1C8.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
+namespace sabatex.V1C8.AccountingUkrCorp.Models.Documents
 {
     [Table("PereraschetProportsyonalnohoNDSpoTovaramYOS")]
     [Description1C8(Name = "ПерерасчетПропорциональногоНДСпоТоварамИОС", Comment = "(регл)", Synonym = "Перерасчет пропорционального НДС по товарам и ОС")]
-    public class ПерерасчетПропорциональногоНДСпоТоварамИОС:CatalogItem
+    public class ПерерасчетПропорциональногоНДСпоТоварамИОС:DocumentItem
     {
         #region реквізити
         [Description1C8(Name = "Организация", Comment = "(Общ)", Synonym = "Организация")]

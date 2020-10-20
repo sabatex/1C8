@@ -31,11 +31,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
         [Description1C8(Name = "СчетДт", Comment = "", Synonym = "Счет Дт")]
         public ПланСчетов.Хозрасчетный СчетДт {get; set;}
         [Description1C8(Name = "СубконтоДт1", Comment = "", Synonym = "Субконто Дт 1")]
-        public Документ.СторнированиеНачислений СубконтоДт1 {get; set;}
+        public Documents.СторнированиеНачислений СубконтоДт1 {get; set;}
         [Description1C8(Name = "СубконтоДт2", Comment = "", Synonym = "Субконто Дт 2")]
-        public Документ.СторнированиеНачислений СубконтоДт2 {get; set;}
+        public Documents.СторнированиеНачислений СубконтоДт2 {get; set;}
         [Description1C8(Name = "СубконтоДт3", Comment = "", Synonym = "Субконто Дт 3")]
-        public Документ.СторнированиеНачислений СубконтоДт3 {get; set;}
+        public Documents.СторнированиеНачислений СубконтоДт3 {get; set;}
         [Description1C8(Name = "КоличествоДт", Comment = "", Synonym = "Количество Дт")]
         public Catalogs.ПараметрыТиповойОперации КоличествоДт {get; set;}
         [Description1C8(Name = "ВалютаДт", Comment = "", Synonym = "Валюта Дт")]
@@ -45,11 +45,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
         [Description1C8(Name = "СчетКт", Comment = "", Synonym = "Счет Кт")]
         public ПланСчетов.Хозрасчетный СчетКт {get; set;}
         [Description1C8(Name = "СубконтоКт1", Comment = "", Synonym = "Субконто Кт 1")]
-        public Документ.СторнированиеНачислений СубконтоКт1 {get; set;}
+        public Documents.СторнированиеНачислений СубконтоКт1 {get; set;}
         [Description1C8(Name = "СубконтоКт2", Comment = "", Synonym = "Субконто Кт 2")]
-        public Документ.СторнированиеНачислений СубконтоКт2 {get; set;}
+        public Documents.СторнированиеНачислений СубконтоКт2 {get; set;}
         [Description1C8(Name = "СубконтоКт3", Comment = "", Synonym = "Субконто Кт 3")]
-        public Документ.СторнированиеНачислений СубконтоКт3 {get; set;}
+        public Documents.СторнированиеНачислений СубконтоКт3 {get; set;}
         [Description1C8(Name = "КоличествоКт", Comment = "", Synonym = "Количество Кт")]
         public Catalogs.ПараметрыТиповойОперации КоличествоКт {get; set;}
         [Description1C8(Name = "ВалютаКт", Comment = "", Synonym = "Валюта Кт")]
@@ -98,7 +98,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
         [StringLength(100)]
         public string Синоним {get; set;}
         [Description1C8(Name = "Значение", Comment = "", Synonym = "Значение")]
-        public Документ.СторнированиеНачислений Значение {get; set;}
+        public Documents.СторнированиеНачислений Значение {get; set;}
         [Description1C8(Name = "ТипПоляРегистра", Comment = "Измерение, Ресурс, Реквизит", Synonym = "Тип поля регистра")]
         public Enums.ТипыПолейРегистра ТипПоляРегистра {get; set;}
         [Description1C8(Name = "НеИзменятьЗначение", Comment = "Используется для получения значения у периодического регистра сведений.", Synonym = "Не изменять значение")]

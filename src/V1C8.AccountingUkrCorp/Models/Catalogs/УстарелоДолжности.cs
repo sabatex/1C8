@@ -14,16 +14,29 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class УстарелоДолжности:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
+    public DBNull РеквизитДопУпорядочивания {get; set;}
+    [Description1C8(Name = "КодКП", Comment = "Код (классификатор профессий)", Synonym = "Код по классификатору профессий")]
+    [StringLength(10)]
+    public string КодКП {get; set;}
+    [Description1C8(Name = "ЯвляетсяШахтерскойДолжностью", Comment = "", Synonym = "Является шахтерской должностью")]
+    public bool ЯвляетсяШахтерскойДолжностью {get; set;}
+    [Description1C8(Name = "НаименованиеПоКП", Comment = "Наименование по классификатору профессий", Synonym = "Наименование по КП")]
+    [StringLength(300)]
+    public string НаименованиеПоКП {get; set;}
+    [Description1C8(Name = "КодЗКППТР", Comment = "", Synonym = "Код ЗКППТР")]
+    [StringLength(6)]
+    public string КодЗКППТР {get; set;}
     #endregion реквізити
     }
 }

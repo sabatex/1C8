@@ -14,16 +14,22 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class ПапкиФайлов:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
+    public string Описание {get; set;}
+    [Description1C8(Name = "Ответственный", Comment = "", Synonym = "Ответственный")]
+    public DBNull Ответственный {get; set;}
+    [Description1C8(Name = "ДатаСоздания", Comment = "", Synonym = "Дата создания")]
+    public DateTime ДатаСоздания {get; set;}
     #endregion реквізити
     }
 }

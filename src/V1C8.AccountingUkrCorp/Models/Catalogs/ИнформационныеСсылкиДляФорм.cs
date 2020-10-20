@@ -14,16 +14,36 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class ИнформационныеСсылкиДляФорм:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Адрес", Comment = "", Synonym = "Адрес")]
+    public string Адрес {get; set;}
+    [Description1C8(Name = "Вес", Comment = "", Synonym = "Вес")]
+    public DBNull Вес {get; set;}
+    [Description1C8(Name = "ДатаНачалаАктуальности", Comment = "", Synonym = "Дата начала актуальности")]
+    public DateTime ДатаНачалаАктуальности {get; set;}
+    [Description1C8(Name = "ДатаОбновления", Comment = "", Synonym = "Дата обновления")]
+    public DateTime ДатаОбновления {get; set;}
+    [Description1C8(Name = "ИзКонфигурации", Comment = "", Synonym = "Из конфигурации")]
+    public bool ИзКонфигурации {get; set;}
+    [Description1C8(Name = "ДатаОкончанияАктуальности", Comment = "", Synonym = "Дата окончания актуальности")]
+    public DateTime ДатаОкончанияАктуальности {get; set;}
+    [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
+    [StringLength(100)]
+    public string Идентификатор {get; set;}
+    [Description1C8(Name = "Подсказка", Comment = "", Synonym = "Подсказка")]
+    [StringLength(200)]
+    public string Подсказка {get; set;}
+    [Description1C8(Name = "ПолныйПутьКФорме", Comment = "", Synonym = "Полный путь к форме")]
+    public DBNull ПолныйПутьКФорме {get; set;}
     #endregion реквізити
     }
 }

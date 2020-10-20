@@ -14,16 +14,52 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class ДополнительныеОтчетыИОбработки:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "БезопасныйРежим", Comment = "", Synonym = "Безопасный режим")]
+    public bool БезопасныйРежим {get; set;}
+    [Description1C8(Name = "Версия", Comment = "", Synonym = "Версия")]
+    [StringLength(10)]
+    public string Версия {get; set;}
+    [Description1C8(Name = "Вид", Comment = "", Synonym = "Вид")]
+    public DBNull Вид {get; set;}
+    [Description1C8(Name = "ИмяОбъекта", Comment = "", Synonym = "Имя объекта")]
+    [StringLength(256)]
+    public string ИмяОбъекта {get; set;}
+    [Description1C8(Name = "ИмяФайла", Comment = "", Synonym = "Имя файла")]
+    [StringLength(260)]
+    public string ИмяФайла {get; set;}
+    [Description1C8(Name = "Информация", Comment = "", Synonym = "Информация")]
+    [StringLength(1024)]
+    public string Информация {get; set;}
+    [Description1C8(Name = "ИспользоватьДляФормыОбъекта", Comment = "", Synonym = "Использовать для формы объекта")]
+    public bool ИспользоватьДляФормыОбъекта {get; set;}
+    [Description1C8(Name = "ИспользоватьДляФормыСписка", Comment = "", Synonym = "Использовать для формы списка")]
+    public bool ИспользоватьДляФормыСписка {get; set;}
+    [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
+    public string Комментарий {get; set;}
+    [Description1C8(Name = "Ответственный", Comment = "", Synonym = "Ответственный")]
+    public DBNull Ответственный {get; set;}
+    [Description1C8(Name = "Публикация", Comment = "", Synonym = "Публикация")]
+    public DBNull Публикация {get; set;}
+    [Description1C8(Name = "ХранилищеНастроек", Comment = "", Synonym = "Хранилище настроек")]
+    public DBNull ХранилищеНастроек {get; set;}
+    [Description1C8(Name = "ХранилищеОбработки", Comment = "", Synonym = "Хранилище обработки")]
+    public DBNull ХранилищеОбработки {get; set;}
+    [Description1C8(Name = "ИспользуетХранилищеВариантов", Comment = "Когда Истина то дополнительный отчет подключен к хранилищу вариантов 'ХранилищеВариантовОтчетов'.", Synonym = "Использует хранилище вариантов")]
+    public bool ИспользуетХранилищеВариантов {get; set;}
+    [Description1C8(Name = "ТеснаяИнтеграцияСФормойОтчета", Comment = "Когда Истина то у отчета есть программный интерфейс для тесной интеграции с общей формой 'ФормаОтчета'.", Synonym = "Тесная интеграция с формой отчета")]
+    public bool ТеснаяИнтеграцияСФормойОтчета {get; set;}
+    [Description1C8(Name = "РежимСовместимостиРазрешений", Comment = "", Synonym = "Режим совместимости разрешений")]
+    public DBNull РежимСовместимостиРазрешений {get; set;}
     #endregion реквізити
     }
 }

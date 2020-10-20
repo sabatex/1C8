@@ -14,16 +14,22 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class УсловияТруда:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "ПроцентНадбавкиЗаВредность", Comment = "", Synonym = "% надбавки за вредность")]
+    public DBNull ПроцентНадбавкиЗаВредность {get; set;}
+    [Description1C8(Name = "ВыплачиваетсяНадбавкаЗаВредность", Comment = "", Synonym = "Выплачивается надбавка за вредность")]
+    public bool ВыплачиваетсяНадбавкаЗаВредность {get; set;}
+    [Description1C8(Name = "КоличествоДнейДополнительногоОтпускаВГод", Comment = "", Synonym = "Количество дней дополнительного отпуска за вредность (в год)")]
+    public DBNull КоличествоДнейДополнительногоОтпускаВГод {get; set;}
     #endregion реквізити
     }
 }

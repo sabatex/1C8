@@ -14,16 +14,20 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class УдалитьВидыКонтактнойИнформации:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Тип", Comment = "", Synonym = "Тип")]
+    public DBNull Тип {get; set;}
+    [Description1C8(Name = "ВидОбъектаКонтактнойИнформации", Comment = "", Synonym = "Вид объекта контактной информации")]
+    public DBNull ВидОбъектаКонтактнойИнформации {get; set;}
     #endregion реквізити
     }
 }

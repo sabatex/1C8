@@ -14,16 +14,36 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class ВидыОперацийРасчетаЗарплаты:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Начисление", Comment = "", Synonym = "Начисления")]
+    public bool Начисление {get; set;}
+    [Description1C8(Name = "Договоры", Comment = "", Synonym = "Договоры")]
+    public bool Договоры {get; set;}
+    [Description1C8(Name = "Пособия", Comment = "", Synonym = "Пособия")]
+    public bool Пособия {get; set;}
+    [Description1C8(Name = "Льготы", Comment = "", Synonym = "Льготы")]
+    public bool Льготы {get; set;}
+    [Description1C8(Name = "Удержания", Comment = "", Synonym = "Удержания")]
+    public bool Удержания {get; set;}
+    [Description1C8(Name = "НДФЛ", Comment = "", Synonym = "НДФЛ")]
+    public bool НДФЛ {get; set;}
+    [Description1C8(Name = "Займы", Comment = "", Synonym = "Займы")]
+    public bool Займы {get; set;}
+    [Description1C8(Name = "ВзносыФОТ", Comment = "", Synonym = "Взносы ФОТ")]
+    public bool ВзносыФОТ {get; set;}
+    [Description1C8(Name = "ВАрхиве", Comment = "", Synonym = "В архиве")]
+    public bool ВАрхиве {get; set;}
+    [Description1C8(Name = "Взносы", Comment = "", Synonym = "Взносы")]
+    public bool Взносы {get; set;}
     #endregion реквізити
     }
 }

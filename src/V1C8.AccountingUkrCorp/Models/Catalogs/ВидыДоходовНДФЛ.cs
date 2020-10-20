@@ -14,16 +14,30 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class ВидыДоходовНДФЛ:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "ВидСтавкиРезидента", Comment = "", Synonym = "Ставка налога")]
+    public DBNull ВидСтавкиРезидента {get; set;}
+    [Description1C8(Name = "СоответствуетОплатеТруда", Comment = "", Synonym = "Соответствует оплате труда")]
+    public bool СоответствуетОплатеТруда {get; set;}
+    [Description1C8(Name = "УчитыватьВзносы", Comment = "", Synonym = "Учитывать взносы")]
+    public bool УчитыватьВзносы {get; set;}
+    [Description1C8(Name = "ВидСтавкиУвеличенная", Comment = "", Synonym = "Увеличенная ставка")]
+    public DBNull ВидСтавкиУвеличенная {get; set;}
+    [Description1C8(Name = "УчитыватьНСЛ", Comment = "", Synonym = "Учитывать НСЛ")]
+    public bool УчитыватьНСЛ {get; set;}
+    [Description1C8(Name = "ОблагаетсяВоеннымСбором", Comment = "", Synonym = "Облагается военным сбором")]
+    public DBNull ОблагаетсяВоеннымСбором {get; set;}
+    [Description1C8(Name = "ОблагаетсяСверхПредела", Comment = "", Synonym = "Облагается сверх предела")]
+    public DBNull ОблагаетсяСверхПредела {get; set;}
     #endregion реквізити
     }
 }

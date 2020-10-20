@@ -14,16 +14,27 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class УслугиСервиса:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
+    [StringLength(50)]
+    public string Идентификатор {get; set;}
+    [Description1C8(Name = "ПоказыватьПриДобавленииВТариф", Comment = "", Synonym = "Показывать при добавлении в тариф")]
+    public bool ПоказыватьПриДобавленииВТариф {get; set;}
+    [Description1C8(Name = "ПоставщикУслуги", Comment = "", Synonym = "Поставщик услуги")]
+    public DBNull ПоставщикУслуги {get; set;}
+    [Description1C8(Name = "Тарифицируется", Comment = "", Synonym = "Тарифицируется")]
+    public bool Тарифицируется {get; set;}
+    [Description1C8(Name = "ТипУслуги", Comment = "", Synonym = "Тип услуги")]
+    public DBNull ТипУслуги {get; set;}
     #endregion реквізити
     }
 }

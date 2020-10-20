@@ -14,16 +14,34 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class Пользователи:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Недействителен", Comment = "", Synonym = "Недействителен")]
+    public bool Недействителен {get; set;}
+    [Description1C8(Name = "Подразделение", Comment = "", Synonym = "Подразделение")]
+    public DBNull Подразделение {get; set;}
+    [Description1C8(Name = "ФизическоеЛицо", Comment = "", Synonym = "Физическое лицо")]
+    public DBNull ФизическоеЛицо {get; set;}
+    [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
+    public string Комментарий {get; set;}
+    [Description1C8(Name = "Служебный", Comment = "", Synonym = "Служебный")]
+    public bool Служебный {get; set;}
+    [Description1C8(Name = "Подготовлен", Comment = "", Synonym = "Подготовлен")]
+    public bool Подготовлен {get; set;}
+    [Description1C8(Name = "ИдентификаторПользователяИБ", Comment = "", Synonym = "Идентификатор пользователя ИБ")]
+    public DBNull ИдентификаторПользователяИБ {get; set;}
+    [Description1C8(Name = "ИдентификаторПользователяСервиса", Comment = "", Synonym = "Идентификатор пользователя сервиса")]
+    public DBNull ИдентификаторПользователяСервиса {get; set;}
+    [Description1C8(Name = "СвойстваПользователяИБ", Comment = "", Synonym = "Свойства пользователя ИБ")]
+    public DBNull СвойстваПользователяИБ {get; set;}
     #endregion реквізити
     }
 }

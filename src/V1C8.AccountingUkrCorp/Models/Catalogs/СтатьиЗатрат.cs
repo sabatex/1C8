@@ -14,16 +14,24 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class СтатьиЗатрат:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "ПостояннаяЗатрата", Comment = "", Synonym = "Постоянная затрата")]
+    public bool ПостояннаяЗатрата {get; set;}
+    [Description1C8(Name = "ВидЗатрат", Comment = "(Общ)", Synonym = "Вид затрат")]
+    public DBNull ВидЗатрат {get; set;}
+    [Description1C8(Name = "Счет8Класса", Comment = "", Synonym = "Счет 8 класса")]
+    public DBNull Счет8Класса {get; set;}
+    [Description1C8(Name = "СтатьяДекларацииПоНалогуНаПрибыль", Comment = "", Synonym = "Ст. декл. по налогу на прибыль (до 01.01.2015)")]
+    public DBNull СтатьяДекларацииПоНалогуНаПрибыль {get; set;}
     #endregion реквізити
     }
 }

@@ -14,16 +14,26 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class ТипыЦенНоменклатуры:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "ВалютаЦены", Comment = "", Synonym = "Валюта цены по умолчанию")]
+    public DBNull ВалютаЦены {get; set;}
+    [Description1C8(Name = "ЦенаВключаетНДС", Comment = "", Synonym = "Цена включает НДС")]
+    public bool ЦенаВключаетНДС {get; set;}
+    [Description1C8(Name = "ПорядокОкругления", Comment = "", Synonym = "Округлять до")]
+    public DBNull ПорядокОкругления {get; set;}
+    [Description1C8(Name = "ОкруглятьВБольшуюСторону", Comment = "", Synonym = "Метод округления")]
+    public bool ОкруглятьВБольшуюСторону {get; set;}
+    [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
+    public string Комментарий {get; set;}
     #endregion реквізити
     }
 }

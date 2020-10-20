@@ -14,16 +14,25 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class ОснованияСпециальногоСтажа:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "КодОтчености", Comment = "", Synonym = "Код отчености")]
+    [StringLength(8)]
+    public string КодОтчености {get; set;}
+    [Description1C8(Name = "ОграничениеПоПолу", Comment = "", Synonym = "Ограничение по полу")]
+    public bool ОграничениеПоПолу {get; set;}
+    [Description1C8(Name = "ПолФизическихЛиц", Comment = "", Synonym = "Пол физических лиц")]
+    public DBNull ПолФизическихЛиц {get; set;}
+    [Description1C8(Name = "РазрешеноИспользованиеБезАттестацииРабочихМест", Comment = "", Synonym = "Разрешено использование без аттестации рабочих мест")]
+    public bool РазрешеноИспользованиеБезАттестацииРабочихМест {get; set;}
     #endregion реквізити
     }
 }

@@ -14,16 +14,35 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class Сотрудники:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "ФизическоеЛицо", Comment = "", Synonym = "Физическое лицо")]
+    public DBNull ФизическоеЛицо {get; set;}
+    [Description1C8(Name = "Актуальность", Comment = "", Synonym = "Актуальность")]
+    public bool Актуальность {get; set;}
+    [Description1C8(Name = "ГоловнаяОрганизация", Comment = "", Synonym = "Головная организация")]
+    public DBNull ГоловнаяОрганизация {get; set;}
+    [Description1C8(Name = "УдалитьВидЗанятости", Comment = "", Synonym = "(не используется) Вид занятости")]
+    public DBNull УдалитьВидЗанятости {get; set;}
+    [Description1C8(Name = "ВАрхиве", Comment = "", Synonym = "В архиве")]
+    public bool ВАрхиве {get; set;}
+    [Description1C8(Name = "ОсновноеНазначение", Comment = "", Synonym = "Основное назначение")]
+    public DBNull ОсновноеНазначение {get; set;}
+    [Description1C8(Name = "ПоНаправлениюОргановЗанятости", Comment = "", Synonym = "По направлению органов занятости")]
+    public bool ПоНаправлениюОргановЗанятости {get; set;}
+    [Description1C8(Name = "УточнениеНаименования", Comment = "", Synonym = "Уточнение наименования")]
+    [StringLength(40)]
+    public string УточнениеНаименования {get; set;}
+    [Description1C8(Name = "ГоловнойСотрудник", Comment = "", Synonym = "Основной сотрудник")]
+    public DBNull ГоловнойСотрудник {get; set;}
     #endregion реквізити
     }
 }

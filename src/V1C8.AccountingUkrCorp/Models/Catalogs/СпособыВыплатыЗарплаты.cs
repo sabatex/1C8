@@ -14,16 +14,38 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class СпособыВыплатыЗарплаты:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Поставляемый", Comment = "", Synonym = "Поставляемый")]
+    public bool Поставляемый {get; set;}
+    [Description1C8(Name = "ХарактерВыплаты", Comment = "", Synonym = "Характер выплаты")]
+    public DBNull ХарактерВыплаты {get; set;}
+    [Description1C8(Name = "ВидДокументаОснования", Comment = "", Synonym = "Вид документа основания")]
+    public DBNull ВидДокументаОснования {get; set;}
+    [Description1C8(Name = "Округление", Comment = "", Synonym = "Округление")]
+    public DBNull Округление {get; set;}
+    [Description1C8(Name = "ПроцентВыплаты", Comment = "", Synonym = "Процент выплаты")]
+    public DBNull ПроцентВыплаты {get; set;}
+    [Description1C8(Name = "УдалитьИдентификаторОбъекта", Comment = "", Synonym = "(не использовать) Идентификатор объекта")]
+    [StringLength(256)]
+    public string УдалитьИдентификаторОбъекта {get; set;}
+    [Description1C8(Name = "УдалитьСпособПолученияЗарплатыКВыплате", Comment = "", Synonym = "(не использовать) Способ получения зарплаты к выплате")]
+    [StringLength(10)]
+    public string УдалитьСпособПолученияЗарплатыКВыплате {get; set;}
+    [Description1C8(Name = "ГруппаУчетаНачислений", Comment = "", Synonym = "Группа учета начислений")]
+    public DBNull ГруппаУчетаНачислений {get; set;}
+    [Description1C8(Name = "КодДоходаНДФЛ", Comment = "", Synonym = "Код дохода НДФЛ")]
+    public DBNull КодДоходаНДФЛ {get; set;}
+    [Description1C8(Name = "КодДоходаВС", Comment = "", Synonym = "Код дохода ВС")]
+    public DBNull КодДоходаВС {get; set;}
     #endregion реквізити
     }
 }

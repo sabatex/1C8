@@ -14,16 +14,26 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     public class Склады:EnumItem
     {
     #region Стандартні реквізити
-    public Guid Id{get; set;}
-    public bool IsFolder{get; set;}
-    public bool DeletionMark{get; set;}
-    public bool Predefined{get; set;}
-    public string Code{get; set;}
-    public string Description{get; set;}
-    public Guid? Parent{get; set;}
-    public Guid? Owner{get; set;}
+    public Guid Id {get; set;}
+    public bool IsFolder {get; set;}
+    public bool DeletionMark {get; set;}
+    public bool Predefined {get; set;}
+    public string Code {get; set;}
+    public string Description {get; set;}
+    public Guid? Parent {get; set;}
+    public Guid? Owner {get; set;}
     #endregion Стандартні реквізити
     #region реквізити
+    [Description1C8(Name = "Комментарий", Comment = "(Общ) Любая дополнительная информация", Synonym = "Комментарий")]
+    public string Комментарий {get; set;}
+    [Description1C8(Name = "ТипЦенРозничнойТорговли", Comment = "(Общ)", Synonym = "Тип цен розничной торговли")]
+    public DBNull ТипЦенРозничнойТорговли {get; set;}
+    [Description1C8(Name = "ТипСклада", Comment = "", Synonym = "Тип склада")]
+    public DBNull ТипСклада {get; set;}
+    [Description1C8(Name = "ТерриторияПоКОАТУУ", Comment = "Название и код территории по КОАТУУ, на которой расположен склад (торговая точка)", Synonym = "Территория по КОАТУУ")]
+    public DBNull ТерриторияПоКОАТУУ {get; set;}
+    [Description1C8(Name = "Местонахождение", Comment = "", Synonym = "Местонахождение")]
+    public string Местонахождение {get; set;}
     #endregion реквізити
     }
 }

@@ -25,11 +25,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Количество", Comment = "(Общ)", Synonym = "Количество")]
-    public DBNull Количество {get; set;}
+    // Format 15.3
+    public decimal Количество {get; set;}
     [Description1C8(Name = "ЕдиницаИзмерения", Comment = "(Общ)", Synonym = "Единица измерения")]
     public DBNull ЕдиницаИзмерения {get; set;}
     [Description1C8(Name = "Коэффициент", Comment = "(Общ)", Synonym = "Коэффициент")]
-    public DBNull Коэффициент {get; set;}
+    // Format 10.3
+    public decimal Коэффициент {get; set;}
     #endregion реквізити
     }
 }

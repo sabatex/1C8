@@ -40,7 +40,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string КодПоЕДРПОУ {get; set;}
     [Description1C8(Name = "РучноеИзменение", Comment = "", Synonym = "Ручное изменение")]
-    public DBNull РучноеИзменение {get; set;}
+    // Format 1.0
+    public long РучноеИзменение {get; set;}
     #endregion реквізити
     }
 }

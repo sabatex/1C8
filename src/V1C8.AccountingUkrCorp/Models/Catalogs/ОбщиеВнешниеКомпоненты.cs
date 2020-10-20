@@ -33,7 +33,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДатаВерсии", Comment = "", Synonym = "Дата версии")]
     public DateTime ДатаВерсии {get; set;}
     [Description1C8(Name = "ХранилищеКомпоненты", Comment = "", Synonym = "Хранилище компоненты")]
-    public DBNull ХранилищеКомпоненты {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеКомпоненты {get; set;}
     [Description1C8(Name = "Windows_x86", Comment = "", Synonym = "Windows x86")]
     public bool Windows_x86 {get; set;}
     [Description1C8(Name = "Windows_x86_64", Comment = "", Synonym = "Windows x86_64")]

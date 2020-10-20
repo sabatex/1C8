@@ -31,12 +31,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(18)]
     public string Версия {get; set;}
     [Description1C8(Name = "ХранилищеРасширения", Comment = "", Synonym = "Хранилище расширения")]
-    public DBNull ХранилищеРасширения {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеРасширения {get; set;}
     [Description1C8(Name = "Информация", Comment = "", Synonym = "Информация")]
     [StringLength(1024)]
     public string Информация {get; set;}
     [Description1C8(Name = "ИдентификаторВерсии", Comment = "", Synonym = "Идентификатор версии")]
-    public DBNull ИдентификаторВерсии {get; set;}
+    public Guid ИдентификаторВерсии {get; set;}
     [Description1C8(Name = "Отключено", Comment = "", Synonym = "Отключено")]
     public bool Отключено {get; set;}
     [Description1C8(Name = "ПричинаОтключения", Comment = "", Synonym = "Причина отключения")]

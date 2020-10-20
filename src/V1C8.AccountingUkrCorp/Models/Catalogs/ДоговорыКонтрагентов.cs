@@ -33,7 +33,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Организация", Comment = "(Общ)", Synonym = "Организация")]
     public DBNull Организация {get; set;}
     [Description1C8(Name = "ПроцентКомиссионногоВознаграждения", Comment = "(Общ)", Synonym = "Процент комиссионного вознаграждения")]
-    public DBNull ПроцентКомиссионногоВознаграждения {get; set;}
+    // Format 5.2
+    public decimal ПроцентКомиссионногоВознаграждения {get; set;}
     [Description1C8(Name = "СпособРасчетаКомиссионногоВознаграждения", Comment = "(Общ)", Synonym = "Способ расчета комиссионного вознаграждения")]
     public DBNull СпособРасчетаКомиссионногоВознаграждения {get; set;}
     [Description1C8(Name = "ТипЦен", Comment = "(Общ) Тип цен по умолчанию для офрмления покупок по данному договору", Synonym = "Тип цен")]
@@ -60,7 +61,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УстановленСрокОплаты", Comment = "Если не установлен, для контроля просроченной задолженности используется срок из констант", Synonym = "Установлен срок оплаты по договору")]
     public bool УстановленСрокОплаты {get; set;}
     [Description1C8(Name = "СрокОплаты", Comment = "Срок в днях, после которого долг считается просроченным", Synonym = "Срок оплаты")]
-    public DBNull СрокОплаты {get; set;}
+    // Format 5.0
+    public long СрокОплаты {get; set;}
     [Description1C8(Name = "НаименованиеДляПечати", Comment = "", Synonym = "Наименование для печати")]
     [StringLength(150)]
     public string НаименованиеДляПечати {get; set;}

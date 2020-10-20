@@ -27,7 +27,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ИспользуетсяШкала", Comment = "", Synonym = "Использовать шкалу")]
     public bool ИспользуетсяШкала {get; set;}
     [Description1C8(Name = "СпособВводаСуммы", Comment = "Способ ввода суммы по тарифу. 0 — процент взимается с полной суммы перевода, 1 — процент взимается с суммы перевода, превышающей предыдущий порог", Synonym = "Способ ввода суммы")]
-    public DBNull СпособВводаСуммы {get; set;}
+    // Format 1.0
+    public long СпособВводаСуммы {get; set;}
     #endregion реквізити
     }
 }

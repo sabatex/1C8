@@ -33,11 +33,14 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(128)]
     public string Ключ {get; set;}
     [Description1C8(Name = "КоличествоПовторовПриАварийномЗавершении", Comment = "", Synonym = "Количество повторов при аварийном завершении")]
-    public DBNull КоличествоПовторовПриАварийномЗавершении {get; set;}
+    // Format 10.0
+    public long КоличествоПовторовПриАварийномЗавершении {get; set;}
     [Description1C8(Name = "ИнтервалПовтораПриАварийномЗавершении", Comment = "", Synonym = "Интервал повтора при аварийном завершении")]
-    public DBNull ИнтервалПовтораПриАварийномЗавершении {get; set;}
+    // Format 10.0
+    public long ИнтервалПовтораПриАварийномЗавершении {get; set;}
     [Description1C8(Name = "Расписание", Comment = "", Synonym = "Расписание")]
-    public DBNull Расписание {get; set;}
+    // Сховище значень
+    public byte[] Расписание {get; set;}
     [Description1C8(Name = "Имя", Comment = "", Synonym = "Имя")]
     [StringLength(255)]
     public string Имя {get; set;}

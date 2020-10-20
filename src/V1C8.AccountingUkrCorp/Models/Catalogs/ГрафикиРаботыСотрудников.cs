@@ -31,7 +31,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДатаОтсчета", Comment = "", Synonym = "Дата отсчета")]
     public DateTime ДатаОтсчета {get; set;}
     [Description1C8(Name = "ДлительностьРабочейНедели", Comment = "", Synonym = "Длительность рабочей недели")]
-    public DBNull ДлительностьРабочейНедели {get; set;}
+    // Format 7.2
+    public decimal ДлительностьРабочейНедели {get; set;}
     [Description1C8(Name = "НеполноеРабочееВремя", Comment = "", Synonym = "Неполное рабочее время")]
     public bool НеполноеРабочееВремя {get; set;}
     [Description1C8(Name = "СокращеннаяРабочаяНеделя", Comment = "", Synonym = "Сокращенная рабочая неделя")]
@@ -45,7 +46,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СпособЗаполнения", Comment = "", Synonym = "Способ заполнения")]
     public DBNull СпособЗаполнения {get; set;}
     [Description1C8(Name = "РабочихДнейВНеделе", Comment = "", Synonym = "Рабочих дней в неделе")]
-    public DBNull РабочихДнейВНеделе {get; set;}
+    // Format 1.0
+    public long РабочихДнейВНеделе {get; set;}
     [Description1C8(Name = "СпособОпределенияНормыСуммированногоУчета", Comment = "", Synonym = "Способ определения нормы суммированного учета")]
     public DBNull СпособОпределенияНормыСуммированногоУчета {get; set;}
     [Description1C8(Name = "ГрафикНормыПриСуммированномУчете", Comment = "", Synonym = "График нормы при суммированном учете")]

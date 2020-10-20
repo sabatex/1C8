@@ -25,7 +25,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ПорядокКоллекции", Comment = "", Synonym = "Порядок коллекции")]
-    public DBNull ПорядокКоллекции {get; set;}
+    // Format 2.0
+    public long ПорядокКоллекции {get; set;}
     [Description1C8(Name = "Имя", Comment = "Например, 'ОбъектыАдресацииЗадач'", Synonym = "Имя")]
     [StringLength(255)]
     public string Имя {get; set;}
@@ -43,7 +44,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ЗначениеПустойСсылки", Comment = "", Synonym = "Значение пустой ссылки")]
     public DBNull ЗначениеПустойСсылки {get; set;}
     [Description1C8(Name = "КлючОбъектаМетаданных", Comment = "", Synonym = "Ключ объекта метаданных")]
-    public DBNull КлючОбъектаМетаданных {get; set;}
+    // Сховище значень
+    public byte[] КлючОбъектаМетаданных {get; set;}
     [Description1C8(Name = "НоваяСсылка", Comment = "", Synonym = "Новая ссылка")]
     public DBNull НоваяСсылка {get; set;}
     [Description1C8(Name = "ИмяРасширения", Comment = "", Synonym = "Имя расширения")]

@@ -25,7 +25,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Вложения", Comment = "", Synonym = "Вложения")]
-    public DBNull Вложения {get; set;}
+    // Сховище значень
+    public byte[] Вложения {get; set;}
     [Description1C8(Name = "ВнешняяСсылка", Comment = "", Synonym = "Внешняя ссылка")]
     public string ВнешняяСсылка {get; set;}
     [Description1C8(Name = "Дата", Comment = "", Synonym = "Дата")]
@@ -35,9 +36,10 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДатаОкончанияАктуальности", Comment = "", Synonym = "Дата окончания актуальности")]
     public DateTime ДатаОкончанияАктуальности {get; set;}
     [Description1C8(Name = "Идентификатор", Comment = "", Synonym = "Идентификатор")]
-    public DBNull Идентификатор {get; set;}
+    public Guid Идентификатор {get; set;}
     [Description1C8(Name = "Критичность", Comment = "", Synonym = "Критичность")]
-    public DBNull Критичность {get; set;}
+    // Format 10.0
+    public long Критичность {get; set;}
     [Description1C8(Name = "ТекстHTML", Comment = "", Synonym = "Текст HTML")]
     public string ТекстHTML {get; set;}
     [Description1C8(Name = "ТипИнформации", Comment = "", Synonym = "Тип информации")]

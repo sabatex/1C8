@@ -31,18 +31,20 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СостояниеЗадания", Comment = "", Synonym = "Состояние задания")]
     public DBNull СостояниеЗадания {get; set;}
     [Description1C8(Name = "ИсполняющееФоновоеЗадание", Comment = "", Synonym = "Исполняющее фоновое задание")]
-    public DBNull ИсполняющееФоновоеЗадание {get; set;}
+    public Guid ИсполняющееФоновоеЗадание {get; set;}
     [Description1C8(Name = "ЭксклюзивноеВыполнение", Comment = "", Synonym = "Эксклюзивное выполнение")]
     public bool ЭксклюзивноеВыполнение {get; set;}
     [Description1C8(Name = "Шаблон", Comment = "", Synonym = "Шаблон")]
     public DBNull Шаблон {get; set;}
     [Description1C8(Name = "НомерПопытки", Comment = "", Synonym = "Номер попытки")]
-    public DBNull НомерПопытки {get; set;}
+    // Format 3.0
+    public long НомерПопытки {get; set;}
     [Description1C8(Name = "ИмяМетода", Comment = "", Synonym = "Имя метода")]
     [StringLength(255)]
     public string ИмяМетода {get; set;}
     [Description1C8(Name = "Параметры", Comment = "", Synonym = "Параметры")]
-    public DBNull Параметры {get; set;}
+    // Сховище значень
+    public byte[] Параметры {get; set;}
     [Description1C8(Name = "ДатаНачалаПоследнегоЗапуска", Comment = "", Synonym = "Дата начала последнего запуска")]
     public DateTime ДатаНачалаПоследнегоЗапуска {get; set;}
     [Description1C8(Name = "ДатаЗавершенияПоследнегоЗапуска", Comment = "", Synonym = "Дата завершения последнего запуска")]
@@ -51,11 +53,14 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(128)]
     public string Ключ {get; set;}
     [Description1C8(Name = "ИнтервалПовтораПриАварийномЗавершении", Comment = "", Synonym = "Интервал повтора при аварийном завершении")]
-    public DBNull ИнтервалПовтораПриАварийномЗавершении {get; set;}
+    // Format 10.0
+    public long ИнтервалПовтораПриАварийномЗавершении {get; set;}
     [Description1C8(Name = "Расписание", Comment = "", Synonym = "Расписание")]
-    public DBNull Расписание {get; set;}
+    // Сховище значень
+    public byte[] Расписание {get; set;}
     [Description1C8(Name = "КоличествоПовторовПриАварийномЗавершении", Comment = "", Synonym = "Количество повторов при аварийном завершении")]
-    public DBNull КоличествоПовторовПриАварийномЗавершении {get; set;}
+    // Format 10.0
+    public long КоличествоПовторовПриАварийномЗавершении {get; set;}
     #endregion реквізити
     }
 }

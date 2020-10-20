@@ -29,9 +29,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДляВнешнихПользователей", Comment = "", Synonym = "Для внешних пользователей")]
     public bool ДляВнешнихПользователей {get; set;}
     [Description1C8(Name = "Хеш", Comment = "", Synonym = "Хеш")]
-    public DBNull Хеш {get; set;}
+    // Format 10.0
+    public long Хеш {get; set;}
     [Description1C8(Name = "СоставПолей", Comment = "", Synonym = "Состав полей")]
-    public DBNull СоставПолей {get; set;}
+    // Format 17.0
+    public long СоставПолей {get; set;}
     [Description1C8(Name = "Значение1", Comment = "", Synonym = "Значение 1")]
     public DBNull Значение1 {get; set;}
     [Description1C8(Name = "Значение2", Comment = "", Synonym = "Значение 2")]

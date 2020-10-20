@@ -39,7 +39,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "ГоризонтПланирования", Comment = "", Synonym = "Горизонт планирования")]
-    public DBNull ГоризонтПланирования {get; set;}
+    // Format 3.0
+    public long ГоризонтПланирования {get; set;}
     [Description1C8(Name = "ВладелецГрафика", Comment = "", Synonym = "Владелец графика")]
     public DBNull ВладелецГрафика {get; set;}
     [Description1C8(Name = "УдалитьВидКалендаря", Comment = "", Synonym = "(Не используется) вид календаря")]

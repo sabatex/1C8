@@ -33,7 +33,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(200)]
     public string ПараметрыПрописиНаУкраинском {get; set;}
     [Description1C8(Name = "Наценка", Comment = "", Synonym = "Наценка")]
-    public DBNull Наценка {get; set;}
+    // Format 10.2
+    public decimal Наценка {get; set;}
     [Description1C8(Name = "ОсновнаяВалюта", Comment = "", Synonym = "Основная валюта")]
     public DBNull ОсновнаяВалюта {get; set;}
     [Description1C8(Name = "ПараметрыПрописиНаРусском", Comment = "", Synonym = "Параметры прописи на русском")]

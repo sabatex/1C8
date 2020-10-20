@@ -49,12 +49,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(260)]
     public string ИмяФайла {get; set;}
     [Description1C8(Name = "ХранилищеОбработки", Comment = "", Synonym = "Хранилище обработки")]
-    public DBNull ХранилищеОбработки {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеОбработки {get; set;}
     [Description1C8(Name = "ХранилищеВариантов", Comment = "", Synonym = "Хранилище вариантов")]
     [StringLength(150)]
     public string ХранилищеВариантов {get; set;}
     [Description1C8(Name = "ВерсияGUID", Comment = "", Synonym = "Версия GUID")]
-    public DBNull ВерсияGUID {get; set;}
+    public Guid ВерсияGUID {get; set;}
     [Description1C8(Name = "КонтролироватьСовместимостьСВерсиямиКонфигурации", Comment = "", Synonym = "Контролировать совместимость с версиями конфигурации")]
     public bool КонтролироватьСовместимостьСВерсиямиКонфигурации {get; set;}
     [Description1C8(Name = "ИспользуетХранилищеВариантов", Comment = "", Synonym = "Использует хранилище вариантов")]

@@ -46,7 +46,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "РедактированиеТолькоВДиалоге", Comment = "", Synonym = "Редактирование только в диалоге")]
     public bool РедактированиеТолькоВДиалоге {get; set;}
     [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
-    public DBNull РеквизитДопУпорядочивания {get; set;}
+    // Format 5.0
+    public long РеквизитДопУпорядочивания {get; set;}
     [Description1C8(Name = "СкрыватьНеактуальныеАдреса", Comment = "", Synonym = "Скрывать неактуальные адреса")]
     public bool СкрыватьНеактуальныеАдреса {get; set;}
     [Description1C8(Name = "ТелефонCДобавочнымНомером", Comment = "", Synonym = "Телефон c добавочным номером")]

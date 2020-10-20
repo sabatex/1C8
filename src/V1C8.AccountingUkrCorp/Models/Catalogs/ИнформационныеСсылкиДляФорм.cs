@@ -27,7 +27,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Адрес", Comment = "", Synonym = "Адрес")]
     public string Адрес {get; set;}
     [Description1C8(Name = "Вес", Comment = "", Synonym = "Вес")]
-    public DBNull Вес {get; set;}
+    // Format 10.0
+    public long Вес {get; set;}
     [Description1C8(Name = "ДатаНачалаАктуальности", Comment = "", Synonym = "Дата начала актуальности")]
     public DateTime ДатаНачалаАктуальности {get; set;}
     [Description1C8(Name = "ДатаОбновления", Comment = "", Synonym = "Дата обновления")]

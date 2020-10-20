@@ -36,7 +36,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Субконто3", Comment = "", Synonym = "Субконто3")]
     public DBNull Субконто3 {get; set;}
     [Description1C8(Name = "РежимУчетаВзносов", Comment = "0 - совпадает с зарплатй, 1 - все взносы на отдельной статье", Synonym = "Режим учета взносов")]
-    public DBNull РежимУчетаВзносов {get; set;}
+    // Format 10.0
+    public long РежимУчетаВзносов {get; set;}
     [Description1C8(Name = "ЕстьПрочиеОперации", Comment = "", Synonym = "Есть прочие операции")]
     public bool ЕстьПрочиеОперации {get; set;}
     [Description1C8(Name = "СчетУчетаВзносов", Comment = "", Synonym = "Счет учета взносов")]

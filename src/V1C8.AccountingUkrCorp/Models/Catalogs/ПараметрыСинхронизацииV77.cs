@@ -27,7 +27,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ИмяФайлаДанных", Comment = "", Synonym = "Имя файла данных")]
     public string ИмяФайлаДанных {get; set;}
     [Description1C8(Name = "НомерПоследнейЗагрузки", Comment = "", Synonym = "Номер последней загрузки")]
-    public DBNull НомерПоследнейЗагрузки {get; set;}
+    // Format 10.0
+    public long НомерПоследнейЗагрузки {get; set;}
     [Description1C8(Name = "ОтветственныйПользователь", Comment = "", Synonym = "Ответственный пользователь")]
     [StringLength(100)]
     public string ОтветственныйПользователь {get; set;}

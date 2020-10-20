@@ -37,11 +37,12 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Подготовлен", Comment = "", Synonym = "Подготовлен")]
     public bool Подготовлен {get; set;}
     [Description1C8(Name = "ИдентификаторПользователяИБ", Comment = "", Synonym = "Идентификатор пользователя ИБ")]
-    public DBNull ИдентификаторПользователяИБ {get; set;}
+    public Guid ИдентификаторПользователяИБ {get; set;}
     [Description1C8(Name = "ИдентификаторПользователяСервиса", Comment = "", Synonym = "Идентификатор пользователя сервиса")]
-    public DBNull ИдентификаторПользователяСервиса {get; set;}
+    public Guid ИдентификаторПользователяСервиса {get; set;}
     [Description1C8(Name = "СвойстваПользователяИБ", Comment = "", Synonym = "Свойства пользователя ИБ")]
-    public DBNull СвойстваПользователяИБ {get; set;}
+    // Сховище значень
+    public byte[] СвойстваПользователяИБ {get; set;}
     #endregion реквізити
     }
 }

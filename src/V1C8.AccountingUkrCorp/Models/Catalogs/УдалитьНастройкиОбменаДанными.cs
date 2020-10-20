@@ -33,9 +33,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПроизводитьОтправкуСообщений", Comment = "", Synonym = "Производить отправку сообщений")]
     public bool ПроизводитьОтправкуСообщений {get; set;}
     [Description1C8(Name = "КоличествоЭлементовВТранзакцииНаВыгрузкуДанных", Comment = "", Synonym = "Количество элементов в транзакции на выгрузку данных")]
-    public DBNull КоличествоЭлементовВТранзакцииНаВыгрузкуДанных {get; set;}
+    // Format 10.0
+    public long КоличествоЭлементовВТранзакцииНаВыгрузкуДанных {get; set;}
     [Description1C8(Name = "КоличествоЭлементовВТранзакцииНаЗагрузкуДанных", Comment = "", Synonym = "Количество элементов в транзакции на загрузку данных")]
-    public DBNull КоличествоЭлементовВТранзакцииНаЗагрузкуДанных {get; set;}
+    // Format 10.0
+    public long КоличествоЭлементовВТранзакцииНаЗагрузкуДанных {get; set;}
     [Description1C8(Name = "ВыполнятьАрхивациюФайловОбмена", Comment = "", Synonym = "Выполнять архивацию файлов обмена")]
     public bool ВыполнятьАрхивациюФайловОбмена {get; set;}
     [Description1C8(Name = "ПарольНаОтправку", Comment = "", Synonym = "Пароль на отправку")]
@@ -59,7 +61,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОтсутствиеКаталогаДляЗапускаАвтообмена", Comment = "", Synonym = "Отсутствие каталога для запуска автообмена")]
     public string ОтсутствиеКаталогаДляЗапускаАвтообмена {get; set;}
     [Description1C8(Name = "ПортFTPСоединения", Comment = "", Synonym = "Порт FTP соединения")]
-    public DBNull ПортFTPСоединения {get; set;}
+    // Format 10.0
+    public long ПортFTPСоединения {get; set;}
     [Description1C8(Name = "ПользовательFTPСоединения", Comment = "", Synonym = "Пользователь FTP соединения")]
     [StringLength(50)]
     public string ПользовательFTPСоединения {get; set;}
@@ -69,19 +72,24 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "МаксимальныйРазмерОтправляемогоПолучаемогоПакетаЧерезFTP", Comment = "", Synonym = "Максимальный размер отправляемого получаемого пакета через FTP")]
-    public DBNull МаксимальныйРазмерОтправляемогоПолучаемогоПакетаЧерезFTP {get; set;}
+    // Format 10.0
+    public long МаксимальныйРазмерОтправляемогоПолучаемогоПакетаЧерезFTP {get; set;}
     [Description1C8(Name = "ПассивноеFTPСоединение", Comment = "", Synonym = "Пассивное FTP соединение")]
     public bool ПассивноеFTPСоединение {get; set;}
     [Description1C8(Name = "УзелФоновогоОбмена", Comment = "", Synonym = "Узел фонового обмена")]
     public DBNull УзелФоновогоОбмена {get; set;}
     [Description1C8(Name = "ПравилаОбмена", Comment = "", Synonym = "Правила обмена")]
-    public DBNull ПравилаОбмена {get; set;}
+    // Сховище значень
+    public byte[] ПравилаОбмена {get; set;}
     [Description1C8(Name = "ПравилаОбменаДляПриемника", Comment = "", Synonym = "Правила обмена для приемника")]
-    public DBNull ПравилаОбменаДляПриемника {get; set;}
+    // Сховище значень
+    public byte[] ПравилаОбменаДляПриемника {get; set;}
     [Description1C8(Name = "ДобавлениеОбъектовИзФоновогоОбмена", Comment = "", Synonym = "Добавление объектов из фонового обмена")]
-    public DBNull ДобавлениеОбъектовИзФоновогоОбмена {get; set;}
+    // Format 10.0
+    public long ДобавлениеОбъектовИзФоновогоОбмена {get; set;}
     [Description1C8(Name = "КоличествоОбъектовДляФоновогоОбмена", Comment = "", Synonym = "Количество объектов для фонового обмена")]
-    public DBNull КоличествоОбъектовДляФоновогоОбмена {get; set;}
+    // Format 10.0
+    public long КоличествоОбъектовДляФоновогоОбмена {get; set;}
     [Description1C8(Name = "OnLineОбмен", Comment = "", Synonym = "On line обмен")]
     public bool OnLineОбмен {get; set;}
     [Description1C8(Name = "ТипИнформационнойБазыДляПодключения", Comment = "", Synonym = "Тип информационной базы для подключения")]
@@ -111,7 +119,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПослеОшибкиОтложенногоПроведенияПрекратитьОперации", Comment = "", Synonym = "После ошибки отложенного проведения прекратить операции")]
     public bool ПослеОшибкиОтложенногоПроведенияПрекратитьОперации {get; set;}
     [Description1C8(Name = "КоличествоОшибокОтложенногоПроведенияДляПрекращенияОперации", Comment = "", Synonym = "Количество ошибок отложенного проведения для прекращения операции")]
-    public DBNull КоличествоОшибокОтложенногоПроведенияДляПрекращенияОперации {get; set;}
+    // Format 10.0
+    public long КоличествоОшибокОтложенногоПроведенияДляПрекращенияОперации {get; set;}
     [Description1C8(Name = "ВыполнитьОтложенноеПроведениеДокументовПоРасписанию", Comment = "", Synonym = "Выполнить отложенное проведение документов по расписанию")]
     public bool ВыполнитьОтложенноеПроведениеДокументовПоРасписанию {get; set;}
     [Description1C8(Name = "УдалитьДинамическиИзменятьИнтервалМеждуОбменами", Comment = "", Synonym = "Динамически изменять интервал между обменами (не используется)")]
@@ -138,7 +147,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "АвтоматическиЗакачиватьПочтуПриОбмене", Comment = "", Synonym = "Автоматически закачивать почту при обмене")]
     public bool АвтоматическиЗакачиватьПочтуПриОбмене {get; set;}
     [Description1C8(Name = "МаксимальныйРазмерОтправляемогоПакетаЧерезПочту", Comment = "", Synonym = "Максимальный размер отправляемого пакета через почту")]
-    public DBNull МаксимальныйРазмерОтправляемогоПакетаЧерезПочту {get; set;}
+    // Format 10.0
+    public long МаксимальныйРазмерОтправляемогоПакетаЧерезПочту {get; set;}
     [Description1C8(Name = "Ответственный", Comment = "", Synonym = "Пользователь")]
     public DBNull Ответственный {get; set;}
     [Description1C8(Name = "ВыполнятьАвтоматически", Comment = "", Synonym = "Выполнять периодически")]
@@ -170,7 +180,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(50)]
     public string СерверПроксиFTP {get; set;}
     [Description1C8(Name = "ПортПроксиFTP", Comment = "", Synonym = "Порт прокси FTP")]
-    public DBNull ПортПроксиFTP {get; set;}
+    // Format 10.0
+    public long ПортПроксиFTP {get; set;}
     [Description1C8(Name = "ПротоколПроксиFTP", Comment = "", Synonym = "Протокол прокси FTP")]
     [StringLength(50)]
     public string ПротоколПроксиFTP {get; set;}

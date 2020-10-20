@@ -55,7 +55,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(28)]
     public string Отпечаток {get; set;}
     [Description1C8(Name = "ДанныеСертификата", Comment = "Двоичные данные сертификата", Synonym = "Данные сертификата")]
-    public DBNull ДанныеСертификата {get; set;}
+    // Сховище значень
+    public byte[] ДанныеСертификата {get; set;}
     [Description1C8(Name = "Программа", Comment = "", Synonym = "Программа")]
     public DBNull Программа {get; set;}
     [Description1C8(Name = "Отозван", Comment = "", Synonym = "Отозван")]

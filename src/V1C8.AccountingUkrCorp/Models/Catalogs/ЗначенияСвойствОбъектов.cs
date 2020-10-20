@@ -25,7 +25,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Вес", Comment = "", Synonym = "Весовой коэффициент")]
-    public DBNull Вес {get; set;}
+    // Format 10.2
+    public decimal Вес {get; set;}
     [Description1C8(Name = "ПолноеНаименование", Comment = "", Synonym = "Полное наименование")]
     public string ПолноеНаименование {get; set;}
     #endregion реквізити

@@ -25,7 +25,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
-    public DBNull РеквизитДопУпорядочивания {get; set;}
+    // Format 5.0
+    public long РеквизитДопУпорядочивания {get; set;}
     [Description1C8(Name = "НаименованиеПолное", Comment = "", Synonym = "Наименование полное")]
     public string НаименованиеПолное {get; set;}
     [Description1C8(Name = "ТарифнаяСетка", Comment = "", Synonym = "Тарифная сетка")]

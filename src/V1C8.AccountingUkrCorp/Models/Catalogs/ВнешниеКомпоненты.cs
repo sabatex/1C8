@@ -38,7 +38,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(260)]
     public string ИмяФайла {get; set;}
     [Description1C8(Name = "ХранилищеКомпоненты", Comment = "", Synonym = "Хранилище компоненты")]
-    public DBNull ХранилищеКомпоненты {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеКомпоненты {get; set;}
     [Description1C8(Name = "ОбновлятьСПортала1СИТС", Comment = "", Synonym = "Обновлять с сайта поставщика")]
     public bool ОбновлятьСПортала1СИТС {get; set;}
     [Description1C8(Name = "ОписаниеОшибки", Comment = "", Synonym = "Описание ошибки")]

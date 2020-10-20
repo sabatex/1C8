@@ -33,7 +33,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Округление", Comment = "", Synonym = "Округление")]
     public DBNull Округление {get; set;}
     [Description1C8(Name = "ПроцентВыплаты", Comment = "", Synonym = "Процент выплаты")]
-    public DBNull ПроцентВыплаты {get; set;}
+    // Format 3.0
+    public long ПроцентВыплаты {get; set;}
     [Description1C8(Name = "УдалитьИдентификаторОбъекта", Comment = "", Synonym = "(не использовать) Идентификатор объекта")]
     [StringLength(256)]
     public string УдалитьИдентификаторОбъекта {get; set;}

@@ -27,13 +27,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "МаксимальныйРазмер", Comment = "", Synonym = "Предел, МБ")]
-    public DBNull МаксимальныйРазмер {get; set;}
+    // Format 10.0
+    public long МаксимальныйРазмер {get; set;}
     [Description1C8(Name = "ПолныйПутьLinux", Comment = "", Synonym = "Полный путь linux")]
     public string ПолныйПутьLinux {get; set;}
     [Description1C8(Name = "ПолныйПутьWindows", Comment = "", Synonym = "Полный путь windows")]
     public string ПолныйПутьWindows {get; set;}
     [Description1C8(Name = "ПорядокЗаполнения", Comment = "", Synonym = "Порядок")]
-    public DBNull ПорядокЗаполнения {get; set;}
+    // Format 3.0
+    public long ПорядокЗаполнения {get; set;}
     #endregion реквізити
     }
 }

@@ -31,7 +31,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПредоставлятьОтпускВсемСотрудникам", Comment = "", Synonym = "Предоставлять отпуск всем сотрудникам")]
     public bool ПредоставлятьОтпускВсемСотрудникам {get; set;}
     [Description1C8(Name = "КоличествоДнейВГод", Comment = "", Synonym = "Количество дней в год")]
-    public DBNull КоличествоДнейВГод {get; set;}
+    // Format 2.0
+    public long КоличествоДнейВГод {get; set;}
     [Description1C8(Name = "НаименованиеПолное", Comment = "", Synonym = "Наименование для печати")]
     [StringLength(250)]
     public string НаименованиеПолное {get; set;}

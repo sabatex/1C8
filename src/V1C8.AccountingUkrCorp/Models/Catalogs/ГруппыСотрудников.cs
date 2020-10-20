@@ -27,7 +27,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ФормироватьАвтоматически", Comment = "", Synonym = "Формировать автоматически")]
     public bool ФормироватьАвтоматически {get; set;}
     [Description1C8(Name = "ХранилищеНастроек", Comment = "", Synonym = "Хранилище настроек")]
-    public DBNull ХранилищеНастроек {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеНастроек {get; set;}
     #endregion реквізити
     }
 }

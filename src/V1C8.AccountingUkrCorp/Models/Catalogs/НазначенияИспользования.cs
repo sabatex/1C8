@@ -25,9 +25,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "СрокПолезногоИспользования", Comment = "", Synonym = "Срок полезного использования")]
-    public DBNull СрокПолезногоИспользования {get; set;}
+    // Format 4.0
+    public long СрокПолезногоИспользования {get; set;}
     [Description1C8(Name = "Количество", Comment = "", Synonym = "Количество")]
-    public DBNull Количество {get; set;}
+    // Format 15.3
+    public decimal Количество {get; set;}
     [Description1C8(Name = "СпособОтраженияРасходов", Comment = "", Synonym = "Способ отражения расходов")]
     public DBNull СпособОтраженияРасходов {get; set;}
     [Description1C8(Name = "ВидМалоценногоАктива", Comment = "", Synonym = "Вид малоценного актива")]
@@ -42,7 +44,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ЕдиницаИзмерения", Comment = "(Общ)", Synonym = "Единица измерения")]
     public DBNull ЕдиницаИзмерения {get; set;}
     [Description1C8(Name = "Коэффициент", Comment = "(Общ)", Synonym = "Коэффициент")]
-    public DBNull Коэффициент {get; set;}
+    // Format 10.3
+    public decimal Коэффициент {get; set;}
     #endregion реквізити
     }
 }

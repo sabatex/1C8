@@ -37,7 +37,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Зашифрован", Comment = "", Synonym = "Зашифрован")]
     public bool Зашифрован {get; set;}
     [Description1C8(Name = "ИндексКартинки", Comment = "", Synonym = "Индекс значка")]
-    public DBNull ИндексКартинки {get; set;}
+    // Format 10.0
+    public long ИндексКартинки {get; set;}
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "ПодписанЭП", Comment = "", Synonym = "Подписан электронно")]
@@ -48,7 +49,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Редактирует", Comment = "", Synonym = "Редактирует")]
     public DBNull Редактирует {get; set;}
     [Description1C8(Name = "ТекстХранилище", Comment = "", Synonym = "Текст")]
-    public DBNull ТекстХранилище {get; set;}
+    // Сховище значень
+    public byte[] ТекстХранилище {get; set;}
     [Description1C8(Name = "ТекущаяВерсия", Comment = "", Synonym = "Активная версия")]
     public DBNull ТекущаяВерсия {get; set;}
     [Description1C8(Name = "Изменил", Comment = "", Synonym = "Отредактировал")]
@@ -61,11 +63,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(11)]
     public string УдалитьТекущаяВерсияКод {get; set;}
     [Description1C8(Name = "УдалитьТекущаяВерсияНомерВерсии", Comment = "", Synonym = "(не используется) Номер активной версии")]
-    public DBNull УдалитьТекущаяВерсияНомерВерсии {get; set;}
+    // Format 5.0
+    public long УдалитьТекущаяВерсияНомерВерсии {get; set;}
     [Description1C8(Name = "ПутьКФайлу", Comment = "", Synonym = "Путь к файлу")]
     public string ПутьКФайлу {get; set;}
     [Description1C8(Name = "Размер", Comment = "", Synonym = "Размер (байт)")]
-    public DBNull Размер {get; set;}
+    // Format 10.0
+    public long Размер {get; set;}
     [Description1C8(Name = "Расширение", Comment = "", Synonym = "Расширение")]
     [StringLength(10)]
     public string Расширение {get; set;}
@@ -78,7 +82,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СтатусИзвлеченияТекста", Comment = "", Synonym = "Статус извлечения текста")]
     public DBNull СтатусИзвлеченияТекста {get; set;}
     [Description1C8(Name = "ФайлХранилище", Comment = "", Synonym = "Временное хранилище файла")]
-    public DBNull ФайлХранилище {get; set;}
+    // Сховище значень
+    public byte[] ФайлХранилище {get; set;}
     #endregion реквізити
     }
 }

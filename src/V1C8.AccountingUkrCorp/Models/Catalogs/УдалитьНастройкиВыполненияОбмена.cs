@@ -46,9 +46,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(255)]
     public string ВыполнятьОбменПриПоявленииФайла {get; set;}
     [Description1C8(Name = "КоличествоЭлементовВТранзакцииНаВыгрузкуДанных", Comment = "", Synonym = "Количество элементов в транзакции на выгрузку данных")]
-    public DBNull КоличествоЭлементовВТранзакцииНаВыгрузкуДанных {get; set;}
+    // Format 10.0
+    public long КоличествоЭлементовВТранзакцииНаВыгрузкуДанных {get; set;}
     [Description1C8(Name = "КоличествоЭлементовВТранзакцииНаЗагрузкуДанных", Comment = "", Synonym = "Количество элементов в транзакции на загрузку данных")]
-    public DBNull КоличествоЭлементовВТранзакцииНаЗагрузкуДанных {get; set;}
+    // Format 10.0
+    public long КоличествоЭлементовВТранзакцииНаЗагрузкуДанных {get; set;}
     [Description1C8(Name = "УчетнаяЗаписьОтправкиСообщенияОбОшибке", Comment = "", Synonym = "Учетная запись отправки сообщения об ошибке")]
     [StringLength(10)]
     public string УчетнаяЗаписьОтправкиСообщенияОбОшибке {get; set;}

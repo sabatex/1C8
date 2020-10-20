@@ -33,7 +33,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДоговорКонтрагента", Comment = "", Synonym = "Договор контрагента")]
     public DBNull ДоговорКонтрагента {get; set;}
     [Description1C8(Name = "ПроцентБанковскойКомиссии", Comment = "", Synonym = "Процент банковской комиссии")]
-    public DBNull ПроцентБанковскойКомиссии {get; set;}
+    // Format 5.2
+    public decimal ПроцентБанковскойКомиссии {get; set;}
     [Description1C8(Name = "СчетДеньгиВПути", Comment = "", Synonym = "Счет деньги в пути")]
     public DBNull СчетДеньгиВПути {get; set;}
     #endregion реквізити

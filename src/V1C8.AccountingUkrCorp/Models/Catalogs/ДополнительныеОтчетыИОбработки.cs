@@ -51,9 +51,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Публикация", Comment = "", Synonym = "Публикация")]
     public DBNull Публикация {get; set;}
     [Description1C8(Name = "ХранилищеНастроек", Comment = "", Synonym = "Хранилище настроек")]
-    public DBNull ХранилищеНастроек {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеНастроек {get; set;}
     [Description1C8(Name = "ХранилищеОбработки", Comment = "", Synonym = "Хранилище обработки")]
-    public DBNull ХранилищеОбработки {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеОбработки {get; set;}
     [Description1C8(Name = "ИспользуетХранилищеВариантов", Comment = "Когда Истина то дополнительный отчет подключен к хранилищу вариантов 'ХранилищеВариантовОтчетов'.", Synonym = "Использует хранилище вариантов")]
     public bool ИспользуетХранилищеВариантов {get; set;}
     [Description1C8(Name = "ТеснаяИнтеграцияСФормойОтчета", Comment = "Когда Истина то у отчета есть программный интерфейс для тесной интеграции с общей формой 'ФормаОтчета'.", Synonym = "Тесная интеграция с формой отчета")]

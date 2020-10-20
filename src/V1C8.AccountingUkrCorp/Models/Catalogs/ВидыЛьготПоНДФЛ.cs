@@ -28,7 +28,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(3)]
     public string КодОтчетностиНДФЛ {get; set;}
     [Description1C8(Name = "РазмерНДФЛ", Comment = "", Synonym = "Размер льготы НДФЛ")]
-    public DBNull РазмерНДФЛ {get; set;}
+    // Format 5.2
+    public decimal РазмерНДФЛ {get; set;}
     [Description1C8(Name = "СпособПримененияНДФЛ", Comment = "", Synonym = "Способ применения льготы по НДФЛ")]
     public DBNull СпособПримененияНДФЛ {get; set;}
     [Description1C8(Name = "ГруппаЛьгот", Comment = "", Synonym = "Группа льгот")]

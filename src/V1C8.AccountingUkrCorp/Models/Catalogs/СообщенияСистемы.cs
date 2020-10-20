@@ -25,7 +25,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ТелоСообщения", Comment = "", Synonym = "Тело сообщения")]
-    public DBNull ТелоСообщения {get; set;}
+    // Сховище значень
+    public byte[] ТелоСообщения {get; set;}
     [Description1C8(Name = "Отправитель", Comment = "", Synonym = "Отправитель")]
     public DBNull Отправитель {get; set;}
     [Description1C8(Name = "Получатель", Comment = "", Synonym = "Получатель")]
@@ -33,7 +34,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Заблокировано", Comment = "", Synonym = "Заблокировано")]
     public bool Заблокировано {get; set;}
     [Description1C8(Name = "КоличествоПопытокОбработкиСообщения", Comment = "", Synonym = "Количество попыток обработки сообщения")]
-    public DBNull КоличествоПопытокОбработкиСообщения {get; set;}
+    // Format 2.0
+    public long КоличествоПопытокОбработкиСообщения {get; set;}
     [Description1C8(Name = "ПодробноеПредставлениеОшибки", Comment = "", Synonym = "Подробное представление ошибки")]
     public string ПодробноеПредставлениеОшибки {get; set;}
     [Description1C8(Name = "ЭтоБыстроеСообщение", Comment = "", Synonym = "Это быстрое сообщение")]

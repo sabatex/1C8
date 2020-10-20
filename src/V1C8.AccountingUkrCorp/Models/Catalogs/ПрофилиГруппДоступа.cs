@@ -25,7 +25,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ИдентификаторПоставляемыхДанных", Comment = "", Synonym = "Идентификатор поставляемых данных")]
-    public DBNull ИдентификаторПоставляемыхДанных {get; set;}
+    public Guid ИдентификаторПоставляемыхДанных {get; set;}
     [Description1C8(Name = "ПоставляемыйПрофильИзменен", Comment = "", Synonym = "Поставляемый профиль изменен")]
     public bool ПоставляемыйПрофильИзменен {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]

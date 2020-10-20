@@ -33,7 +33,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ГрафикРаботыСотрудников", Comment = "", Synonym = "График работы")]
     public DBNull ГрафикРаботыСотрудников {get; set;}
     [Description1C8(Name = "КоличествоСтавок", Comment = "", Synonym = "Количество ставок")]
-    public DBNull КоличествоСтавок {get; set;}
+    // Format 7.2
+    public decimal КоличествоСтавок {get; set;}
     [Description1C8(Name = "Утверждена", Comment = "", Synonym = "Утверждена")]
     public bool Утверждена {get; set;}
     [Description1C8(Name = "ДатаУтверждения", Comment = "", Synonym = "Дата утверждения")]
@@ -43,19 +44,25 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДатаЗакрытия", Comment = "", Synonym = "Дата закрытия")]
     public DateTime ДатаЗакрытия {get; set;}
     [Description1C8(Name = "ОкладТариф", Comment = "", Synonym = "Оклад тариф")]
-    public DBNull ОкладТариф {get; set;}
+    // Format 15.3
+    public decimal ОкладТариф {get; set;}
     [Description1C8(Name = "ОкладТарифМин", Comment = "", Synonym = "Оклад тариф мин")]
-    public DBNull ОкладТарифМин {get; set;}
+    // Format 15.3
+    public decimal ОкладТарифМин {get; set;}
     [Description1C8(Name = "ОкладТарифМакс", Comment = "", Synonym = "Оклад тариф макс")]
-    public DBNull ОкладТарифМакс {get; set;}
+    // Format 15.3
+    public decimal ОкладТарифМакс {get; set;}
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "ФОТ", Comment = "", Synonym = "ФОТ")]
-    public DBNull ФОТ {get; set;}
+    // Format 19.2
+    public decimal ФОТ {get; set;}
     [Description1C8(Name = "ФОТМин", Comment = "", Synonym = "ФОТ, мин.")]
-    public DBNull ФОТМин {get; set;}
+    // Format 19.2
+    public decimal ФОТМин {get; set;}
     [Description1C8(Name = "ФОТМакс", Comment = "", Synonym = "ФОТ, макс.")]
-    public DBNull ФОТМакс {get; set;}
+    // Format 19.2
+    public decimal ФОТМакс {get; set;}
     [Description1C8(Name = "УсловияПриема", Comment = "", Synonym = "Условия приема на работу, характер работы")]
     public string УсловияПриема {get; set;}
     [Description1C8(Name = "СпособОтраженияЗарплатыВБухучете", Comment = "", Synonym = "Способ отражения")]
@@ -69,15 +76,19 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "РазрядКатегорияНадбавки", Comment = "", Synonym = "Разряд (категория) надбавки")]
     public DBNull РазрядКатегорияНадбавки {get; set;}
     [Description1C8(Name = "НадбавкаЗаВредностьРазмер", Comment = "", Synonym = "Надбавка за вредность размер")]
-    public DBNull НадбавкаЗаВредностьРазмер {get; set;}
+    // Format 15.2
+    public decimal НадбавкаЗаВредностьРазмер {get; set;}
     [Description1C8(Name = "НадбавкаЗаВредностьРазмерМин", Comment = "", Synonym = "Надбавка за вредность размер мин")]
-    public DBNull НадбавкаЗаВредностьРазмерМин {get; set;}
+    // Format 15.2
+    public decimal НадбавкаЗаВредностьРазмерМин {get; set;}
     [Description1C8(Name = "НадбавкаЗаВредностьРазмерМакс", Comment = "", Synonym = "Надбавка за вредность размер макс")]
-    public DBNull НадбавкаЗаВредностьРазмерМакс {get; set;}
+    // Format 15.2
+    public decimal НадбавкаЗаВредностьРазмерМакс {get; set;}
     [Description1C8(Name = "ВыплачиваетсяНадбавкаЗаВредность", Comment = "", Synonym = "Выплачивается надбавка за вредность")]
     public bool ВыплачиваетсяНадбавкаЗаВредность {get; set;}
     [Description1C8(Name = "ПроцентНадбавкиЗаВредность", Comment = "", Synonym = "% надбавки")]
-    public DBNull ПроцентНадбавкиЗаВредность {get; set;}
+    // Format 5.2
+    public decimal ПроцентНадбавкиЗаВредность {get; set;}
     #endregion реквізити
     }
 }

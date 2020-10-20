@@ -30,9 +30,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "МинимальноДопустимыйУровень", Comment = "", Synonym = "Минимально допустимый уровень")]
     public DBNull МинимальноДопустимыйУровень {get; set;}
     [Description1C8(Name = "Приоритет", Comment = "", Synonym = "Приоритет")]
-    public DBNull Приоритет {get; set;}
+    // Format 15.0
+    public long Приоритет {get; set;}
     [Description1C8(Name = "ЦелевоеВремя", Comment = "", Synonym = "Целевое время")]
-    public DBNull ЦелевоеВремя {get; set;}
+    // Format 15.2
+    public decimal ЦелевоеВремя {get; set;}
     [Description1C8(Name = "ИмяХеш", Comment = "", Synonym = "Имя хеш")]
     [StringLength(40)]
     public string ИмяХеш {get; set;}

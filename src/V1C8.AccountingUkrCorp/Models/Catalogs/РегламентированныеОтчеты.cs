@@ -32,11 +32,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Описание", Comment = "Любая дополнительная информация", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "Периоды", Comment = "", Synonym = "Периоды")]
-    public DBNull Периоды {get; set;}
+    // Сховище значень
+    public byte[] Периоды {get; set;}
     [Description1C8(Name = "ВнешнийОтчетИспользовать", Comment = "", Synonym = "Использовать внешний отчет")]
     public bool ВнешнийОтчетИспользовать {get; set;}
     [Description1C8(Name = "ВнешнийОтчетХранилище", Comment = "", Synonym = "Хранилище с внешним отчетом")]
-    public DBNull ВнешнийОтчетХранилище {get; set;}
+    // Сховище значень
+    public byte[] ВнешнийОтчетХранилище {get; set;}
     [Description1C8(Name = "ВнешнийОтчетВерсия", Comment = "", Synonym = "Версия внешнего отчета")]
     [StringLength(32)]
     public string ВнешнийОтчетВерсия {get; set;}

@@ -27,7 +27,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОбщевойсковоеЗвание", Comment = "", Synonym = "Общевойсковое звание")]
     public DBNull ОбщевойсковоеЗвание {get; set;}
     [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
-    public DBNull РеквизитДопУпорядочивания {get; set;}
+    // Format 5.0
+    public long РеквизитДопУпорядочивания {get; set;}
     [Description1C8(Name = "Состав", Comment = "", Synonym = "Состав")]
     public DBNull Состав {get; set;}
     #endregion реквізити

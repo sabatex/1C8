@@ -33,7 +33,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "FTPПассивноеСоединение", Comment = "", Synonym = "Пассивное соединение")]
     public bool FTPПассивноеСоединение {get; set;}
     [Description1C8(Name = "FTPПорт", Comment = "", Synonym = "Порт")]
-    public DBNull FTPПорт {get; set;}
+    // Format 5.0
+    public long FTPПорт {get; set;}
     [Description1C8(Name = "FTPСервер", Comment = "", Synonym = "Сервер")]
     [StringLength(100)]
     public string FTPСервер {get; set;}
@@ -60,7 +61,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ИспользоватьЭлектроннуюПочту", Comment = "", Synonym = "Отправлять по электронной почте:")]
     public bool ИспользоватьЭлектроннуюПочту {get; set;}
     [Description1C8(Name = "КартинкиПисьмаВФорматеHTML", Comment = "", Synonym = "Картинки письма в формате HTML")]
-    public DBNull КартинкиПисьмаВФорматеHTML {get; set;}
+    // Сховище значень
+    public byte[] КартинкиПисьмаВФорматеHTML {get; set;}
     [Description1C8(Name = "Личная", Comment = "", Synonym = "Личная")]
     public bool Личная {get; set;}
     [Description1C8(Name = "Папка", Comment = "", Synonym = "Папка")]
@@ -74,7 +76,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Подготовлена", Comment = "", Synonym = "Подготовлена")]
     public bool Подготовлена {get; set;}
     [Description1C8(Name = "РегламентноеЗадание", Comment = "", Synonym = "Регламентное задание")]
-    public DBNull РегламентноеЗадание {get; set;}
+    public Guid РегламентноеЗадание {get; set;}
     [Description1C8(Name = "СетевойКаталогLinux", Comment = "", Synonym = "Сетевой каталог linux")]
     [StringLength(200)]
     public string СетевойКаталогLinux {get; set;}

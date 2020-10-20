@@ -25,7 +25,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "ХранилищеВнешнейОбработки", Comment = "", Synonym = "Хранилище внешней обработки")]
-    public DBNull ХранилищеВнешнейОбработки {get; set;}
+    // Сховище значень
+    public byte[] ХранилищеВнешнейОбработки {get; set;}
     [Description1C8(Name = "ВидОбработки", Comment = "", Synonym = "Вид обработки")]
     [StringLength(10)]
     public string ВидОбработки {get; set;}

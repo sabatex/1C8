@@ -39,7 +39,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "Изменил", Comment = "Автор - пользователь, добавивший файл", Synonym = "Изменил")]
     public DBNull Изменил {get; set;}
     [Description1C8(Name = "ИндексКартинки", Comment = "Индекс иконки, соответствующей расширению файла, для показа в списке", Synonym = "Индекс картинки")]
-    public DBNull ИндексКартинки {get; set;}
+    // Format 10.0
+    public long ИндексКартинки {get; set;}
     [Description1C8(Name = "Описание", Comment = "Описание файла", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "ПодписанЭП", Comment = "", Synonym = "Подписан ЭП")]
@@ -47,7 +48,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПутьКФайлу", Comment = "Дополнительный путь к файлу на диске (в случае если ТипХраненияФайла - на диске)", Synonym = "Путь к файлу")]
     public string ПутьКФайлу {get; set;}
     [Description1C8(Name = "Размер", Comment = "Размер файла", Synonym = "Размер")]
-    public DBNull Размер {get; set;}
+    // Format 10.0
+    public long Размер {get; set;}
     [Description1C8(Name = "Расширение", Comment = "Расширение файла версии", Synonym = "Расширение")]
     [StringLength(10)]
     public string Расширение {get; set;}
@@ -56,13 +58,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СтатусИзвлеченияТекста", Comment = "", Synonym = "Статус извлечения текста")]
     public DBNull СтатусИзвлеченияТекста {get; set;}
     [Description1C8(Name = "ТекстХранилище", Comment = "Текст, извлеченный из файла - для полнотекстового поиска", Synonym = "Текст")]
-    public DBNull ТекстХранилище {get; set;}
+    // Сховище значень
+    public byte[] ТекстХранилище {get; set;}
     [Description1C8(Name = "ТипХраненияФайла", Comment = "Где хранятся файлы - в базе как ХранилищеЗначения или в каталоге на диске", Synonym = "Тип хранения файла")]
     public DBNull ТипХраненияФайла {get; set;}
     [Description1C8(Name = "Том", Comment = "Ссылка на том (в случае если ТипХраненияФайла - на диске)", Synonym = "Том")]
     public DBNull Том {get; set;}
     [Description1C8(Name = "ФайлХранилище", Comment = "Служебное поле для обмена файлами в РИБ", Synonym = "Файл хранилище")]
-    public DBNull ФайлХранилище {get; set;}
+    // Сховище значень
+    public byte[] ФайлХранилище {get; set;}
     [Description1C8(Name = "ХранитьВерсии", Comment = "", Synonym = "Хранить версии")]
     public bool ХранитьВерсии {get; set;}
     #endregion реквізити

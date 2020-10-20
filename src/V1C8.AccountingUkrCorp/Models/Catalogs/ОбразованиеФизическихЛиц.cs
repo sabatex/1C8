@@ -55,7 +55,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string НаименованиеКурса {get; set;}
     [Description1C8(Name = "КоличествоЧасов", Comment = "", Synonym = "Количество часов")]
-    public DBNull КоличествоЧасов {get; set;}
+    // Format 4.0
+    public long КоличествоЧасов {get; set;}
     [Description1C8(Name = "ВидДополнительногоОбучения", Comment = "", Synonym = "Вид дополнительного обучения")]
     public DBNull ВидДополнительногоОбучения {get; set;}
     [Description1C8(Name = "Основание", Comment = "", Synonym = "Основание")]

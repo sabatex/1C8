@@ -30,7 +30,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ДатаДобавления", Comment = "", Synonym = "Дата добавления")]
     public DateTime ДатаДобавления {get; set;}
     [Description1C8(Name = "ХранимыйФайл", Comment = "", Synonym = "Хранимый файл")]
-    public DBNull ХранимыйФайл {get; set;}
+    // Сховище значень
+    public byte[] ХранимыйФайл {get; set;}
     [Description1C8(Name = "ПутьКФайлу", Comment = "", Synonym = "Путь к файлу")]
     public string ПутьКФайлу {get; set;}
     [Description1C8(Name = "Том", Comment = "", Synonym = "Том")]
@@ -38,7 +39,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ТипХраненияФайла", Comment = "", Synonym = "Тип хранения файла")]
     public DBNull ТипХраненияФайла {get; set;}
     [Description1C8(Name = "ИдентификаторФайла", Comment = "", Synonym = "Идентификатор файла")]
-    public DBNull ИдентификаторФайла {get; set;}
+    public Guid ИдентификаторФайла {get; set;}
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     #endregion реквізити

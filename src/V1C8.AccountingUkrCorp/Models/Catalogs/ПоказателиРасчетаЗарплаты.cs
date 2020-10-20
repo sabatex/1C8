@@ -43,7 +43,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ВидСтажа", Comment = "", Synonym = "Вид стажа")]
     public DBNull ВидСтажа {get; set;}
     [Description1C8(Name = "Точность", Comment = "", Synonym = "Точность")]
-    public DBNull Точность {get; set;}
+    // Format 1.0
+    public long Точность {get; set;}
     [Description1C8(Name = "ОтображатьВДокументахНачисления", Comment = "", Synonym = "Отображать в документах начисления зарплаты")]
     public bool ОтображатьВДокументахНачисления {get; set;}
     [Description1C8(Name = "ИдентификаторСлужебный", Comment = "", Synonym = "Идентификатор служебный")]
@@ -59,7 +60,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НеИспользуется", Comment = "", Synonym = "Показатель больше не используется")]
     public bool НеИспользуется {get; set;}
     [Description1C8(Name = "РеквизитДопУпорядочивания", Comment = "", Synonym = "Порядок")]
-    public DBNull РеквизитДопУпорядочивания {get; set;}
+    // Format 5.0
+    public long РеквизитДопУпорядочивания {get; set;}
     #endregion реквізити
     }
 }

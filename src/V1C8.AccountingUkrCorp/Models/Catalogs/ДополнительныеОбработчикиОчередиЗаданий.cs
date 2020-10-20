@@ -25,9 +25,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "КоличествоЗаданий", Comment = "", Synonym = "Количество заданий")]
-    public DBNull КоличествоЗаданий {get; set;}
+    // Format 2.0
+    public long КоличествоЗаданий {get; set;}
     [Description1C8(Name = "ДлительностьЗадания", Comment = "", Synonym = "Длительность задания")]
-    public DBNull ДлительностьЗадания {get; set;}
+    // Format 4.0
+    public long ДлительностьЗадания {get; set;}
     #endregion реквізити
     }
 }

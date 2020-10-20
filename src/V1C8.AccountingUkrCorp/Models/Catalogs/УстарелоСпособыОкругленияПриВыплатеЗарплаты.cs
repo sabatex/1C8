@@ -25,7 +25,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     #endregion Стандартні реквізити
     #region реквізити
     [Description1C8(Name = "Точность", Comment = "", Synonym = "Точность")]
-    public DBNull Точность {get; set;}
+    // Format 7.2
+    public decimal Точность {get; set;}
     #endregion реквізити
     }
 }

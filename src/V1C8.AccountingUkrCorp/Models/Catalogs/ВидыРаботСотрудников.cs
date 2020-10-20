@@ -28,9 +28,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(10)]
     public string ЕдиницаИзмерения {get; set;}
     [Description1C8(Name = "Трудоемкость", Comment = "", Synonym = "Трудоемкость")]
-    public DBNull Трудоемкость {get; set;}
+    // Format 15.3
+    public decimal Трудоемкость {get; set;}
     [Description1C8(Name = "КратностьТрудоемкости", Comment = "", Synonym = "Кратность трудоемкости")]
-    public DBNull КратностьТрудоемкости {get; set;}
+    // Format 15.3
+    public decimal КратностьТрудоемкости {get; set;}
     #endregion реквізити
     }
 }

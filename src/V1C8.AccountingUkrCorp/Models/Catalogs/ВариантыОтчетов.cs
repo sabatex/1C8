@@ -42,7 +42,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "НаименованияПолей", Comment = "", Synonym = "Наименования полей")]
     public string НаименованияПолей {get; set;}
     [Description1C8(Name = "Настройки", Comment = "", Synonym = "Настройки")]
-    public DBNull Настройки {get; set;}
+    // Сховище значень
+    public byte[] Настройки {get; set;}
     [Description1C8(Name = "Описание", Comment = "", Synonym = "Описание")]
     public string Описание {get; set;}
     [Description1C8(Name = "Отчет", Comment = "", Synonym = "Отчет")]

@@ -28,7 +28,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(430)]
     public string ИмяПрограммы {get; set;}
     [Description1C8(Name = "ТипПрограммы", Comment = "", Synonym = "Тип программы")]
-    public DBNull ТипПрограммы {get; set;}
+    // Format 9.0
+    public long ТипПрограммы {get; set;}
     [Description1C8(Name = "АлгоритмПодписи", Comment = "", Synonym = "Алгоритм подписи")]
     [StringLength(100)]
     public string АлгоритмПодписи {get; set;}

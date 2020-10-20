@@ -30,7 +30,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(255)]
     public string АдресЭлектроннойПочты {get; set;}
     [Description1C8(Name = "ВремяОжидания", Comment = "", Synonym = "Время ожидания сервера (сек)")]
-    public DBNull ВремяОжидания {get; set;}
+    // Format 3.0
+    public long ВремяОжидания {get; set;}
     [Description1C8(Name = "ИмяПользователя", Comment = "Имя отправителя", Synonym = "Имя пользователя")]
     [StringLength(100)]
     public string ИмяПользователя {get; set;}
@@ -49,7 +50,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ОставлятьКопииСообщенийНаСервере", Comment = "", Synonym = "Оставлять копии сообщений на сервере")]
     public bool ОставлятьКопииСообщенийНаСервере {get; set;}
     [Description1C8(Name = "ПериодХраненияСообщенийНаСервере", Comment = "", Synonym = "Период хранения сообщений на сервере")]
-    public DBNull ПериодХраненияСообщенийНаСервере {get; set;}
+    // Format 3.0
+    public long ПериодХраненияСообщенийНаСервере {get; set;}
     [Description1C8(Name = "Пользователь", Comment = "", Synonym = "Пользователь")]
     [StringLength(100)]
     public string Пользователь {get; set;}
@@ -57,9 +59,11 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [StringLength(100)]
     public string ПользовательSMTP {get; set;}
     [Description1C8(Name = "ПортСервераВходящейПочты", Comment = "", Synonym = "Порт сервера входящей почты")]
-    public DBNull ПортСервераВходящейПочты {get; set;}
+    // Format 5.0
+    public long ПортСервераВходящейПочты {get; set;}
     [Description1C8(Name = "ПортСервераИсходящейПочты", Comment = "", Synonym = "Порт сервера исходящей почты")]
-    public DBNull ПортСервераИсходящейПочты {get; set;}
+    // Format 5.0
+    public long ПортСервераИсходящейПочты {get; set;}
     [Description1C8(Name = "ПротоколВходящейПочты", Comment = "", Synonym = "Протокол входящей почты")]
     [StringLength(4)]
     public string ПротоколВходящейПочты {get; set;}

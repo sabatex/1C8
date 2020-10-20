@@ -35,11 +35,13 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "УдалитьЗашифрован", Comment = "", Synonym = "(не используется) Зашифрована")]
     public bool УдалитьЗашифрован {get; set;}
     [Description1C8(Name = "ИндексКартинки", Comment = "", Synonym = "Индекс значка")]
-    public DBNull ИндексКартинки {get; set;}
+    // Format 10.0
+    public long ИндексКартинки {get; set;}
     [Description1C8(Name = "Комментарий", Comment = "", Synonym = "Комментарий")]
     public string Комментарий {get; set;}
     [Description1C8(Name = "НомерВерсии", Comment = "", Synonym = "Номер")]
-    public DBNull НомерВерсии {get; set;}
+    // Format 5.0
+    public long НомерВерсии {get; set;}
     [Description1C8(Name = "УдалитьПодписанЭП", Comment = "", Synonym = "(не используется) Подписана электронно")]
     public bool УдалитьПодписанЭП {get; set;}
     [Description1C8(Name = "ПолноеНаименование", Comment = "", Synonym = "Полное наименование")]
@@ -48,7 +50,8 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "ПутьКФайлу", Comment = "", Synonym = "Путь к файлу")]
     public string ПутьКФайлу {get; set;}
     [Description1C8(Name = "Размер", Comment = "", Synonym = "Размер (байт)")]
-    public DBNull Размер {get; set;}
+    // Format 10.0
+    public long Размер {get; set;}
     [Description1C8(Name = "Расширение", Comment = "", Synonym = "Расширение")]
     [StringLength(10)]
     public string Расширение {get; set;}
@@ -57,13 +60,15 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
     [Description1C8(Name = "СтатусИзвлеченияТекста", Comment = "", Synonym = "Статус извлечения текста")]
     public DBNull СтатусИзвлеченияТекста {get; set;}
     [Description1C8(Name = "ТекстХранилище", Comment = "", Synonym = "Текст")]
-    public DBNull ТекстХранилище {get; set;}
+    // Сховище значень
+    public byte[] ТекстХранилище {get; set;}
     [Description1C8(Name = "ТипХраненияФайла", Comment = "", Synonym = "Тип хранения версии файла")]
     public DBNull ТипХраненияФайла {get; set;}
     [Description1C8(Name = "Том", Comment = "", Synonym = "Том")]
     public DBNull Том {get; set;}
     [Description1C8(Name = "ФайлХранилище", Comment = "", Synonym = "Временное хранилище версии файла")]
-    public DBNull ФайлХранилище {get; set;}
+    // Сховище значень
+    public byte[] ФайлХранилище {get; set;}
     #endregion реквізити
     }
 }

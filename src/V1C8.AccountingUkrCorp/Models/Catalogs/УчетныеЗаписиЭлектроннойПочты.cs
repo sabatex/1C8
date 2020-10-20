@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UchetnyeZapysyЕlektronnoiPochty")]
     [Description1C8(Name = "УчетныеЗаписиЭлектроннойПочты", Comment = "", Synonym = "Учетные записи электронной почты")]
-    public class УчетныеЗаписиЭлектроннойПочты
+    public class УчетныеЗаписиЭлектроннойПочты:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

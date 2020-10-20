@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NemateryalnyeAktyvy")]
     [Description1C8(Name = "НематериальныеАктивы", Comment = "", Synonym = "Нематериальные активы")]
-    public class НематериальныеАктивы
+    public class НематериальныеАктивы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

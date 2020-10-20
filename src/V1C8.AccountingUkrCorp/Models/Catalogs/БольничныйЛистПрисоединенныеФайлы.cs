@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("BolnychnyiLystPrysoedynennyeFaily")]
     [Description1C8(Name = "БольничныйЛистПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Больничный лист)")]
-    public class БольничныйЛистПрисоединенныеФайлы
+    public class БольничныйЛистПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

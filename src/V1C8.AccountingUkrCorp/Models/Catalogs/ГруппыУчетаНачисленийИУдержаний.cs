@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("HruppyUchetaNachyslenyiYUderzhanyi")]
     [Description1C8(Name = "ГруппыУчетаНачисленийИУдержаний", Comment = "", Synonym = "Группы учета начислений и удержаний")]
-    public class ГруппыУчетаНачисленийИУдержаний
+    public class ГруппыУчетаНачисленийИУдержаний:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

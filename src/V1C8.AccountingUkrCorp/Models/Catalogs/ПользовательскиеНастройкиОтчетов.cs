@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PolzovatelskyeNastroikyOtchetov")]
     [Description1C8(Name = "ПользовательскиеНастройкиОтчетов", Comment = "Используется для поиска настроек. Содержит только представления. Не содержит самих настроек.", Synonym = "Пользовательские настройки отчетов")]
-    public class ПользовательскиеНастройкиОтчетов
+    public class ПользовательскиеНастройкиОтчетов:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

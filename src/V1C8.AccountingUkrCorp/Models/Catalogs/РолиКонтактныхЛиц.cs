@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RolyKontaktnykhLyts")]
     [Description1C8(Name = "РолиКонтактныхЛиц", Comment = "", Synonym = "Роли контактных лиц")]
-    public class РолиКонтактныхЛиц
+    public class РолиКонтактныхЛиц:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

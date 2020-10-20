@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NaboryStateiNalohovykhDeklaratsyi")]
     [Description1C8(Name = "НаборыСтатейНалоговыхДеклараций", Comment = "", Synonym = "Наборы статей налоговых деклараций")]
-    public class НаборыСтатейНалоговыхДеклараций
+    public class НаборыСтатейНалоговыхДеклараций:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

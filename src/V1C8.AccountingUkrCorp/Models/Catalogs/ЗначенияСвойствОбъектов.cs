@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ZnachenyiaSvoistvObektov")]
     [Description1C8(Name = "ЗначенияСвойствОбъектов", Comment = "", Synonym = "Дополнительные значения")]
-    public class ЗначенияСвойствОбъектов
+    public class ЗначенияСвойствОбъектов:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

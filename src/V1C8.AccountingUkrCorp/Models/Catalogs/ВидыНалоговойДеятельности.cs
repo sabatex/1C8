@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyNalohovoiDeiatelnosty")]
     [Description1C8(Name = "ВидыНалоговойДеятельности", Comment = "(Регл) Виды деятельности по налогу на прибыль", Synonym = "Виды налоговой деятельности")]
-    public class ВидыНалоговойДеятельности
+    public class ВидыНалоговойДеятельности:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

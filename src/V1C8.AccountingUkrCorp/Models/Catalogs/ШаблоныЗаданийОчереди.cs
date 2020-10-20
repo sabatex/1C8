@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ShablonyZadanyiOcheredy")]
     [Description1C8(Name = "ШаблоныЗаданийОчереди", Comment = "", Synonym = "Шаблоны заданий очереди")]
-    public class ШаблоныЗаданийОчереди
+    public class ШаблоныЗаданийОчереди:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

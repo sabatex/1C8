@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Subkonto")]
     [Description1C8(Name = "Субконто", Comment = "", Synonym = "Субконто")]
-    public class Субконто
+    public class Субконто:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

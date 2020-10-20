@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KadrovyiPerevodPrysoedynennyeFaily")]
     [Description1C8(Name = "КадровыйПереводПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Кадровый перевод)")]
-    public class КадровыйПереводПрисоединенныеФайлы
+    public class КадровыйПереводПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

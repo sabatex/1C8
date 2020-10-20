@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UdalytVneshnyeObrabotky")]
     [Description1C8(Name = "УдалитьВнешниеОбработки", Comment = "", Synonym = "(не используется) Внешние обработки, печатные формы, обработки по заполнению табличных частей")]
-    public class УдалитьВнешниеОбработки
+    public class УдалитьВнешниеОбработки:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

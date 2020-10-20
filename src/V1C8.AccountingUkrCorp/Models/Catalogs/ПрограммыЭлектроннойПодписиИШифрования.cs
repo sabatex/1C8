@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ProhrammyЕlektronnoiPodpysyYShyfrovanyia")]
     [Description1C8(Name = "ПрограммыЭлектроннойПодписиИШифрования", Comment = "", Synonym = "Программы электронной подписи и шифрования")]
-    public class ПрограммыЭлектроннойПодписиИШифрования
+    public class ПрограммыЭлектроннойПодписиИШифрования:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

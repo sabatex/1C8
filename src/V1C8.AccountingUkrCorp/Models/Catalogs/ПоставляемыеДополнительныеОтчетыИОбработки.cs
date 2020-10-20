@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PostavliaemyeDopolnytelnyeOtchetyYObrabotky")]
     [Description1C8(Name = "ПоставляемыеДополнительныеОтчетыИОбработки", Comment = "", Synonym = "Поставляемые дополнительные отчеты и обработки")]
-    public class ПоставляемыеДополнительныеОтчетыИОбработки
+    public class ПоставляемыеДополнительныеОтчетыИОбработки:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

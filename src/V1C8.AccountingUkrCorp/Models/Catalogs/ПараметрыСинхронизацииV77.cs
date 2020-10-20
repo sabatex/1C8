@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ParametrySynkhronyzatsyyV77")]
     [Description1C8(Name = "ПараметрыСинхронизацииV77", Comment = "", Synonym = "Параметры синхронизации с v7.7")]
-    public class ПараметрыСинхронизацииV77
+    public class ПараметрыСинхронизацииV77:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

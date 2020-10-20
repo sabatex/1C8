@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SposobyOtrazhenyiaRaskhodovPoAmortyzatsyy")]
     [Description1C8(Name = "СпособыОтраженияРасходовПоАмортизации", Comment = "(Общ)", Synonym = "Способы отражения расходов по амортизации и улучшению")]
-    public class СпособыОтраженияРасходовПоАмортизации
+    public class СпособыОтраженияРасходовПоАмортизации:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

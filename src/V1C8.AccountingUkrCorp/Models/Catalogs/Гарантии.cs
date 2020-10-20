@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Harantyy")]
     [Description1C8(Name = "Гарантии", Comment = "(Регл)", Synonym = "Гарантии")]
-    public class Гарантии
+    public class Гарантии:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

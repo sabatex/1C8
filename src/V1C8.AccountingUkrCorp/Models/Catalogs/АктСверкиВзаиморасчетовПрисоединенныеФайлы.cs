@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("AktSverkyVzaymoraschetovPrysoedynennyeFaily")]
     [Description1C8(Name = "АктСверкиВзаиморасчетовПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Акт сверки расчетов с контрагентом)")]
-    public class АктСверкиВзаиморасчетовПрисоединенныеФайлы
+    public class АктСверкиВзаиморасчетовПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

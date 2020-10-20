@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SoobshchenyiaSystemy")]
     [Description1C8(Name = "СообщенияСистемы", Comment = "", Synonym = "Сообщения системы")]
-    public class СообщенияСистемы
+    public class СообщенияСистемы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

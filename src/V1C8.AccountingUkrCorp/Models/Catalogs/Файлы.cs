@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Faily")]
     [Description1C8(Name = "Файлы", Comment = "Файлы в папках", Synonym = "Файлы")]
-    public class Файлы
+    public class Файлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NalohovaiaNakladnaiaPrysoedynennyeFaily")]
     [Description1C8(Name = "НалоговаяНакладнаяПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Налоговая накладная)")]
-    public class НалоговаяНакладнаяПрисоединенныеФайлы
+    public class НалоговаяНакладнаяПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

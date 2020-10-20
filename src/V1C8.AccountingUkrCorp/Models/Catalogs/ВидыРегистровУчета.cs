@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyRehystrovUcheta")]
     [Description1C8(Name = "ВидыРегистровУчета", Comment = "", Synonym = "Виды регистров учета")]
-    public class ВидыРегистровУчета
+    public class ВидыРегистровУчета:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

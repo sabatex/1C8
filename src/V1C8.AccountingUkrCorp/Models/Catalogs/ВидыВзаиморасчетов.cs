@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyVzaymoraschetov")]
     [Description1C8(Name = "ВидыВзаиморасчетов", Comment = "", Synonym = "Виды взаиморасчетов")]
-    public class ВидыВзаиморасчетов
+    public class ВидыВзаиморасчетов:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

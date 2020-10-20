@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NalohovyeNaznachenyiaAktyvovYZatrat")]
     [Description1C8(Name = "НалоговыеНазначенияАктивовИЗатрат", Comment = "(Регл)", Synonym = "Налоговые назначения активов и затрат")]
-    public class НалоговыеНазначенияАктивовИЗатрат
+    public class НалоговыеНазначенияАктивовИЗатрат:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

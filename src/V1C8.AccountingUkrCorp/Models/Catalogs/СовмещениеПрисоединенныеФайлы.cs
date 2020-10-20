@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SovmeshchenyePrysoedynennyeFaily")]
     [Description1C8(Name = "СовмещениеПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Совмещение)")]
-    public class СовмещениеПрисоединенныеФайлы
+    public class СовмещениеПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

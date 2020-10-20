@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UstareloNachyslenyeZarplatyPrysoedynennyeFaily")]
     [Description1C8(Name = "УстарелоНачислениеЗарплатыПрисоединенныеФайлы", Comment = "", Synonym = "ѳ(устарело) Присоединенные файлы (Начисление зарплаты)")]
-    public class УстарелоНачислениеЗарплатыПрисоединенныеФайлы
+    public class УстарелоНачислениеЗарплатыПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YdentyfykatoryObektovRasshyrenyi")]
     [Description1C8(Name = "ИдентификаторыОбъектовРасширений", Comment = "", Synonym = "Идентификаторы объектов расширений")]
-    public class ИдентификаторыОбъектовРасширений
+    public class ИдентификаторыОбъектовРасширений:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("DohovorZaimaSotrudnykuPrysoedynennyeFaily")]
     [Description1C8(Name = "ДоговорЗаймаСотрудникуПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Договор займа сотруднику)")]
-    public class ДоговорЗаймаСотрудникуПрисоединенныеФайлы
+    public class ДоговорЗаймаСотрудникуПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

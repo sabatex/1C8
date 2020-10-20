@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VersyyFailov")]
     [Description1C8(Name = "ВерсииФайлов", Comment = "", Synonym = "Версии файлов")]
-    public class ВерсииФайлов
+    public class ВерсииФайлов:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PrykhodnyiKassovyiOrderPrysoedynennyeFaily")]
     [Description1C8(Name = "ПриходныйКассовыйОрдерПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Приходный кассовый ордер)")]
-    public class ПриходныйКассовыйОрдерПрисоединенныеФайлы
+    public class ПриходныйКассовыйОрдерПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

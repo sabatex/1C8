@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VneshnyePolzovately")]
     [Description1C8(Name = "ВнешниеПользователи", Comment = "", Synonym = "Внешние пользователи")]
-    public class ВнешниеПользователи
+    public class ВнешниеПользователи:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

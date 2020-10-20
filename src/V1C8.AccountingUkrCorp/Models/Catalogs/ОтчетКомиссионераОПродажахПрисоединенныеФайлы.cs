@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("OtchetKomyssyoneraOProdazhakhPrysoedynennyeFaily")]
     [Description1C8(Name = "ОтчетКомиссионераОПродажахПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Отчеты комиссионера о продажах)")]
-    public class ОтчетКомиссионераОПродажахПрисоединенныеФайлы
+    public class ОтчетКомиссионераОПродажахПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

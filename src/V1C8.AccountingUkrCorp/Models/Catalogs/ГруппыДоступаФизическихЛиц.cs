@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("HruppyDostupaFyzycheskykhLyts")]
     [Description1C8(Name = "ГруппыДоступаФизическихЛиц", Comment = "", Synonym = "Группы доступа физических лиц")]
-    public class ГруппыДоступаФизическихЛиц
+    public class ГруппыДоступаФизическихЛиц:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

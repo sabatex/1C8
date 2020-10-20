@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UstareloVydyLhotPoNDFL")]
     [Description1C8(Name = "УстарелоВидыЛьготПоНДФЛ", Comment = "", Synonym = "ѳ(устарело) Виды льгот по НДФЛ")]
-    public class УстарелоВидыЛьготПоНДФЛ
+    public class УстарелоВидыЛьготПоНДФЛ:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

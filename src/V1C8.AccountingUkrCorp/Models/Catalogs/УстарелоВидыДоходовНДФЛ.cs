@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UstareloVydyDokhodovNDFL")]
     [Description1C8(Name = "УстарелоВидыДоходовНДФЛ", Comment = "(Регл)", Synonym = "ѳ(устарело) Виды доходов НДФЛ")]
-    public class УстарелоВидыДоходовНДФЛ
+    public class УстарелоВидыДоходовНДФЛ:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

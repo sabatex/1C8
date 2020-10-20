@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("TypyTsenNomenklatury")]
     [Description1C8(Name = "ТипыЦенНоменклатуры", Comment = "", Synonym = "Типы цен номенклатуры")]
-    public class ТипыЦенНоменклатуры
+    public class ТипыЦенНоменклатуры:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

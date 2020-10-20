@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KontraktnyeObiazatelstva")]
     [Description1C8(Name = "КонтрактныеОбязательства", Comment = "(Регл)", Synonym = "Контрактные обязательства")]
-    public class КонтрактныеОбязательства
+    public class КонтрактныеОбязательства:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

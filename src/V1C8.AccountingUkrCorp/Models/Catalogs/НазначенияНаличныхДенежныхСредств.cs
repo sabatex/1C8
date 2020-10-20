@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NaznachenyiaNalychnykhDenezhnykhSredstv")]
     [Description1C8(Name = "НазначенияНаличныхДенежныхСредств", Comment = "(Регл)", Synonym = "Назначения наличных денежных средств")]
-    public class НазначенияНаличныхДенежныхСредств
+    public class НазначенияНаличныхДенежныхСредств:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

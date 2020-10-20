@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NalohovyeHruppyOsnovnykhSredstv")]
     [Description1C8(Name = "НалоговыеГруппыОсновныхСредств", Comment = "", Synonym = "Налоговые группы основных средств")]
-    public class НалоговыеГруппыОсновныхСредств
+    public class НалоговыеГруппыОсновныхСредств:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

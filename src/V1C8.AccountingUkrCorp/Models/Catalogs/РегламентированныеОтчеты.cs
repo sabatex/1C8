@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RehlamentyrovannyeOtchety")]
     [Description1C8(Name = "РегламентированныеОтчеты", Comment = "", Synonym = "Регламентированные отчеты")]
-    public class РегламентированныеОтчеты
+    public class РегламентированныеОтчеты:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

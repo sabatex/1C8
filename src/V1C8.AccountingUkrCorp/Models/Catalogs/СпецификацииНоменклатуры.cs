@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SpetsyfykatsyyNomenklatury")]
     [Description1C8(Name = "СпецификацииНоменклатуры", Comment = "", Synonym = "Спецификации номенклатуры")]
-    public class СпецификацииНоменклатуры
+    public class СпецификацииНоменклатуры:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

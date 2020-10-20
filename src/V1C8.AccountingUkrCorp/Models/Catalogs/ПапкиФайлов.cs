@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PapkyFailov")]
     [Description1C8(Name = "ПапкиФайлов", Comment = "Структура папок для хранения файлов", Synonym = "Папки")]
-    public class ПапкиФайлов
+    public class ПапкиФайлов:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

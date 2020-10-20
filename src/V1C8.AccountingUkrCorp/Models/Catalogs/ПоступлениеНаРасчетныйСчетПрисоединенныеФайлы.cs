@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PostuplenyeNaRaschetnyiSchetPrysoedynennyeFaily")]
     [Description1C8(Name = "ПоступлениеНаРасчетныйСчетПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Поступление на банковский счет)")]
-    public class ПоступлениеНаРасчетныйСчетПрисоединенныеФайлы
+    public class ПоступлениеНаРасчетныйСчетПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

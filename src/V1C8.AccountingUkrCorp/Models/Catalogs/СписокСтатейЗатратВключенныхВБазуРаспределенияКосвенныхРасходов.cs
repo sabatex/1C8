@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("SpysokStateiZatratVkliuchennykhVBazuRaspredelenyiaKosvennykhRaskhodov")]
     [Description1C8(Name = "СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов", Comment = "", Synonym = "Список статей затрат, включенных в базу распределения косвенных расходов")]
-    public class СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов
+    public class СписокСтатейЗатратВключенныхВБазуРаспределенияКосвенныхРасходов:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

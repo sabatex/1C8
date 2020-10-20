@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ParametryVyrabotkyOS")]
     [Description1C8(Name = "ПараметрыВыработкиОС", Comment = "", Synonym = "Параметры выработки ОС")]
-    public class ПараметрыВыработкиОС
+    public class ПараметрыВыработкиОС:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

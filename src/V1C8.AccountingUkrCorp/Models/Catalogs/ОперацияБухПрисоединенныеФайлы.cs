@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("OperatsyiaBukhPrysoedynennyeFaily")]
     [Description1C8(Name = "ОперацияБухПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Операции, введенные вручную)")]
-    public class ОперацияБухПрисоединенныеФайлы
+    public class ОперацияБухПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

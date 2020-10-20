@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KlassyfykatorSpetsyalnosteiPoObrazovanyiu")]
     [Description1C8(Name = "КлассификаторСпециальностейПоОбразованию", Comment = "", Synonym = "Классифик. специальностей")]
-    public class КлассификаторСпециальностейПоОбразованию
+    public class КлассификаторСпециальностейПоОбразованию:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

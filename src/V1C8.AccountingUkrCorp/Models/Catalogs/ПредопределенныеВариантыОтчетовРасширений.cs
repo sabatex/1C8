@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PredopredelennyeVaryantyOtchetovRasshyrenyi")]
     [Description1C8(Name = "ПредопределенныеВариантыОтчетовРасширений", Comment = "Предопределенные варианты отчетов конфигурации", Synonym = "Предопределенные варианты отчетов расширений")]
-    public class ПредопределенныеВариантыОтчетовРасширений
+    public class ПредопределенныеВариантыОтчетовРасширений:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

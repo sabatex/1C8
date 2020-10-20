@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YnformatsyonnyeSsylkyDliaForm")]
     [Description1C8(Name = "ИнформационныеСсылкиДляФорм", Comment = "", Synonym = "Информационные ссылки для форм")]
-    public class ИнформационныеСсылкиДляФорм
+    public class ИнформационныеСсылкиДляФорм:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

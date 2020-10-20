@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UstareloSposobyOkruhlenyiaPryVyplateZarplaty")]
     [Description1C8(Name = "УстарелоСпособыОкругленияПриВыплатеЗарплаты", Comment = "", Synonym = "ѳ(устарело) Способы округления при выплате")]
-    public class УстарелоСпособыОкругленияПриВыплатеЗарплаты
+    public class УстарелоСпособыОкругленияПриВыплатеЗарплаты:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

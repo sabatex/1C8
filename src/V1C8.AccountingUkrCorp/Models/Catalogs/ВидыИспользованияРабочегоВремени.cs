@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyYspolzovanyiaRabochehoVremeny")]
     [Description1C8(Name = "ВидыИспользованияРабочегоВремени", Comment = "", Synonym = "Виды использования рабочего времени")]
-    public class ВидыИспользованияРабочегоВремени
+    public class ВидыИспользованияРабочегоВремени:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

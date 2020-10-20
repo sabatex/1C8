@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ParametryTypovoiOperatsyy")]
     [Description1C8(Name = "ПараметрыТиповойОперации", Comment = "", Synonym = "Параметры типовой операции")]
-    public class ПараметрыТиповойОперации
+    public class ПараметрыТиповойОперации:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

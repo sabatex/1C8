@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ObrazovanyeFyzycheskykhLyts")]
     [Description1C8(Name = "ОбразованиеФизическихЛиц", Comment = "", Synonym = "Образование физических лиц")]
-    public class ОбразованиеФизическихЛиц
+    public class ОбразованиеФизическихЛиц:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

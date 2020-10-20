@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ProyzvodstvennyeKalendary")]
     [Description1C8(Name = "ПроизводственныеКалендари", Comment = "", Synonym = "Производственные календари")]
-    public class ПроизводственныеКалендари
+    public class ПроизводственныеКалендари:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

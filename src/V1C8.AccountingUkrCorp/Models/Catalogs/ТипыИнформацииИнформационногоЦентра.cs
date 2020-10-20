@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("TypyYnformatsyyYnformatsyonnohoTsentra")]
     [Description1C8(Name = "ТипыИнформацииИнформационногоЦентра", Comment = "", Synonym = "Типы информации информационного центра")]
-    public class ТипыИнформацииИнформационногоЦентра
+    public class ТипыИнформацииИнформационногоЦентра:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

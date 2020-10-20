@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YzmenenyeKvalyfykatsyonnohoRazriadaPrysoedynennyeFaily")]
     [Description1C8(Name = "ИзменениеКвалификационногоРазрядаПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Изменение квалификационного разряда (категории) сотрудника)")]
-    public class ИзменениеКвалификационногоРазрядаПрисоединенныеФайлы
+    public class ИзменениеКвалификационногоРазрядаПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

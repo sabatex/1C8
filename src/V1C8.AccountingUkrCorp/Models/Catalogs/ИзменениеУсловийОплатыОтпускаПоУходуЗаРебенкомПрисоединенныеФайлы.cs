@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("YzmenenyeUslovyiOplatyOtpuskaPoUkhoduZaRebenkomPrysoedynennyeFaily")]
     [Description1C8(Name = "ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенкомПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Изменение условий оплаты отпуска по уходу за ребенком)")]
-    public class ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенкомПрисоединенныеФайлы
+    public class ИзменениеУсловийОплатыОтпускаПоУходуЗаРебенкомПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

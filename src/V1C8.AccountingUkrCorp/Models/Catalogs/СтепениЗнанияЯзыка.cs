@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("StepenyZnanyiaIazyka")]
     [Description1C8(Name = "СтепениЗнанияЯзыка", Comment = "", Synonym = "Степени знания языков")]
-    public class СтепениЗнанияЯзыка
+    public class СтепениЗнанияЯзыка:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

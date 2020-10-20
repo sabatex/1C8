@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NaboryDopolnytelnykhRekvyzytovYSvedenyi")]
     [Description1C8(Name = "НаборыДополнительныхРеквизитовИСведений", Comment = "", Synonym = "Наборы дополнительных реквизитов и сведений")]
-    public class НаборыДополнительныхРеквизитовИСведений
+    public class НаборыДополнительныхРеквизитовИСведений:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

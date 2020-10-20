@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("StatyOtsrochennykhNalohovykhAktyvovYObiazatelstv")]
     [Description1C8(Name = "СтатьиОтсроченныхНалоговыхАктивовИОбязательств", Comment = "(Регл)", Synonym = "Статьи отсроченных налоговых активов и обязательств")]
-    public class СтатьиОтсроченныхНалоговыхАктивовИОбязательств
+    public class СтатьиОтсроченныхНалоговыхАктивовИОбязательств:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

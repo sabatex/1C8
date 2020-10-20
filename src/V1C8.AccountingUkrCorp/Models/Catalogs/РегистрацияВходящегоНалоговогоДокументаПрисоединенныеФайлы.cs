@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RehystratsyiaVkhodiashchehoNalohovohoDokumentaPrysoedynennyeFaily")]
     [Description1C8(Name = "РегистрацияВходящегоНалоговогоДокументаПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Регистрация входящего налогового документа)")]
-    public class РегистрацияВходящегоНалоговогоДокументаПрисоединенныеФайлы
+    public class РегистрацияВходящегоНалоговогоДокументаПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UdalytNastroikyVypolnenyiaObmena")]
     [Description1C8(Name = "УдалитьНастройкиВыполненияОбмена", Comment = "", Synonym = "(не используется) Настройки выполнения обмена")]
-    public class УдалитьНастройкиВыполненияОбмена
+    public class УдалитьНастройкиВыполненияОбмена:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

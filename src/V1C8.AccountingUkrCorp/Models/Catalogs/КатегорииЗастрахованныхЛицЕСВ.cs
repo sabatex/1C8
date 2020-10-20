@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KatehoryyZastrakhovannykhLytsESV")]
     [Description1C8(Name = "КатегорииЗастрахованныхЛицЕСВ", Comment = "", Synonym = "Категории застрахованных лиц (ЕСВ)")]
-    public class КатегорииЗастрахованныхЛицЕСВ
+    public class КатегорииЗастрахованныхЛицЕСВ:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

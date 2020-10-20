@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("HTDYmportPrysoedynennyeFaily")]
     [Description1C8(Name = "ГТДИмпортПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (ГТД по импорту)")]
-    public class ГТДИмпортПрисоединенныеФайлы
+    public class ГТДИмпортПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

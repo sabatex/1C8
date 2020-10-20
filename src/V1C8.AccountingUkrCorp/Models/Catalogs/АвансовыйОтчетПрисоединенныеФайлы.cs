@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("AvansovyiOtchetPrysoedynennyeFaily")]
     [Description1C8(Name = "АвансовыйОтчетПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Авансовый отчет)")]
-    public class АвансовыйОтчетПрисоединенныеФайлы
+    public class АвансовыйОтчетПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

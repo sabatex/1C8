@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("TaryfnyeSetky")]
     [Description1C8(Name = "ТарифныеСетки", Comment = "", Synonym = "Тарифные группы")]
-    public class ТарифныеСетки
+    public class ТарифныеСетки:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("OplataPoSrednemuZarabotkuPrysoedynennyeFaily")]
     [Description1C8(Name = "ОплатаПоСреднемуЗаработкуПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Отсутствие с сохранением оплаты)")]
-    public class ОплатаПоСреднемуЗаработкуПрисоединенныеФайлы
+    public class ОплатаПоСреднемуЗаработкуПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PryzPodarokPrysoedynennyeFaily")]
     [Description1C8(Name = "ПризПодарокПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Приз, подарок)")]
-    public class ПризПодарокПрисоединенныеФайлы
+    public class ПризПодарокПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

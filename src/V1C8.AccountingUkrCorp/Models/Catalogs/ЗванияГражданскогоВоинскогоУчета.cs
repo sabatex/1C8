@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ZvanyiaHrazhdanskohoVoynskohoUcheta")]
     [Description1C8(Name = "ЗванияГражданскогоВоинскогоУчета", Comment = "", Synonym = "Воинские звания")]
-    public class ЗванияГражданскогоВоинскогоУчета
+    public class ЗванияГражданскогоВоинскогоУчета:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

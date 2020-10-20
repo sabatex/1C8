@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyDohovorovAvtorskohoZakaza")]
     [Description1C8(Name = "ВидыДоговоровАвторскогоЗаказа", Comment = "", Synonym = "Виды авторских договоров")]
-    public class ВидыДоговоровАвторскогоЗаказа
+    public class ВидыДоговоровАвторскогоЗаказа:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

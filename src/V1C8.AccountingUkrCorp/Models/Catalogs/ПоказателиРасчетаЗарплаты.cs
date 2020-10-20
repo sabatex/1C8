@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PokazatelyRaschetaZarplaty")]
     [Description1C8(Name = "ПоказателиРасчетаЗарплаты", Comment = "", Synonym = "Показатели расчета зарплаты")]
-    public class ПоказателиРасчетаЗарплаты
+    public class ПоказателиРасчетаЗарплаты:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

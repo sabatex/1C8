@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RehystrUchetaPrysoedynennyeFaily")]
     [Description1C8(Name = "РегистрУчетаПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Регистры учета)")]
-    public class РегистрУчетаПрисоединенныеФайлы
+    public class РегистрУчетаПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

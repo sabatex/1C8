@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("VydyDokumentovVvodDannykhDliaRaschetaZarplaty")]
     [Description1C8(Name = "ВидыДокументовВводДанныхДляРасчетаЗарплаты", Comment = "", Synonym = "Шаблоны ввода исходных данных")]
-    public class ВидыДокументовВводДанныхДляРасчетаЗарплаты
+    public class ВидыДокументовВводДанныхДляРасчетаЗарплаты:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

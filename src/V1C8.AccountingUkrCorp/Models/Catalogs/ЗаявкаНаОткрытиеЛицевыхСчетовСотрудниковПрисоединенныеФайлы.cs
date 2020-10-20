@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("ZaiavkaNaOtkrytyeLytsevykhSchetovSotrudnykovPrysoedynennyeFaily")]
     [Description1C8(Name = "ЗаявкаНаОткрытиеЛицевыхСчетовСотрудниковПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Заявка на открытие лицевых счетов сотрудников)")]
-    public class ЗаявкаНаОткрытиеЛицевыхСчетовСотрудниковПрисоединенныеФайлы
+    public class ЗаявкаНаОткрытиеЛицевыхСчетовСотрудниковПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

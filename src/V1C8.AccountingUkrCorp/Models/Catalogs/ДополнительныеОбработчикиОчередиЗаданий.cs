@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("DopolnytelnyeObrabotchykyOcheredyZadanyi")]
     [Description1C8(Name = "ДополнительныеОбработчикиОчередиЗаданий", Comment = "", Synonym = "Дополнительные обработчики очереди заданий")]
-    public class ДополнительныеОбработчикиОчередиЗаданий
+    public class ДополнительныеОбработчикиОчередиЗаданий:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("RabotaSverkhurochnoPrysoedynennyeFaily")]
     [Description1C8(Name = "РаботаСверхурочноПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Работа сверхурочно)")]
-    public class РаботаСверхурочноПрисоединенныеФайлы
+    public class РаботаСверхурочноПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

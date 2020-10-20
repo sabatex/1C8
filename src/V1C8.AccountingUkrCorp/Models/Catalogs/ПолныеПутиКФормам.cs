@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PolnyePutyKFormam")]
     [Description1C8(Name = "ПолныеПутиКФормам", Comment = "", Synonym = "Полные пути к формам")]
-    public class ПолныеПутиКФормам
+    public class ПолныеПутиКФормам:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

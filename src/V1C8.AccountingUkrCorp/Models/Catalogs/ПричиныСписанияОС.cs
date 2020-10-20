@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PrychynySpysanyiaOS")]
     [Description1C8(Name = "ПричиныСписанияОС", Comment = "", Synonym = "Причины списания ОС")]
-    public class ПричиныСписанияОС
+    public class ПричиныСписанияОС:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

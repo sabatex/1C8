@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PlatezhnoePoruchenyePrysoedynennyeFaily")]
     [Description1C8(Name = "ПлатежноеПоручениеПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Платежное поручение)")]
-    public class ПлатежноеПоручениеПрисоединенныеФайлы
+    public class ПлатежноеПоручениеПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

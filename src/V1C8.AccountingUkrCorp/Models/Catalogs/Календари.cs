@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Kalendary")]
     [Description1C8(Name = "Календари", Comment = "", Synonym = "ѳ(устарело) Графики работы")]
-    public class Календари
+    public class Календари:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

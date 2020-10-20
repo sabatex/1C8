@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KorrektyrovkaDolhaPrysoedynennyeFaily")]
     [Description1C8(Name = "КорректировкаДолгаПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Корректировка долга)")]
-    public class КорректировкаДолгаПрисоединенныеФайлы
+    public class КорректировкаДолгаПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

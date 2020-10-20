@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("UchetnyeZapysySynkhronyzatsyyFailov")]
     [Description1C8(Name = "УчетныеЗаписиСинхронизацииФайлов", Comment = "", Synonym = "Учетные записи синхронизации файлов")]
-    public class УчетныеЗаписиСинхронизацииФайлов
+    public class УчетныеЗаписиСинхронизацииФайлов:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PeremeshchenyeVDruhoePodrazdelenyePrysoedynennyeFaily")]
     [Description1C8(Name = "ПеремещениеВДругоеПодразделениеПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Перемещение в другое подразделение)")]
-    public class ПеремещениеВДругоеПодразделениеПрисоединенныеФайлы
+    public class ПеремещениеВДругоеПодразделениеПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

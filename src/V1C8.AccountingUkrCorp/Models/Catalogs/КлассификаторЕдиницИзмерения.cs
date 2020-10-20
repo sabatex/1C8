@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("KlassyfykatorEdynytsYzmerenyia")]
     [Description1C8(Name = "КлассификаторЕдиницИзмерения", Comment = "(Общ)", Synonym = "Классификатор единиц измерения")]
-    public class КлассификаторЕдиницИзмерения
+    public class КлассификаторЕдиницИзмерения:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

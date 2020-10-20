@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("PodtverzhdenyeZachyslenyiaZarplatyPrysoedynennyeFaily")]
     [Description1C8(Name = "ПодтверждениеЗачисленияЗарплатыПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Подтверждение зачисления зарплаты)")]
-    public class ПодтверждениеЗачисленияЗарплатыПрисоединенныеФайлы
+    public class ПодтверждениеЗачисленияЗарплатыПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("Prylozhenye2KNalohovoiNakladnoiPrysoedynennyeFaily")]
     [Description1C8(Name = "Приложение2КНалоговойНакладнойПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Приложение 2 к налоговой накладной)")]
-    public class Приложение2КНалоговойНакладнойПрисоединенныеФайлы
+    public class Приложение2КНалоговойНакладнойПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("NomenklaturnyeHruppy")]
     [Description1C8(Name = "НоменклатурныеГруппы", Comment = "", Synonym = "Номенклатурные группы")]
-    public class НоменклатурныеГруппы
+    public class НоменклатурныеГруппы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

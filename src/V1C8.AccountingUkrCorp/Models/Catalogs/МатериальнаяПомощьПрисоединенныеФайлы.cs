@@ -11,7 +11,7 @@ namespace sabatex.V1C8.AccountingUkrCorp.Models.Catalogs
 {
     [Table("MateryalnaiaPomoshchPrysoedynennyeFaily")]
     [Description1C8(Name = "МатериальнаяПомощьПрисоединенныеФайлы", Comment = "", Synonym = "Присоединенные файлы (Материальная помощь)")]
-    public class МатериальнаяПомощьПрисоединенныеФайлы
+    public class МатериальнаяПомощьПрисоединенныеФайлы:CatalogItem
     {
     #region Стандартні реквізити
     public Guid Id {get; set;}

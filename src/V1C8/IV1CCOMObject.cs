@@ -1,5 +1,10 @@
-interface IV1CCOMObject
+namespace sabatex.V1C8
 {
-    T GetProperty<T>(string propertyName);
-    T Method<T>(string methodName, params object[] args);
+
+
+    public interface IV1CCOMObject
+    {
+        T GetProperty<T>(string propertyName);
+        T Method<T>(string methodName, params object[] args);
+    }
 }

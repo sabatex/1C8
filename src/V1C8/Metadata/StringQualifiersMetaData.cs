@@ -6,7 +6,7 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public int Length{get=>GetStructProperty<int>("Length");}
+        public int Length{get=>GetProperty<int>("Length");}
         public string AllowedLength{get=>GLOBAL.String(GetProperty<V1C8COMObject>("AllowedLength"));}
     }
 }

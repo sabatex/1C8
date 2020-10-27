@@ -139,8 +139,7 @@ namespace sabatex.V1C8
             }
 
         }
- 
-       protected T OLE1C77Function<T>(string FuncName, BindingFlags invokeAttr, object Handle, params object[] Args)
+         protected T OLE1C77Function<T>(string FuncName, BindingFlags invokeAttr, object Handle, params object[] Args)
        {
             // convert args
             object[] normalArgs = new object[Args.Length];
@@ -259,8 +258,6 @@ namespace sabatex.V1C8
 
         }
  
-
-
         public object Method(string methodName, params object[] args)
         {
             return OLE1C77Function(methodName, BindingFlags.InvokeMethod, handle, args);
@@ -280,16 +277,10 @@ namespace sabatex.V1C8
         }
 
         public object GetProperty(string propertyName) => OLE1C77Function(propertyName, BindingFlags.GetProperty, Handle);
-        public T GetProperty<T>(string propertyName) where T:V1C8COMObject
+        public T GetProperty<T>(string propertyName)
         {
             return OLE1C77Function<T>(propertyName, BindingFlags.GetProperty, Handle);
         }
-
-        public T GetStructProperty<T>(string propertyName) where T:struct
-        {
-            return (T)GetProperty(propertyName);
-        }
-
 
         public V1C8COMObject GetPropertyObject(string PropertyName)
         {

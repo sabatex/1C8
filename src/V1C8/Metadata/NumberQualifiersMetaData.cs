@@ -6,8 +6,8 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public int Digits{get=>GetStructProperty<int>("Digits");}
-        public int FractionDigits{get=>GetStructProperty<int>("FractionDigits");}
+        public int Digits{get=>GetProperty<int>("Digits");}
+        public int FractionDigits{get=>GetProperty<int>("FractionDigits");}
 
     }
 }

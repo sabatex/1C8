@@ -279,21 +279,18 @@ namespace sabatex.V1C8
         public object GetProperty(string propertyName) => OLE1C77Function(propertyName, BindingFlags.GetProperty, Handle);
         public T GetProperty<T>(string propertyName)
         {
-            return OLE1C77Function<T>(propertyName, BindingFlags.GetProperty, Handle);
-        }
-
-        public V1C8COMObject GetPropertyObject(string PropertyName)
-        {
             try
             {
-                return (V1C8COMObject)GetProperty(PropertyName);
+                return OLE1C77Function<T>(propertyName, BindingFlags.GetProperty, Handle);
             }
-            catch
+            catch (Exception e)
             {
-                Trace.TraceError($"Error get property {PropertyName} as COMObject");
-                return null;
+                Trace.TraceError($"Error get property {propertyName} as {typeof(T)}");
+                throw new Exception($"Error get property {propertyName} as {typeof(T)}. {e.Message}");
             }
         }
+
+
         public string GetPropertyString(string PropertyName)
         {
             try

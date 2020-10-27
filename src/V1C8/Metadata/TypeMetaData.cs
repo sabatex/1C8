@@ -8,7 +8,7 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public EnumerationsMetadata<TypeMetaData>  Types()=>Method<EnumerationsMetadata<TypeMetaData>>("Types");
+        public MetadataObjectCollection<TypeMetaData>  Types()=>Method<MetadataObjectCollection<TypeMetaData>>("Types");
         public StringQualifiersMetaData StringQualifiers{get=>GetProperty<StringQualifiersMetaData>("StringQualifiers");}
         public NumberQualifiersMetaData NumberQualifiers{get=>GetProperty<NumberQualifiersMetaData>("NumberQualifiers");}
     

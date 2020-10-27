@@ -12,8 +12,8 @@ namespace sabatex.V1C8.Metadata
             
         }
  
-        public EnumerationsMetadata<FieldMetadata> Attributes{get=>GetProperty<EnumerationsMetadata<FieldMetadata>>("Attributes");}
-        public EnumerationsMetadata<CatalogTableMetaData> TabularSections{get=>GetProperty<EnumerationsMetadata<CatalogTableMetaData>>("TabularSections");}
+        public MetadataObjectCollection<FieldMetadata> Attributes{get=>GetProperty<MetadataObjectCollection<FieldMetadata>>("Attributes");}
+        public MetadataObjectCollection<CatalogTableMetaData> TabularSections{get=>GetProperty<MetadataObjectCollection<CatalogTableMetaData>>("TabularSections");}
  
     }
 }

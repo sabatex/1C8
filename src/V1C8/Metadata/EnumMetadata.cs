@@ -11,7 +11,7 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public EnumerationsMetadata<EnumItemMetaData>  EnumValues{get=>GetProperty<EnumerationsMetadata<EnumItemMetaData>>("EnumValues");}
+        public MetadataObjectCollection<EnumItemMetaData>  EnumValues{get=>GetProperty<MetadataObjectCollection<EnumItemMetaData>>("EnumValues");}
  
     }
 }

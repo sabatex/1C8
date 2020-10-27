@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace sabatex.V1C8
 {
-    public class V1C8COMObject:IDisposable
+    public class V1C8COMObject:IDisposable,IV1CCOMObject
     {
         List<V1C8COMObject> Children = new List<V1C8COMObject>();
         V1C8COMObject owner = null;

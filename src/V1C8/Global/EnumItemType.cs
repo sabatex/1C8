@@ -12,7 +12,7 @@ namespace sabatex.V1C8.Global
         {
         }
         public V1C8COMObject Metadata()=>Method<V1C8COMObject>("Metadata");
-        public bool IsEmpty()=>MethodSruct<bool>("IsEmpty");
+        public bool IsEmpty()=>Method<bool>("IsEmpty");
  
     }
 

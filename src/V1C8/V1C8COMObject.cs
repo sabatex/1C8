@@ -141,8 +141,7 @@ namespace sabatex.V1C8
         }
  
        protected T OLE1C77Function<T>(string FuncName, BindingFlags invokeAttr, object Handle, params object[] Args)
-        where T : V1C8COMObject
-        {
+       {
             // convert args
             object[] normalArgs = new object[Args.Length];
             for (int i = 0; i < Args.Length; i++)
@@ -158,15 +157,20 @@ namespace sabatex.V1C8
             try
             {
                 var obj = Handle.GetType().InvokeMember(FuncName, invokeAttr, null, Handle, normalArgs);
-                if (obj == null) return null;
+                if (obj == null) return (T)obj;
                 if (Marshal.IsComObject(obj))
                 {
-                   T comObj = (T)Activator.CreateInstance(typeof(T),this,obj);  
-                    Children.Add(comObj);
-                    return comObj;
+                   var t = typeof(T);
+                   if (t.IsSubclassOf(typeof(V1C8COMObject)))
+                   {
+                       T comObj = (T)Activator.CreateInstance(typeof(T),this,obj);  
+                       Children.Add(comObj as V1C8COMObject);
+                       return comObj;
+                   }
+                   throw new Exception("COMObject  повинен наслідуватись від V1C8COMObject");
                 }
                 else
-                    return null;
+                    return (T)obj;
 
             }
             catch (ArgumentNullException e)
@@ -261,9 +265,18 @@ namespace sabatex.V1C8
         {
             return OLE1C77Function(methodName, BindingFlags.InvokeMethod, handle, args);
         }
-        public T Method<T>(string methodName, params object[] args) where T:V1C8COMObject
+        public T Method<T>(string methodName, params object[] args)
         {
-            return OLE1C77Function<T>(methodName,BindingFlags.InvokeMethod,handle,args);
+            try
+            {  
+                return OLE1C77Function<T>(methodName,BindingFlags.InvokeMethod,handle,args);
+            }
+            catch (Exception e)
+            {
+                Trace.TraceError($"Error get method {methodName} with error ={e}");
+                throw new Exception();
+            }
+
         }
 
         public object GetProperty(string propertyName) => OLE1C77Function(propertyName, BindingFlags.GetProperty, Handle);
@@ -277,19 +290,6 @@ namespace sabatex.V1C8
             return (T)GetProperty(propertyName);
         }
 
-
-        public R MethodSruct<R>(string methodName, params object[] args) where R:struct
-        {
-            try
-            {    
-                return (R)Method(methodName,args);
-            }
-            catch (Exception e)
-            {
-                Trace.TraceError($"Error get method {methodName} with error ={e}");
-                throw new Exception();
-            }
-        }
 
         public V1C8COMObject GetPropertyObject(string PropertyName)
         {

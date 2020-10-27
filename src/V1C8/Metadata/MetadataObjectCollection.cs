@@ -1,9 +1,8 @@
-
 namespace sabatex.V1C8.Metadata
 {
-    public class EnumerationsMetadata<T>:V1C8COMObject where T:V1C8COMObject
+    public class MetadataObjectCollection<T>:V1C8COMObject where T:V1C8COMObject
     {
-        public EnumerationsMetadata(V1C8COMObject owner, object handle):base(owner,handle)
+        public MetadataObjectCollection(V1C8COMObject owner, object handle):base(owner,handle)
         {
             
         }
@@ -17,4 +16,3 @@ namespace sabatex.V1C8.Metadata
 
     }
 }
-

@@ -12,7 +12,7 @@ namespace sabatex.V1C8.Metadata
         {
         }
 
-        public bool  IsEmpty()=>MethodSruct<bool>("IsEmpty");
+        public bool  IsEmpty()=>Method<bool>("IsEmpty");
     }
 
 }

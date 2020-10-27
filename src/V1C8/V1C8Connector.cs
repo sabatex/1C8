@@ -32,7 +32,7 @@ namespace sabatex.V1C8
             this($"File='{dataBasePath}';Usr='{userName}';pwd='{password}';"){}
 
 
-        public string String(V1C8COMObject value) => MethodString("String",value);
+        public string String(V1C8COMObject value) => Method<string>("String",value);
         public Guid GetObjectId(V1C8COMObject value) => Guid.Parse(this.String(value.GetProperty<V1C8COMObject>("УникальныйИдентификатор")));
 
         public Metadata.MetaData MetaData {get=>GetProperty<Metadata.MetaData>("Metadata");}

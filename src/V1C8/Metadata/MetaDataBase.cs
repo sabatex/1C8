@@ -11,8 +11,8 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public string Name {get=>GetPropertyString("Name");}
-        public string Synonym {get=>GetPropertyString("Synonym");}
-        public  string Comment {get=>GetPropertyString("Comment");}
+        public string Name {get=>GetProperty<string>("Name");}
+        public string Synonym {get=>GetProperty<string>("Synonym");}
+        public  string Comment {get=>GetProperty<string>("Comment");}
     }
 }

@@ -11,8 +11,8 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public string Name { get=>GetPropertyString("Name");}
-        public string Version { get => GetPropertyString("Version") ; }
+        public string Name { get=>GetProperty<string>("Name");}
+        public string Version { get => GetProperty<string>("Version") ; }
         public ObjectMetaData FindByType(V1C8COMObject elementType)=>Method<ObjectMetaData>("FindByType",elementType);
 
         public EnumerationsMetadata<EnumMetaData>  Enums{get=>GetProperty<EnumerationsMetadata<EnumMetaData>>("Enums");}

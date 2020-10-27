@@ -8,7 +8,7 @@
     <Company>sabatex on git</Company>
     <Description>1C8 COMConnector Extensions</Description>
     <Copyright>2019, Serhiy Lakas</Copyright>
-    <Version>5.0.100-beta.1.31</Version>
+    <Version>5.0.100-beta.1.32</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8 #1C8.1 #1C8.2 #1C8.3</PackageTags>
     <PackageId>sabatex.V1C8</PackageId>

@@ -8,7 +8,7 @@ namespace sabatex.V1C8.Metadata
         }
         public int Count()=>Method<int>("Count");
         public T Get(int i) =>Method<T>("Get",i);
-        public int  IndexOf(V1C8COMObject obj)=>MethodInt("IndexOf",obj);
+        public int  IndexOf(V1C8COMObject obj)=>Method<int>("IndexOf",obj);
         public T EmptyRef()=>Method<T>("EmptyRef"); 
 
         public T Find(string value)=>Method<T>("Find",value);

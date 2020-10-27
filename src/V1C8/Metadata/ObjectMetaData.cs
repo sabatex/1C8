@@ -11,7 +11,7 @@ namespace sabatex.V1C8.Metadata
         {
             
         }
-        public string FullName()=>MethodString("FullName");
+        public string FullName()=>Method<string>("FullName");
      }
    
 }

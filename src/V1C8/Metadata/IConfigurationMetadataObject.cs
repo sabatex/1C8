@@ -8,7 +8,7 @@ namespace sabatex.V1C8.Metadata
     public interface IConfigurationMetadataObject:IMetaDataDescription
     {
         string Version  => GetProperty<string>("Version") ; 
-        IMetaDataObject FindByType(V1C8COMObject elementType)=>Method<IMetaDataObject>("FindByType",elementType);
+        IMetaDataObject FindByType(IV1C8COMObject elementType)=>Method<IMetaDataObject>("FindByType",elementType);
 
         IMetaDataObjectCollection<IMetaDataObjectEnum>  Enums{get=>GetProperty<IMetaDataObjectCollection<IMetaDataObjectEnum>>("Enums");}
         IMetaDataObjectCollection<IMetaDataObjectCatalog> Catalogs{get=>GetProperty<IMetaDataObjectCollection<IMetaDataObjectCatalog>>("Catalogs");}

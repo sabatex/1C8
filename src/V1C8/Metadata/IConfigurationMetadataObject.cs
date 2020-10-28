@@ -5,7 +5,7 @@ using System.Text;
 
 namespace sabatex.V1C8.Metadata
 {
-    public interface IConfigurationMetadataObject:IV1C8COMObject,IV1C8Description
+    public interface IConfigurationMetadataObject:IMetaDataDescription
     {
         string Version  => GetProperty<string>("Version") ; 
         IMetaDataObject FindByType(V1C8COMObject elementType)=>Method<IMetaDataObject>("FindByType",elementType);

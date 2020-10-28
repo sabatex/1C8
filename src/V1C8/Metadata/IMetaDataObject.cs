@@ -5,7 +5,7 @@ using System.Text;
 
 namespace sabatex.V1C8.Metadata
 {
-    public interface IMetaDataObject:IV1C8Description
+    public interface IMetaDataObject:IMetaDataDescription
     {
         string FullName()=>Method<string>("FullName");
      }

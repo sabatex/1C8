@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using sabatex.V1C8;
 namespace sabatex.V1C8.Metadata
 {
-    public interface IMetadataObjectCollection<T> : IV1CCOMObject
+    public interface IMetaDataObjectCollection<T> : IV1C8Collection<T>,IV1C8COMObject where T:IV1C8COMObject
     {
         int Count() => Method<int>("Count");
         T Get(int i) => Method<T>("Get", i);

@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 namespace sabatex.V1C8
 {
-    public class V1C8Enumerator<T> : IEnumerator<T> where T:V1C8COMObject
+    public class V1C8Enumerator<T> : IEnumerator<T> where T:IV1C8COMObject
     {
 
-        V1C8COMObject _context;
+        IV1C8COMObject _context;
         int _current;
         int _count;
-        public V1C8Enumerator(V1C8COMObject context)
+        public V1C8Enumerator(IV1C8COMObject context)
         {
            _context=context; 
            _current=0;

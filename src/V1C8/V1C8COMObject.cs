@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace sabatex.V1C8
 {
-    public class V1C8COMObject:IDisposable,IV1CCOMObject
+    public class V1C8COMObject:IDisposable,IV1C8COMObject
     {
         List<V1C8COMObject> Children = new List<V1C8COMObject>();
         V1C8COMObject owner = null;
@@ -139,7 +139,7 @@ namespace sabatex.V1C8
             }
 
         }
-         protected T OLE1C77Function<T>(string FuncName, BindingFlags invokeAttr, object Handle, params object[] Args)
+        protected T OLE1C77Function<T>(string FuncName, BindingFlags invokeAttr, object Handle, params object[] Args)
        {
             // convert args
             object[] normalArgs = new object[Args.Length];

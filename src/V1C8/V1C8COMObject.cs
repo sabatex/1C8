@@ -6,10 +6,11 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using sabatex.V1C8.Metadata;
 
 namespace sabatex.V1C8
 {
-    public class V1C8COMObject:IDisposable,IV1C8COMObject
+    public class V1C8COMObject:IDisposable,IConfigurationMetadataObject
     {
         List<V1C8COMObject> Children = new List<V1C8COMObject>();
         V1C8COMObject owner = null;

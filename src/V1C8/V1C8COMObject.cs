@@ -159,12 +159,11 @@ namespace sabatex.V1C8
                 if (obj == null) return (T)obj;
                 if (Marshal.IsComObject(obj))
                 {
-                   var t = typeof(T);
-                   if (t.IsSubclassOf(typeof(V1C8COMObject)))
+                   if (typeof(IV1C8COMObject).IsAssignableFrom(typeof(T)))
                    {
-                       T comObj = (T)Activator.CreateInstance(typeof(T),this,obj);  
-                       Children.Add(comObj as V1C8COMObject);
-                       return comObj;
+                       V1C8COMObject comObj = new V1C8COMObject(this,obj);  
+                       Children.Add(comObj);
+                       return (T)(object)comObj;
                    }
                    throw new Exception("COMObject  повинен наслідуватись від V1C8COMObject");
                 }

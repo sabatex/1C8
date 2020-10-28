@@ -7,5 +7,6 @@ namespace sabatex.V1C8
         T GetProperty<T>(string propertyName);
         T Method<T>(string methodName, params object[] args);
         object Method(string methodName, params object[] args);
+        V1C8COMConnector GLOBAL{get;}
     }
 }

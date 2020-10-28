@@ -33,6 +33,7 @@ namespace sabatex.V1C8
 
 
         public string String(V1C8COMObject value) => Method<string>("String",value);
+        public string String(IV1C8COMObject value) => Method<string>("String",value);
         public Guid GetObjectId(V1C8COMObject value) => Guid.Parse(this.String(value.GetProperty<V1C8COMObject>("УникальныйИдентификатор")));
 
         public Metadata.IConfigurationMetadataObject MetaData {get=>GetProperty<Metadata.IConfigurationMetadataObject>("Metadata");}

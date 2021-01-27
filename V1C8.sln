@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.Models", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8", "src\sabatex.V1C8\sabatex.V1C8.csproj", "{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3E9C0436-70CA-423D-BB01-9620F5DC7BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sabatex.V1C8.XUnitTest", "sabatex.V1C8.XUnitTest\sabatex.V1C8.XUnitTest.csproj", "{DB504CF8-2FEA-474C-94F2-C73991F0B99E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB504CF8-2FEA-474C-94F2-C73991F0B99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB504CF8-2FEA-474C-94F2-C73991F0B99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB504CF8-2FEA-474C-94F2-C73991F0B99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB504CF8-2FEA-474C-94F2-C73991F0B99E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB504CF8-2FEA-474C-94F2-C73991F0B99E} = {3E9C0436-70CA-423D-BB01-9620F5DC7BF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82302B92-357C-4D3F-A812-9A8F07BAEAFC}

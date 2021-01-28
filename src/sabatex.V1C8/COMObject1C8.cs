@@ -10,7 +10,7 @@ using sabatex.V1C8.Metadata;
 
 namespace sabatex.V1C8
 {
-    public class COMObject1C8:ICOMObject1C8,IGlobalContext
+    public class COMObject1C8:ICOMObject1C8,IGlobalContext,IMetadataConfiguration
     {
         private const string _COMServerName = "V83.COMConnector";
         /// <summary>
@@ -37,7 +37,7 @@ namespace sabatex.V1C8
         {
             _owner = owner;
             _handle = handle;
-            if (owner._globalContext != null)
+            if (owner?._globalContext != null)
                 _globalContext = owner._globalContext;
             else
                 _globalContext = owner;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -10,7 +11,9 @@ using sabatex.V1C8.Metadata;
 
 namespace sabatex.V1C8
 {
-    public class COMObject1C8:ICOMObject1C8,IGlobalContext,IMetadataConfiguration
+    public class COMObject1C8:ICOMObject1C8,IGlobalContext,IMetadataConfiguration,IMetaDataObjectEnum,IMetadataObjectEnumValue,
+                              IMetadataTypeDescription, IMetadataStringQualifiers, IMetadataObjectNumberQualifiers, IMetadataObjectCatalog,
+                              IFixedArray, IMetadataStandardAttributeDescription,IMetadataObjectField
     {
         private const string _COMServerName = "V83.COMConnector";
         /// <summary>
@@ -183,7 +186,6 @@ namespace sabatex.V1C8
                 CreateConnection($"File='{dataBasePath}';Usr='{userName}';pwd='{password}';");
 
     }
-
 
 }
 

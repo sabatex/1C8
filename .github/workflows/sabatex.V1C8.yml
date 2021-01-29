@@ -3,8 +3,8 @@ on:
   push:
     branches:
       - master # Default release branch
-    paths-ignore:
-      - '.github/workflows/**'
+    paths:
+      - 'src/sabatex.V1C8/sabatex.V1C8.csproj'
 jobs:
   publish:
     name: build, pack & publish
@@ -15,7 +15,7 @@ jobs:
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:
-           dotnet-version: 5.0.100-rc.1.20452.10
+           dotnet-version: 5.0.100
       
       - name: Setup MSBuild.exe
         uses: microsoft/setup-msbuild@v1.0.0
@@ -26,21 +26,9 @@ jobs:
         uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: src/V1C8/V1C8.csproj
+          PROJECT_FILE_PATH: 'src/sabatex.V1C8/sabatex.V1C8.csproj'
           # API key to authenticate with NuGet server
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           # Flag to toggle pushing symbols along with nuget package to the server, disabled by default
           INCLUDE_SYMBOLS: true
-          # Publish V1C8
-      
-      - name: publish on version change
-        id: publish_AccountingUkrCorp_Models_nuget
-        uses: rohith/publish-nuget@v2
-        with:
-          # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: src/V1C8.AccountingUkrCorp/Models/V1C8.AccountingUkrCorp.Models.csproj
-          # API key to authenticate with NuGet server
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-          # Flag to toggle pushing symbols along with nuget package to the server, disabled by default
-          INCLUDE_SYMBOLS: true
-  
+ 

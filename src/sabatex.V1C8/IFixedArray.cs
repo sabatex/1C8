@@ -31,6 +31,8 @@ namespace sabatex.V1C8
         /// <param name="index">Индекс элемента.</param>
         /// <returns>Тип: Произвольный. </returns>
         object Get(int index) => Method<object>("Get", index);
+
+        object this[int index] => Get(index);
     }
 
 }

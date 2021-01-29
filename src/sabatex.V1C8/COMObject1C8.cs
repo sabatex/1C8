@@ -13,7 +13,7 @@ namespace sabatex.V1C8
 {
     public class COMObject1C8:ICOMObject1C8,IGlobalContext,IMetadataConfiguration,IMetaDataObjectEnum,IMetadataObjectEnumValue,
                               IMetadataTypeDescription, IMetadataStringQualifiers, IMetadataObjectNumberQualifiers, IMetadataObjectCatalog,
-                              IFixedArray, IMetadataStandardAttributeDescription,IMetadataObjectField
+                              IArray1C8, IMetadataStandardAttributeDescription,IMetadataObjectField
     {
         private const string _COMServerName = "V83.COMConnector";
         /// <summary>

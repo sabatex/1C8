@@ -79,7 +79,9 @@ namespace sabatex.V1C8.XUnitTest
                         ConfigurationExtension = attr.ConfigurationExtension()?.Presentation(),
                         Indexing = attr.Indexing,
                         Use = attr.Use,
-                        FullTextSearch = attr.FullTextSearch
+                        FullName = attr.FullName(),
+                        FullTextSearch = attr.FullTextSearch,
+                        Format = attr.Format
                     });
                 }
 
@@ -110,7 +112,8 @@ namespace sabatex.V1C8.XUnitTest
                 Name = _metadata.Name,
                 Synonym = _metadata.Synonym,
                 Comment = _metadata.Comment,
-                Enums = GetEnumsMetadata()
+                Enums = GetEnumsMetadata(),
+                Catalogs = GetCatalogsMetadata()
 
             };
         }

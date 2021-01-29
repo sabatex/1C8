@@ -6,7 +6,9 @@ namespace sabatex.V1C8.Metadata
     public interface IMetadataObjectField : IMetadataObject
     {
         public IMetadataTypeDescription Type { get => GetProperty<IMetadataTypeDescription>("Type"); }
-
+        /// <summary>
+        /// ¬ид дополнительных индексов, создаваемых дл€ работы с данными объекта метаданных.
+        /// </summary>
         public Indexing Indexing
         {
             get
@@ -28,7 +30,9 @@ namespace sabatex.V1C8.Metadata
                 }
             }
         }
-
+        /// <summary>
+        /// ƒл€ реквизитов справочников, планов видов характеристик это свойство указывает способ использовани€ данных подчиненного объекта конфигурации (например, ƒл€Ёлемента, ƒл€√руппы, ƒл€√руппы»Ёлемента).
+        /// </summary>
         public AttributeUse Use
         {
             get
@@ -50,6 +54,9 @@ namespace sabatex.V1C8.Metadata
                 }
              }
         }
+        /// <summary>
+        /// ќпредел€ет, использовать или нет данные этого объекта метаданных в полнотекстовом поиске.
+        /// </summary>
         public UseFullTextSearch FullTextSearch
         {
             get
@@ -68,8 +75,10 @@ namespace sabatex.V1C8.Metadata
                 }
             }
         }
-
-
+        /// <summary>
+        /// —войство содержит форматную строку, используемую при выводе реквизита.
+        /// </summary>
+        public string Format => GetProperty<string>("Format");
     }
 }
 

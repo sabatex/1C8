@@ -20,7 +20,6 @@ namespace sabatex.V1C8.Metadata
                 value.Comment = e.Comment;
                 value.FullName = e.FullName();
                 value.Name = e.Name;
-                value.Presentation = e.Presentation();
                 value.Synonym = e.Synonym;
                 
                 var enumItems = new List<MetadataEnumItem>();
@@ -33,7 +32,6 @@ namespace sabatex.V1C8.Metadata
                     enumItemValue.Comment = ei.Comment;
                     enumItemValue.FullName = ei.FullName();
                     enumItemValue.Name = ei.Name;
-                    enumItemValue.Presentation = ei.Presentation();
                     enumItemValue.Synonym = ei.Synonym;
                     enumItems.Add(enumItemValue);
                 }

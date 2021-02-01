@@ -10,13 +10,13 @@ namespace sabatex.V1C8.Metadata
         {
             _collection = collection;    
         }
-        int Count() => _collection.Method<int>("Count");
-        T Get(int i) => _collection.Method<T>("Get", i);
-        int IndexOf(COMObject1C8 obj) => _collection.Method<int>("IndexOf", obj);
-        T EmptyRef() => _collection.Method<T>("EmptyRef");
+        public int Count() => _collection.Method<int>("Count");
+        public T Get(int i) => _collection.Method<T>("Get", i);
+        public int IndexOf(COMObject1C8 obj) => _collection.Method<int>("IndexOf", obj);
+        public T EmptyRef() => _collection.Method<T>("EmptyRef");
 
-        T Find(string value) => _collection.Method<T>("Find", value);
-        bool Contains(COMObject1C8 obj) => _collection.Method<bool>("Contains", obj);
+        public T Find(string value) => _collection.Method<T>("Find", value);
+        public bool Contains(COMObject1C8 obj) => _collection.Method<bool>("Contains", obj);
 
         public IEnumerator<T> GetEnumerator()
         {
@@ -28,7 +28,9 @@ namespace sabatex.V1C8.Metadata
             return new V1C8Enumerator<T>(_collection);
         }
 
-        T this[string index] => Find(index);
+        public T this[string index] => Find(index);
+        public T this[int index] => Get(index);
+
     }
 
 

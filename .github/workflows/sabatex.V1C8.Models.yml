@@ -1,4 +1,4 @@
-name: publish to nuget sabatex.V1C8
+name: sabatex.V1C8.Models
 on:
   push:
     branches:

@@ -24,7 +24,4 @@
     <RepositoryUrl>https://github.com/sabatex/V1C8.git</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x86</PlatformTarget>
-  </PropertyGroup>
-</Project>
+ </Project>

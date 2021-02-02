@@ -52,7 +52,7 @@ namespace sabatex.V1C8
         /// 
         /// </summary>
         /// <param name="index"></param>
-        public void Set(int index)=> Method<object>("Set", index);
+        public void Set(int index)=> Method<object>("Set", index,null);
         /// <summary>
         /// Возможно обращение к значению элемента посредством оператора [...]. В качестве аргумента передается индекс значения (нумерация с 0).
         /// </summary>

@@ -7,13 +7,17 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using sabatex.V1C8.ApplicationObjects;
 using sabatex.V1C8.Metadata;
 
 namespace sabatex.V1C8
 {
     public class COMObject1C8:ICOMObject1C8,IGlobalContext,IMetadataConfiguration,IMetaDataObjectEnum,IMetadataObjectEnumValue,
                               IMetadataTypeDescription, IMetadataStringQualifiers, IMetadataObjectNumberQualifiers, IMetadataObjectCatalog,
-                              IArray1C8, IMetadataStandardAttributeDescription,IMetadataObjectField
+                              IArray1C8, IMetadataStandardAttributeDescription,IMetadataObjectField,IMetaDataObjectDocument, IDocumentsManager,
+                              IDocumentManager, IDocumentRef, IDocumentSelection,
+                              IEnumsManager,IEnumManager,IEnumRef,
+                              ICatalogRef
     {
         private const string _COMServerName = "V83.COMConnector";
         /// <summary>
@@ -185,6 +189,24 @@ namespace sabatex.V1C8
         public static COMObject1C8 CreateConnection(string dataBasePath, string userName, string password) =>
                 CreateConnection($"File='{dataBasePath}';Usr='{userName}';pwd='{password}';");
 
+
+        public override bool Equals(object obj)
+        {
+            COMObject1C8 b = obj as COMObject1C8;
+            if (b == null) return false;
+            return _handle == b._handle;
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public T ConvertTo1CObject<T>(object obj) where T : ICOMObject1C8
+        {
+            COMObject1C8 comObj = new COMObject1C8(this, obj);
+            _children.Add(comObj);
+            return (T)(object)comObj;
+        }
     }
 
 }

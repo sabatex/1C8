@@ -2,3 +2,6 @@
 [![NuGet Badge](https://buildstats.info/nuget/sabatex.V1C8)](https://www.nuget.org/packages/sabatex.V1C8/)
 
 # C# NETStandart 2.1 библиотека  для работы с 1С8.3 через COMConnector
+
+
+ .\regsvr32.exe  'C:\Program Files (x86)\1cv8\8.3.x.x\bin\comcntr.dll'

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using sabatex.V1C8.ApplicationObjects;
 
 namespace sabatex.V1C8
 {
@@ -13,8 +14,15 @@ namespace sabatex.V1C8
         public Guid GetObjectId(ICOMObject1C8 value) => Guid.Parse(this.String(value.GetProperty<ICOMObject1C8>("УникальныйИдентификатор")));
 
         public T Eval<T>(string expression) => Method<T>("Eval", expression);
-        public T NewObject<T>(string name) => Method<T>("NewObject", name);
+        public T NewObject<T>(string name, params object[] args)
+        {
+            object[] argsNew = (new object[] { name }).Concat(args).ToArray();
+            return Method<T>("NewObject", argsNew);
+        }
         public IMetadataConfiguration MetaData { get => GetProperty<IMetadataConfiguration>("Metadata"); }
+
+        public IDocumentsManager Documents => GetProperty<IDocumentsManager>("Documents");
+        public IEnumsManager Enums => GetProperty<IEnumsManager>("Enums");
 
         //public References Справочники { get => GetProperty<References>("Справочники"); }
 

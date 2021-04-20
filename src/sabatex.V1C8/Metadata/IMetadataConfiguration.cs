@@ -47,7 +47,7 @@ namespace sabatex.V1C8.Metadata
 
         MetadataObjectCollection<IMetaDataObjectEnum> Enums=>new MetadataObjectCollection<IMetaDataObjectEnum>(GetProperty<ICOMObject1C8>("Enums"));
         MetadataObjectCollection<IMetadataObjectCatalog> Catalogs => new MetadataObjectCollection<IMetadataObjectCatalog>(GetProperty<ICOMObject1C8>("Catalogs"));
-        //IMetaDataObjectCollection<IMetaDataObjectDocument> Documents{get=>GetProperty<IMetaDataObjectCollection<IMetaDataObjectDocument>>("Documents");}
+        MetadataObjectCollection<IMetaDataObjectDocument> Documents=>new MetadataObjectCollection<IMetaDataObjectDocument>(GetProperty<ICOMObject1C8>("Documents"));
         //IMetaDataObjectCollection<IMetaDataObjectChartOfAccount> ChartsOfAccounts{get=>GetProperty<IMetaDataObjectCollection<IMetaDataObjectChartOfAccount>>("ChartsOfAccounts");}
 
     }

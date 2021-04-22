@@ -15,6 +15,7 @@ namespace sabatex.V1C8
     public class COMObject1C8:ICOMObject1C8,IGlobalContext,IMetadataConfiguration,IMetaDataObjectEnum,IMetadataObjectEnumValue,
                               IMetadataTypeDescription, IMetadataStringQualifiers, IMetadataObjectNumberQualifiers, IMetadataObjectCatalog,
                               IArray1C8, IMetadataStandardAttributeDescription,IMetadataObjectField,IMetaDataObjectDocument, IDocumentsManager,
+                              IMetadataObjectTabularSections, IMetadataTabularSectionCollection, IMetadataObjectTabularSection,
                               IDocumentManager, IDocumentRef, IDocumentSelection,
                               IEnumsManager,IEnumManager,IEnumRef,
                               ICatalogRef
@@ -201,11 +202,14 @@ namespace sabatex.V1C8
             return base.GetHashCode();
         }
 
-        public T ConvertTo1CObject<T>(object obj) where T : ICOMObject1C8
+        IEnumerator<IMetadataObjectTabularSection> IEnumerable<IMetadataObjectTabularSection>.GetEnumerator()
         {
-            COMObject1C8 comObj = new COMObject1C8(this, obj);
-            _children.Add(comObj);
-            return (T)(object)comObj;
+            return new V1C8Enumerator<IMetadataObjectTabularSection>(this); 
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 

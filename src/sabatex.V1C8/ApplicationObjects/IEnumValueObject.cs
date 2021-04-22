@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace sabatex.V1C8
+namespace sabatex.V1C8.ApplicationObjects
 {
     public interface IEnumValueObject:ICOMObject1C8
     {

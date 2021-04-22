@@ -37,6 +37,14 @@ namespace WebAPI1C8.Services
                 pairs.Add("Name", description.Name);
                 pairs.Add("Synonym", description.Synonym);
             }
+            void setDescription(MetadataDescription metadataDescription, IMetadataDescription description)
+            {
+                metadataDescription.Comment = description.Comment;
+                metadataDescription.Name = description.Name;
+                metadataDescription.Synonym = description.Synonym;
+             }
+
+
             ObjectType getType(IMetadataTypeDescription mainType)
             {
                 var t = mainType.Types();
@@ -80,24 +88,23 @@ namespace WebAPI1C8.Services
                 case "Документ":
                     var mDocument = globalContext.MetaData.Documents[s[1]];
                     addDescription(result, mDocument);
-                    var attributes = new Dictionary<string, object>();
+                    var attributes = new Dictionary<string, MetadataAttribute>();
                     foreach (var attr in mDocument.Attributes)
                     {
-                        var attribute = new Dictionary<string, object>();
-                        addDescription(attribute, attr);
-                        attribute.Add("Type", getType(attr.Type));
+                        var attribute = new MetadataAttribute();
+                        setDescription(attribute, attr);
+                        attribute.Type = getType(attr.Type);
                         attributes.Add(attr.Name, attribute);
                         
                     }
                     result.Add("Attributes", attributes);
-                    foreach (var tb in mDocument.TabularSections)
-                    {
+                        
+                   foreach (var tb in mDocument.TabularSections)
+                   {
 
-                    }
+                   }
 
-
-
-                    return result;
+                   return result;
                 default:
                     throw new Exception($"Не правильне імя обьэкта метаданих {objectName} ");
 

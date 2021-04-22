@@ -10,8 +10,8 @@ namespace sabatex.V1C8
         void SetProperty(string propertyName, object value);
 
         T Method<T>(string methodName, params object[] args);
+        void Method(string methodName, params object[] args) => Method<object>(methodName, args);
+
         IGlobalContext GlobalContext { get; }
-        T ConvertTo1CObject<T>(object obj) where T : ICOMObject1C8;
- 
      }
 }

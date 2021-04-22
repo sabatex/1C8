@@ -8,7 +8,7 @@
     <Company>sabatex on git</Company>
     <Description>1C8 Models</Description>
     <Copyright>2021, Serhiy Lakas</Copyright>
-    <Version>5.0.3</Version>
+    <Version>5.0.4</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8</PackageTags>
     <PackageId>sabatex.V1C8.Models</PackageId>

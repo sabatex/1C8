@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Authors>Serhiy Lakas</Authors>
     <Product>1C8 Models</Product>
     <Company>sabatex on git</Company>
     <Description>1C8 Models</Description>
     <Copyright>2021, Serhiy Lakas</Copyright>
-    <Version>5.0.2</Version>
+    <Version>5.0.3</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8</PackageTags>
     <PackageId>sabatex.V1C8.Models</PackageId>

@@ -41,6 +41,11 @@ namespace WebAPI1C8.Controllers
             return _service1C.GetDocumentMetadataNames();
         }
 
+        [HttpGet("metadataObject")]
+        public object GetMetadataObject(string objectName= "Документ.РеализацияТоваровУслуг") => _service1C.GetMetadataObject(objectName);
+
+        [HttpGet("documents")]
+        public IEnumerable<object> GetDocumentsMetadata() => _service1C.GetDocumentsMetadata();
 
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using sabatex.V1C8;
 using sabatex.V1C8.ApplicationObjects;
 using sabatex.V1C8.Metadata;
+using sabatex.V1C8.Models.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,82 @@ namespace WebAPI1C8.Services
             globalContext.Dispose();
         }
 
+        public object GetMetadataObject(string objectName)
+        {
+            void addDescription(Dictionary<string,object> pairs,IMetadataDescription description)
+            {
+                pairs.Add("Comment", description.Comment);
+                pairs.Add("Name", description.Name);
+                pairs.Add("Synonym", description.Synonym);
+            }
+            ObjectType getType(IMetadataTypeDescription mainType)
+            {
+                var t = mainType.Types();
+                var result = new ObjectType();
+                for (int i = 0; i < t.Count(); i++)
+                {
+                    var stringType = globalContext.String(t[i] as ICOMObject1C8);
+                    // simple type
+                    switch (stringType)
+                    {
+                        case "Число":
+                            result.AddNumber(mainType.NumberQualifiers.Digits, mainType.NumberQualifiers.FractionDigits);
+                            break;
+                        case "Булево":
+                            result.AddBool();
+                            break;
+                        case "Рядок":
+                            result.AddString(mainType.StringQualifiers.Length,mainType.StringQualifiers.AllowedLength);
+                            break;
+                        case "Дата":
+                            result.AddDateTime(globalContext.String(mainType.GetProperty<ICOMObject1C8>("DateQualifiers").GetProperty<ICOMObject1C8>("DateFractions")));
+                            break;
+                            case "Сховище значень":
+                            result.Types.Add("ValueStorage");
+                            break;
+                        default:
+                            string s = globalContext.MetaData.FindByType(t[i] as ICOMObject1C8).FullName();
+                            result.Types.Add(s);
+                            break;
+                    }
+                }
+                return result;
+            }
+
+            string[] s = objectName.Split('.');
+            if (s.Length != 2)
+                throw new Exception($"Не правильне імя обьэкта метаданих {objectName} ");
+            var result = new Dictionary<string, object>();
+            switch (s[0])
+            {
+                case "Документ":
+                    var mDocument = globalContext.MetaData.Documents[s[1]];
+                    addDescription(result, mDocument);
+                    var attributes = new Dictionary<string, object>();
+                    foreach (var attr in mDocument.Attributes)
+                    {
+                        var attribute = new Dictionary<string, object>();
+                        addDescription(attribute, attr);
+                        attribute.Add("Type", getType(attr.Type));
+                        attributes.Add(attr.Name, attribute);
+                        
+                    }
+                    result.Add("Attributes", attributes);
+                    foreach (var tb in mDocument.TabularSections)
+                    {
+
+                    }
+
+
+
+                    return result;
+                default:
+                    throw new Exception($"Не правильне імя обьэкта метаданих {objectName} ");
+
+            }
+
+        }
+
 
         public IEnumerable<object> GetEnumsMetadata()
         {
@@ -48,11 +125,19 @@ namespace WebAPI1C8.Services
                 yield return new { Name = c.Name, FullName = c.FullName() };
             }
         }
+        public IEnumerable<object> GetDocumentsMetadata()
+        {
+            foreach (var c in globalContext.MetaData.Documents)
+            {
+                yield return GetMetadataObject($"Документ.{c.Name}");
+            }
+        }
 
         object emptyReference = new {id="" };
 
-        public object GetReferenceTypeAttribute(ICOMObject1C8 obj)
+        public object GetReferenceTypeAttribute(ICOMObject1C8 obj,string typeN = "")
         {
+
             if (obj == null) return null;
             string typeName = obj.Method<ICOMObject1C8>("Metadata").Method<string>("FullName");
 
@@ -94,7 +179,8 @@ namespace WebAPI1C8.Services
                     case "Дата":
                         return obj.GetProperty<DateTime>(fieldName);
                     default:
-                        return GetReferenceTypeAttribute(obj.GetProperty<ICOMObject1C8>(fieldName));
+                    string s = globalContext.MetaData.FindByType(fieldType.Types()[0] as ICOMObject1C8).FullName();
+                    return GetReferenceTypeAttribute(obj.GetProperty<ICOMObject1C8>(fieldName),s);
                 }
 
         }
@@ -103,8 +189,7 @@ namespace WebAPI1C8.Services
         public object GetAttribute(ICOMObject1C8 obj,IMetadataObjectField field)
         {
             var fullname = globalContext.String(field.Type.Types()[0] as IMetadataTypeDescription);
-
-
+ 
             var types = field.Type.Types();
             if (types.Count() == 1)
                 return GetSingleTypeAttribute(obj, field.Name, field.Type);
@@ -137,6 +222,7 @@ namespace WebAPI1C8.Services
                 Dictionary<string, object> json = new Dictionary<string, object>();
                 json.Add("type", metadataObject.FullName());
                 var iMetaDataObjectDocument = metadataObject as IMetaDataObjectDocument;
+                var ms = globalContext.MetaData.Documents["РеализацияТоваровУслуг"].FullName();
                 if (iMetaDataObjectDocument != null)
                 {
                     var doc = obj as IDocumentRef;

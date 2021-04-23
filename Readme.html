@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <code>
+        Install
+        Package Manager:
+            PM>Install-Package sabatex.V1C8 -Version 5.0.1
+        Command line:
+            >dotnet add package sabatex.V1C8 --version 5.0.1
+        Project file *.csproj:
+            &ltPackageReference Include="sabatex.V1C8" Version="5.0.1"/&gt
+    
+    </code>
+
+    <p>
+        Пример использования:
+    </p>
+     <pre>
+        // создаём соединение
+        using (var globalContext = COMObject1C8.CreateConnection("ConnectionString1C8")
+        {
+            // получаем документ
+            var doc = globalContext.GetProperty&ltICOMObject1C8&gt("Documents").GetProperty&ltICOMObject1C8&gt("РасходнаяНакладная").Method&ltICOMObject1C8&gt("FindByNumber", "0000001", new DateTime(2021,01,01));
+
+
+        }
+    </pre>
+
+
+</body>
+</html>

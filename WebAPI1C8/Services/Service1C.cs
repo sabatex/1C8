@@ -284,7 +284,6 @@ namespace WebAPI1C8.Services
  
             var doc = globalContext.Documents[documentName].FindByNumber(number, date);
 
-
             if (doc == null)
                 return null;
 

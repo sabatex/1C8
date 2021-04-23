@@ -12,6 +12,7 @@
          - <PackageReference Include="sabatex.V1C8" Version="5.0.1"/>
 
 ### Пример использования:
+```c#
         // создаём соединение
         using (var globalContext = COMObject1C8.CreateConnection("ConnectionString1C8")
         {
@@ -20,3 +21,17 @@
 
 
         }
+### Структура библиотеки
+    - COMObject1C8 основной класс, в котором реализован базовый функционал:
+        - статический метод создания соединения CreateConnection("Строка соединения")
+        - чтение и установка свойств объектов GetProperty<T>("Название свойства")
+        - установка свойства объекта SetProperty<T>("Название свойства",Значение)
+        - выполнение методов объекта Method<T>("Название метода",Пареметр1,....)
+        - свойство GlobalContext  (глобальный контекст)
+    -  ICOMObject1C8
+    -  IGlobalContext
+
+#### если нет доступа к COMConnector 1C8.3 
+     .\regsvr32.exe  'C:\Program Files (x86)\1cv8\8.3.x.x\bin\comcntr.dll'
+
+####

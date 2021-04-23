@@ -31,12 +31,6 @@ namespace WebAPI1C8.Services
 
         public object GetMetadataObject(string objectName)
         {
-            void addDescription(Dictionary<string,object> pairs,IMetadataDescription description)
-            {
-                pairs.Add("Comment", description.Comment);
-                pairs.Add("Name", description.Name);
-                pairs.Add("Synonym", description.Synonym);
-            }
             void setDescription(MetadataDescription metadataDescription, IMetadataDescription description)
             {
                 metadataDescription.Comment = description.Comment;
@@ -44,6 +38,20 @@ namespace WebAPI1C8.Services
                 metadataDescription.Synonym = description.Synonym;
              }
 
+            MetadataAttribute[] getAttributes(MetadataObjectCollection<IMetadataObjectField> objectFields)
+            {
+                var attributes = new List<MetadataAttribute>();
+                foreach (var attr in objectFields)
+                {
+                    var attribute = new MetadataAttribute();
+                    setDescription(attribute, attr);
+                    attribute.Type = getType(attr.Type);
+                    attributes.Add(attribute);
+
+                }
+                return attributes.ToArray();
+
+            }
 
             ObjectType getType(IMetadataTypeDescription mainType)
             {
@@ -82,29 +90,27 @@ namespace WebAPI1C8.Services
             string[] s = objectName.Split('.');
             if (s.Length != 2)
                 throw new Exception($"Не правильне імя обьэкта метаданих {objectName} ");
-            var result = new Dictionary<string, object>();
+            
             switch (s[0])
             {
                 case "Документ":
                     var mDocument = globalContext.MetaData.Documents[s[1]];
-                    addDescription(result, mDocument);
-                    var attributes = new Dictionary<string, MetadataAttribute>();
-                    foreach (var attr in mDocument.Attributes)
-                    {
-                        var attribute = new MetadataAttribute();
-                        setDescription(attribute, attr);
-                        attribute.Type = getType(attr.Type);
-                        attributes.Add(attr.Name, attribute);
-                        
-                    }
-                    result.Add("Attributes", attributes);
-                        
+                    var document = new MetadataDocument();
+                    setDescription(document, mDocument);
+         
+                    document.Attributes = getAttributes(mDocument.Attributes);
+
+                    var ts = new List<MetadataTabularSection>();
                    foreach (var tb in mDocument.TabularSections)
                    {
-
+                        var tabularSection = new MetadataTabularSection();
+                        setDescription(tabularSection, tb);
+                        tabularSection.Attributes = getAttributes(tb.Attributes);
+                        ts.Add(tabularSection);
                    }
+                    document.TabularSections = ts.ToArray();
 
-                   return result;
+                   return document;
                 default:
                     throw new Exception($"Не правильне імя обьэкта метаданих {objectName} ");
 

@@ -1,11 +1,25 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Serhiy Lakas</Authors>
+    <Product>1C8.3 COMConnector extensions </Product>
+    <Description>1C8.3 COMConnector extensions</Description>
+    <Copyright>2021, Serhiy Lakas</Copyright>
+    <Version>5.0.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>#1C8.3</PackageTags>
+    <PackageId>sabatex.V1C8.Extensions</PackageId>
+    <AssemblyName>sabatex.V1C8.Extensions</AssemblyName>
+    <RootNamespace>sabatex.V1C8.Extensions</RootNamespace>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://github.com/sabatex/V1C8.git</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="sabatex.V1C8" Version="5.0.1" />
+    <PackageReference Include="sabatex.V1C8" Version="5.1.0" />
     <PackageReference Include="sabatex.V1C8.Models" Version="5.0.4" />
   </ItemGroup>
 

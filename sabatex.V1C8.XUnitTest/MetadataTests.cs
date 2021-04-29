@@ -54,16 +54,17 @@ namespace sabatex.V1C8.XUnitTest
             }
             return result;
         }
-        [Fact]
-        public void GetEnumsMetadata()
-        {
-            var enumMetadata = _metadata.GetMetadataEnum();
-        }
+        //[Fact]
+        //public void GetEnumsMetadata()
+        //{
+        //    var enumMetadata = _metadata.GetMetadataEnum();
+        //}
 
         [Fact]
         public object GetCatalogsMetadata()
         {
             var result = new List<object>();
+
             foreach (var e in _metadata.Catalogs)
             {
 

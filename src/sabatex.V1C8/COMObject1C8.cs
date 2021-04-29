@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
@@ -12,26 +13,22 @@ using sabatex.V1C8.Metadata;
 
 namespace sabatex.V1C8
 {
-    public class COMObject1C8:ICOMObject1C8,IGlobalContext,IMetadataConfiguration,IMetaDataObjectEnum,IMetadataObjectEnumValue,
-                              IMetadataTypeDescription, IMetadataStringQualifiers, IMetadataObjectNumberQualifiers, IMetadataObjectCatalog,
-                              IArray1C8, IMetadataStandardAttributeDescription,IMetadataObjectField,IMetaDataObjectDocument, IDocumentsManager,
-                              IMetadataObjectTabularSections, IMetadataTabularSectionCollection, IMetadataObjectTabularSection,
-                              IDocumentManager, IDocumentRef, IDocumentSelection,
-                              IEnumsManager,IEnumManager,IEnumRef,
-                              ICatalogRef
+    public partial class COMObject1C8:ICOMObject1C8,IArray1C8,IGlobalContext,
+                                // Metadata
+                                // Document
+                                IDocumentsManager,IDocumentManager,IDocumentRef, IDocumentSelection,
+                                // Enum
+                                IEnumsManager,IEnumManager,IEnumRef,
+                                // Catalog
+                                ICatalogRef
     {
+
         private const string _COMServerName = "V83.COMConnector";
-        /// <summary>
-        /// mark object then disposed
-        /// </summary>
+        // mark object then disposed
         private bool _disposed = false;
-        /// <summary>
-        /// chaild objects
-        /// </summary>
-        List<COMObject1C8> _children = new List<COMObject1C8>();
-        /// <summary>
-        /// link to owner
-        /// </summary>
+        // chaild objects
+        private List<COMObject1C8> _children = new List<COMObject1C8>();
+        // link to owner or null for root
         private COMObject1C8 _owner = null;
         /// <summary>
         /// global context
@@ -49,6 +46,53 @@ namespace sabatex.V1C8
                 _globalContext = owner._globalContext;
             else
                 _globalContext = owner;
+        }
+        protected object COMMethod(string FuncName, BindingFlags invokeAttr, params object[] Args)
+        {
+            object[] normalArgs = null;
+            if (Args.Length != 0)
+            {
+
+                normalArgs = new object[Args.Length]; 
+                for (int i = 0; i < Args.Length; i++)
+                {
+                    var comObject = Args[i] as COMObject1C8;
+                    if (comObject != null)
+                        normalArgs[i] = comObject._handle;
+                    else
+                        normalArgs[i] = Args[i];
+                }
+
+            }
+
+            try
+            {
+                var obj = Handle.GetType().InvokeMember(FuncName, invokeAttr, null, _handle, normalArgs);
+                if (obj == null) return obj;
+                if (Marshal.IsComObject(obj))
+                {
+                    COMObject1C8 comObj = new COMObject1C8(this, obj);
+                    _children.Add(comObj);
+                    return comObj;
+                }
+                else
+                    return obj;
+
+            }
+            catch (Exception e)
+            {
+                StringBuilder errorStr = new StringBuilder($"Error {nameof(COMMethod)} with FuncName={FuncName}");
+                if (Args.Length != 0)
+                {
+                    errorStr.Append(" and params:");
+                    for (int i = 0; i < Args.Length; i++)
+                        errorStr.Append($" Arg{i}={Args[i]}");
+                }
+                errorStr.Append($" Inner exception - {e.Message}");
+                Trace.TraceError(errorStr.ToString());
+                // FuncName == null
+                throw new Exception(errorStr.ToString());
+            }
         }
         protected T COMMethod<T>(string FuncName, BindingFlags invokeAttr, params object[] Args)
         {
@@ -100,16 +144,11 @@ namespace sabatex.V1C8
                 // FuncName == null
                 throw new Exception(errorStr.ToString());
             }
-
-
         }
         public T Method<T>(string methodName, params object[] args)=>COMMethod<T>(methodName,BindingFlags.InvokeMethod,args);
         public T GetProperty<T>(string propertyName)=>COMMethod<T>(propertyName, BindingFlags.GetProperty);
         public void SetProperty(string propName, object value) => COMMethod<object>(propName, BindingFlags.PutDispProperty, value );
-
-
         public IGlobalContext GlobalContext => _globalContext;
-
 
         internal void RemoveChild(COMObject1C8 com)
         {
@@ -211,6 +250,19 @@ namespace sabatex.V1C8
         {
             throw new NotImplementedException();
         }
+
+
+        #region Hidden System.Object members
+        /// <summary>
+        ///     Returns a string that represents the current object.
+        /// </summary>
+        /// <returns> A string that represents the current object. </returns>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        public override string? ToString()
+            => base.ToString();
+        #endregion
+
+
     }
 
 }

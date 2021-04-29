@@ -16,7 +16,6 @@ namespace sabatex.V1C8.XUnitTest
         {
             var Configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
                                                 .AddJsonFile("appsettings.json")
-                                                .AddUserSecrets<MetadataTests>()
                                                 .Build();
             var GlobalContext = COMObject1C8.CreateConnection(Configuration["ConnectionString1C8"]);
 

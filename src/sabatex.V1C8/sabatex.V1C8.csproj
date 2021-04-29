@@ -24,8 +24,4 @@
     <RepositoryUrl>https://github.com/sabatex/V1C8.git</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="sabatex.V1C8.Models" Version="5.0.2" />
-  </ItemGroup>
  </Project>

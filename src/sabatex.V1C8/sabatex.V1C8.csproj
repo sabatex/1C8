@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Authors>Serhiy Lakas</Authors>
     <Product>1C8 COMConnector Extensions</Product>
     <Company>sabatex on git</Company>
     <Description>1C8 COMConnector Extensions</Description>
     <Copyright>2019, Serhiy Lakas</Copyright>
-    <Version>5.0.1</Version>
+    <Version>5.1.0</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8 #1C8.1 #1C8.2 #1C8.3</PackageTags>
     <PackageId>sabatex.V1C8</PackageId>

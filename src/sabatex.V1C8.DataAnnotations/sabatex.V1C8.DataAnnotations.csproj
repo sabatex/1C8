@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Serhiy Lakas</Authors>
     <Product>1C8.3 DataAnnotations </Product>
     <Description>1C8.3 DataAnnotations</Description>

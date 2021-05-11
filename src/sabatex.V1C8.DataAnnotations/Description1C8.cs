@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Collections.Generic;
 using System.Text;
-namespace sabatex.V1C8.ComponentModel.DataAnnotations
+namespace sabatex.V1C8.DataAnnotations
 {
     /// <summary>
     ///     DisplayEnumAttribute is a general-purpose attribute to specify user-visible globalizable strings for enum.

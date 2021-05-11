@@ -19,9 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.JSON", "sabatex.V1C8.JSON\sabatex.V1C8.JSON.csproj", "{00EBA18D-DB40-4078-A51A-3B6912F725A6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.DataAnnotations", "sabatex.V1C8.DataAnnotations\sabatex.V1C8.DataAnnotations.csproj", "{D83A5B9E-B923-459F-9DCF-EF48CCE2314D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.Extensions", "src\sabatex.V1C8.Extensions\sabatex.V1C8.Extensions.csproj", "{652F26CB-6F87-4F14-A400-2D4494E301B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.ComponentModel.DataAnnotations", "src\sabatex.V1C8.ComponentModel.DataAnnotations\sabatex.V1C8.ComponentModel.DataAnnotations.csproj", "{2FEBEB53-0C88-476B-858F-2A7288B0257D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,14 +45,14 @@ Global
 		{00EBA18D-DB40-4078-A51A-3B6912F725A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00EBA18D-DB40-4078-A51A-3B6912F725A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00EBA18D-DB40-4078-A51A-3B6912F725A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D83A5B9E-B923-459F-9DCF-EF48CCE2314D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D83A5B9E-B923-459F-9DCF-EF48CCE2314D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D83A5B9E-B923-459F-9DCF-EF48CCE2314D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D83A5B9E-B923-459F-9DCF-EF48CCE2314D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{652F26CB-6F87-4F14-A400-2D4494E301B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{652F26CB-6F87-4F14-A400-2D4494E301B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{652F26CB-6F87-4F14-A400-2D4494E301B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{652F26CB-6F87-4F14-A400-2D4494E301B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FEBEB53-0C88-476B-858F-2A7288B0257D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FEBEB53-0C88-476B-858F-2A7288B0257D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FEBEB53-0C88-476B-858F-2A7288B0257D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FEBEB53-0C88-476B-858F-2A7288B0257D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

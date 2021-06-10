@@ -23,7 +23,7 @@ namespace sabatex.V1C8
                                 ICatalogRef
     {
 
-        private const string _COMServerName = "V83.COMConnector";
+        //private const string _COMServerName = "V83.COMConnector";
         // mark object then disposed
         private bool _disposed = false;
         // chaild objects
@@ -176,16 +176,17 @@ namespace sabatex.V1C8
             }
         }
 
-        public static COMObject1C8 CreateConnection(string connectionString)
+        public static COMObject1C8 CreateConnection(string connectionString,string COMIDName = "V83.COMConnector")
         {
+            
             if (string.IsNullOrWhiteSpace(connectionString))
                 throw new ArgumentNullException();
 
-            Type comConnector = Type.GetTypeFromProgID(_COMServerName);
+            Type comConnector = Type.GetTypeFromProgID(COMIDName);
 
             if (comConnector == null)
             {
-                string error = $"Помилка зєднання з COM Class Object {_COMServerName} !";
+                string error = $"Помилка зєднання з COM Class Object {COMIDName} !";
                 Trace.TraceError(error);
                 throw new Exception(error);
             }
@@ -193,7 +194,7 @@ namespace sabatex.V1C8
             object instance = Activator.CreateInstance(comConnector);
             if (instance == null)
             {
-                string error = $"Instance of class {_COMServerName} was not created";
+                string error = $"Instance of class {COMIDName} was not created";
                 Trace.TraceError(error);
                 comConnector = null;
                 throw new Exception(error);
@@ -223,11 +224,11 @@ namespace sabatex.V1C8
             }
         }
 
-        public static COMObject1C8 CreateConnection(string serverName, string dataBaseName, string userName, string password) =>
-                CreateConnection($"Srvr='{serverName}';Ref='{dataBaseName}';Usr='{userName}';pwd='{password}';");
+        public static COMObject1C8 CreateConnection(string serverName, string dataBaseName, string userName, string password, string COMIDName = "V83.COMConnector") =>
+                CreateConnection($"Srvr='{serverName}';Ref='{dataBaseName}';Usr='{userName}';pwd='{password}';",COMIDName);
 
-        public static COMObject1C8 CreateConnection(string dataBasePath, string userName, string password) =>
-                CreateConnection($"File='{dataBasePath}';Usr='{userName}';pwd='{password}';");
+        public static COMObject1C8 CreateConnection(string dataBasePath, string userName, string password, string COMIDName = "V83.COMConnector") =>
+                CreateConnection($"File='{dataBasePath}';Usr='{userName}';pwd='{password}';",COMIDName);
 
 
         public override bool Equals(object obj)

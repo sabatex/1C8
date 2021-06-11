@@ -24,7 +24,7 @@ namespace sabatex.V1C8
         public IDocumentsManager Documents => GetProperty<IDocumentsManager>("Documents");
         public IEnumsManager Enums => GetProperty<IEnumsManager>("Enums");
         public ICatalogManager Catalogs => GetProperty<ICatalogManager>("Catalogs");
-        public ICatalogManager Справочники => GetProperty<ICatalogManager>("Справочники");
+        public ICatalogsManager Справочники => GetProperty<ICatalogsManager>("Справочники");
 
     }
 }

@@ -16,7 +16,7 @@ namespace sabatex.V1C8.ApplicationObjects
             return Method<ICatalogSelection>("Select", parent, owner, filter, order);
         }
 
-        public ICatalogRef FindByCode(string code, bool? fullCode,ICOMObject1C8 parent=null,ICOMObject1C8 owner=null)
+        public ICatalogRef FindByCode(string code, bool? fullCode=null,ICOMObject1C8 parent=null,ICOMObject1C8 owner=null)
         {
             var result = Method<ICatalogRef>("FindByCode", code,fullCode,parent,owner);
             if (result == null) return null;

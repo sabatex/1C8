@@ -20,7 +20,7 @@ namespace sabatex.V1C8
                                 // Enum
                                 IEnumsManager,IEnumManager,IEnumRef,
                                 // Catalog
-                                ICatalogRef,ICatalogManager,ICatalogSelection
+                                ICatalogRef,ICatalogManager,ICatalogSelection,ICatalogsManager
     {
 
         //private const string _COMServerName = "V83.COMConnector";

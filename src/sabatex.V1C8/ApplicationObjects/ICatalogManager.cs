@@ -24,8 +24,8 @@ namespace sabatex.V1C8.ApplicationObjects
             return result;
         }
 
-        public ICatalogObject CreateFolder(string folderName) => Method<ICatalogObject>("CreateFolder", folderName);
-        public ICatalogObject CreateItem(string itemName) => Method<ICatalogObject>("CreateItem", itemName);
+        public ICatalogObject CreateFolder() => Method<ICatalogObject>("CreateFolder");
+        public ICatalogObject CreateItem() => Method<ICatalogObject>("CreateItem");
 
     }
 }

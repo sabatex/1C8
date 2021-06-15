@@ -20,17 +20,25 @@ namespace sabatex.V1C8.XUnitTest
         [Fact]
         public void GetCatalogItems()
         {
-            var test = _connection.GlobalContext.Catalogs["ФизическиеЛица"].Select();
-            while (test.Next())
+            var testL = _connection.GlobalContext.Catalogs["ФизическиеЛица"].Select();
+            while (testL.Next())
             {
+                var test = testL.Ref;
                 if (test.DeletionMark) continue;
                 if (test.IsFolder) continue;
                 var owner = test.Owner;
                 var parent = test.Parent;
                 var code = test.Code;
                 var description = test.Description;
-                var refCatalog = test.Ref;
                 var item = _connection.GlobalContext.Catalogs["ФизическиеЛица"].FindByCode(code);
+                var uuid = test.UUID;
+                var metadata = test.Metadata();
+                var fullDescr = test.FullDescr();
+                var fullCode = test.FullCode();
+                var obj = test.GetObject();
+                var isEmpty = test.IsEmpty();
+                var copy = test.Copy();
+                var level = test.Level();
                 Assert.NotNull(item);
 
             }

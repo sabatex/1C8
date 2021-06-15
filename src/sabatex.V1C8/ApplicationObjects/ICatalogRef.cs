@@ -27,6 +27,14 @@ namespace sabatex.V1C8.ApplicationObjects
         public string Code =>GetProperty<string>("Code");
         public string Description => GetProperty<string>("Description");
         public ICatalogRef Ref=> GetProperty<ICatalogRef>("Ref");
+        public string FullDescr() => Method<string>("FullDescr");
+        public string FullCode() => Method<string>("FullCode");
+        public ICatalogObject GetObject() => Method<ICatalogObject>("GetObject");
+        public bool BelongsToItem(ICatalogRef catalogRef) => Method<bool>("BelongsToItem",catalogRef);
+        public bool IsEmpty()=> Method<bool>("IsEmpty");
 
+        public ICatalogObject Copy() => Method<ICatalogObject>("Copy");
+
+        public int Level() => Method<int>("Level");
     }
 }

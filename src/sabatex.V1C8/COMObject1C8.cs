@@ -13,14 +13,16 @@ using sabatex.V1C8.Metadata;
 
 namespace sabatex.V1C8
 {
-    public partial class COMObject1C8:ICOMObject1C8,IArray1C8,IGlobalContext,
+    public partial class COMObject1C8:ICOMObject1C8,IArray1C8,IGlobalContext, IStructure,
                                 // Metadata
                                 // Document
                                 IDocumentsManager,IDocumentManager,IDocumentRef, IDocumentSelection,
                                 // Enum
                                 IEnumsManager,IEnumManager,IEnumRef,
                                 // Catalog
-                                ICatalogRef,ICatalogObject,ICatalogManager,ICatalogSelection,ICatalogsManager
+                                ICatalogRef,ICatalogObject,ICatalogManager,ICatalogSelection,ICatalogsManager,
+                                // Information registers
+                                IInformationRegistersManager, IInformationRegisterManager, IInformationRegisterRecord, IIInformationRegisterSelection, IInformationRegisterRecordManager
     {
 
         //private const string _COMServerName = "V83.COMConnector";

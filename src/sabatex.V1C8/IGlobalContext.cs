@@ -26,5 +26,8 @@ namespace sabatex.V1C8
         public ICatalogsManager Catalogs => GetProperty<ICatalogsManager>("Catalogs");
         public ICatalogsManager Справочники => GetProperty<ICatalogsManager>("Справочники");
 
+        public IInformationRegistersManager InformationRegisters => GetProperty<IInformationRegistersManager>("InformationRegisters");
+
+
     }
 }

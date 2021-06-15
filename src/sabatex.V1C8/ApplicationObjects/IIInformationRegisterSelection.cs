@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace sabatex.V1C8.ApplicationObjects
 {
-    public interface ICatalogSelection:ICatalogRef
+    public interface IIInformationRegisterSelection:IInformationRegisterRecord
     {
         public bool Next() => Method<bool>("Next");
+        public IInformationRegisterRecordManager GetRecordManager() => Method<IInformationRegisterRecordManager>("GetRecordManager");
     }
 }

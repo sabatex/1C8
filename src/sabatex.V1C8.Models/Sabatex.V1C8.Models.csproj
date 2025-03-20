@@ -1,19 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Authors>Serhiy Lakas</Authors>
     <Product>1C8 Models</Product>
     <Company>sabatex on git</Company>
     <Description>1C8 Models</Description>
     <Copyright>2021, Serhiy Lakas</Copyright>
-    <Version>5.0.4</Version>
+    <Version>6.0.0</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8</PackageTags>
-    <PackageId>sabatex.V1C8.Models</PackageId>
-    <AssemblyName>sabatex.V1C8.Models</AssemblyName>
-    <RootNamespace>sabatex.V1C8.Models</RootNamespace>
+    <PackageId>Sabatex.V1C8.Models</PackageId>
+    <AssemblyName>Sabatex.V1C8.Models</AssemblyName>
+    <RootNamespace>Sabatex.V1C8.Models</RootNamespace>
 
 
     <PackageReleaseNotes>Add SetProperty</PackageReleaseNotes>
@@ -25,9 +25,5 @@
     <RepositoryType>GIT</RepositoryType>
 
   </PropertyGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-  </ItemGroup>
   
 </Project>

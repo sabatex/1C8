@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Authors>Serhiy Lakas</Authors>
     <Product>1C8.3 DataAnnotations </Product>
     <Description>1C8.3 DataAnnotations</Description>
     <Copyright>2021, Serhiy Lakas</Copyright>
-    <Version>5.0.1</Version>
+    <Version>6.0.0</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8.3</PackageTags>
     <PackageId>sabatex.V1C8.DataAnnotations</PackageId>

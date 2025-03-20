@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.JSON", "sabate
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.Extensions", "src\sabatex.V1C8.Extensions\sabatex.V1C8.Extensions.csproj", "{652F26CB-6F87-4F14-A400-2D4494E301B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.DataAnnotations", "src\sabatex.V1C8.DataAnnotations\sabatex.V1C8.DataAnnotations.csproj", "{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sabatex.V1C8.Models", "sabatex.V1C8.Models\Sabatex.V1C8.Models.csproj", "{FB58FE0A-5BB0-3457-203F-2C36F48979E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sabatex.V1C8", "sabatex.V1C8\Sabatex.V1C8.csproj", "{CBCFD3CC-13F2-4525-FEB4-D8E957D199CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sabatex.V1C8.DataAnnotations", "Sabatex.V1C8.DataAnnotations\Sabatex.V1C8.DataAnnotations.csproj", "{C2BD0185-8223-D2EA-7DFF-8DC4AB99854F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,14 +41,18 @@ Global
 		{652F26CB-6F87-4F14-A400-2D4494E301B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{652F26CB-6F87-4F14-A400-2D4494E301B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{652F26CB-6F87-4F14-A400-2D4494E301B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCFD3CC-13F2-4525-FEB4-D8E957D199CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCFD3CC-13F2-4525-FEB4-D8E957D199CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCFD3CC-13F2-4525-FEB4-D8E957D199CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCFD3CC-13F2-4525-FEB4-D8E957D199CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BD0185-8223-D2EA-7DFF-8DC4AB99854F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BD0185-8223-D2EA-7DFF-8DC4AB99854F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BD0185-8223-D2EA-7DFF-8DC4AB99854F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BD0185-8223-D2EA-7DFF-8DC4AB99854F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30524.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.Models", "src\sabatex.V1C8.Models\sabatex.V1C8.Models.csproj", "{CA453F00-DFE6-43EB-BECF-1504ECD57F34}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8", "src\sabatex.V1C8\sabatex.V1C8.csproj", "{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3E9C0436-70CA-423D-BB01-9620F5DC7BF3}"
@@ -23,16 +21,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.Extensions", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.DataAnnotations", "src\sabatex.V1C8.DataAnnotations\sabatex.V1C8.DataAnnotations.csproj", "{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sabatex.V1C8.Models", "sabatex.V1C8.Models\Sabatex.V1C8.Models.csproj", "{FB58FE0A-5BB0-3457-203F-2C36F48979E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CA453F00-DFE6-43EB-BECF-1504ECD57F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CA453F00-DFE6-43EB-BECF-1504ECD57F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CA453F00-DFE6-43EB-BECF-1504ECD57F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CA453F00-DFE6-43EB-BECF-1504ECD57F34}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAF15755-5A57-40DA-AF74-DFAFBEB29B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,6 +49,10 @@ Global
 		{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35C21588-E207-40A5-A4CD-3CB53D6D6FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB58FE0A-5BB0-3457-203F-2C36F48979E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

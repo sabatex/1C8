@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace sabatex.V1C8.Metadata
+namespace Sabatex.V1C8.Metadata;
+
+public interface IMetaDataObjectEnum:IMetadataObject
 {
-    public interface IMetaDataObjectEnum:IMetadataObject
-    {
-        public MetadataObjectCollection<IMetadataObjectEnumValue>  EnumValues => new MetadataObjectCollection<IMetadataObjectEnumValue>(GetProperty<ICOMObject1C8>("EnumValues"));
-    }
+    public MetadataObjectCollection<IMetadataObjectEnumValue>  EnumValues => new MetadataObjectCollection<IMetadataObjectEnumValue>(GetProperty<ICOMObject1C8>("EnumValues"));
 }

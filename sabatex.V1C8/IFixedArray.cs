@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace sabatex.V1C8
+namespace Sabatex.V1C8
 {
     /// <summary>
     /// Неизменяемый массив. Заполняется системой при инициализации объектов данного типа или с помощью конструктора.

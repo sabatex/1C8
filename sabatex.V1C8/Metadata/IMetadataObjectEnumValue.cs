@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sabatex.V1C8.Metadata
-{
-    public interface IMetadataObjectEnumValue:IMetadataObject
-    {
-         public bool  IsEmpty()=>Method<bool>("IsEmpty");
-    }
+namespace Sabatex.V1C8.Metadata;
 
+public interface IMetadataObjectEnumValue:IMetadataObject
+{
+     public bool  IsEmpty()=>Method<bool>("IsEmpty");
 }

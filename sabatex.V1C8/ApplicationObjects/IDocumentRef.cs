@@ -1,9 +1,9 @@
-﻿using sabatex.V1C8.Metadata;
+﻿using Sabatex.V1C8.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace sabatex.V1C8.ApplicationObjects
+namespace Sabatex.V1C8.ApplicationObjects
 {
     public interface IDocumentRef:ICOMObject1C8
     {

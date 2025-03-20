@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-namespace sabatex.V1C8
+namespace Sabatex.V1C8
 {
     public class V1C8Enumerator<T> : IEnumerator<T> where T:ICOMObject1C8
     {

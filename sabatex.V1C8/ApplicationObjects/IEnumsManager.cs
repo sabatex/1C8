@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace sabatex.V1C8.ApplicationObjects
+namespace Sabatex.V1C8.ApplicationObjects
 {
     public interface IEnumsManager:ICOMObject1C8
     {

@@ -8,10 +8,10 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.ApplicationObjects;
-using sabatex.V1C8.Metadata;
+using Sabatex.V1C8.ApplicationObjects;
+using Sabatex.V1C8.Metadata;
 
-namespace sabatex.V1C8
+namespace Sabatex.V1C8
 {
     public partial class COMObject1C8:ICOMObject1C8,IArray1C8,IGlobalContext, IStructure,
                                 // Metadata

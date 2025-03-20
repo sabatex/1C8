@@ -1,12 +1,12 @@
-﻿using sabatex.V1C8.Metadata;
+﻿using Sabatex.V1C8.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using sabatex.V1C8.ApplicationObjects;
+using Sabatex.V1C8.ApplicationObjects;
 
-namespace sabatex.V1C8
+namespace Sabatex.V1C8
 {
     public interface IGlobalContext:ICOMObject1C8
     {

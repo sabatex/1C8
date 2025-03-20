@@ -1,6 +1,6 @@
 using System;
 
-namespace sabatex.V1C8
+namespace Sabatex.V1C8
 {
 
 

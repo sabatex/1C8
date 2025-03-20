@@ -1,4 +1,4 @@
-namespace sabatex.V1C8.Metadata
+namespace Sabatex.V1C8.Metadata
 {
     public interface IMetadataAttributes:ICOMObject1C8
     {

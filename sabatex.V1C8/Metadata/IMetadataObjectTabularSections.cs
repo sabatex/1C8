@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace sabatex.V1C8.Metadata
+namespace Sabatex.V1C8.Metadata;
+
+public interface IMetadataObjectTabularSections : IMetadataObject, IMetadataAttributes
 {
-    public interface IMetadataObjectTabularSections : IMetadataObject, IMetadataAttributes
-    {
-        IMetadataObjectCollection<IMetadataObjectTabularSection> TabularSections=> GetProperty<ICOMObject1C8>("TabularSections") as IMetadataObjectCollection<IMetadataObjectTabularSection>;
-    }
+    IMetadataObjectCollection<IMetadataObjectTabularSection> TabularSections=> GetProperty<ICOMObject1C8>("TabularSections") as IMetadataObjectCollection<IMetadataObjectTabularSection>;
 }

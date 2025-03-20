@@ -17,7 +17,7 @@ namespace Sabatex.V1C8.XUnitTest
             _metadata = _connection.GlobalContext.MetaData;
         }
         [Fact]
-        public object TestEnumsMetadata()
+        public void TestEnumsMetadata()
         {
             var result = new List<object>();
 
@@ -52,16 +52,9 @@ namespace Sabatex.V1C8.XUnitTest
                 };
                 result.Add(en);
             }
-            return result;
         }
-        //[Fact]
-        //public void GetEnumsMetadata()
-        //{
-        //    var enumMetadata = _metadata.GetMetadataEnum();
-        //}
 
-        [Fact]
-        public object GetCatalogsMetadata()
+        public List<object> GetCatalogsMetadata()
         {
             var result = new List<object>();
 

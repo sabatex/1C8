@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using sabatex.V1C8;
+using Sabatex.V1C8;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sabatex.V1C8.XUnitTest
+namespace Sabatex.V1C8.XUnitTest
 {
     public class ConnectionFixture:IDisposable
     {

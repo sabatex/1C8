@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3E9C0436-70CA-423D-BB01-9620F5DC7BF3}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sabatex.V1C8.XUnitTest", "sabatex.V1C8.XUnitTest\sabatex.V1C8.XUnitTest.csproj", "{DB504CF8-2FEA-474C-94F2-C73991F0B99E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{35746AFC-7430-48C5-8CF8-A4E827CF75E8}"
@@ -56,9 +54,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{DB504CF8-2FEA-474C-94F2-C73991F0B99E} = {3E9C0436-70CA-423D-BB01-9620F5DC7BF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82302B92-357C-4D3F-A812-9A8F07BAEAFC}

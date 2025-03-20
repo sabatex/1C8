@@ -1,10 +1,10 @@
-﻿using sabatex.V1C8.Metadata;
+﻿using Sabatex.V1C8.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace sabatex.V1C8.XUnitTest
+namespace Sabatex.V1C8.XUnitTest
 {
     [Collection("Connection 1C8")]
     public class MetadataTests

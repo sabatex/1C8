@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace sabatex.V1C8.XUnitTest
+namespace Sabatex.V1C8.XUnitTest
 {
     public class ConnectionTest
     {

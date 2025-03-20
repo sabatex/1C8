@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Authors>Serhiy Lakas</Authors>
     <Product>1C8.3 COMConnector extensions </Product>
     <Description>1C8.3 COMConnector extensions</Description>
     <Copyright>2021, Serhiy Lakas</Copyright>
-    <Version>6.0.1</Version>
+    <Version>8.0.0</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8.3</PackageTags>
     <PackageId>sabatex.V1C8.Extensions</PackageId>
@@ -19,8 +19,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="sabatex.V1C8" Version="6.0.1" />
-    <PackageReference Include="sabatex.V1C8.Models" Version="6.0.1" />
+    <PackageReference Include="Sabatex.V1C8" Version="8.0.0" />
+    <PackageReference Include="Sabatex.V1C8.Models" Version="8.0.0" />
   </ItemGroup>
 
 </Project>

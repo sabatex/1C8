@@ -1,19 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Authors>Serhiy Lakas</Authors>
     <Product>1C8 COMConnector Extensions</Product>
     <Company>sabatex on git</Company>
     <Description>1C8 COMConnector Extensions</Description>
     <Copyright>2019, Serhiy Lakas</Copyright>
-    <Version>5.1.12</Version>
+    <Version>6.0.0</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>#1C8 #1C8.1 #1C8.2 #1C8.3</PackageTags>
-    <PackageId>sabatex.V1C8</PackageId>
-    <AssemblyName>sabatex.V1C8</AssemblyName>
-    <RootNamespace>sabatex.V1C8</RootNamespace>
+    <PackageId>Sabatex.V1C8</PackageId>
+    <AssemblyName>Sabatex.V1C8</AssemblyName>
+    <RootNamespace>Sabatex.V1C8</RootNamespace>
 
 
     <PackageReleaseNotes>Add SetProperty</PackageReleaseNotes>

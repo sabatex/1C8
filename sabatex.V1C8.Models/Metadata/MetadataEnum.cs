@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace sabatex.V1C8.Models.Metadata
+namespace Sabatex.V1C8.Models.Metadata;
+
+public class MetadataEnum:MetadataObject
 {
-    public class MetadataEnum:MetadataObject
-    {
-        public IEnumerable<MetadataEnumItem> Items { get; set; }
-    }
+    public IEnumerable<MetadataEnumItem> Items { get; set; }
 }

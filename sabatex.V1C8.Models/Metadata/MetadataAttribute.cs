@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace sabatex.V1C8.Models.Metadata
+namespace Sabatex.V1C8.Models.Metadata;
+
+public class MetadataAttribute:MetadataDescription
 {
-    public class MetadataAttribute:MetadataDescription
-    {
-        public ObjectType Type { get; set; }
-    }
+    public ObjectType Type { get; set; }
 }
